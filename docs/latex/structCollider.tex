@@ -1,0 +1,189 @@
+\doxysection{Collider Struct Reference}
+\hypertarget{structCollider}{}\label{structCollider}\index{Collider@{Collider}}
+
+
+{\ttfamily \#include $<$Collider.\+h$>$}
+
+
+
+Inheritance diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{structCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structCollider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}} (std\+::string \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}}, std\+::function$<$ void(\mbox{\hyperlink{structCollider}{Collider}} \&other)$>$ \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{on\+Collision}}, bool is\+Trigger=false, bool is\+Static=false, bool consider\+Vel=false, bool is\+Ui=false)
+\item 
+\mbox{\hyperlink{structCollider_a923208f36ba5546c434755626cf04181}{Collider}} (std\+::string \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}})
+\item 
+\mbox{\hyperlink{structCollider_a564acde9860f875a32a6638c573d87be}{\texorpdfstring{$\sim$}{\string~}\+Collider}} ()
+\item 
+void \mbox{\hyperlink{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}{init}} () override
+\item 
+void \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{update}} () override
+\item 
+void \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{on\+Collision}} (\mbox{\hyperlink{structCollider}{Collider}} \&other)
+\item 
+const bool \mbox{\hyperlink{structCollider_a6b742fe2cb5dd449723ff4148de4a959}{is\+Colliding}} (std\+::string coll\+Tag)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structCollider_a80a564c1cb6930ffc7810f559381a5e4}\index{Collider@{Collider}!Collider@{Collider}}
+\index{Collider@{Collider}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Collider()}{Collider()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structCollider_a80a564c1cb6930ffc7810f559381a5e4} 
+Collider\+::\+Collider (\begin{DoxyParamCaption}\item[{std\+::string}]{tag}{, }\item[{std\+::function$<$ void(\mbox{\hyperlink{structCollider}{Collider}} \&other)$>$}]{on\+Collision}{, }\item[{bool}]{is\+Trigger}{ = {\ttfamily false}, }\item[{bool}]{is\+Static}{ = {\ttfamily false}, }\item[{bool}]{consider\+Vel}{ = {\ttfamily false}, }\item[{bool}]{is\+Ui}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{structCollider_a80a564c1cb6930ffc7810f559381a5e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCollider_a80a564c1cb6930ffc7810f559381a5e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structCollider_a923208f36ba5546c434755626cf04181}\index{Collider@{Collider}!Collider@{Collider}}
+\index{Collider@{Collider}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Collider()}{Collider()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structCollider_a923208f36ba5546c434755626cf04181} 
+Collider\+::\+Collider (\begin{DoxyParamCaption}\item[{std\+::string}]{tag}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCollider_a923208f36ba5546c434755626cf04181_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structCollider_a564acde9860f875a32a6638c573d87be}\index{Collider@{Collider}!````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}}
+\index{````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Collider()}{\string~Collider()}}
+{\footnotesize\ttfamily \label{structCollider_a564acde9860f875a32a6638c573d87be} 
+Collider\+::\texorpdfstring{$\sim$}{\string~}\+Collider (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}\index{Collider@{Collider}!init@{init}}
+\index{init@{init}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6} 
+void Collider\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
+
+\Hypertarget{structCollider_a6b742fe2cb5dd449723ff4148de4a959}\index{Collider@{Collider}!isColliding@{isColliding}}
+\index{isColliding@{isColliding}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{isColliding()}{isColliding()}}
+{\footnotesize\ttfamily \label{structCollider_a6b742fe2cb5dd449723ff4148de4a959} 
+const bool Collider\+::is\+Colliding (\begin{DoxyParamCaption}\item[{std\+::string}]{coll\+Tag}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCollider_a6b742fe2cb5dd449723ff4148de4a959_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}\index{Collider@{Collider}!onCollision@{onCollision}}
+\index{onCollision@{onCollision}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
+{\footnotesize\ttfamily \label{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5} 
+void Collider\+::on\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCollider}{Collider}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structCollider_aec6345e2c307d0a680360352f35e1779}\index{Collider@{Collider}!update@{update}}
+\index{update@{update}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structCollider_aec6345e2c307d0a680360352f35e1779} 
+void Collider\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCollider_aec6345e2c307d0a680360352f35e1779_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structCollider_a47553d89c2a08d0df50e2e4934572902}\index{Collider@{Collider}!tag@{tag}}
+\index{tag@{tag}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily \label{structCollider_a47553d89c2a08d0df50e2e4934572902} 
+std\+::string Collider\+::tag}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Collider_8h}{Collider.\+h}}\item 
+src/\mbox{\hyperlink{Collider_8cpp}{Collider.\+cpp}}\end{DoxyCompactItemize}

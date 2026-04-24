@@ -1,0 +1,137 @@
+\doxysection{Animator Struct Reference}
+\hypertarget{structAnimator}{}\label{structAnimator}\index{Animator@{Animator}}
+
+
+{\ttfamily \#include $<$Animator.\+h$>$}
+
+
+
+Inheritance diagram for Animator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{structAnimator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structAnimator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structAnimator_1_1Animation}{Animation}}
+\item 
+struct \mbox{\hyperlink{structAnimator_1_1Edge}{Edge}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAnimator_a701eeb9283612be2027425efb06bbff7}{Animator}} ()
+\item 
+\mbox{\hyperlink{structAnimator_a5af4797549f9f466a88657899e17c6ab}{\texorpdfstring{$\sim$}{\string~}\+Animator}} ()
+\item 
+void \mbox{\hyperlink{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}{init}} () override
+\item 
+void \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e956735}{update}} () override
+\item 
+void \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}{draw}} () override
+\item 
+void \mbox{\hyperlink{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1}{add\+Animation}} (const char \texorpdfstring{$\ast$}{*}id, const char \texorpdfstring{$\ast$}{*}tex\+Path, int speed=100, const bool is\+Looping=true, const bool is\+Reversible=false)
+\item 
+void \mbox{\hyperlink{structAnimator_a11922ec826afced3bfac9098fa55b8ea}{add\+Edge}} (const char \texorpdfstring{$\ast$}{*}id\+From, const char \texorpdfstring{$\ast$}{*}id\+To, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$ conditions)
+\item 
+std\+::string \mbox{\hyperlink{structAnimator_a05dbf02b17e983baa9984133df8900e9}{get\+Curr\+Anim\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structAnimator_a701eeb9283612be2027425efb06bbff7}\index{Animator@{Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}}
+{\footnotesize\ttfamily \label{structAnimator_a701eeb9283612be2027425efb06bbff7} 
+Animator\+::\+Animator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structAnimator_a5af4797549f9f466a88657899e17c6ab}\index{Animator@{Animator}!````~Animator@{\texorpdfstring{$\sim$}{\string~}Animator}}
+\index{````~Animator@{\texorpdfstring{$\sim$}{\string~}Animator}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Animator()}{\string~Animator()}}
+{\footnotesize\ttfamily \label{structAnimator_a5af4797549f9f466a88657899e17c6ab} 
+Animator\+::\texorpdfstring{$\sim$}{\string~}\+Animator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1}\index{Animator@{Animator}!addAnimation@{addAnimation}}
+\index{addAnimation@{addAnimation}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{addAnimation()}{addAnimation()}}
+{\footnotesize\ttfamily \label{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1} 
+void Animator\+::add\+Animation (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{tex\+Path}{, }\item[{int}]{speed}{ = {\ttfamily 100}, }\item[{const bool}]{is\+Looping}{ = {\ttfamily true}, }\item[{const bool}]{is\+Reversible}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{structAnimator_a11922ec826afced3bfac9098fa55b8ea}\index{Animator@{Animator}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily \label{structAnimator_a11922ec826afced3bfac9098fa55b8ea} 
+void Animator\+::add\+Edge (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id\+From}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{id\+To}{, }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$}]{conditions}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}\index{Animator@{Animator}!draw@{draw}}
+\index{draw@{draw}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structAnimator_a23e378fb2dc1cb48c685015ddc885c29} 
+void Animator\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{Component}}.
+
+\Hypertarget{structAnimator_a05dbf02b17e983baa9984133df8900e9}\index{Animator@{Animator}!getCurrAnimID@{getCurrAnimID}}
+\index{getCurrAnimID@{getCurrAnimID}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{getCurrAnimID()}{getCurrAnimID()}}
+{\footnotesize\ttfamily \label{structAnimator_a05dbf02b17e983baa9984133df8900e9} 
+std\+::string Animator\+::get\+Curr\+Anim\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}\index{Animator@{Animator}!init@{init}}
+\index{init@{init}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structAnimator_a399c69a70f729b5a9f5d3cd463da020b} 
+void Animator\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
+
+\Hypertarget{structAnimator_a59b9903253d8ce084048f7600e956735}\index{Animator@{Animator}!update@{update}}
+\index{update@{update}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structAnimator_a59b9903253d8ce084048f7600e956735} 
+void Animator\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Animator_8h}{Animator.\+h}}\item 
+src/\mbox{\hyperlink{Animator_8cpp}{Animator.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,209 @@
+\doxysection{FPS Struct Reference}
+\hypertarget{structFPS}{}\label{structFPS}\index{FPS@{FPS}}
+
+
+{\ttfamily \#include $<$Counters.\+h$>$}
+
+
+
+Inheritance diagram for FPS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structFPS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for FPS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structFPS__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4}{FPS}} (std\+::string in\+Str)
+\item 
+\mbox{\hyperlink{structFPS_ae9c26e732f0773feaacd6c812db04e88}{\texorpdfstring{$\sim$}{\string~}\+FPS}} ()
+\item 
+float \mbox{\hyperlink{structFPS_aebad3ebf6b14fbf70a5f2b8a7d1e1b84}{calc\+Avg}} ()
+\item 
+void \mbox{\hyperlink{structFPS_a2eb4adf219fe41837ef4e48ff4ada160}{update}} () override
+\item 
+void \mbox{\hyperlink{structFPS_adfc6d925757aafc98ea17e9540b866df}{reload}} () override
+\item 
+\mbox{\hyperlink{structFPS_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\item 
+\mbox{\hyperlink{structFPS_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\item 
+\mbox{\hyperlink{structFPS_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\item 
+\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\item 
+\mbox{\hyperlink{structText_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
+\item 
+\mbox{\hyperlink{structText_a4e7641708dfbf9c6bbbd41e897e9139c}{\texorpdfstring{$\sim$}{\string~}\+Text}} () override
+\item 
+void \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{update}} () override
+\item 
+void \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{draw}} () override
+\item 
+void \mbox{\hyperlink{structText_ab1d94af2f78ab8ec80e50cdb88402380}{change\+Text}} (std\+::string text)
+\item 
+void \mbox{\hyperlink{structText_ae74b78f8759c0db114a86db64b6d8d67}{centre\+Text}} (SDL\+\_\+\+Rect \&parent\+Rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structFPS_a56699d62767d20dd0732f31025839c94}{value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structText_a8791ce14f2670ec8fa98f9de34414e90}{set\+Tex}} (const char \texorpdfstring{$\ast$}{*}text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{structText}{Text}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structText_a032059fb32d2304c4a38b89d85b168b3}{data}}
+\item 
+float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structText_a1be16c24549bf25debf21d52ba29faba}{text\+Tex}}
+\item 
+SDL\+\_\+\+Colour \mbox{\hyperlink{structText_a0bbb8742e8ed2109988b868579b0923e}{text\+Colour}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{dest\+Rect}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4}\index{FPS@{FPS}!FPS@{FPS}}
+\index{FPS@{FPS}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{FPS()}{FPS()}}
+{\footnotesize\ttfamily \label{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4} 
+FPS\+::\+FPS (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structFPS_ae9c26e732f0773feaacd6c812db04e88}\index{FPS@{FPS}!````~FPS@{\texorpdfstring{$\sim$}{\string~}FPS}}
+\index{````~FPS@{\texorpdfstring{$\sim$}{\string~}FPS}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FPS()}{\string~FPS()}}
+{\footnotesize\ttfamily \label{structFPS_ae9c26e732f0773feaacd6c812db04e88} 
+FPS\+::\texorpdfstring{$\sim$}{\string~}\+FPS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structFPS_aebad3ebf6b14fbf70a5f2b8a7d1e1b84}\index{FPS@{FPS}!calcAvg@{calcAvg}}
+\index{calcAvg@{calcAvg}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{calcAvg()}{calcAvg()}}
+{\footnotesize\ttfamily \label{structFPS_aebad3ebf6b14fbf70a5f2b8a7d1e1b84} 
+float FPS\+::calc\+Avg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{structFPS_aebad3ebf6b14fbf70a5f2b8a7d1e1b84_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structFPS_adfc6d925757aafc98ea17e9540b866df}\index{FPS@{FPS}!reload@{reload}}
+\index{reload@{reload}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{structFPS_adfc6d925757aafc98ea17e9540b866df} 
+void FPS\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{Component}}.
+
+\Hypertarget{structFPS_a3708b595d0ef813e44b22c07bed5c34a}\index{FPS@{FPS}!Text@{Text}}
+\index{Text@{Text}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{structFPS_a3708b595d0ef813e44b22c07bed5c34a} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structFPS_a5ecdd4b00938ce0c10f14fa52a1f8a88}\index{FPS@{FPS}!Text@{Text}}
+\index{Text@{Text}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{structFPS_a5ecdd4b00938ce0c10f14fa52a1f8a88} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structFPS_af0a355f99999e8690c9d450f9464bfe3}\index{FPS@{FPS}!Text@{Text}}
+\index{Text@{Text}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{structFPS_af0a355f99999e8690c9d450f9464bfe3} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{, }\item[{SDL\+\_\+\+Color}]{color}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{structFPS_af0a355f99999e8690c9d450f9464bfe3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structFPS_a2eb4adf219fe41837ef4e48ff4ada160}\index{FPS@{FPS}!update@{update}}
+\index{update@{update}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structFPS_a2eb4adf219fe41837ef4e48ff4ada160} 
+void FPS\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structFPS_a2eb4adf219fe41837ef4e48ff4ada160_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structFPS_a56699d62767d20dd0732f31025839c94}\index{FPS@{FPS}!value@{value}}
+\index{value@{value}!FPS@{FPS}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{structFPS_a56699d62767d20dd0732f31025839c94} 
+int FPS\+::value}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Counters_8h}{Counters.\+h}}\item 
+src/\mbox{\hyperlink{Counters_8cpp}{Counters.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="Animator::Animation::Animation" name="Animator::Animation::Animation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,162,81"/>
+<area shape="rect" id="Node000002" href="$structTextureManager.html#affabc7a219da0e5c10988c64f9a97466" title=" " alt="" coords="217,5,416,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,45,201,40,202,45,162,51"/>
+<area shape="rect" id="Node000003" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title=" " alt="" coords="210,74,423,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,66,195,70,194,75,162,71"/>
+</map>

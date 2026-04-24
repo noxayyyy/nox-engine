@@ -1,0 +1,183 @@
+\doxysection{Game Class Reference}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\item 
+void \mbox{\hyperlink{classGame_a6fb6ab188f447a0b1448f77426a2ad79}{init}} (const char \texorpdfstring{$\ast$}{*}title, int xpos, int ypos, int width, int height, bool fullscreen)
+\item 
+void \mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handle\+Events}} ()
+\item 
+void \mbox{\hyperlink{classGame_adbbce2f78e1de148e187a4bc70b493d7}{ghost\+Spawn}} ()
+\item 
+void \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\item 
+void \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}} ()
+\item 
+void \mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}} ()
+\item 
+bool \mbox{\hyperlink{classGame_afd9af52dcc5835f2a8c37f441a256b9d}{running}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classGame_a474f21af42dbf8a9644a8472af45b611}{set\+Pause}} (bool pause)
+\item 
+static const bool \mbox{\hyperlink{classGame_aa153f0da6707884d25383acc9fd711f1}{get\+Paused}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classGame_ad918e31c1644966465f822d912585f16}{delta\+Time}}
+\item 
+static float \mbox{\hyperlink{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}{time\+Scale}}
+\item 
+static SDL\+\_\+\+Event \mbox{\hyperlink{classGame_ac50bda5dab77dc40a78db21a883d23b3}{event}}
+\item 
+static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ae5164c37c0dc74cfb56041174017bf57}{renderer}}
+\item 
+static SDL\+\_\+\+Point \mbox{\hyperlink{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}{mouse\+Coords}}
+\item 
+static bool \mbox{\hyperlink{classGame_a2a7362eac9054b5735967829046edb7d}{mouse\+Button\+Pressed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \label{classGame_ad59df6562a58a614fda24622d3715b65} 
+Game\+::\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
+\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
+{\footnotesize\ttfamily \label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGame_ad4f36a72a2d06696f7973788606f57fc}\index{Game@{Game}!clean@{clean}}
+\index{clean@{clean}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{classGame_ad4f36a72a2d06696f7973788606f57fc} 
+void Game\+::clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_aa153f0da6707884d25383acc9fd711f1}\index{Game@{Game}!getPaused@{getPaused}}
+\index{getPaused@{getPaused}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPaused()}{getPaused()}}
+{\footnotesize\ttfamily \label{classGame_aa153f0da6707884d25383acc9fd711f1} 
+static const bool Game\+::get\+Paused (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classGame_aa153f0da6707884d25383acc9fd711f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_adbbce2f78e1de148e187a4bc70b493d7}\index{Game@{Game}!ghostSpawn@{ghostSpawn}}
+\index{ghostSpawn@{ghostSpawn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ghostSpawn()}{ghostSpawn()}}
+{\footnotesize\ttfamily \label{classGame_adbbce2f78e1de148e187a4bc70b493d7} 
+void Game\+::ghost\+Spawn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_adb5563f62c0c82e3e42ec36501aa5698}\index{Game@{Game}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily \label{classGame_adb5563f62c0c82e3e42ec36501aa5698} 
+void Game\+::handle\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_a6fb6ab188f447a0b1448f77426a2ad79}\index{Game@{Game}!init@{init}}
+\index{init@{init}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classGame_a6fb6ab188f447a0b1448f77426a2ad79} 
+void Game\+::init (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{, }\item[{int}]{xpos}{, }\item[{int}]{ypos}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{bool}]{fullscreen}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_a15ddd769261d923827a3cdf41499c843}\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{classGame_a15ddd769261d923827a3cdf41499c843} 
+void Game\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGame_afd9af52dcc5835f2a8c37f441a256b9d}\index{Game@{Game}!running@{running}}
+\index{running@{running}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily \label{classGame_afd9af52dcc5835f2a8c37f441a256b9d} 
+bool Game\+::running (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classGame_a474f21af42dbf8a9644a8472af45b611}\index{Game@{Game}!setPause@{setPause}}
+\index{setPause@{setPause}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setPause()}{setPause()}}
+{\footnotesize\ttfamily \label{classGame_a474f21af42dbf8a9644a8472af45b611} 
+static void Game\+::set\+Pause (\begin{DoxyParamCaption}\item[{bool}]{pause}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_a79df6376b332d63c9eca0dcee30305c3}\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classGame_a79df6376b332d63c9eca0dcee30305c3} 
+void Game\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classGame_ad918e31c1644966465f822d912585f16}\index{Game@{Game}!deltaTime@{deltaTime}}
+\index{deltaTime@{deltaTime}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{deltaTime}{deltaTime}}
+{\footnotesize\ttfamily \label{classGame_ad918e31c1644966465f822d912585f16} 
+float Game\+::delta\+Time\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_ac50bda5dab77dc40a78db21a883d23b3}\index{Game@{Game}!event@{event}}
+\index{event@{event}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \label{classGame_ac50bda5dab77dc40a78db21a883d23b3} 
+SDL\+\_\+\+Event Game\+::event\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_a2a7362eac9054b5735967829046edb7d}\index{Game@{Game}!mouseButtonPressed@{mouseButtonPressed}}
+\index{mouseButtonPressed@{mouseButtonPressed}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouseButtonPressed}{mouseButtonPressed}}
+{\footnotesize\ttfamily \label{classGame_a2a7362eac9054b5735967829046edb7d} 
+bool Game\+::mouse\+Button\+Pressed\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}\index{Game@{Game}!mouseCoords@{mouseCoords}}
+\index{mouseCoords@{mouseCoords}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouseCoords}{mouseCoords}}
+{\footnotesize\ttfamily \label{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb} 
+SDL\+\_\+\+Point Game\+::mouse\+Coords\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_ae5164c37c0dc74cfb56041174017bf57}\index{Game@{Game}!renderer@{renderer}}
+\index{renderer@{renderer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily \label{classGame_ae5164c37c0dc74cfb56041174017bf57} 
+SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} Game\+::renderer\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}\index{Game@{Game}!timeScale@{timeScale}}
+\index{timeScale@{timeScale}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{timeScale}{timeScale}}
+{\footnotesize\ttfamily \label{classGame_aa67a1eb6b517d48fc49bf39a2477c35d} 
+float Game\+::time\+Scale\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Game_8h}{Game.\+h}}\end{DoxyCompactItemize}

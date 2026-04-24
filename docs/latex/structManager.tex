@@ -1,0 +1,135 @@
+\doxysection{Manager Struct Reference}
+\hypertarget{structManager}{}\label{structManager}\index{Manager@{Manager}}
+
+
+{\ttfamily \#include $<$ECS.\+h$>$}
+
+
+
+Collaboration diagram for Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{structManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}} ()
+\item 
+void \mbox{\hyperlink{structManager_af43da42550bd9746c5ea61a6aeee80de}{update}} ()
+\item 
+void \mbox{\hyperlink{structManager_ad688d8d92b4d0c1049913500ca9ba9f3}{draw}} ()
+\item 
+void \mbox{\hyperlink{structManager_a91664ffe84b1acc07269ce65eb504d79}{refresh\+Groups}} ()
+\item 
+void \mbox{\hyperlink{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748}{refresh}} ()
+\item 
+void \mbox{\hyperlink{structManager_a68fd701c4f4a0c4126f30fb0eb46809d}{add\+To\+Group}} (\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}mem\+Entity, \mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{structManager_a5e1017b17f0612ad6a2b5dad02efad5c}{get\+Group\+Members}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \& \mbox{\hyperlink{structManager_a47e037085d72bac9204b47734b3aae3c}{add\+Entity}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{structManager_aa6fcc1945934b4c4cf7c5f0e308d3709}{destroy\+All}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily \label{structManager_a1658ff9f18e38ccd9cb8b0b371b9c20b} 
+Manager\+::\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structManager_a47e037085d72bac9204b47734b3aae3c}\index{Manager@{Manager}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily \label{structManager_a47e037085d72bac9204b47734b3aae3c} 
+\mbox{\hyperlink{structEntity}{Entity}} \& Manager\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::string}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structManager_a68fd701c4f4a0c4126f30fb0eb46809d}\index{Manager@{Manager}!addToGroup@{addToGroup}}
+\index{addToGroup@{addToGroup}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{addToGroup()}{addToGroup()}}
+{\footnotesize\ttfamily \label{structManager_a68fd701c4f4a0c4126f30fb0eb46809d} 
+void Manager\+::add\+To\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}}]{mem\+Entity}{, }\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structManager_aa6fcc1945934b4c4cf7c5f0e308d3709}\index{Manager@{Manager}!destroyAll@{destroyAll}}
+\index{destroyAll@{destroyAll}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{destroyAll()}{destroyAll()}}
+{\footnotesize\ttfamily \label{structManager_aa6fcc1945934b4c4cf7c5f0e308d3709} 
+void Manager\+::destroy\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structManager_aa6fcc1945934b4c4cf7c5f0e308d3709_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structManager_ad688d8d92b4d0c1049913500ca9ba9f3}\index{Manager@{Manager}!draw@{draw}}
+\index{draw@{draw}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structManager_ad688d8d92b4d0c1049913500ca9ba9f3} 
+void Manager\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structManager_a5e1017b17f0612ad6a2b5dad02efad5c}\index{Manager@{Manager}!getGroupMembers@{getGroupMembers}}
+\index{getGroupMembers@{getGroupMembers}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{getGroupMembers()}{getGroupMembers()}}
+{\footnotesize\ttfamily \label{structManager_a5e1017b17f0612ad6a2b5dad02efad5c} 
+std\+::vector$<$ \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} $>$ \& Manager\+::get\+Group\+Members (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748}\index{Manager@{Manager}!refresh@{refresh}}
+\index{refresh@{refresh}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily \label{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748} 
+void Manager\+::refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structManager_a91664ffe84b1acc07269ce65eb504d79}\index{Manager@{Manager}!refreshGroups@{refreshGroups}}
+\index{refreshGroups@{refreshGroups}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{refreshGroups()}{refreshGroups()}}
+{\footnotesize\ttfamily \label{structManager_a91664ffe84b1acc07269ce65eb504d79} 
+void Manager\+::refresh\+Groups (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structManager_a91664ffe84b1acc07269ce65eb504d79_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structManager_af43da42550bd9746c5ea61a6aeee80de}\index{Manager@{Manager}!update@{update}}
+\index{update@{update}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structManager_af43da42550bd9746c5ea61a6aeee80de} 
+void Manager\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ECS_8h}{ECS.\+h}}\item 
+src/\mbox{\hyperlink{ECS_8cpp}{ECS.\+cpp}}\end{DoxyCompactItemize}

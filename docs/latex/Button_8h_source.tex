@@ -1,0 +1,50 @@
+\doxysection{Button.\+h}
+\hypertarget{Button_8h_source}{}\label{Button_8h_source}\index{include/Button.h@{include/Button.h}}
+\mbox{\hyperlink{Button_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Collider_8h}{Collider.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MouseTracker_8h}{MouseTracker.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Text_8h}{Text.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structManager}{Manager}}\ \mbox{\hyperlink{Button_8h_a8b88105956ea929e3c74c65791e92c6f}{manager}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}}(}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ std::string\ inStr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{float}\ scale,\ SDL\_Colour\ defColour,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ SDL\_Colour\ hoverColour,\ SDL\_Colour\ textColour,\ std::function<\textcolor{keywordtype}{void}()>\ func}
+\DoxyCodeLine{00016\ \ \ \ \ );}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}}(std::string\ inStr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{float}\ scale,\ std::function<\textcolor{keywordtype}{void}()>\ func);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}}(std::string\ inStr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ std::function<\textcolor{keywordtype}{void}()>\ func);}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{structButton_a2a001eb9c3cc8ae54768a850dd345002}{\string~Button}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structButton_a94132a198aa03cd94f0337d29109b20c}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332}{reload}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structButton_af4d14cf544d8e0620f4ffcd7984103f7}{draw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ scale;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ isPressed;}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ content;}
+\DoxyCodeLine{00030\ \ \ \ \ std::function<void()>\ pressFunc;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ transform;}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structCollider}{Collider}}*\ collider;}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structText}{Text}}*\ text;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ SDL\_Rect\ buttonRect;}
+\DoxyCodeLine{00037\ \ \ \ \ SDL\_Texture*\ texture;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ SDL\_Colour\ defColour;}
+\DoxyCodeLine{00040\ \ \ \ \ SDL\_Colour\ hoverColour;}
+\DoxyCodeLine{00041\ \ \ \ \ SDL\_Colour\ textColour;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ setTex(SDL\_Colour\&\ colour);}
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}

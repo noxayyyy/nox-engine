@@ -1,0 +1,130 @@
+\doxysection{Texture\+Manager Struct Reference}
+\hypertarget{structTextureManager}{}\label{structTextureManager}\index{TextureManager@{TextureManager}}
+
+
+{\ttfamily \#include $<$Texture\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Texture\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{structTextureManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static SDL\+\_\+\+Point \mbox{\hyperlink{structTextureManager_affabc7a219da0e5c10988c64f9a97466}{Get\+Size\+Of\+Surface}} (const char \texorpdfstring{$\ast$}{*}file\+Name)
+\item 
+static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}{Load\+Texture}} (const char \texorpdfstring{$\ast$}{*}file\+Name)
+\item 
+static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_af0ef10e05ccd7d1cffd18eef53295a2d}{Load\+Texture}} (const SDL\+\_\+\+Colour colour, const char \texorpdfstring{$\ast$}{*}text)
+\item 
+static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_ae93507f1515dbfa355cc2b6d8980ad32}{Load\+Texture}} (SDL\+\_\+\+Rect \&rect, SDL\+\_\+\+Colour colour)
+\item 
+static void \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&src, SDL\+\_\+\+Rect \&dest)
+\item 
+static void \mbox{\hyperlink{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&dest)
+\item 
+static void \mbox{\hyperlink{structTextureManager_aef20b2103e28306a714abf1161d41174}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&src, SDL\+\_\+\+Rect \&dest, const double angle)
+\item 
+static void \mbox{\hyperlink{structTextureManager_a0a7be48af9b877305284415aea6ec09f}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&dest, const double angle)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024}{font}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
+\index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9} 
+void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{structTextureManager_a0a7be48af9b877305284415aea6ec09f}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
+\index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{structTextureManager_a0a7be48af9b877305284415aea6ec09f} 
+void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{, }\item[{const double}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
+\index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8} 
+void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{src}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structTextureManager_aef20b2103e28306a714abf1161d41174}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
+\index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{structTextureManager_aef20b2103e28306a714abf1161d41174} 
+void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{src}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{, }\item[{const double}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{structTextureManager_affabc7a219da0e5c10988c64f9a97466}\index{TextureManager@{TextureManager}!GetSizeOfSurface@{GetSizeOfSurface}}
+\index{GetSizeOfSurface@{GetSizeOfSurface}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{GetSizeOfSurface()}{GetSizeOfSurface()}}
+{\footnotesize\ttfamily \label{structTextureManager_affabc7a219da0e5c10988c64f9a97466} 
+SDL\+\_\+\+Point Texture\+Manager\+::\+Get\+Size\+Of\+Surface (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structTextureManager_affabc7a219da0e5c10988c64f9a97466_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}\index{TextureManager@{TextureManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structTextureManager_af0ef10e05ccd7d1cffd18eef53295a2d}\index{TextureManager@{TextureManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{structTextureManager_af0ef10e05ccd7d1cffd18eef53295a2d} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Colour}]{colour}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{structTextureManager_ae93507f1515dbfa355cc2b6d8980ad32}\index{TextureManager@{TextureManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{structTextureManager_ae93507f1515dbfa355cc2b6d8980ad32} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect \&}]{rect}{, }\item[{SDL\+\_\+\+Colour}]{colour}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024}\index{TextureManager@{TextureManager}!font@{font}}
+\index{font@{font}!TextureManager@{TextureManager}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024} 
+TTF\+\_\+\+Font\texorpdfstring{$\ast$}{*} Texture\+Manager\+::font\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{TextureManager_8h}{Texture\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{TextureManager_8cpp}{Texture\+Manager.\+cpp}}\end{DoxyCompactItemize}

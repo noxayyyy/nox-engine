@@ -1,0 +1,35 @@
+\doxysection{Transform.\+h}
+\hypertarget{Transform_8h_source}{}\label{Transform_8h_source}\index{include/Transform.h@{include/Transform.h}}
+\mbox{\hyperlink{Transform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}}\ \{\ \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f}{NINETY}},\ \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1}{ONE\_EIGHTY}}\ \};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{structVector2D}{Vector2D}}\ \mbox{\hyperlink{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556}{initPos}},\ \mbox{\hyperlink{structTransform_a184506ba90094bd001616750a8efeaaa}{pos}},\ \mbox{\hyperlink{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}{vel}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTransform_aed2cde92529cda428813f16a7054d7a0}{height}}\ =\ 50;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTransform_ac161d5afc0737803f9cd4abd16c4697a}{width}}\ =\ 50;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}}\ =\ 0.6f;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structTransform_a25a3777aad28148d20cceb0f1900cec4}{speed}}\ =\ 240.0f;\ \textcolor{comment}{//\ 480.0f;}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}});}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}});}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}(\mbox{\hyperlink{structVector2D}{Vector2D}}\ vec);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTransform_a9f67e6f75148a2b7da067961e6d46902}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTransform_a95f43abca9677142b734c1536bf1b886}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTransform_a4f24046feadc161265f75f821b162a22}{reload}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTransform_a0067e69d59b0510d386bd6ffd5ddaeb6}{rotate}}(\mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}}\ rotation,\ \textcolor{keywordtype}{bool}\ anticlockwise);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTransform_af8dca674026ec3d3140314995d5b7c53}{setAngle}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}});}
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

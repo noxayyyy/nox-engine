@@ -1,0 +1,25 @@
+\doxysection{Texture\+Manager.\+h}
+\hypertarget{TextureManager_8h_source}{}\label{TextureManager_8h_source}\index{include/TextureManager.h@{include/TextureManager.h}}
+\mbox{\hyperlink{TextureManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Game_8h}{Game.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_render.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_ttf.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTextureManager}{TextureManager}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ TTF\_Font*\ \mbox{\hyperlink{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024}{font}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Point\ \mbox{\hyperlink{structTextureManager_affabc7a219da0e5c10988c64f9a97466}{GetSizeOfSurface}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ fileName);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Texture*\ \mbox{\hyperlink{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}{LoadTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ fileName);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Texture*\ \mbox{\hyperlink{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}{LoadTexture}}(\textcolor{keyword}{const}\ SDL\_Colour\ colour,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ text);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Texture*\ \mbox{\hyperlink{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}{LoadTexture}}(SDL\_Rect\&\ rect,\ SDL\_Colour\ colour);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{DrawTexture}}(SDL\_Texture*\ tex,\ SDL\_Rect\&\ src,\ SDL\_Rect\&\ dest);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{DrawTexture}}(SDL\_Texture*\ tex,\ SDL\_Rect\&\ dest);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{DrawTexture}}(SDL\_Texture*\ tex,\ SDL\_Rect\&\ src,\ SDL\_Rect\&\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ angle);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{DrawTexture}}(SDL\_Texture*\ tex,\ SDL\_Rect\&\ dest,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ angle);}
+\DoxyCodeLine{00019\ \};}
+
+\end{DoxyCode}

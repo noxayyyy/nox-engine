@@ -1,0 +1,110 @@
+\doxysection{Component Struct Reference}
+\hypertarget{structComponent}{}\label{structComponent}\index{Component@{Component}}
+
+
+{\ttfamily \#include $<$ECS.\+h$>$}
+
+
+
+Inheritance diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{structComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structComponent_a2e9aa4348314d981f05f67397ad2f872}\index{Component@{Component}!````~Component@{\texorpdfstring{$\sim$}{\string~}Component}}
+\index{````~Component@{\texorpdfstring{$\sim$}{\string~}Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Component()}{\string~Component()}}
+{\footnotesize\ttfamily \label{structComponent_a2e9aa4348314d981f05f67397ad2f872} 
+virtual Component\+::\texorpdfstring{$\sim$}{\string~}\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}\index{Component@{Component}!draw@{draw}}
+\index{draw@{draw}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a} 
+virtual void Component\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}{Animator}}, \mbox{\hyperlink{structButton_af4d14cf544d8e0620f4ffcd7984103f7}{Button}}, \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{Sprites}}, and \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{Text}}.
+
+\Hypertarget{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}\index{Component@{Component}!init@{init}}
+\index{init@{init}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structComponent_a162f8cdc070537a71f2ad0b5e763b86f} 
+virtual void Component\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}{Animator}}, \mbox{\hyperlink{structButton_a94132a198aa03cd94f0337d29109b20c}{Button}}, \mbox{\hyperlink{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}{Collider}}, \mbox{\hyperlink{structController_afd3de74c4b224affca8fb73bc75374a9}{Controller}}, \mbox{\hyperlink{structMouseTracker_a1b92139b782973f6dbe135f9be3158a7}{Mouse\+Tracker}}, \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{Sprites}}, \mbox{\hyperlink{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}{Tile}}, and \mbox{\hyperlink{structTransform_a9f67e6f75148a2b7da067961e6d46902}{Transform}}.
+
+\Hypertarget{structComponent_abd8b82630598fe8a13318ecc13a5c159}\index{Component@{Component}!reload@{reload}}
+\index{reload@{reload}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{structComponent_abd8b82630598fe8a13318ecc13a5c159} 
+virtual void Component\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332}{Button}}, \mbox{\hyperlink{structController_a66dcd5056f1c90515405d4a77f86dd67}{Controller}}, \mbox{\hyperlink{structFPS_adfc6d925757aafc98ea17e9540b866df}{FPS}}, \mbox{\hyperlink{structMouseTracker_aa37b0f2556c8b0c64bf5197a30eafb81}{Mouse\+Tracker}}, \mbox{\hyperlink{structPoints_a9b6c82fcf421a12d2ca76483622fdfbb}{Points}}, and \mbox{\hyperlink{structTransform_a4f24046feadc161265f75f821b162a22}{Transform}}.
+
+\Hypertarget{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}\index{Component@{Component}!update@{update}}
+\index{update@{update}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae} 
+virtual void Component\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e956735}{Animator}}, \mbox{\hyperlink{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}{Button}}, \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{Collider}}, \mbox{\hyperlink{structController_a612e598a359e9327b6bb625c7b377ee7}{Controller}}, \mbox{\hyperlink{structFPS_a2eb4adf219fe41837ef4e48ff4ada160}{FPS}}, \mbox{\hyperlink{structMouseTracker_afd5dfe7e64afed79934b732654c5bff0}{Mouse\+Tracker}}, \mbox{\hyperlink{structPoints_adad983d6f230a1e9ccb71a2dd87d1516}{Points}}, \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{Sprites}}, \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{Text}}, and \mbox{\hyperlink{structTransform_a95f43abca9677142b734c1536bf1b886}{Transform}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structComponent_a6acb3f00c9d114d961c8763ede390d2c}\index{Component@{Component}!entity@{entity}}
+\index{entity@{entity}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily \label{structComponent_a6acb3f00c9d114d961c8763ede390d2c} 
+\mbox{\hyperlink{structEntity}{Entity}}\texorpdfstring{$\ast$}{*} Component\+::entity}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ECS_8h}{ECS.\+h}}\end{DoxyCompactItemize}

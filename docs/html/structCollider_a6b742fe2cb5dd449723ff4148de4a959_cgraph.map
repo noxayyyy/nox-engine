@@ -1,0 +1,9 @@
+<map id="Collider::isColliding" name="Collider::isColliding">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,153,57"/>
+<area shape="rect" id="Node000002" href="$structCollider.html#a80a564c1cb6930ffc7810f559381a5e4" title=" " alt="" coords="201,29,330,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,40,185,40,185,46,153,46"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="233,30,228,20,232,11,245,5,265,3,287,5,299,12,297,16,286,10,265,8,246,10,236,15,233,20,238,27"/>
+<area shape="rect" id="Node000003" href="$structCollider.html#a6b79610fbf8052480ee21ca2f7b3fbd5" title=" " alt="" coords="378,29,529,57"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="331,49,362,49,362,55,331,54"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="377,37,346,37,346,32,377,32"/>
+</map>

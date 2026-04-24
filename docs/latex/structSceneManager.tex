@@ -1,0 +1,183 @@
+\doxysection{Scene\+Manager Struct Reference}
+\hypertarget{structSceneManager}{}\label{structSceneManager}\index{SceneManager@{SceneManager}}
+
+
+{\ttfamily \#include $<$Scene\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{structSceneManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{Scene\+Manager}} ()
+\item 
+\mbox{\hyperlink{structSceneManager_a2bb376a85d29e85f47753e26c7539229}{\texorpdfstring{$\sim$}{\string~}\+Scene\+Manager}} ()
+\item 
+void \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{load\+Scene}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45}{load\+Scene}} (int build\+Index)
+\item 
+void \mbox{\hyperlink{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}{load\+Next\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}{load\+Prev\+Scene}} ()
+\item 
+\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}{get\+Current\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}{add\+Scene}} (\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*}scene)
+\item 
+void \mbox{\hyperlink{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}{remove\+Bg\+Scene}} (int layer)
+\item 
+void \mbox{\hyperlink{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}{update\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15}{call\+Scene\+Events}} (SDL\+\_\+\+Event \&event)
+\item 
+void \mbox{\hyperlink{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}{draw\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}{reload\+Scene}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structSceneManager_a52085e6737c23b491c228e86781af808}\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}}
+{\footnotesize\ttfamily \label{structSceneManager_a52085e6737c23b491c228e86781af808} 
+Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structSceneManager_a2bb376a85d29e85f47753e26c7539229}\index{SceneManager@{SceneManager}!````~SceneManager@{\texorpdfstring{$\sim$}{\string~}SceneManager}}
+\index{````~SceneManager@{\texorpdfstring{$\sim$}{\string~}SceneManager}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SceneManager()}{\string~SceneManager()}}
+{\footnotesize\ttfamily \label{structSceneManager_a2bb376a85d29e85f47753e26c7539229} 
+Scene\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Scene\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}\index{SceneManager@{SceneManager}!addScene@{addScene}}
+\index{addScene@{addScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{addScene()}{addScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a8b195be621119bb20fd7f39f84d182ba} 
+void Scene\+Manager\+::add\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*}}]{scene}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15}\index{SceneManager@{SceneManager}!callSceneEvents@{callSceneEvents}}
+\index{callSceneEvents@{callSceneEvents}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{callSceneEvents()}{callSceneEvents()}}
+{\footnotesize\ttfamily \label{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15} 
+void Scene\+Manager\+::call\+Scene\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}\index{SceneManager@{SceneManager}!drawScene@{drawScene}}
+\index{drawScene@{drawScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{drawScene()}{drawScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752} 
+void Scene\+Manager\+::draw\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}\index{SceneManager@{SceneManager}!getCurrentScene@{getCurrentScene}}
+\index{getCurrentScene@{getCurrentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentScene()}{getCurrentScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89} 
+\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*} Scene\+Manager\+::get\+Current\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}\index{SceneManager@{SceneManager}!loadNextScene@{loadNextScene}}
+\index{loadNextScene@{loadNextScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{loadNextScene()}{loadNextScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c} 
+void Scene\+Manager\+::load\+Next\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}\index{SceneManager@{SceneManager}!loadPrevScene@{loadPrevScene}}
+\index{loadPrevScene@{loadPrevScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{loadPrevScene()}{loadPrevScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664} 
+void Scene\+Manager\+::load\+Prev\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45}\index{SceneManager@{SceneManager}!loadScene@{loadScene}}
+\index{loadScene@{loadScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{loadScene()}{loadScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45} 
+void Scene\+Manager\+::load\+Scene (\begin{DoxyParamCaption}\item[{int}]{build\+Index}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}\index{SceneManager@{SceneManager}!loadScene@{loadScene}}
+\index{loadScene@{loadScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{loadScene()}{loadScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be} 
+void Scene\+Manager\+::load\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{id}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}\index{SceneManager@{SceneManager}!reloadScene@{reloadScene}}
+\index{reloadScene@{reloadScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{reloadScene()}{reloadScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7} 
+void Scene\+Manager\+::reload\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}\index{SceneManager@{SceneManager}!removeBgScene@{removeBgScene}}
+\index{removeBgScene@{removeBgScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{removeBgScene()}{removeBgScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19} 
+void Scene\+Manager\+::remove\+Bg\+Scene (\begin{DoxyParamCaption}\item[{int}]{layer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}\index{SceneManager@{SceneManager}!updateScene@{updateScene}}
+\index{updateScene@{updateScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{updateScene()}{updateScene()}}
+{\footnotesize\ttfamily \label{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983} 
+void Scene\+Manager\+::update\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SceneManager_8h}{Scene\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{SceneManager_8cpp}{Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

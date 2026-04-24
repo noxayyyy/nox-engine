@@ -1,0 +1,15 @@
+<map id="Tile" name="Tile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="147,1278,247,1462"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title=" " alt="" coords="144,478,266,639"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,654,201,1278,195,1278,201,654"/>
+<area shape="rect" id="Node000004" href="$structTransform.html" title=" " alt="" coords="47,850,149,1213"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="186,654,142,851,137,850,181,653"/>
+<area shape="rect" id="Node000006" href="$structSprites.html" title=" " alt="" coords="235,928,426,1134"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="233,653,306,928,301,929,227,654"/>
+<area shape="rect" id="Node000003" href="$structEntity.html" title=" " alt="" coords="148,5,262,301"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,300,208,461,202,461,202,300"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,1212,102,1253,117,1283,138,1311,134,1314,113,1286,97,1255,86,1213"/>
+<area shape="rect" id="Node000005" href="$structVector2D.html" title=" " alt="" coords="5,366,119,751"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="75,751,81,826,81,833,76,833,75,826,70,751"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="292,1135,242,1263,237,1261,287,1133"/>
+</map>

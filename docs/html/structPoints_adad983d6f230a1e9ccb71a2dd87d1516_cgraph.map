@@ -1,0 +1,7 @@
+<map id="Points::update" name="Points::update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,120,33"/>
+<area shape="rect" id="Node000002" href="$structText.html#a8791ce14f2670ec8fa98f9de34414e90" title=" " alt="" coords="168,5,266,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,16,152,16,152,22,120,22"/>
+<area shape="rect" id="Node000003" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title=" " alt="" coords="314,5,527,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,16,298,16,298,22,266,22"/>
+</map>

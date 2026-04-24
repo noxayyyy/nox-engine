@@ -1,0 +1,5 @@
+<map id="Button" name="Button">
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,215,112,444"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title=" " alt="" coords="5,5,128,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,182,70,215,64,215,64,182"/>
+</map>

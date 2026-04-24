@@ -1,0 +1,241 @@
+\doxysection{Text Struct Reference}
+\hypertarget{structText}{}\label{structText}\index{Text@{Text}}
+
+
+{\ttfamily \#include $<$Text.\+h$>$}
+
+
+
+Inheritance diagram for Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structText__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structText__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\item 
+\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\item 
+\mbox{\hyperlink{structText_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
+\item 
+\mbox{\hyperlink{structText_a4e7641708dfbf9c6bbbd41e897e9139c}{\texorpdfstring{$\sim$}{\string~}\+Text}} () override
+\item 
+void \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{update}} () override
+\item 
+void \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{draw}} () override
+\item 
+void \mbox{\hyperlink{structText_ab1d94af2f78ab8ec80e50cdb88402380}{change\+Text}} (std\+::string text)
+\item 
+void \mbox{\hyperlink{structText_ae74b78f8759c0db114a86db64b6d8d67}{centre\+Text}} (SDL\+\_\+\+Rect \&parent\+Rect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structText_a8791ce14f2670ec8fa98f9de34414e90}{set\+Tex}} (const char \texorpdfstring{$\ast$}{*}text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structText_a032059fb32d2304c4a38b89d85b168b3}{data}}
+\item 
+float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structText_a1be16c24549bf25debf21d52ba29faba}{text\+Tex}}
+\item 
+SDL\+\_\+\+Colour \mbox{\hyperlink{structText_a0bbb8742e8ed2109988b868579b0923e}{text\+Colour}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{dest\+Rect}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structText_af0a355f99999e8690c9d450f9464bfe3}\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{structText_af0a355f99999e8690c9d450f9464bfe3} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{, }\item[{SDL\+\_\+\+Color}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structText_a3708b595d0ef813e44b22c07bed5c34a}\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{structText_a3708b595d0ef813e44b22c07bed5c34a} 
+Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structText_a3708b595d0ef813e44b22c07bed5c34a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structText_a4e7641708dfbf9c6bbbd41e897e9139c}\index{Text@{Text}!````~Text@{\texorpdfstring{$\sim$}{\string~}Text}}
+\index{````~Text@{\texorpdfstring{$\sim$}{\string~}Text}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Text()}{\string~Text()}}
+{\footnotesize\ttfamily \label{structText_a4e7641708dfbf9c6bbbd41e897e9139c} 
+Text\+::\texorpdfstring{$\sim$}{\string~}\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structText_ae74b78f8759c0db114a86db64b6d8d67}\index{Text@{Text}!centreText@{centreText}}
+\index{centreText@{centreText}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{centreText()}{centreText()}}
+{\footnotesize\ttfamily \label{structText_ae74b78f8759c0db114a86db64b6d8d67} 
+void Text\+::centre\+Text (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect \&}]{parent\+Rect}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{structText_ae74b78f8759c0db114a86db64b6d8d67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structText_ab1d94af2f78ab8ec80e50cdb88402380}\index{Text@{Text}!changeText@{changeText}}
+\index{changeText@{changeText}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{changeText()}{changeText()}}
+{\footnotesize\ttfamily \label{structText_ab1d94af2f78ab8ec80e50cdb88402380} 
+void Text\+::change\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structText_a8f486a54a21fafc7a5dfb75975f1621f}\index{Text@{Text}!draw@{draw}}
+\index{draw@{draw}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structText_a8f486a54a21fafc7a5dfb75975f1621f} 
+void Text\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{structText_a8f486a54a21fafc7a5dfb75975f1621f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structText_a8791ce14f2670ec8fa98f9de34414e90}\index{Text@{Text}!setTex@{setTex}}
+\index{setTex@{setTex}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{setTex()}{setTex()}}
+{\footnotesize\ttfamily \label{structText_a8791ce14f2670ec8fa98f9de34414e90} 
+void Text\+::set\+Tex (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structText_a8791ce14f2670ec8fa98f9de34414e90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{structText_a8791ce14f2670ec8fa98f9de34414e90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structText_aec022b3d70204a615b0d107975dfb518}\index{Text@{Text}!update@{update}}
+\index{update@{update}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structText_aec022b3d70204a615b0d107975dfb518} 
+void Text\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structText_aec022b3d70204a615b0d107975dfb518_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structText_a032059fb32d2304c4a38b89d85b168b3}\index{Text@{Text}!data@{data}}
+\index{data@{data}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{structText_a032059fb32d2304c4a38b89d85b168b3} 
+std\+::string Text\+::data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{structText_a3bf3dadf3713e965b57343d1dad5c15b}\index{Text@{Text}!destRect@{destRect}}
+\index{destRect@{destRect}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{destRect}{destRect}}
+{\footnotesize\ttfamily \label{structText_a3bf3dadf3713e965b57343d1dad5c15b} 
+SDL\+\_\+\+Rect Text\+::dest\+Rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}\index{Text@{Text}!scale@{scale}}
+\index{scale@{scale}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{structText_a4792bbb71878bcb9aa41d4bb7f68e33b} 
+float Text\+::scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{structText_a0bbb8742e8ed2109988b868579b0923e}\index{Text@{Text}!textColour@{textColour}}
+\index{textColour@{textColour}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{textColour}{textColour}}
+{\footnotesize\ttfamily \label{structText_a0bbb8742e8ed2109988b868579b0923e} 
+SDL\+\_\+\+Colour Text\+::text\+Colour\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{structText_a1be16c24549bf25debf21d52ba29faba}\index{Text@{Text}!textTex@{textTex}}
+\index{textTex@{textTex}!Text@{Text}}
+\doxysubsubsection{\texorpdfstring{textTex}{textTex}}
+{\footnotesize\ttfamily \label{structText_a1be16c24549bf25debf21d52ba29faba} 
+SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Text\+::text\+Tex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Text_8h}{Text.\+h}}\item 
+src/\mbox{\hyperlink{Text_8cpp}{Text.\+cpp}}\end{DoxyCompactItemize}

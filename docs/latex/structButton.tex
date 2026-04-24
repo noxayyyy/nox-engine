@@ -1,0 +1,148 @@
+\doxysection{Button Struct Reference}
+\hypertarget{structButton}{}\label{structButton}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+
+
+Inheritance diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{structButton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structButton__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, float scale, SDL\+\_\+\+Colour def\+Colour, SDL\+\_\+\+Colour hover\+Colour, SDL\+\_\+\+Colour text\+Colour, std\+::function$<$ void()$>$ func)
+\item 
+\mbox{\hyperlink{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, float scale, std\+::function$<$ void()$>$ func)
+\item 
+\mbox{\hyperlink{structButton_a4c24ca26da1399b4ece25bdd05d27d98}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, std\+::function$<$ void()$>$ func)
+\item 
+\mbox{\hyperlink{structButton_a2a001eb9c3cc8ae54768a850dd345002}{\texorpdfstring{$\sim$}{\string~}\+Button}} ()
+\item 
+void \mbox{\hyperlink{structButton_a94132a198aa03cd94f0337d29109b20c}{init}} () override
+\item 
+void \mbox{\hyperlink{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}{update}} () override
+\item 
+void \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332}{reload}} () override
+\item 
+void \mbox{\hyperlink{structButton_af4d14cf544d8e0620f4ffcd7984103f7}{draw}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structButton_ab254bfae7efdeabe2a474d39b260c19b}\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{structButton_ab254bfae7efdeabe2a474d39b260c19b} 
+Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{, }\item[{SDL\+\_\+\+Colour}]{def\+Colour}{, }\item[{SDL\+\_\+\+Colour}]{hover\+Colour}{, }\item[{SDL\+\_\+\+Colour}]{text\+Colour}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf}\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf} 
+Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structButton_a4c24ca26da1399b4ece25bdd05d27d98}\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{structButton_a4c24ca26da1399b4ece25bdd05d27d98} 
+Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structButton_a2a001eb9c3cc8ae54768a850dd345002}\index{Button@{Button}!````~Button@{\texorpdfstring{$\sim$}{\string~}Button}}
+\index{````~Button@{\texorpdfstring{$\sim$}{\string~}Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Button()}{\string~Button()}}
+{\footnotesize\ttfamily \label{structButton_a2a001eb9c3cc8ae54768a850dd345002} 
+Button\+::\texorpdfstring{$\sim$}{\string~}\+Button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structButton_af4d14cf544d8e0620f4ffcd7984103f7}\index{Button@{Button}!draw@{draw}}
+\index{draw@{draw}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structButton_af4d14cf544d8e0620f4ffcd7984103f7} 
+void Button\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structButton_af4d14cf544d8e0620f4ffcd7984103f7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structButton_a94132a198aa03cd94f0337d29109b20c}\index{Button@{Button}!init@{init}}
+\index{init@{init}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structButton_a94132a198aa03cd94f0337d29109b20c} 
+void Button\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structButton_a94132a198aa03cd94f0337d29109b20c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structButton_ac73fe4dc081674c116aabe8145386332}\index{Button@{Button}!reload@{reload}}
+\index{reload@{reload}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{structButton_ac73fe4dc081674c116aabe8145386332} 
+void Button\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{Component}}.
+
+\Hypertarget{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}\index{Button@{Button}!update@{update}}
+\index{update@{update}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structButton_abda97f1ae8e081da3dbd0b77a27cad9d} 
+void Button\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Button_8h}{Button.\+h}}\item 
+src/\mbox{\hyperlink{Button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}

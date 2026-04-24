@@ -1,0 +1,14 @@
+<map id="Collider::Collider" name="Collider::Collider">
+<area shape="rect" id="Node000001" title=" " alt="" coords="377,109,506,137"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="474,96,462,90,442,88,422,90,412,95,409,100,414,107,409,110,404,100,408,91,421,85,442,83,464,85,476,92"/>
+<area shape="rect" id="Node000002" href="$structCollider.html#a923208f36ba5546c434755626cf04181" title=" " alt="" coords="189,5,318,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="410,102,372,74,328,48,300,36,302,31,330,43,374,70,413,98"/>
+<area shape="rect" id="Node000003" href="$structCollider.html#a6b742fe2cb5dd449723ff4148de4a959" title=" " alt="" coords="180,57,327,85"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="374,107,305,88,307,83,375,102"/>
+<area shape="rect" id="Node000004" href="$structCollider.html#a6b79610fbf8052480ee21ca2f7b3fbd5" title=" " alt="" coords="178,109,329,137"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="361,135,330,135,330,129,361,129"/>
+<area shape="rect" id="Node000005" href="$structCollider.html#aec6345e2c307d0a680360352f35e1779" title=" " alt="" coords="5,135,130,162"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="374,144,329,151,224,157,130,155,130,150,224,152,329,146,373,138"/>
+<area shape="poly" id="edge5_Node000004_Node000001" title=" " alt="" coords="345,112,376,112,376,117,345,117"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="163,138,130,143,129,137,162,133"/>
+</map>

@@ -1,0 +1,144 @@
+\doxysection{Sprites Struct Reference}
+\hypertarget{structSprites}{}\label{structSprites}\index{Sprites@{Sprites}}
+
+
+{\ttfamily \#include $<$Sprites.\+h$>$}
+
+
+
+Inheritance diagram for Sprites\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structSprites__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sprites\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSprites__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}} (const char \texorpdfstring{$\ast$}{*}tex)
+\item 
+\mbox{\hyperlink{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}{Sprites}} (const char \texorpdfstring{$\ast$}{*}tex, int n\+Frames, int m\+Speed, bool loop)
+\item 
+\mbox{\hyperlink{structSprites_a46633552deb102b94d645b223234de7a}{\texorpdfstring{$\sim$}{\string~}\+Sprites}} ()
+\item 
+void \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{init}} () override
+\item 
+void \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{update}} () override
+\item 
+void \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{draw}} () override
+\item 
+void \mbox{\hyperlink{structSprites_a9767aacb914fde74ce286c466dd0345a}{recalc\+Sprite\+Dimensions}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structSprites_a90c58c4968e7c990a5accd46b58cefd7}\index{Sprites@{Sprites}!Sprites@{Sprites}}
+\index{Sprites@{Sprites}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{Sprites()}{Sprites()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structSprites_a90c58c4968e7c990a5accd46b58cefd7} 
+Sprites\+::\+Sprites (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tex}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}\index{Sprites@{Sprites}!Sprites@{Sprites}}
+\index{Sprites@{Sprites}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{Sprites()}{Sprites()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6} 
+Sprites\+::\+Sprites (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{int}]{n\+Frames}{, }\item[{int}]{m\+Speed}{, }\item[{bool}]{loop}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSprites_a46633552deb102b94d645b223234de7a}\index{Sprites@{Sprites}!````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}}
+\index{````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sprites()}{\string~Sprites()}}
+{\footnotesize\ttfamily \label{structSprites_a46633552deb102b94d645b223234de7a} 
+Sprites\+::\texorpdfstring{$\sim$}{\string~}\+Sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}\index{Sprites@{Sprites}!draw@{draw}}
+\index{draw@{draw}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structSprites_acf0999cbe0c8a23f168b357cab07b3d4} 
+void Sprites\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSprites_acf0999cbe0c8a23f168b357cab07b3d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}\index{Sprites@{Sprites}!init@{init}}
+\index{init@{init}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structSprites_ac4bef9081db1e53ea8e764d4c21239ea} 
+void Sprites\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
+
+\Hypertarget{structSprites_a9767aacb914fde74ce286c466dd0345a}\index{Sprites@{Sprites}!recalcSpriteDimensions@{recalcSpriteDimensions}}
+\index{recalcSpriteDimensions@{recalcSpriteDimensions}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{recalcSpriteDimensions()}{recalcSpriteDimensions()}}
+{\footnotesize\ttfamily \label{structSprites_a9767aacb914fde74ce286c466dd0345a} 
+void Sprites\+::recalc\+Sprite\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structSprites_ad357d4d5deb0293597ad6a7953afb434}\index{Sprites@{Sprites}!update@{update}}
+\index{update@{update}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structSprites_ad357d4d5deb0293597ad6a7953afb434} 
+void Sprites\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}\index{Sprites@{Sprites}!Animator@{Animator}}
+\index{Animator@{Animator}!Sprites@{Sprites}}
+\doxysubsubsection{\texorpdfstring{Animator}{Animator}}
+{\footnotesize\ttfamily \label{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129} 
+friend struct \mbox{\hyperlink{structAnimator}{Animator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Sprites_8h}{Sprites.\+h}}\item 
+src/\mbox{\hyperlink{Sprites_8cpp}{Sprites.\+cpp}}\end{DoxyCompactItemize}

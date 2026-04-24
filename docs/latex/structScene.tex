@@ -1,0 +1,245 @@
+\doxysection{Scene Struct Reference}
+\hypertarget{structScene}{}\label{structScene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Collaboration diagram for Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{structScene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structScene_a56b1a969dde64f1a33b34cd136ceaa49}{Scene}} (std\+::string \mbox{\hyperlink{structScene_a44b2d6bffa153dda02f026f8533ceb08}{name}}, int \mbox{\hyperlink{structScene_a788a34d3985920dc587460a19ccf2733}{build\+Index}}, bool is\+Panel, bool is\+Locking, int \mbox{\hyperlink{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}{layer}})
+\item 
+virtual \mbox{\hyperlink{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}{\texorpdfstring{$\sim$}{\string~}\+Scene}} ()
+\item 
+virtual void \mbox{\hyperlink{structScene_a7edd8111e127173d2d06b571a177d7b1}{init}} ()=0
+\item 
+virtual void \mbox{\hyperlink{structScene_a7faff47f5c1b1ebc986f768c9b9732ec}{update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{structScene_a24ed31537c3c9c40f708e68295e2f51e}{reload}} ()=0
+\item 
+virtual void \mbox{\hyperlink{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c}{reload\+With\+State}} ()=0
+\item 
+virtual void \mbox{\hyperlink{structScene_a01a5fa609184cdc9470f8ccaf6b34dcf}{handle\+Events}} (SDL\+\_\+\+Event \&event)=0
+\item 
+virtual void \mbox{\hyperlink{structScene_a789c16961aa1e316b2a4a05b95187546}{draw}} ()=0
+\item 
+void \mbox{\hyperlink{structScene_aaa7336b94069dd6a90968bf9f513022f}{add\+Entity\+To\+Scene}} (\mbox{\hyperlink{structEntity}{Entity}} \&entity)
+\item 
+void \mbox{\hyperlink{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e}{remove\+Entity\+From\+Scene}} (\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\item 
+bool \mbox{\hyperlink{structScene_a83e3e3fa5c0d62e01620acf29c7db751}{exists\+In\+Scene}} (\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\item 
+void \mbox{\hyperlink{structScene_a9a6078cc3fc29516f5409544ebd78c39}{clear\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structScene_aa3e52280b56676471e6fa85692ae8abe}{enable\+Scene}} ()
+\item 
+void \mbox{\hyperlink{structScene_a3f612fa63b769ff431831701f1a36eb6}{disable\+Scene}} ()
+\item 
+const bool \& \mbox{\hyperlink{structScene_afd4007289e6a1fab14313ec559cb3db8}{get\+Is\+Panel}} () const
+\item 
+const bool \& \mbox{\hyperlink{structScene_a6b6e6f58bf56b8a2f563687927e84ca3}{get\+Is\+Locking}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structScene_a44b2d6bffa153dda02f026f8533ceb08}{name}}
+\item 
+int \mbox{\hyperlink{structScene_a788a34d3985920dc587460a19ccf2733}{build\+Index}}
+\item 
+int \mbox{\hyperlink{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}{layer}}
+\item 
+bool \mbox{\hyperlink{structScene_a9835f4115f9424c614b2e5a4ba421713}{mouse\+Button\+Pressed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structScene_a56b1a969dde64f1a33b34cd136ceaa49}\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily \label{structScene_a56b1a969dde64f1a33b34cd136ceaa49} 
+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{, }\item[{int}]{build\+Index}{, }\item[{bool}]{is\+Panel}{, }\item[{bool}]{is\+Locking}{, }\item[{int}]{layer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily \label{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e} 
+virtual Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structScene_aaa7336b94069dd6a90968bf9f513022f}\index{Scene@{Scene}!addEntityToScene@{addEntityToScene}}
+\index{addEntityToScene@{addEntityToScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addEntityToScene()}{addEntityToScene()}}
+{\footnotesize\ttfamily \label{structScene_aaa7336b94069dd6a90968bf9f513022f} 
+void Scene\+::add\+Entity\+To\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEntity}{Entity}} \&}]{entity}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structScene_a9a6078cc3fc29516f5409544ebd78c39}\index{Scene@{Scene}!clearScene@{clearScene}}
+\index{clearScene@{clearScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{clearScene()}{clearScene()}}
+{\footnotesize\ttfamily \label{structScene_a9a6078cc3fc29516f5409544ebd78c39} 
+void Scene\+::clear\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{structScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structScene_a3f612fa63b769ff431831701f1a36eb6}\index{Scene@{Scene}!disableScene@{disableScene}}
+\index{disableScene@{disableScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{disableScene()}{disableScene()}}
+{\footnotesize\ttfamily \label{structScene_a3f612fa63b769ff431831701f1a36eb6} 
+void Scene\+::disable\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{structScene_a3f612fa63b769ff431831701f1a36eb6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structScene_a789c16961aa1e316b2a4a05b95187546}\index{Scene@{Scene}!draw@{draw}}
+\index{draw@{draw}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structScene_a789c16961aa1e316b2a4a05b95187546} 
+virtual void Scene\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{structScene_aa3e52280b56676471e6fa85692ae8abe}\index{Scene@{Scene}!enableScene@{enableScene}}
+\index{enableScene@{enableScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{enableScene()}{enableScene()}}
+{\footnotesize\ttfamily \label{structScene_aa3e52280b56676471e6fa85692ae8abe} 
+void Scene\+::enable\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structScene_a83e3e3fa5c0d62e01620acf29c7db751}\index{Scene@{Scene}!existsInScene@{existsInScene}}
+\index{existsInScene@{existsInScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{existsInScene()}{existsInScene()}}
+{\footnotesize\ttfamily \label{structScene_a83e3e3fa5c0d62e01620acf29c7db751} 
+bool Scene\+::exists\+In\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}}]{entity}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structScene_a83e3e3fa5c0d62e01620acf29c7db751_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structScene_a6b6e6f58bf56b8a2f563687927e84ca3}\index{Scene@{Scene}!getIsLocking@{getIsLocking}}
+\index{getIsLocking@{getIsLocking}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getIsLocking()}{getIsLocking()}}
+{\footnotesize\ttfamily \label{structScene_a6b6e6f58bf56b8a2f563687927e84ca3} 
+const bool \& Scene\+::get\+Is\+Locking (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structScene_afd4007289e6a1fab14313ec559cb3db8}\index{Scene@{Scene}!getIsPanel@{getIsPanel}}
+\index{getIsPanel@{getIsPanel}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getIsPanel()}{getIsPanel()}}
+{\footnotesize\ttfamily \label{structScene_afd4007289e6a1fab14313ec559cb3db8} 
+const bool \& Scene\+::get\+Is\+Panel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structScene_afd4007289e6a1fab14313ec559cb3db8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structScene_a01a5fa609184cdc9470f8ccaf6b34dcf}\index{Scene@{Scene}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily \label{structScene_a01a5fa609184cdc9470f8ccaf6b34dcf} 
+virtual void Scene\+::handle\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{structScene_a7edd8111e127173d2d06b571a177d7b1}\index{Scene@{Scene}!init@{init}}
+\index{init@{init}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structScene_a7edd8111e127173d2d06b571a177d7b1} 
+virtual void Scene\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{structScene_a24ed31537c3c9c40f708e68295e2f51e}\index{Scene@{Scene}!reload@{reload}}
+\index{reload@{reload}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{structScene_a24ed31537c3c9c40f708e68295e2f51e} 
+virtual void Scene\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c}\index{Scene@{Scene}!reloadWithState@{reloadWithState}}
+\index{reloadWithState@{reloadWithState}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{reloadWithState()}{reloadWithState()}}
+{\footnotesize\ttfamily \label{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c} 
+virtual void Scene\+::reload\+With\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e}\index{Scene@{Scene}!removeEntityFromScene@{removeEntityFromScene}}
+\index{removeEntityFromScene@{removeEntityFromScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{removeEntityFromScene()}{removeEntityFromScene()}}
+{\footnotesize\ttfamily \label{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e} 
+void Scene\+::remove\+Entity\+From\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}}]{entity}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structScene_a7faff47f5c1b1ebc986f768c9b9732ec}\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structScene_a7faff47f5c1b1ebc986f768c9b9732ec} 
+virtual void Scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structScene_a788a34d3985920dc587460a19ccf2733}\index{Scene@{Scene}!buildIndex@{buildIndex}}
+\index{buildIndex@{buildIndex}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{buildIndex}{buildIndex}}
+{\footnotesize\ttfamily \label{structScene_a788a34d3985920dc587460a19ccf2733} 
+int Scene\+::build\+Index}
+
+\Hypertarget{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}\index{Scene@{Scene}!layer@{layer}}
+\index{layer@{layer}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{layer}{layer}}
+{\footnotesize\ttfamily \label{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d} 
+int Scene\+::layer}
+
+\Hypertarget{structScene_a9835f4115f9424c614b2e5a4ba421713}\index{Scene@{Scene}!mouseButtonPressed@{mouseButtonPressed}}
+\index{mouseButtonPressed@{mouseButtonPressed}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{mouseButtonPressed}{mouseButtonPressed}}
+{\footnotesize\ttfamily \label{structScene_a9835f4115f9424c614b2e5a4ba421713} 
+bool Scene\+::mouse\+Button\+Pressed}
+
+\Hypertarget{structScene_a44b2d6bffa153dda02f026f8533ceb08}\index{Scene@{Scene}!name@{name}}
+\index{name@{name}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{structScene_a44b2d6bffa153dda02f026f8533ceb08} 
+std\+::string Scene\+::name}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Scene_8h}{Scene.\+h}}\item 
+src/\mbox{\hyperlink{Scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

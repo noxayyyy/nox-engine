@@ -1,0 +1,139 @@
+\doxysection{Tile Struct Reference}
+\hypertarget{structTile}{}\label{structTile}\index{Tile@{Tile}}
+
+
+{\ttfamily \#include $<$Tile.\+h$>$}
+
+
+
+Inheritance diagram for Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{structTile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structTile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}} (int x, int y, int w, int h, int id)
+\item 
+\mbox{\hyperlink{structTile_a98634abbd93fa13d0578d7103202d03d}{\texorpdfstring{$\sim$}{\string~}\+Tile}} ()
+\item 
+void \mbox{\hyperlink{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}{init}} () override
+\item 
+void \mbox{\hyperlink{structTile_a2a78af6e82cf111b1d078f8c96a444ab}{resize\+Tile}} (int w, int h, float scale=0.\+64f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
+\item 
+virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
+\item 
+virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTransform}{Transform}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}{transform}}
+\item 
+\mbox{\hyperlink{structSprites}{Sprites}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_ad17fd46301d8b9de7da563daa3fec696}{sprite}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}{tile\+Rect}}
+\item 
+int \mbox{\hyperlink{structTile_af37b0873afcb54b101422972a2c17e23}{tile\+ID}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_add000516854959aea1c6554a832646c3}{path}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structTile_addab2525260d7755d1dff0b0eac9ae59}\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily \label{structTile_addab2525260d7755d1dff0b0eac9ae59} 
+Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structTile_a98634abbd93fa13d0578d7103202d03d}\index{Tile@{Tile}!````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}}
+\index{````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Tile()}{\string~Tile()}}
+{\footnotesize\ttfamily \label{structTile_a98634abbd93fa13d0578d7103202d03d} 
+Tile\+::\texorpdfstring{$\sim$}{\string~}\+Tile (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}\index{Tile@{Tile}!init@{init}}
+\index{init@{init}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e} 
+void Tile\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
+
+\Hypertarget{structTile_a2a78af6e82cf111b1d078f8c96a444ab}\index{Tile@{Tile}!resizeTile@{resizeTile}}
+\index{resizeTile@{resizeTile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{resizeTile()}{resizeTile()}}
+{\footnotesize\ttfamily \label{structTile_a2a78af6e82cf111b1d078f8c96a444ab} 
+void Tile\+::resize\+Tile (\begin{DoxyParamCaption}\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{ = {\ttfamily 0.64f}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structTile_add000516854959aea1c6554a832646c3}\index{Tile@{Tile}!path@{path}}
+\index{path@{path}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{structTile_add000516854959aea1c6554a832646c3} 
+const char\texorpdfstring{$\ast$}{*} Tile\+::path}
+
+\Hypertarget{structTile_ad17fd46301d8b9de7da563daa3fec696}\index{Tile@{Tile}!sprite@{sprite}}
+\index{sprite@{sprite}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily \label{structTile_ad17fd46301d8b9de7da563daa3fec696} 
+\mbox{\hyperlink{structSprites}{Sprites}}\texorpdfstring{$\ast$}{*} Tile\+::sprite}
+
+\Hypertarget{structTile_af37b0873afcb54b101422972a2c17e23}\index{Tile@{Tile}!tileID@{tileID}}
+\index{tileID@{tileID}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{tileID}{tileID}}
+{\footnotesize\ttfamily \label{structTile_af37b0873afcb54b101422972a2c17e23} 
+int Tile\+::tile\+ID}
+
+\Hypertarget{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}\index{Tile@{Tile}!tileRect@{tileRect}}
+\index{tileRect@{tileRect}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{tileRect}{tileRect}}
+{\footnotesize\ttfamily \label{structTile_a5e5613c963cdbdb8822ec84ecf3a1864} 
+SDL\+\_\+\+Rect Tile\+::tile\+Rect}
+
+\Hypertarget{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}\index{Tile@{Tile}!transform@{transform}}
+\index{transform@{transform}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \label{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014} 
+\mbox{\hyperlink{structTransform}{Transform}}\texorpdfstring{$\ast$}{*} Tile\+::transform}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Tile_8h}{Tile.\+h}}\item 
+src/\mbox{\hyperlink{Tile_8cpp}{Tile.\+cpp}}\end{DoxyCompactItemize}

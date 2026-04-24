@@ -1,0 +1,211 @@
+\doxysection{Entity Struct Reference}
+\hypertarget{structEntity}{}\label{structEntity}\index{Entity@{Entity}}
+
+
+{\ttfamily \#include $<$ECS.\+h$>$}
+
+
+
+Collaboration diagram for Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{structEntity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structEntity_a4deb453bd9d9f49c9ec3c80816dc6aa8}{Entity}} (\mbox{\hyperlink{structManager}{Manager}} \&mem\+Manager, std\+::string \+\_\+id)
+\item 
+void \mbox{\hyperlink{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update}} ()
+\item 
+void \mbox{\hyperlink{structEntity_a7666f416dd0d1fce0f1133f78df44476}{draw}} ()
+\item 
+bool \mbox{\hyperlink{structEntity_aea1c1568b4123d989c5310697030ad77}{is\+Active}} () const
+\item 
+std\+::string \mbox{\hyperlink{structEntity_acf456649975d568c848741a38bf3fa1f}{get\+ID}} () const
+\item 
+void \mbox{\hyperlink{structEntity_a020b55925e09a5f6892b61a07d9ac42a}{enable}} ()
+\item 
+void \mbox{\hyperlink{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e}{disable}} ()
+\item 
+void \mbox{\hyperlink{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}{refresh}} ()
+\item 
+void \mbox{\hyperlink{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}{reload}} ()
+\item 
+bool \mbox{\hyperlink{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}{has\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+\item 
+void \mbox{\hyperlink{structEntity_a6c56a84be807fa655c42141d982bef54}{del\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+\item 
+void \mbox{\hyperlink{structEntity_aaee4506fc67f002244c8ad2adc92417c}{add\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+\item 
+{\footnotesize template$<$typename T$>$ }\\bool \mbox{\hyperlink{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b}{has\+Component}} () const
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structEntity_a0c59911f0b4747b26e004796d5a9f85d}{del\+Component}} ()
+\item 
+void \mbox{\hyperlink{structEntity_a43953614bae5e98da168015ec31f994a}{delete\+All\+Components}} ()
+\item 
+{\footnotesize template$<$typename T, typename... TArgs$>$ }\\T \& \mbox{\hyperlink{structEntity_aafe23d7d7ea7f427ca40454edcae460e}{add\+Component}} (TArgs \&\&... m\+Args)
+\item 
+{\footnotesize template$<$typename T$>$ }\\T \& \mbox{\hyperlink{structEntity_ad5ce9d4246498a5a2ffd163a2d38c98f}{get\+Component}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structEntity_a4deb453bd9d9f49c9ec3c80816dc6aa8}\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily \label{structEntity_a4deb453bd9d9f49c9ec3c80816dc6aa8} 
+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structManager}{Manager}} \&}]{mem\+Manager}{, }\item[{std\+::string}]{\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structEntity_aafe23d7d7ea7f427ca40454edcae460e}\index{Entity@{Entity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily \label{structEntity_aafe23d7d7ea7f427ca40454edcae460e} 
+template$<$typename T, typename... TArgs$>$ \\
+T \& Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{TArgs \&\&...}]{m\+Args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structEntity_aafe23d7d7ea7f427ca40454edcae460e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structEntity_aaee4506fc67f002244c8ad2adc92417c}\index{Entity@{Entity}!addGroup@{addGroup}}
+\index{addGroup@{addGroup}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}}
+{\footnotesize\ttfamily \label{structEntity_aaee4506fc67f002244c8ad2adc92417c} 
+void Entity\+::add\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a0c59911f0b4747b26e004796d5a9f85d}\index{Entity@{Entity}!delComponent@{delComponent}}
+\index{delComponent@{delComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{delComponent()}{delComponent()}}
+{\footnotesize\ttfamily \label{structEntity_a0c59911f0b4747b26e004796d5a9f85d} 
+template$<$typename T$>$ \\
+void Entity\+::del\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structEntity_a0c59911f0b4747b26e004796d5a9f85d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structEntity_a43953614bae5e98da168015ec31f994a}\index{Entity@{Entity}!deleteAllComponents@{deleteAllComponents}}
+\index{deleteAllComponents@{deleteAllComponents}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{deleteAllComponents()}{deleteAllComponents()}}
+{\footnotesize\ttfamily \label{structEntity_a43953614bae5e98da168015ec31f994a} 
+void Entity\+::delete\+All\+Components (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a6c56a84be807fa655c42141d982bef54}\index{Entity@{Entity}!delGroup@{delGroup}}
+\index{delGroup@{delGroup}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{delGroup()}{delGroup()}}
+{\footnotesize\ttfamily \label{structEntity_a6c56a84be807fa655c42141d982bef54} 
+void Entity\+::del\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e}\index{Entity@{Entity}!disable@{disable}}
+\index{disable@{disable}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e} 
+void Entity\+::disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a7666f416dd0d1fce0f1133f78df44476}\index{Entity@{Entity}!draw@{draw}}
+\index{draw@{draw}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structEntity_a7666f416dd0d1fce0f1133f78df44476} 
+void Entity\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a020b55925e09a5f6892b61a07d9ac42a}\index{Entity@{Entity}!enable@{enable}}
+\index{enable@{enable}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{structEntity_a020b55925e09a5f6892b61a07d9ac42a} 
+void Entity\+::enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_ad5ce9d4246498a5a2ffd163a2d38c98f}\index{Entity@{Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \label{structEntity_ad5ce9d4246498a5a2ffd163a2d38c98f} 
+template$<$typename T$>$ \\
+T \& Entity\+::get\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structEntity_ad5ce9d4246498a5a2ffd163a2d38c98f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structEntity_acf456649975d568c848741a38bf3fa1f}\index{Entity@{Entity}!getID@{getID}}
+\index{getID@{getID}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily \label{structEntity_acf456649975d568c848741a38bf3fa1f} 
+std\+::string Entity\+::get\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b}\index{Entity@{Entity}!hasComponent@{hasComponent}}
+\index{hasComponent@{hasComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{hasComponent()}{hasComponent()}}
+{\footnotesize\ttfamily \label{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b} 
+template$<$typename T$>$ \\
+bool Entity\+::has\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}\index{Entity@{Entity}!hasGroup@{hasGroup}}
+\index{hasGroup@{hasGroup}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{hasGroup()}{hasGroup()}}
+{\footnotesize\ttfamily \label{structEntity_a31e0aa9b0fca96c50ac32c366438cccd} 
+bool Entity\+::has\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_aea1c1568b4123d989c5310697030ad77}\index{Entity@{Entity}!isActive@{isActive}}
+\index{isActive@{isActive}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily \label{structEntity_aea1c1568b4123d989c5310697030ad77} 
+bool Entity\+::is\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}\index{Entity@{Entity}!refresh@{refresh}}
+\index{refresh@{refresh}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily \label{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42} 
+void Entity\+::refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}\index{Entity@{Entity}!reload@{reload}}
+\index{reload@{reload}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23} 
+void Entity\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f} 
+void Entity\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ECS_8h}{ECS.\+h}}\item 
+src/\mbox{\hyperlink{ECS_8cpp}{ECS.\+cpp}}\end{DoxyCompactItemize}

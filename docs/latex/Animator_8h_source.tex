@@ -1,0 +1,63 @@
+\doxysection{Animator.\+h}
+\hypertarget{Animator_8h_source}{}\label{Animator_8h_source}\index{include/Animator.h@{include/Animator.h}}
+\mbox{\hyperlink{Animator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Sprites_8h}{Sprites.h}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAnimator_a701eeb9283612be2027425efb06bbff7}{Animator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}{Animation}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579}{id}};}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAnimator_1_1Animation_a601ea6202862535ec720150aecab37f8}{frames}};}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{structAnimator_1_1Animation_a7978793e8615eb44486843a0ea72666b}{texture}};}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7}{speed}}\ =\ 100;}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structAnimator_1_1Animation_a263600b19edbf1bf843c7cfc584cb1a3}{loop}};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structAnimator_1_1Animation_a309d420a31e2da9522188aec21ff5b6f}{reversible}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}{Animation}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}{Animation}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}{Animation}}(}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id},\ SDL\_Point\ frameSize,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ texPath,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7}{speed}}\ =\ 100,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isLooping\ =\ \textcolor{keyword}{true},\ \textcolor{keywordtype}{bool}\ isReversible\ =\ \textcolor{keyword}{false}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Animation_aa7897ab04165c1d511e934292f34d47f}{\string~Animation}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAnimator_1_1Edge_ad85e2e0d8036a2ff44c31354bf612033}{Edge}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<bool>>\ \mbox{\hyperlink{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0}{conditions}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Edge_ad85e2e0d8036a2ff44c31354bf612033}{Edge}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Edge_ad85e2e0d8036a2ff44c31354bf612033}{Edge}}(std::vector<std::shared\_ptr<bool>>\ \mbox{\hyperlink{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0}{conditions}});}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAnimator_1_1Edge_a2f3e19b39df64d3a51e9d87fb9f38c08}{\string~Edge}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structAnimator_1_1Edge_a58af165137d9797b872f07b80584e907}{canTraverse}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structAnimator_a701eeb9283612be2027425efb06bbff7}{Animator}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structAnimator_a5af4797549f9f466a88657899e17c6ab}{\string~Animator}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e956735}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}{draw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1}{addAnimation}}(}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ texPath,\ \textcolor{keywordtype}{int}\ speed\ =\ 100,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ isLooping\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ isReversible\ =\ \textcolor{keyword}{false}}
+\DoxyCodeLine{00044\ \ \ \ \ );}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{structAnimator_a11922ec826afced3bfac9098fa55b8ea}{addEdge}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ idFrom,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ idTo,\ std::vector<std::shared\_ptr<bool>>\ conditions);}
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ \mbox{\hyperlink{structAnimator_a05dbf02b17e983baa9984133df8900e9}{getCurrAnimID}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ std::shared\_ptr<Animation>\ currentAnimation;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{structSprites}{Sprites}}*\ sprite;}
+\DoxyCodeLine{00053\ \ \ \ \ SDL\_Point\ frameSize;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ std::unordered\_map<const\ char*,\ std::shared\_ptr<Animation>>\ animations;}
+\DoxyCodeLine{00056\ \ \ \ \ std::unordered\_map<const\ char*,\ std::unordered\_map<const\ char*,\ Edge>>\ adjMatrix;}
+\DoxyCodeLine{00057\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="Animator" name="Animator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,577,138,806"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title=" " alt="" coords="10,366,133,528"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,543,74,577,69,577,69,543"/>
+<area shape="rect" id="Node000003" href="$structEntity.html" title=" " alt="" coords="15,5,128,301"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,301,74,349,69,349,69,301"/>
+</map>
