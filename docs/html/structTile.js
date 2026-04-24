@@ -1,7 +1,6 @@
 var structTile =
 [
     [ "Tile", "structTile.html#addab2525260d7755d1dff0b0eac9ae59", null ],
-    [ "~Tile", "structTile.html#a98634abbd93fa13d0578d7103202d03d", null ],
     [ "init", "structTile.html#a2d57b6b85f16bb978f2f4f60b265bf9e", null ],
     [ "resizeTile", "structTile.html#a2a78af6e82cf111b1d078f8c96a444ab", null ],
     [ "path", "structTile.html#add000516854959aea1c6554a832646c3", null ],

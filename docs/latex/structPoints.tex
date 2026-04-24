@@ -11,8 +11,7 @@ A \doxylink{structText}{Text} component that displays a score or point value.
 
 
 
-Inheritance diagram for Points\+:
-\nopagebreak
+Inheritance diagram for Points\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Points\+:
 \end{figure}
 
 
-Collaboration diagram for Points\+:
-\nopagebreak
+Collaboration diagram for Points\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,29 +32,25 @@ Collaboration diagram for Points\+:
 \item 
 \mbox{\hyperlink{structPoints_a9be248b584db504e01bcf09009de0956}{Points}} (std\+::string in\+Str)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structPoints}{Points} counter. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structPoints_a9d56d7dc8b6a6f492e07d354eb379c12}{\texorpdfstring{$\sim$}{\string~}\+Points}} ()
-\item 
 void \mbox{\hyperlink{structPoints_adad983d6f230a1e9ccb71a2dd87d1516}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates the displayed text if the point value has changed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structPoints_a9b6c82fcf421a12d2ca76483622fdfbb}{reload}} () override
 \begin{DoxyCompactList}\small\item\em Resets the points value to its initial state. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structPoints_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\mbox{\hyperlink{structPoints_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float scale, SDL\+\_\+\+Color color)
 \begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structPoints_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\mbox{\hyperlink{structPoints_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float scale)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structPoints_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float scale, SDL\+\_\+\+Color color)
 \begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float scale)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structText_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structText_a4e7641708dfbf9c6bbbd41e897e9139c}{\texorpdfstring{$\sim$}{\string~}\+Text}} () override
-\item 
 void \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates the destination rectangle for rendering. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{draw}} () override
@@ -69,18 +63,17 @@ void \mbox{\hyperlink{structText_ae74b78f8759c0db114a86db64b6d8d67}{centre\+Text
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
-\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{structPoints_a15e92100b114c6783de5a570530d7fea}{value}}
+\Hypertarget{structPoints_a15e92100b114c6783de5a570530d7fea}\label{structPoints_a15e92100b114c6783de5a570530d7fea} 
+int {\bfseries value}
 \begin{DoxyCompactList}\small\item\em The numerical score value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
@@ -91,15 +84,15 @@ void \mbox{\hyperlink{structText_a8791ce14f2670ec8fa98f9de34414e90}{set\+Tex}} (
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structText_a032059fb32d2304c4a38b89d85b168b3}{data}}
+std\+::string {\bfseries data}
 \item 
-float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}
+float {\bfseries scale}
 \item 
-SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structText_a1be16c24549bf25debf21d52ba29faba}{text\+Tex}}
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} {\bfseries text\+Tex}
 \item 
-SDL\+\_\+\+Colour \mbox{\hyperlink{structText_a0bbb8742e8ed2109988b868579b0923e}{text\+Colour}}
+SDL\+\_\+\+Colour {\bfseries text\+Colour}
 \item 
-SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{dest\+Rect}}
+SDL\+\_\+\+Rect {\bfseries dest\+Rect}
 \end{DoxyCompactItemize}
 
 
@@ -122,20 +115,13 @@ Constructs a \doxylink{structPoints}{Points} counter.
 {\em in\+Str} & The prefix string to display (e.\+g., "{}\+Score\+: "{}). \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structPoints_a9be248b584db504e01bcf09009de0956_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structPoints_a9d56d7dc8b6a6f492e07d354eb379c12}\index{Points@{Points}!````~Points@{\texorpdfstring{$\sim$}{\string~}Points}}
-\index{````~Points@{\texorpdfstring{$\sim$}{\string~}Points}!Points@{Points}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Points()}{\string~Points()}}
-{\footnotesize\ttfamily \label{structPoints_a9d56d7dc8b6a6f492e07d354eb379c12} 
-Points\+::\texorpdfstring{$\sim$}{\string~}\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -216,8 +202,7 @@ Constructs a fully customized \doxylink{structText}{Text} component.
 {\em color} & The color of the text. \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -238,8 +223,7 @@ Updates the displayed text if the point value has changed.
 
 Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -248,20 +232,7 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structPoints_a15e92100b114c6783de5a570530d7fea}\index{Points@{Points}!value@{value}}
-\index{value@{value}!Points@{Points}}
-\doxysubsubsection{\texorpdfstring{value}{value}}
-{\footnotesize\ttfamily \label{structPoints_a15e92100b114c6783de5a570530d7fea} 
-int Points\+::value}
-
-
-
-The numerical score value. 
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Counters_8h}{Counters.\+h}}\item 
-src/\mbox{\hyperlink{Counters_8cpp}{Counters.\+cpp}}\end{DoxyCompactItemize}
+src/Counters.\+cpp\end{DoxyCompactItemize}

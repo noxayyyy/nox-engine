@@ -145,8 +145,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a923208f36ba5546c434755626cf04181" id="r_a923208f36ba5546c434755626cf04181"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a923208f36ba5546c434755626cf04181">Collider</a> (std::string <a class="el" href="#a47553d89c2a08d0df50e2e4934572902">tag</a>)</td></tr>
 <tr class="memdesc:a923208f36ba5546c434755626cf04181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a simple <a class="el" href="structCollider.html" title="Provides an entity with a physical bounding box for collision detection.">Collider</a> with only a tag.  <br /></td></tr>
 <tr class="separator:a923208f36ba5546c434755626cf04181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564acde9860f875a32a6638c573d87be" id="r_a564acde9860f875a32a6638c573d87be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564acde9860f875a32a6638c573d87be">~Collider</a> ()</td></tr>
-<tr class="separator:a564acde9860f875a32a6638c573d87be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed04ad82be15bcba1d3dc6a09f76dae6" id="r_aed04ad82be15bcba1d3dc6a09f76dae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed04ad82be15bcba1d3dc6a09f76dae6">init</a> () override</td></tr>
 <tr class="memdesc:aed04ad82be15bcba1d3dc6a09f76dae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the collider by linking it to the entity's transform.  <br /></td></tr>
 <tr class="separator:aed04ad82be15bcba1d3dc6a09f76dae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,17 +164,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
 <tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
-<tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a47553d89c2a08d0df50e2e4934572902" id="r_a47553d89c2a08d0df50e2e4934572902"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47553d89c2a08d0df50e2e4934572902">tag</a></td></tr>
-<tr class="memdesc:a47553d89c2a08d0df50e2e4934572902"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tag to identify the type of collider (e.g., "player", "wall").  <br /></td></tr>
+<tr class="memitem:a47553d89c2a08d0df50e2e4934572902" id="r_a47553d89c2a08d0df50e2e4934572902"><td class="memItemLeft" align="right" valign="top"><a id="a47553d89c2a08d0df50e2e4934572902" name="a47553d89c2a08d0df50e2e4934572902"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>tag</b></td></tr>
+<tr class="memdesc:a47553d89c2a08d0df50e2e4934572902"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tag to identify the type of collider (e.g., "player", "wall"). <br /></td></tr>
 <tr class="separator:a47553d89c2a08d0df50e2e4934572902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
-<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
-<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
+<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component. <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -304,23 +302,6 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="359,37,328,37,328,32,359,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a564acde9860f875a32a6638c573d87be" name="a564acde9860f875a32a6638c573d87be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564acde9860f875a32a6638c573d87be">&#9670;&#160;</a></span>~Collider()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Collider::~Collider </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -494,26 +475,9 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a47553d89c2a08d0df50e2e4934572902" name="a47553d89c2a08d0df50e2e4934572902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47553d89c2a08d0df50e2e4934572902">&#9670;&#160;</a></span>tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Collider::tag</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A tag to identify the type of collider (e.g., "player", "wall"). </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/<a class="el" href="Collider_8h_source.html">Collider.h</a></li>
-<li>src/<a class="el" href="Collider_8cpp.html">Collider.cpp</a></li>
+<li>src/<b>Collider.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

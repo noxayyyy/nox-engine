@@ -11,8 +11,7 @@ The base class for all components in the ECS.
 
 
 
-Inheritance diagram for Component\+:
-\nopagebreak
+Inheritance diagram for Component\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Component\+:
 \end{figure}
 
 
-Collaboration diagram for Component\+:
-\nopagebreak
+Collaboration diagram for Component\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,13 +37,12 @@ virtual void \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
 \begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\Hypertarget{structComponent_a6acb3f00c9d114d961c8763ede390d2c}\label{structComponent_a6acb3f00c9d114d961c8763ede390d2c} 
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -53,15 +50,6 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 The base class for all components in the ECS. 
 
 Components contain data and logic that can be attached to entities. 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structComponent_a2e9aa4348314d981f05f67397ad2f872}\index{Component@{Component}!````~Component@{\texorpdfstring{$\sim$}{\string~}Component}}
-\index{````~Component@{\texorpdfstring{$\sim$}{\string~}Component}!Component@{Component}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Component()}{\string~Component()}}
-{\footnotesize\ttfamily \label{structComponent_a2e9aa4348314d981f05f67397ad2f872} 
-virtual Component\+::\texorpdfstring{$\sim$}{\string~}\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}\index{Component@{Component}!draw@{draw}}
@@ -119,19 +107,6 @@ Called once per frame. Contains the component\textquotesingle{}s main logic.
 
 
 Reimplemented in \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e956735}{Animator}}, \mbox{\hyperlink{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}{Button}}, \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{Collider}}, \mbox{\hyperlink{structController_a612e598a359e9327b6bb625c7b377ee7}{Controller}}, \mbox{\hyperlink{structFPS_a2eb4adf219fe41837ef4e48ff4ada160}{FPS}}, \mbox{\hyperlink{structMouseTracker_afd5dfe7e64afed79934b732654c5bff0}{Mouse\+Tracker}}, \mbox{\hyperlink{structPoints_adad983d6f230a1e9ccb71a2dd87d1516}{Points}}, \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{Sprites}}, \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{Text}}, and \mbox{\hyperlink{structTransform_a95f43abca9677142b734c1536bf1b886}{Transform}}.
-
-
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structComponent_a6acb3f00c9d114d961c8763ede390d2c}\index{Component@{Component}!entity@{entity}}
-\index{entity@{entity}!Component@{Component}}
-\doxysubsubsection{\texorpdfstring{entity}{entity}}
-{\footnotesize\ttfamily \label{structComponent_a6acb3f00c9d114d961c8763ede390d2c} 
-\mbox{\hyperlink{structEntity}{Entity}}\texorpdfstring{$\ast$}{*} Component\+::entity}
-
-
-
-Pointer to the entity that owns this component. 
 
 
 

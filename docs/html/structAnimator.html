@@ -148,10 +148,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a701eeb9283612be2027425efb06bbff7" id="r_a701eeb9283612be2027425efb06bbff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a701eeb9283612be2027425efb06bbff7">Animator</a> ()</td></tr>
-<tr class="separator:a701eeb9283612be2027425efb06bbff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af4797549f9f466a88657899e17c6ab" id="r_a5af4797549f9f466a88657899e17c6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af4797549f9f466a88657899e17c6ab">~Animator</a> ()</td></tr>
-<tr class="separator:a5af4797549f9f466a88657899e17c6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399c69a70f729b5a9f5d3cd463da020b" id="r_a399c69a70f729b5a9f5d3cd463da020b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399c69a70f729b5a9f5d3cd463da020b">init</a> () override</td></tr>
 <tr class="memdesc:a399c69a70f729b5a9f5d3cd463da020b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structAnimator.html" title="Manages sprite sheet animations and transitions between them using a state machine.">Animator</a> component, acquiring the entity's Sprite component.  <br /></td></tr>
 <tr class="separator:a399c69a70f729b5a9f5d3cd463da020b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,55 +170,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent" id="r_abd8b82630598fe8a13318ecc13a5c159"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">reload</a> ()</td></tr>
 <tr class="memdesc:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to reset the component's state.  <br /></td></tr>
 <tr class="separator:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
-<tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
-<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
-<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
+<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component. <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages sprite sheet animations and transitions between them using a state machine. </p>
 <p>This component controls an entity's sprite to play different animation sequences. It uses an adjacency matrix to define transitions (Edges) between animations based on conditions. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a701eeb9283612be2027425efb06bbff7" name="a701eeb9283612be2027425efb06bbff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a701eeb9283612be2027425efb06bbff7">&#9670;&#160;</a></span>Animator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Animator::Animator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5af4797549f9f466a88657899e17c6ab" name="a5af4797549f9f466a88657899e17c6ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5af4797549f9f466a88657899e17c6ab">&#9670;&#160;</a></span>~Animator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Animator::~Animator </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a48a95ea818a364fbd5fd2140b4120cf1" name="a48a95ea818a364fbd5fd2140b4120cf1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48a95ea818a364fbd5fd2140b4120cf1">&#9670;&#160;</a></span>addAnimation()</h2>
 
@@ -416,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/<a class="el" href="Animator_8h_source.html">Animator.h</a></li>
-<li>src/<a class="el" href="Animator_8cpp.html">Animator.cpp</a></li>
+<li>src/<b>Animator.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

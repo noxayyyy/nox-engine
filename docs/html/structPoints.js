@@ -1,7 +1,6 @@
 var structPoints =
 [
     [ "Points", "structPoints.html#a9be248b584db504e01bcf09009de0956", null ],
-    [ "~Points", "structPoints.html#a9d56d7dc8b6a6f492e07d354eb379c12", null ],
     [ "reload", "structPoints.html#a9b6c82fcf421a12d2ca76483622fdfbb", null ],
     [ "Text", "structPoints.html#a3708b595d0ef813e44b22c07bed5c34a", null ],
     [ "Text", "structPoints.html#a5ecdd4b00938ce0c10f14fa52a1f8a88", null ],

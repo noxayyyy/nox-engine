@@ -19,24 +19,24 @@
 \DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structEntity}{Entity}};}
 \DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structManager}{Manager}};}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{using\ }\mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{ComponentID}}\ =\ std::size\_t;}
-\DoxyCodeLine{00022\ \textcolor{keyword}{using\ }\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ =\ std::size\_t;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{using\ }ComponentID\ =\ std::size\_t;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{using\ }GroupID\ =\ std::size\_t;}
 \DoxyCodeLine{00023\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{ComponentID}}\ \mbox{\hyperlink{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3}{getNewComponentTypeID}}()\ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{ComponentID}}\ lastID\ =\ 0u;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{inline}\ ComponentID\ \mbox{\hyperlink{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3}{getNewComponentTypeID}}()\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ ComponentID\ lastID\ =\ 0u;}
 \DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ lastID++;}
 \DoxyCodeLine{00031\ \}}
 \DoxyCodeLine{00032\ }
 \DoxyCodeLine{00038\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{00039\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{ComponentID}}\ \mbox{\hyperlink{ECS_8h_a6618a945314f27cb6b96b1a770a33c36}{getComponentTypeID}}()\ noexcept\ \{}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{ComponentID}}\ typeID\ =\ \mbox{\hyperlink{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3}{getNewComponentTypeID}}();}
+\DoxyCodeLine{00039\ \textcolor{keyword}{inline}\ ComponentID\ \mbox{\hyperlink{ECS_8h_a6618a945314f27cb6b96b1a770a33c36}{getComponentTypeID}}()\ noexcept\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ ComponentID\ typeID\ =\ \mbox{\hyperlink{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3}{getNewComponentTypeID}}();}
 \DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{return}\ typeID;}
 \DoxyCodeLine{00042\ \}}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \textcolor{keyword}{using\ }\mbox{\hyperlink{ECS_8h_a3e96c0643a5277139a28fe8168164c93}{ComponentBitSet}}\ =\ std::bitset<MAX\_COMPONENTS>;}
-\DoxyCodeLine{00045\ \textcolor{keyword}{using\ }\mbox{\hyperlink{ECS_8h_a98e60333e8d716507315fc4d8a435cfe}{ComponentArray}}\ =\ std::array<std::shared\_ptr<Component>,\ \mbox{\hyperlink{Constants_8h_a17f156982a410ef4a1cafb028b3040f5}{MAX\_COMPONENTS}}>;}
+\DoxyCodeLine{00044\ \textcolor{keyword}{using\ }ComponentBitSet\ =\ std::bitset<MAX\_COMPONENTS>;}
+\DoxyCodeLine{00045\ \textcolor{keyword}{using\ }ComponentArray\ =\ std::array<std::shared\_ptr<Component>,\ \mbox{\hyperlink{Constants_8h_a17f156982a410ef4a1cafb028b3040f5}{MAX\_COMPONENTS}}>;}
 \DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{keyword}{using\ }\mbox{\hyperlink{ECS_8h_a8657c60c9c4988cd80991c6dbe6cfcbf}{GroupBitSet}}\ =\ std::bitset<MAX\_GROUPS>;}
+\DoxyCodeLine{00047\ \textcolor{keyword}{using\ }GroupBitSet\ =\ std::bitset<MAX\_GROUPS>;}
 \DoxyCodeLine{00048\ }
 \DoxyCodeLine{00053\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structComponent}{Component}}\ \{}
 \DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
@@ -50,7 +50,7 @@
 \DoxyCodeLine{00071\ }
 \DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}}()\ \{\}}
 \DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\string~Component}}()\ \{\}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structComponent}{\string~Component}}()\ \{\}}
 \DoxyCodeLine{00078\ \};}
 \DoxyCodeLine{00079\ }
 \DoxyCodeLine{00084\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structEntity_a4deb453bd9d9f49c9ec3c80816dc6aa8}{Entity}}\ \{}
@@ -68,9 +68,9 @@
 \DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}{refresh}}();}
 \DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}{reload}}();}
 \DoxyCodeLine{00129\ }
-\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}{hasGroup}}(\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ memGroup);}
-\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_a6c56a84be807fa655c42141d982bef54}{delGroup}}(\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ memGroup);}
-\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_aaee4506fc67f002244c8ad2adc92417c}{addGroup}}(\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ memGroup);}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}{hasGroup}}(GroupID\ memGroup);}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_a6c56a84be807fa655c42141d982bef54}{delGroup}}(GroupID\ memGroup);}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structEntity_aaee4506fc67f002244c8ad2adc92417c}{addGroup}}(GroupID\ memGroup);}
 \DoxyCodeLine{00146\ }
 \DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
 \DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b}{hasComponent}}()\textcolor{keyword}{\ const\ }\{}
@@ -121,27 +121,27 @@
 \DoxyCodeLine{00218\ \ \ \ \ \}}
 \DoxyCodeLine{00219\ }
 \DoxyCodeLine{00220\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00221\ \ \ \ \ \mbox{\hyperlink{structManager}{Manager}}\&\ \mbox{\hyperlink{Button_8h_a8b88105956ea929e3c74c65791e92c6f}{manager}};}
+\DoxyCodeLine{00221\ \ \ \ \ \mbox{\hyperlink{structManager}{Manager}}\&\ manager;}
 \DoxyCodeLine{00222\ \ \ \ \ \textcolor{keywordtype}{bool}\ active\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00223\ \ \ \ \ std::string\ id;}
 \DoxyCodeLine{00224\ \ \ \ \ std::vector<std::shared\_ptr<Component>>\ components;}
 \DoxyCodeLine{00225\ }
-\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{ECS_8h_a98e60333e8d716507315fc4d8a435cfe}{ComponentArray}}\ componentArray;}
-\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{ECS_8h_a3e96c0643a5277139a28fe8168164c93}{ComponentBitSet}}\ componentBitSet;}
-\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{ECS_8h_a8657c60c9c4988cd80991c6dbe6cfcbf}{GroupBitSet}}\ groupBitSet;}
+\DoxyCodeLine{00226\ \ \ \ \ ComponentArray\ componentArray;}
+\DoxyCodeLine{00227\ \ \ \ \ ComponentBitSet\ componentBitSet;}
+\DoxyCodeLine{00228\ \ \ \ \ GroupBitSet\ groupBitSet;}
 \DoxyCodeLine{00229\ \};}
 \DoxyCodeLine{00230\ }
-\DoxyCodeLine{00234\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}}\ \{}
+\DoxyCodeLine{00234\ \textcolor{keyword}{struct\ }Manager\ \{}
 \DoxyCodeLine{00235\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{structManager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager}}();}
+\DoxyCodeLine{00236\ \ \ \ \ Manager();}
 \DoxyCodeLine{00237\ }
 \DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_af43da42550bd9746c5ea61a6aeee80de}{update}}();}
 \DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_ad688d8d92b4d0c1049913500ca9ba9f3}{draw}}();}
 \DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_a91664ffe84b1acc07269ce65eb504d79}{refreshGroups}}();}
 \DoxyCodeLine{00253\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_adc5c66704fd1b0a9b9d38de8fdcb3748}{refresh}}();}
 \DoxyCodeLine{00254\ }
-\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_a68fd701c4f4a0c4126f30fb0eb46809d}{addToGroup}}(\mbox{\hyperlink{structEntity}{Entity}}*\ memEntity,\ \mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ memGroup);}
-\DoxyCodeLine{00266\ \ \ \ \ std::vector<Entity*>\&\ \mbox{\hyperlink{structManager_a5e1017b17f0612ad6a2b5dad02efad5c}{getGroupMembers}}(\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{GroupID}}\ memGroup);}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_a68fd701c4f4a0c4126f30fb0eb46809d}{addToGroup}}(\mbox{\hyperlink{structEntity}{Entity}}*\ memEntity,\ GroupID\ memGroup);}
+\DoxyCodeLine{00266\ \ \ \ \ std::vector<Entity*>\&\ \mbox{\hyperlink{structManager_a5e1017b17f0612ad6a2b5dad02efad5c}{getGroupMembers}}(GroupID\ memGroup);}
 \DoxyCodeLine{00272\ \ \ \ \ \mbox{\hyperlink{structEntity}{Entity}}\&\ \mbox{\hyperlink{structManager_a47e037085d72bac9204b47734b3aae3c}{addEntity}}(std::string\ \textcolor{keywordtype}{id});}
 \DoxyCodeLine{00276\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structManager_aa6fcc1945934b4c4cf7c5f0e308d3709}{destroyAll}}();}
 \DoxyCodeLine{00277\ }

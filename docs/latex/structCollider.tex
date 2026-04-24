@@ -11,8 +11,7 @@ Provides an entity with a physical bounding box for collision detection.
 
 
 
-Inheritance diagram for Collider\+:
-\nopagebreak
+Inheritance diagram for Collider\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Collider\+:
 \end{figure}
 
 
-Collaboration diagram for Collider\+:
-\nopagebreak
+Collaboration diagram for Collider\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,8 +34,6 @@ Collaboration diagram for Collider\+:
 \begin{DoxyCompactList}\small\item\em Constructs a fully configured \doxylink{structCollider}{Collider}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structCollider_a923208f36ba5546c434755626cf04181}{Collider}} (std\+::string \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}})
 \begin{DoxyCompactList}\small\item\em Constructs a simple \doxylink{structCollider}{Collider} with only a tag. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structCollider_a564acde9860f875a32a6638c573d87be}{\texorpdfstring{$\sim$}{\string~}\+Collider}} ()
-\item 
 void \mbox{\hyperlink{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the collider by linking it to the entity\textquotesingle{}s transform. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{update}} () override
@@ -52,18 +48,17 @@ const bool \mbox{\hyperlink{structCollider_a6b742fe2cb5dd449723ff4148de4a959}{is
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
 \begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}}
+\Hypertarget{structCollider_a47553d89c2a08d0df50e2e4934572902}\label{structCollider_a47553d89c2a08d0df50e2e4934572902} 
+std\+::string {\bfseries tag}
 \begin{DoxyCompactList}\small\item\em A tag to identify the type of collider (e.\+g., "{}player"{}, "{}wall"{}). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -98,16 +93,14 @@ Constructs a fully configured \doxylink{structCollider}{Collider}.
 {\em is\+Ui} & If true, indicates this is a UI element collider. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=327pt]{structCollider_a80a564c1cb6930ffc7810f559381a5e4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -129,20 +122,13 @@ Constructs a simple \doxylink{structCollider}{Collider} with only a tag.
 {\em tag} & Identifier for this collider type. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structCollider_a923208f36ba5546c434755626cf04181_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structCollider_a564acde9860f875a32a6638c573d87be}\index{Collider@{Collider}!````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}}
-\index{````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}!Collider@{Collider}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Collider()}{\string~Collider()}}
-{\footnotesize\ttfamily \label{structCollider_a564acde9860f875a32a6638c573d87be} 
-Collider\+::\texorpdfstring{$\sim$}{\string~}\+Collider (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -178,8 +164,7 @@ Checks if this collider is currently colliding with any collider of a specific t
 \begin{DoxyReturn}{Returns}
 True if a collision is occurring, false otherwise. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -201,16 +186,14 @@ Executes the collision callback function.
 {\em other} & The \doxylink{structCollider}{Collider} component of the other entity involved in the collision. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=327pt]{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -231,8 +214,7 @@ Updates the collider\textquotesingle{}s position and checks for collisions again
 
 Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -241,20 +223,7 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structCollider_a47553d89c2a08d0df50e2e4934572902}\index{Collider@{Collider}!tag@{tag}}
-\index{tag@{tag}!Collider@{Collider}}
-\doxysubsubsection{\texorpdfstring{tag}{tag}}
-{\footnotesize\ttfamily \label{structCollider_a47553d89c2a08d0df50e2e4934572902} 
-std\+::string Collider\+::tag}
-
-
-
-A tag to identify the type of collider (e.\+g., "{}player"{}, "{}wall"{}). 
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Collider_8h}{Collider.\+h}}\item 
-src/\mbox{\hyperlink{Collider_8cpp}{Collider.\+cpp}}\end{DoxyCompactItemize}
+src/Collider.\+cpp\end{DoxyCompactItemize}

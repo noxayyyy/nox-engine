@@ -11,8 +11,7 @@ A component that represents one square in a tilemap.
 
 
 
-Inheritance diagram for Tile\+:
-\nopagebreak
+Inheritance diagram for Tile\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Tile\+:
 \end{figure}
 
 
-Collaboration diagram for Tile\+:
-\nopagebreak
+Collaboration diagram for Tile\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,8 +32,6 @@ Collaboration diagram for Tile\+:
 \item 
 \mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}} (int x, int y, int w, int h, int id)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structTile}{Tile}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structTile_a98634abbd93fa13d0578d7103202d03d}{\texorpdfstring{$\sim$}{\string~}\+Tile}} ()
-\item 
 void \mbox{\hyperlink{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the tile by adding \doxylink{structTransform}{Transform} and Sprite components to its entity. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structTile_a2a78af6e82cf111b1d078f8c96a444ab}{resize\+Tile}} (int w, int h, float scale=0.\+64f)
@@ -48,26 +44,29 @@ virtual void \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
 \begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structTransform}{Transform}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}{transform}}
+\Hypertarget{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}\label{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014} 
+\mbox{\hyperlink{structTransform}{Transform}} \texorpdfstring{$\ast$}{*} {\bfseries transform}
 \begin{DoxyCompactList}\small\item\em Pointer to the tile\textquotesingle{}s \doxylink{structTransform}{Transform} component. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structSprites}{Sprites}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_ad17fd46301d8b9de7da563daa3fec696}{sprite}}
+\Hypertarget{structTile_ad17fd46301d8b9de7da563daa3fec696}\label{structTile_ad17fd46301d8b9de7da563daa3fec696} 
+\mbox{\hyperlink{structSprites}{Sprites}} \texorpdfstring{$\ast$}{*} {\bfseries sprite}
 \begin{DoxyCompactList}\small\item\em Pointer to the tile\textquotesingle{}s Sprite component. \end{DoxyCompactList}\item 
-SDL\+\_\+\+Rect \mbox{\hyperlink{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}{tile\+Rect}}
+\Hypertarget{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}\label{structTile_a5e5613c963cdbdb8822ec84ecf3a1864} 
+SDL\+\_\+\+Rect {\bfseries tile\+Rect}
 \begin{DoxyCompactList}\small\item\em The rectangle defining the tile\textquotesingle{}s position and size. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structTile_af37b0873afcb54b101422972a2c17e23}{tile\+ID}}
+\Hypertarget{structTile_af37b0873afcb54b101422972a2c17e23}\label{structTile_af37b0873afcb54b101422972a2c17e23} 
+int {\bfseries tile\+ID}
 \begin{DoxyCompactList}\small\item\em The identifier for the type of tile (e.\+g., wall, path). \end{DoxyCompactList}\item 
-const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTile_add000516854959aea1c6554a832646c3}{path}}
+\Hypertarget{structTile_add000516854959aea1c6554a832646c3}\label{structTile_add000516854959aea1c6554a832646c3} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries path}
 \begin{DoxyCompactList}\small\item\em The file path to the tile\textquotesingle{}s texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -100,12 +99,6 @@ Constructs a \doxylink{structTile}{Tile}.
 {\em id} & The tile\textquotesingle{}s type ID. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structTile_a98634abbd93fa13d0578d7103202d03d}\index{Tile@{Tile}!````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}}
-\index{````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Tile()}{\string~Tile()}}
-{\footnotesize\ttfamily \label{structTile_a98634abbd93fa13d0578d7103202d03d} 
-Tile\+::\texorpdfstring{$\sim$}{\string~}\+Tile (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -144,60 +137,7 @@ Resizes the tile\textquotesingle{}s underlying components.
 \end{DoxyParams}
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structTile_add000516854959aea1c6554a832646c3}\index{Tile@{Tile}!path@{path}}
-\index{path@{path}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{path}{path}}
-{\footnotesize\ttfamily \label{structTile_add000516854959aea1c6554a832646c3} 
-const char\texorpdfstring{$\ast$}{*} Tile\+::path}
-
-
-
-The file path to the tile\textquotesingle{}s texture. 
-
-\Hypertarget{structTile_ad17fd46301d8b9de7da563daa3fec696}\index{Tile@{Tile}!sprite@{sprite}}
-\index{sprite@{sprite}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
-{\footnotesize\ttfamily \label{structTile_ad17fd46301d8b9de7da563daa3fec696} 
-\mbox{\hyperlink{structSprites}{Sprites}}\texorpdfstring{$\ast$}{*} Tile\+::sprite}
-
-
-
-Pointer to the tile\textquotesingle{}s Sprite component. 
-
-\Hypertarget{structTile_af37b0873afcb54b101422972a2c17e23}\index{Tile@{Tile}!tileID@{tileID}}
-\index{tileID@{tileID}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{tileID}{tileID}}
-{\footnotesize\ttfamily \label{structTile_af37b0873afcb54b101422972a2c17e23} 
-int Tile\+::tile\+ID}
-
-
-
-The identifier for the type of tile (e.\+g., wall, path). 
-
-\Hypertarget{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}\index{Tile@{Tile}!tileRect@{tileRect}}
-\index{tileRect@{tileRect}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{tileRect}{tileRect}}
-{\footnotesize\ttfamily \label{structTile_a5e5613c963cdbdb8822ec84ecf3a1864} 
-SDL\+\_\+\+Rect Tile\+::tile\+Rect}
-
-
-
-The rectangle defining the tile\textquotesingle{}s position and size. 
-
-\Hypertarget{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}\index{Tile@{Tile}!transform@{transform}}
-\index{transform@{transform}!Tile@{Tile}}
-\doxysubsubsection{\texorpdfstring{transform}{transform}}
-{\footnotesize\ttfamily \label{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014} 
-\mbox{\hyperlink{structTransform}{Transform}}\texorpdfstring{$\ast$}{*} Tile\+::transform}
-
-
-
-Pointer to the tile\textquotesingle{}s \doxylink{structTransform}{Transform} component. 
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Tile_8h}{Tile.\+h}}\item 
-src/\mbox{\hyperlink{Tile_8cpp}{Tile.\+cpp}}\end{DoxyCompactItemize}
+src/Tile.\+cpp\end{DoxyCompactItemize}

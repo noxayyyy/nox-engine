@@ -14,10 +14,6 @@ var searchData=
   ['getnewcomponenttypeid_11',['getNewComponentTypeID',['../ECS_8h.html#a506292c7895583d174f94fd9b1f5b1e3',1,'ECS.h']]],
   ['getpaused_12',['getPaused',['../classGame.html#aa153f0da6707884d25383acc9fd711f1',1,'Game']]],
   ['getsizeofsurface_13',['GetSizeOfSurface',['../structTextureManager.html#affabc7a219da0e5c10988c64f9a97466',1,'TextureManager']]],
-  ['ghost_5fbar_14',['GHOST_BAR',['../Constants_8h.html#ac691f71a1e791a19456911d213a8143fa4ff7759c640d7a6ec12fb6fdb5cd6788',1,'Constants.h']]],
-  ['ghosts_15',['GHOSTS',['../Constants_8h.html#ac691f71a1e791a19456911d213a8143fa3d223a154b96a31b5f2de5c61e2b2ed9',1,'Constants.h']]],
-  ['ghostspawn_16',['ghostSpawn',['../classGame.html#adbbce2f78e1de148e187a4bc70b493d7',1,'Game']]],
-  ['groupbitset_17',['GroupBitSet',['../ECS_8h.html#a8657c60c9c4988cd80991c6dbe6cfcbf',1,'ECS.h']]],
-  ['groupid_18',['GroupID',['../ECS_8h.html#af05108a2e67a61a15c3f17ae813a3756',1,'ECS.h']]],
-  ['grouplabels_19',['GroupLabels',['../Constants_8h.html#ac691f71a1e791a19456911d213a8143f',1,'Constants.h']]]
+  ['ghostspawn_14',['ghostSpawn',['../classGame.html#adbbce2f78e1de148e187a4bc70b493d7',1,'Game']]],
+  ['grouplabels_15',['GroupLabels',['../Constants_8h.html#ac691f71a1e791a19456911d213a8143f',1,'Constants.h']]]
 ];

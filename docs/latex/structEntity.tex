@@ -11,8 +11,7 @@ A general-\/purpose object in the game world.
 
 
 
-Collaboration diagram for Entity\+:
-\nopagebreak
+Collaboration diagram for Entity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -24,33 +23,40 @@ Collaboration diagram for Entity\+:
 \item 
 \mbox{\hyperlink{structEntity_a4deb453bd9d9f49c9ec3c80816dc6aa8}{Entity}} (\mbox{\hyperlink{structManager}{Manager}} \&mem\+Manager, std\+::string \+\_\+id)
 \begin{DoxyCompactList}\small\item\em Constructs an \doxylink{structEntity}{Entity}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update}} ()
+\Hypertarget{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\label{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f} 
+void {\bfseries update} ()
 \begin{DoxyCompactList}\small\item\em Calls the update method on all of its components. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a7666f416dd0d1fce0f1133f78df44476}{draw}} ()
+\Hypertarget{structEntity_a7666f416dd0d1fce0f1133f78df44476}\label{structEntity_a7666f416dd0d1fce0f1133f78df44476} 
+void {\bfseries draw} ()
 \begin{DoxyCompactList}\small\item\em Calls the draw method on all of its components. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structEntity_aea1c1568b4123d989c5310697030ad77}{is\+Active}} () const
 \begin{DoxyCompactList}\small\item\em Checks if the entity is currently active. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{structEntity_acf456649975d568c848741a38bf3fa1f}{get\+ID}} () const
 \begin{DoxyCompactList}\small\item\em Gets the entity\textquotesingle{}s string identifier. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a020b55925e09a5f6892b61a07d9ac42a}{enable}} ()
+\Hypertarget{structEntity_a020b55925e09a5f6892b61a07d9ac42a}\label{structEntity_a020b55925e09a5f6892b61a07d9ac42a} 
+void {\bfseries enable} ()
 \begin{DoxyCompactList}\small\item\em Activates the entity, enabling its update and draw calls. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e}{disable}} ()
+\Hypertarget{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e}\label{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e} 
+void {\bfseries disable} ()
 \begin{DoxyCompactList}\small\item\em Deactivates the entity, disabling its update and draw calls. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}{refresh}} ()
+\Hypertarget{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}\label{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42} 
+void {\bfseries refresh} ()
 \begin{DoxyCompactList}\small\item\em Marks the entity to be refreshed in the manager\textquotesingle{}s group lists. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}{reload}} ()
+\Hypertarget{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}\label{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23} 
+void {\bfseries reload} ()
 \begin{DoxyCompactList}\small\item\em Calls the reload method on all of its components. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}{has\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+bool \mbox{\hyperlink{structEntity_a31e0aa9b0fca96c50ac32c366438cccd}{has\+Group}} (Group\+ID mem\+Group)
 \begin{DoxyCompactList}\small\item\em Checks if the entity belongs to a specific group. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a6c56a84be807fa655c42141d982bef54}{del\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+void \mbox{\hyperlink{structEntity_a6c56a84be807fa655c42141d982bef54}{del\+Group}} (Group\+ID mem\+Group)
 \begin{DoxyCompactList}\small\item\em Removes the entity from a specific group. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_aaee4506fc67f002244c8ad2adc92417c}{add\+Group}} (\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} mem\+Group)
+void \mbox{\hyperlink{structEntity_aaee4506fc67f002244c8ad2adc92417c}{add\+Group}} (Group\+ID mem\+Group)
 \begin{DoxyCompactList}\small\item\em Adds the entity to a specific group. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\bool \mbox{\hyperlink{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b}{has\+Component}} () const
 \begin{DoxyCompactList}\small\item\em Checks if the entity has a component of a specific type. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structEntity_a0c59911f0b4747b26e004796d5a9f85d}{del\+Component}} ()
 \begin{DoxyCompactList}\small\item\em Removes a component of a specific type from the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structEntity_a43953614bae5e98da168015ec31f994a}{delete\+All\+Components}} ()
+\Hypertarget{structEntity_a43953614bae5e98da168015ec31f994a}\label{structEntity_a43953614bae5e98da168015ec31f994a} 
+void {\bfseries delete\+All\+Components} ()
 \begin{DoxyCompactList}\small\item\em Removes all components from the entity. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T, typename... TArgs$>$ }\\T \& \mbox{\hyperlink{structEntity_aafe23d7d7ea7f427ca40454edcae460e}{add\+Component}} (TArgs \&\&... m\+Args)
 \begin{DoxyCompactList}\small\item\em Adds a component to the entity. \end{DoxyCompactList}\item 
@@ -110,8 +116,7 @@ Adds a component to the entity.
 \begin{DoxyReturn}{Returns}
 A reference to the newly added component. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -122,7 +127,7 @@ Here is the call graph for this function\+:
 \index{addGroup@{addGroup}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{addGroup()}{addGroup()}}
 {\footnotesize\ttfamily \label{structEntity_aaee4506fc67f002244c8ad2adc92417c} 
-void Entity\+::add\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+void Entity\+::add\+Group (\begin{DoxyParamCaption}\item[{Group\+ID}]{mem\+Group}{}\end{DoxyParamCaption})}
 
 
 
@@ -130,7 +135,7 @@ Adds the entity to a specific group.
 
 
 \begin{DoxyParams}{Parameters}
-{\em mem\+Group} & The \doxylink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID} to add to. \\
+{\em mem\+Group} & The Group\+ID to add to. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{structEntity_a0c59911f0b4747b26e004796d5a9f85d}\index{Entity@{Entity}!delComponent@{delComponent}}
@@ -149,29 +154,18 @@ Removes a component of a specific type from the entity.
 {\em T} & The component type to remove. \\
 \hline
 \end{DoxyTemplParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structEntity_a0c59911f0b4747b26e004796d5a9f85d_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structEntity_a43953614bae5e98da168015ec31f994a}\index{Entity@{Entity}!deleteAllComponents@{deleteAllComponents}}
-\index{deleteAllComponents@{deleteAllComponents}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{deleteAllComponents()}{deleteAllComponents()}}
-{\footnotesize\ttfamily \label{structEntity_a43953614bae5e98da168015ec31f994a} 
-void Entity\+::delete\+All\+Components (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Removes all components from the entity. 
-
 \Hypertarget{structEntity_a6c56a84be807fa655c42141d982bef54}\index{Entity@{Entity}!delGroup@{delGroup}}
 \index{delGroup@{delGroup}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{delGroup()}{delGroup()}}
 {\footnotesize\ttfamily \label{structEntity_a6c56a84be807fa655c42141d982bef54} 
-void Entity\+::del\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+void Entity\+::del\+Group (\begin{DoxyParamCaption}\item[{Group\+ID}]{mem\+Group}{}\end{DoxyParamCaption})}
 
 
 
@@ -179,39 +173,9 @@ Removes the entity from a specific group.
 
 
 \begin{DoxyParams}{Parameters}
-{\em mem\+Group} & The \doxylink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID} to remove from. \\
+{\em mem\+Group} & The Group\+ID to remove from. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e}\index{Entity@{Entity}!disable@{disable}}
-\index{disable@{disable}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
-{\footnotesize\ttfamily \label{structEntity_a1a4a3c76da92e326a7a9b701ccdd570e} 
-void Entity\+::disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Deactivates the entity, disabling its update and draw calls. 
-
-\Hypertarget{structEntity_a7666f416dd0d1fce0f1133f78df44476}\index{Entity@{Entity}!draw@{draw}}
-\index{draw@{draw}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily \label{structEntity_a7666f416dd0d1fce0f1133f78df44476} 
-void Entity\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the draw method on all of its components. 
-
-\Hypertarget{structEntity_a020b55925e09a5f6892b61a07d9ac42a}\index{Entity@{Entity}!enable@{enable}}
-\index{enable@{enable}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
-{\footnotesize\ttfamily \label{structEntity_a020b55925e09a5f6892b61a07d9ac42a} 
-void Entity\+::enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Activates the entity, enabling its update and draw calls. 
-
 \Hypertarget{structEntity_ad5ce9d4246498a5a2ffd163a2d38c98f}\index{Entity@{Entity}!getComponent@{getComponent}}
 \index{getComponent@{getComponent}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
@@ -236,8 +200,7 @@ A reference to the component.
 {\em std\+::runtime\+\_\+error} & if the component does not exist. \\
 \hline
 \end{DoxyExceptions}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -276,16 +239,14 @@ Checks if the entity has a component of a specific type.
 \begin{DoxyReturn}{Returns}
 True if the component exists, false otherwise. 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structEntity_aa622a8d79153a90d0e3b9b992ca2d38b_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -296,7 +257,7 @@ Here is the caller graph for this function\+:
 \index{hasGroup@{hasGroup}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{hasGroup()}{hasGroup()}}
 {\footnotesize\ttfamily \label{structEntity_a31e0aa9b0fca96c50ac32c366438cccd} 
-bool Entity\+::has\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}}}]{mem\+Group}{}\end{DoxyParamCaption})}
+bool Entity\+::has\+Group (\begin{DoxyParamCaption}\item[{Group\+ID}]{mem\+Group}{}\end{DoxyParamCaption})}
 
 
 
@@ -304,7 +265,7 @@ Checks if the entity belongs to a specific group.
 
 
 \begin{DoxyParams}{Parameters}
-{\em mem\+Group} & The \doxylink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID} to check. \\
+{\em mem\+Group} & The Group\+ID to check. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -323,39 +284,9 @@ Checks if the entity is currently active.
 \begin{DoxyReturn}{Returns}
 True if active, false otherwise. 
 \end{DoxyReturn}
-\Hypertarget{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42}\index{Entity@{Entity}!refresh@{refresh}}
-\index{refresh@{refresh}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
-{\footnotesize\ttfamily \label{structEntity_aabcc7161ef99ca8dbe5d68f95af59a42} 
-void Entity\+::refresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Marks the entity to be refreshed in the manager\textquotesingle{}s group lists. 
-
-\Hypertarget{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23}\index{Entity@{Entity}!reload@{reload}}
-\index{reload@{reload}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
-{\footnotesize\ttfamily \label{structEntity_a8f7c3e30f4e93df3ae2f14501e705f23} 
-void Entity\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the reload method on all of its components. 
-
-\Hypertarget{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\index{Entity@{Entity}!update@{update}}
-\index{update@{update}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{structEntity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f} 
-void Entity\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the update method on all of its components. 
-
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{ECS_8h}{ECS.\+h}}\item 
-src/\mbox{\hyperlink{ECS_8cpp}{ECS.\+cpp}}\end{DoxyCompactItemize}
+src/ECS.\+cpp\end{DoxyCompactItemize}

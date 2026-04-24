@@ -11,8 +11,7 @@ A component that gives an entity a visual representation using a texture.
 
 
 
-Inheritance diagram for Sprites\+:
-\nopagebreak
+Inheritance diagram for Sprites\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Sprites\+:
 \end{figure}
 
 
-Collaboration diagram for Sprites\+:
-\nopagebreak
+Collaboration diagram for Sprites\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,33 +34,31 @@ Collaboration diagram for Sprites\+:
 \begin{DoxyCompactList}\small\item\em Constructs a sprite from a texture path. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}{Sprites}} (const char \texorpdfstring{$\ast$}{*}tex, int n\+Frames, int m\+Speed, bool loop)
 \begin{DoxyCompactList}\small\item\em Constructs a sprite with simple, built-\/in animation capabilities. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structSprites_a46633552deb102b94d645b223234de7a}{\texorpdfstring{$\sim$}{\string~}\+Sprites}} ()
-\item 
 void \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the sprite, getting the entity\textquotesingle{}s transform and loading the texture. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates the destination rectangle for rendering based on the transform. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{draw}} () override
 \begin{DoxyCompactList}\small\item\em Draws the sprite\textquotesingle{}s current texture to the screen. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSprites_a9767aacb914fde74ce286c466dd0345a}{recalc\+Sprite\+Dimensions}} ()
+\Hypertarget{structSprites_a9767aacb914fde74ce286c466dd0345a}\label{structSprites_a9767aacb914fde74ce286c466dd0345a} 
+void {\bfseries recalc\+Sprite\+Dimensions} ()
 \begin{DoxyCompactList}\small\item\em Recalculates the sprite\textquotesingle{}s on-\/screen dimensions based on texture size and transform scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
-\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animator}}
+\Hypertarget{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}\label{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129} 
+struct {\bfseries Animator}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -87,6 +83,14 @@ Constructs a sprite from a texture path.
 {\em tex} & The file path to the texture. \\
 \hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{structSprites_a90c58c4968e7c990a5accd46b58cefd7_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}\index{Sprites@{Sprites}!Sprites@{Sprites}}
 \index{Sprites@{Sprites}!Sprites@{Sprites}}
 \doxysubsubsection{\texorpdfstring{Sprites()}{Sprites()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -108,12 +112,14 @@ Constructs a sprite with simple, built-\/in animation capabilities.
 {\em loop} & Whether the animation should loop. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structSprites_a46633552deb102b94d645b223234de7a}\index{Sprites@{Sprites}!````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}}
-\index{````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}!Sprites@{Sprites}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sprites()}{\string~Sprites()}}
-{\footnotesize\ttfamily \label{structSprites_a46633552deb102b94d645b223234de7a} 
-Sprites\+::\texorpdfstring{$\sim$}{\string~}\+Sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
@@ -131,8 +137,7 @@ Draws the sprite\textquotesingle{}s current texture to the screen.
 
 Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{Component}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -153,16 +158,6 @@ Initializes the sprite, getting the entity\textquotesingle{}s transform and load
 
 Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
 
-\Hypertarget{structSprites_a9767aacb914fde74ce286c466dd0345a}\index{Sprites@{Sprites}!recalcSpriteDimensions@{recalcSpriteDimensions}}
-\index{recalcSpriteDimensions@{recalcSpriteDimensions}!Sprites@{Sprites}}
-\doxysubsubsection{\texorpdfstring{recalcSpriteDimensions()}{recalcSpriteDimensions()}}
-{\footnotesize\ttfamily \label{structSprites_a9767aacb914fde74ce286c466dd0345a} 
-void Sprites\+::recalc\+Sprite\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Recalculates the sprite\textquotesingle{}s on-\/screen dimensions based on texture size and transform scale. 
-
 \Hypertarget{structSprites_ad357d4d5deb0293597ad6a7953afb434}\index{Sprites@{Sprites}!update@{update}}
 \index{update@{update}!Sprites@{Sprites}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
@@ -179,16 +174,7 @@ Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728
 
 
 
-\doxysubsection{Friends And Related Symbol Documentation}
-\Hypertarget{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}\index{Sprites@{Sprites}!Animator@{Animator}}
-\index{Animator@{Animator}!Sprites@{Sprites}}
-\doxysubsubsection{\texorpdfstring{Animator}{Animator}}
-{\footnotesize\ttfamily \label{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129} 
-friend struct \mbox{\hyperlink{structAnimator}{Animator}}\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Sprites_8h}{Sprites.\+h}}\item 
-src/\mbox{\hyperlink{Sprites_8cpp}{Sprites.\+cpp}}\end{DoxyCompactItemize}
+src/Sprites.\+cpp\end{DoxyCompactItemize}

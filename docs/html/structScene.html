@@ -128,25 +128,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56b1a969dde64f1a33b34cd136ceaa49" id="r_a56b1a969dde64f1a33b34cd136ceaa49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b1a969dde64f1a33b34cd136ceaa49">Scene</a> (std::string <a class="el" href="#a44b2d6bffa153dda02f026f8533ceb08">name</a>, int <a class="el" href="#a788a34d3985920dc587460a19ccf2733">buildIndex</a>, bool isPanel, bool isLocking, int <a class="el" href="#ae69969ad40d0f10a8d7a7d0fc201ab9d">layer</a>)</td></tr>
 <tr class="memdesc:a56b1a969dde64f1a33b34cd136ceaa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structScene.html" title="An abstract class representing a distinct part of the game, like a main menu or a level.">Scene</a>.  <br /></td></tr>
 <tr class="separator:a56b1a969dde64f1a33b34cd136ceaa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0a5be58e2ee2d1fdafc5fb46b5e661e" id="r_aa0a5be58e2ee2d1fdafc5fb46b5e661e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a5be58e2ee2d1fdafc5fb46b5e661e">~Scene</a> ()</td></tr>
-<tr class="separator:aa0a5be58e2ee2d1fdafc5fb46b5e661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edd8111e127173d2d06b571a177d7b1" id="r_a7edd8111e127173d2d06b571a177d7b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7edd8111e127173d2d06b571a177d7b1">init</a> ()=0</td></tr>
-<tr class="memdesc:a7edd8111e127173d2d06b571a177d7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific initialization logic.  <br /></td></tr>
+<tr class="memitem:a7edd8111e127173d2d06b571a177d7b1" id="r_a7edd8111e127173d2d06b571a177d7b1"><td class="memItemLeft" align="right" valign="top"><a id="a7edd8111e127173d2d06b571a177d7b1" name="a7edd8111e127173d2d06b571a177d7b1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()=0</td></tr>
+<tr class="memdesc:a7edd8111e127173d2d06b571a177d7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific initialization logic. <br /></td></tr>
 <tr class="separator:a7edd8111e127173d2d06b571a177d7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7faff47f5c1b1ebc986f768c9b9732ec" id="r_a7faff47f5c1b1ebc986f768c9b9732ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7faff47f5c1b1ebc986f768c9b9732ec">update</a> ()=0</td></tr>
-<tr class="memdesc:a7faff47f5c1b1ebc986f768c9b9732ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific update logic.  <br /></td></tr>
+<tr class="memitem:a7faff47f5c1b1ebc986f768c9b9732ec" id="r_a7faff47f5c1b1ebc986f768c9b9732ec"><td class="memItemLeft" align="right" valign="top"><a id="a7faff47f5c1b1ebc986f768c9b9732ec" name="a7faff47f5c1b1ebc986f768c9b9732ec"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()=0</td></tr>
+<tr class="memdesc:a7faff47f5c1b1ebc986f768c9b9732ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific update logic. <br /></td></tr>
 <tr class="separator:a7faff47f5c1b1ebc986f768c9b9732ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ed31537c3c9c40f708e68295e2f51e" id="r_a24ed31537c3c9c40f708e68295e2f51e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24ed31537c3c9c40f708e68295e2f51e">reload</a> ()=0</td></tr>
-<tr class="memdesc:a24ed31537c3c9c40f708e68295e2f51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to reset the scene to its initial state.  <br /></td></tr>
+<tr class="memitem:a24ed31537c3c9c40f708e68295e2f51e" id="r_a24ed31537c3c9c40f708e68295e2f51e"><td class="memItemLeft" align="right" valign="top"><a id="a24ed31537c3c9c40f708e68295e2f51e" name="a24ed31537c3c9c40f708e68295e2f51e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reload</b> ()=0</td></tr>
+<tr class="memdesc:a24ed31537c3c9c40f708e68295e2f51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to reset the scene to its initial state. <br /></td></tr>
 <tr class="separator:a24ed31537c3c9c40f708e68295e2f51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94fd9954ef4f4562e3c29e69f6f27e8c" id="r_a94fd9954ef4f4562e3c29e69f6f27e8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94fd9954ef4f4562e3c29e69f6f27e8c">reloadWithState</a> ()=0</td></tr>
-<tr class="memdesc:a94fd9954ef4f4562e3c29e69f6f27e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to reload the scene while preserving some state (e.g., UI state).  <br /></td></tr>
+<tr class="memitem:a94fd9954ef4f4562e3c29e69f6f27e8c" id="r_a94fd9954ef4f4562e3c29e69f6f27e8c"><td class="memItemLeft" align="right" valign="top"><a id="a94fd9954ef4f4562e3c29e69f6f27e8c" name="a94fd9954ef4f4562e3c29e69f6f27e8c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reloadWithState</b> ()=0</td></tr>
+<tr class="memdesc:a94fd9954ef4f4562e3c29e69f6f27e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to reload the scene while preserving some state (e.g., UI state). <br /></td></tr>
 <tr class="separator:a94fd9954ef4f4562e3c29e69f6f27e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01a5fa609184cdc9470f8ccaf6b34dcf" id="r_a01a5fa609184cdc9470f8ccaf6b34dcf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01a5fa609184cdc9470f8ccaf6b34dcf">handleEvents</a> (SDL_Event &amp;event)=0</td></tr>
 <tr class="memdesc:a01a5fa609184cdc9470f8ccaf6b34dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to handle scene-specific SDL events.  <br /></td></tr>
 <tr class="separator:a01a5fa609184cdc9470f8ccaf6b34dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789c16961aa1e316b2a4a05b95187546" id="r_a789c16961aa1e316b2a4a05b95187546"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a789c16961aa1e316b2a4a05b95187546">draw</a> ()=0</td></tr>
-<tr class="memdesc:a789c16961aa1e316b2a4a05b95187546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific drawing logic.  <br /></td></tr>
+<tr class="memitem:a789c16961aa1e316b2a4a05b95187546" id="r_a789c16961aa1e316b2a4a05b95187546"><td class="memItemLeft" align="right" valign="top"><a id="a789c16961aa1e316b2a4a05b95187546" name="a789c16961aa1e316b2a4a05b95187546"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()=0</td></tr>
+<tr class="memdesc:a789c16961aa1e316b2a4a05b95187546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function for scene-specific drawing logic. <br /></td></tr>
 <tr class="separator:a789c16961aa1e316b2a4a05b95187546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7336b94069dd6a90968bf9f513022f" id="r_aaa7336b94069dd6a90968bf9f513022f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7336b94069dd6a90968bf9f513022f">addEntityToScene</a> (<a class="el" href="structEntity.html">Entity</a> &amp;entity)</td></tr>
 <tr class="memdesc:aaa7336b94069dd6a90968bf9f513022f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an entity as belonging to this scene.  <br /></td></tr>
@@ -157,14 +160,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83e3e3fa5c0d62e01620acf29c7db751" id="r_a83e3e3fa5c0d62e01620acf29c7db751"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83e3e3fa5c0d62e01620acf29c7db751">existsInScene</a> (<a class="el" href="structEntity.html">Entity</a> *entity)</td></tr>
 <tr class="memdesc:a83e3e3fa5c0d62e01620acf29c7db751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a specific entity is part of this scene.  <br /></td></tr>
 <tr class="separator:a83e3e3fa5c0d62e01620acf29c7db751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6078cc3fc29516f5409544ebd78c39" id="r_a9a6078cc3fc29516f5409544ebd78c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a6078cc3fc29516f5409544ebd78c39">clearScene</a> ()</td></tr>
-<tr class="memdesc:a9a6078cc3fc29516f5409544ebd78c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all entities from the scene.  <br /></td></tr>
+<tr class="memitem:a9a6078cc3fc29516f5409544ebd78c39" id="r_a9a6078cc3fc29516f5409544ebd78c39"><td class="memItemLeft" align="right" valign="top"><a id="a9a6078cc3fc29516f5409544ebd78c39" name="a9a6078cc3fc29516f5409544ebd78c39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearScene</b> ()</td></tr>
+<tr class="memdesc:a9a6078cc3fc29516f5409544ebd78c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all entities from the scene. <br /></td></tr>
 <tr class="separator:a9a6078cc3fc29516f5409544ebd78c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e52280b56676471e6fa85692ae8abe" id="r_aa3e52280b56676471e6fa85692ae8abe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e52280b56676471e6fa85692ae8abe">enableScene</a> ()</td></tr>
-<tr class="memdesc:aa3e52280b56676471e6fa85692ae8abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates all entities within the scene.  <br /></td></tr>
+<tr class="memitem:aa3e52280b56676471e6fa85692ae8abe" id="r_aa3e52280b56676471e6fa85692ae8abe"><td class="memItemLeft" align="right" valign="top"><a id="aa3e52280b56676471e6fa85692ae8abe" name="aa3e52280b56676471e6fa85692ae8abe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableScene</b> ()</td></tr>
+<tr class="memdesc:aa3e52280b56676471e6fa85692ae8abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates all entities within the scene. <br /></td></tr>
 <tr class="separator:aa3e52280b56676471e6fa85692ae8abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f612fa63b769ff431831701f1a36eb6" id="r_a3f612fa63b769ff431831701f1a36eb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f612fa63b769ff431831701f1a36eb6">disableScene</a> ()</td></tr>
-<tr class="memdesc:a3f612fa63b769ff431831701f1a36eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates all entities within the scene.  <br /></td></tr>
+<tr class="memitem:a3f612fa63b769ff431831701f1a36eb6" id="r_a3f612fa63b769ff431831701f1a36eb6"><td class="memItemLeft" align="right" valign="top"><a id="a3f612fa63b769ff431831701f1a36eb6" name="a3f612fa63b769ff431831701f1a36eb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableScene</b> ()</td></tr>
+<tr class="memdesc:a3f612fa63b769ff431831701f1a36eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates all entities within the scene. <br /></td></tr>
 <tr class="separator:a3f612fa63b769ff431831701f1a36eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4007289e6a1fab14313ec559cb3db8" id="r_afd4007289e6a1fab14313ec559cb3db8"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd4007289e6a1fab14313ec559cb3db8">getIsPanel</a> () const</td></tr>
 <tr class="memdesc:afd4007289e6a1fab14313ec559cb3db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the scene is a UI panel.  <br /></td></tr>
@@ -175,16 +181,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a44b2d6bffa153dda02f026f8533ceb08" id="r_a44b2d6bffa153dda02f026f8533ceb08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b2d6bffa153dda02f026f8533ceb08">name</a></td></tr>
-<tr class="memdesc:a44b2d6bffa153dda02f026f8533ceb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique name of the scene.  <br /></td></tr>
+<tr class="memitem:a44b2d6bffa153dda02f026f8533ceb08" id="r_a44b2d6bffa153dda02f026f8533ceb08"><td class="memItemLeft" align="right" valign="top"><a id="a44b2d6bffa153dda02f026f8533ceb08" name="a44b2d6bffa153dda02f026f8533ceb08"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memdesc:a44b2d6bffa153dda02f026f8533ceb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique name of the scene. <br /></td></tr>
 <tr class="separator:a44b2d6bffa153dda02f026f8533ceb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a788a34d3985920dc587460a19ccf2733" id="r_a788a34d3985920dc587460a19ccf2733"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a788a34d3985920dc587460a19ccf2733">buildIndex</a></td></tr>
-<tr class="memdesc:a788a34d3985920dc587460a19ccf2733"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the scene for sequential loading.  <br /></td></tr>
+<tr class="memitem:a788a34d3985920dc587460a19ccf2733" id="r_a788a34d3985920dc587460a19ccf2733"><td class="memItemLeft" align="right" valign="top"><a id="a788a34d3985920dc587460a19ccf2733" name="a788a34d3985920dc587460a19ccf2733"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>buildIndex</b></td></tr>
+<tr class="memdesc:a788a34d3985920dc587460a19ccf2733"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the scene for sequential loading. <br /></td></tr>
 <tr class="separator:a788a34d3985920dc587460a19ccf2733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69969ad40d0f10a8d7a7d0fc201ab9d" id="r_ae69969ad40d0f10a8d7a7d0fc201ab9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69969ad40d0f10a8d7a7d0fc201ab9d">layer</a></td></tr>
-<tr class="memdesc:ae69969ad40d0f10a8d7a7d0fc201ab9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rendering layer, for handling multiple active scenes (e.g., UI panels).  <br /></td></tr>
+<tr class="memitem:ae69969ad40d0f10a8d7a7d0fc201ab9d" id="r_ae69969ad40d0f10a8d7a7d0fc201ab9d"><td class="memItemLeft" align="right" valign="top"><a id="ae69969ad40d0f10a8d7a7d0fc201ab9d" name="ae69969ad40d0f10a8d7a7d0fc201ab9d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b></td></tr>
+<tr class="memdesc:ae69969ad40d0f10a8d7a7d0fc201ab9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rendering layer, for handling multiple active scenes (e.g., UI panels). <br /></td></tr>
 <tr class="separator:ae69969ad40d0f10a8d7a7d0fc201ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9835f4115f9424c614b2e5a4ba421713" id="r_a9835f4115f9424c614b2e5a4ba421713"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9835f4115f9424c614b2e5a4ba421713">mouseButtonPressed</a></td></tr>
+<tr class="memitem:a9835f4115f9424c614b2e5a4ba421713" id="r_a9835f4115f9424c614b2e5a4ba421713"><td class="memItemLeft" align="right" valign="top"><a id="a9835f4115f9424c614b2e5a4ba421713" name="a9835f4115f9424c614b2e5a4ba421713"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseButtonPressed</b></td></tr>
 <tr class="separator:a9835f4115f9424c614b2e5a4ba421713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -239,31 +249,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0a5be58e2ee2d1fdafc5fb46b5e661e" name="aa0a5be58e2ee2d1fdafc5fb46b5e661e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a5be58e2ee2d1fdafc5fb46b5e661e">&#9670;&#160;</a></span>~Scene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Scene::~Scene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaa7336b94069dd6a90968bf9f513022f" name="aaa7336b94069dd6a90968bf9f513022f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa7336b94069dd6a90968bf9f513022f">&#9670;&#160;</a></span>addEntityToScene()</h2>
@@ -287,110 +272,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a9a6078cc3fc29516f5409544ebd78c39" name="a9a6078cc3fc29516f5409544ebd78c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a6078cc3fc29516f5409544ebd78c39">&#9670;&#160;</a></span>clearScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Scene::clearScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all entities from the scene. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph.png" border="0" usemap="#astructScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph" alt=""/></div>
-<map name="astructScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph" id="astructScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph">
-<area shape="rect" title="Removes all entities from the scene." alt="" coords="5,5,145,33"/>
-<area shape="rect" href="structScene.html#a3f612fa63b769ff431831701f1a36eb6" title="Deactivates all entities within the scene." alt="" coords="193,5,347,33"/>
-<area shape="poly" title=" " alt="" coords="145,16,177,16,177,22,145,22"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3f612fa63b769ff431831701f1a36eb6" name="a3f612fa63b769ff431831701f1a36eb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f612fa63b769ff431831701f1a36eb6">&#9670;&#160;</a></span>disableScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Scene::disableScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deactivates all entities within the scene. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structScene_a3f612fa63b769ff431831701f1a36eb6_icgraph.png" border="0" usemap="#astructScene_a3f612fa63b769ff431831701f1a36eb6_icgraph" alt=""/></div>
-<map name="astructScene_a3f612fa63b769ff431831701f1a36eb6_icgraph" id="astructScene_a3f612fa63b769ff431831701f1a36eb6_icgraph">
-<area shape="rect" title="Deactivates all entities within the scene." alt="" coords="193,5,347,33"/>
-<area shape="rect" href="structScene.html#a9a6078cc3fc29516f5409544ebd78c39" title="Removes all entities from the scene." alt="" coords="5,5,145,33"/>
-<area shape="poly" title=" " alt="" coords="177,22,145,22,145,16,177,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a789c16961aa1e316b2a4a05b95187546" name="a789c16961aa1e316b2a4a05b95187546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a789c16961aa1e316b2a4a05b95187546">&#9670;&#160;</a></span>draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Scene::draw </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual function for scene-specific drawing logic. </p>
-
-</div>
-</div>
-<a id="aa3e52280b56676471e6fa85692ae8abe" name="aa3e52280b56676471e6fa85692ae8abe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e52280b56676471e6fa85692ae8abe">&#9670;&#160;</a></span>enableScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Scene::enableScene </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Activates all entities within the scene. </p>
 
 </div>
 </div>
@@ -519,87 +400,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a7edd8111e127173d2d06b571a177d7b1" name="a7edd8111e127173d2d06b571a177d7b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7edd8111e127173d2d06b571a177d7b1">&#9670;&#160;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Scene::init </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual function for scene-specific initialization logic. </p>
-
-</div>
-</div>
-<a id="a24ed31537c3c9c40f708e68295e2f51e" name="a24ed31537c3c9c40f708e68295e2f51e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24ed31537c3c9c40f708e68295e2f51e">&#9670;&#160;</a></span>reload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Scene::reload </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual function to reset the scene to its initial state. </p>
-
-</div>
-</div>
-<a id="a94fd9954ef4f4562e3c29e69f6f27e8c" name="a94fd9954ef4f4562e3c29e69f6f27e8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94fd9954ef4f4562e3c29e69f6f27e8c">&#9670;&#160;</a></span>reloadWithState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Scene::reloadWithState </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual function to reload the scene while preserving some state (e.g., UI state). </p>
-
-</div>
-</div>
 <a id="a6d94e9e8483bf03c6aa5d786fb2f948e" name="a6d94e9e8483bf03c6aa5d786fb2f948e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d94e9e8483bf03c6aa5d786fb2f948e">&#9670;&#160;</a></span>removeEntityFromScene()</h2>
 
@@ -635,109 +435,9 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a7faff47f5c1b1ebc986f768c9b9732ec" name="a7faff47f5c1b1ebc986f768c9b9732ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7faff47f5c1b1ebc986f768c9b9732ec">&#9670;&#160;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Scene::update </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual function for scene-specific update logic. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph.png" border="0" usemap="#astructScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph" alt=""/></div>
-<map name="astructScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph" id="astructScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph">
-<area shape="rect" title="Pure virtual function for scene&#45;specific update logic." alt="" coords="263,5,376,33"/>
-<area shape="rect" href="structSceneManager.html#a66eb8582ca7e36bc1ad1ffe4fef7e983" title="Calls the update method on the current active scene(s)." alt="" coords="5,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="247,22,215,22,215,16,247,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a788a34d3985920dc587460a19ccf2733" name="a788a34d3985920dc587460a19ccf2733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a788a34d3985920dc587460a19ccf2733">&#9670;&#160;</a></span>buildIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Scene::buildIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The index of the scene for sequential loading. </p>
-
-</div>
-</div>
-<a id="ae69969ad40d0f10a8d7a7d0fc201ab9d" name="ae69969ad40d0f10a8d7a7d0fc201ab9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69969ad40d0f10a8d7a7d0fc201ab9d">&#9670;&#160;</a></span>layer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Scene::layer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The rendering layer, for handling multiple active scenes (e.g., UI panels). </p>
-
-</div>
-</div>
-<a id="a9835f4115f9424c614b2e5a4ba421713" name="a9835f4115f9424c614b2e5a4ba421713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9835f4115f9424c614b2e5a4ba421713">&#9670;&#160;</a></span>mouseButtonPressed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scene::mouseButtonPressed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a44b2d6bffa153dda02f026f8533ceb08" name="a44b2d6bffa153dda02f026f8533ceb08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44b2d6bffa153dda02f026f8533ceb08">&#9670;&#160;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Scene::name</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The unique name of the scene. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/<a class="el" href="Scene_8h_source.html">Scene.h</a></li>
-<li>src/<a class="el" href="Scene_8cpp.html">Scene.cpp</a></li>
+<li>src/<b>Scene.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

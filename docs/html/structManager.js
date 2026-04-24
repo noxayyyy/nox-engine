@@ -1,6 +1,5 @@
 var structManager =
 [
-    [ "Manager", "structManager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b", null ],
     [ "addEntity", "structManager.html#a47e037085d72bac9204b47734b3aae3c", null ],
     [ "addToGroup", "structManager.html#a68fd701c4f4a0c4126f30fb0eb46809d", null ],
     [ "destroyAll", "structManager.html#aa6fcc1945934b4c4cf7c5f0e308d3709", null ],

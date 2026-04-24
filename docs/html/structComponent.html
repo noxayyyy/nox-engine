@@ -169,45 +169,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
 <tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9aa4348314d981f05f67397ad2f872" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
-<tr class="separator:a2e9aa4348314d981f05f67397ad2f872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
-<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
+<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a id="a6acb3f00c9d114d961c8763ede390d2c" name="a6acb3f00c9d114d961c8763ede390d2c"></a>
+<a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component. <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for all components in the ECS. </p>
 <p>Components contain data and logic that can be attached to entities. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2e9aa4348314d981f05f67397ad2f872" name="a2e9aa4348314d981f05f67397ad2f872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e9aa4348314d981f05f67397ad2f872">&#9670;&#160;</a></span>~Component()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Component::~Component </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2fc563e2f7e0c20902fc4f9d5e69e02a" name="a2fc563e2f7e0c20902fc4f9d5e69e02a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fc563e2f7e0c20902fc4f9d5e69e02a">&#9670;&#160;</a></span>draw()</h2>
 
@@ -321,23 +294,6 @@ Public Attributes</h2></td></tr>
 <p>Called once per frame. Contains the component's main logic. </p>
 
 <p>Reimplemented in <a class="el" href="structAnimator.html#a59b9903253d8ce084048f7600e956735">Animator</a>, <a class="el" href="structButton.html#abda97f1ae8e081da3dbd0b77a27cad9d">Button</a>, <a class="el" href="structCollider.html#aec6345e2c307d0a680360352f35e1779">Collider</a>, <a class="el" href="structController.html#a612e598a359e9327b6bb625c7b377ee7">Controller</a>, <a class="el" href="structFPS.html#a2eb4adf219fe41837ef4e48ff4ada160">FPS</a>, <a class="el" href="structMouseTracker.html#afd5dfe7e64afed79934b732654c5bff0">MouseTracker</a>, <a class="el" href="structPoints.html#adad983d6f230a1e9ccb71a2dd87d1516">Points</a>, <a class="el" href="structSprites.html#ad357d4d5deb0293597ad6a7953afb434">Sprites</a>, <a class="el" href="structText.html#aec022b3d70204a615b0d107975dfb518">Text</a>, and <a class="el" href="structTransform.html#a95f43abca9677142b734c1536bf1b886">Transform</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6acb3f00c9d114d961c8763ede390d2c" name="a6acb3f00c9d114d961c8763ede390d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6acb3f00c9d114d961c8763ede390d2c">&#9670;&#160;</a></span>entity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structEntity.html">Entity</a>* Component::entity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pointer to the entity that owns this component. </p>
 
 </div>
 </div>

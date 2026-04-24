@@ -11,8 +11,7 @@ Stores an entity\textquotesingle{}s position, velocity, scale, and rotation.
 
 
 
-Inheritance diagram for Transform\+:
-\nopagebreak
+Inheritance diagram for Transform\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Transform\+:
 \end{figure}
 
 
-Collaboration diagram for Transform\+:
-\nopagebreak
+Collaboration diagram for Transform\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,22 +30,25 @@ Collaboration diagram for Transform\+:
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}} \{ \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f}{NINETY}}
-, \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1}{ONE\+\_\+\+EIGHTY}}
+\Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6}\label{structTransform_ada80898bd2a05f81a7a1b503c82737f6} 
+enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}} \{ {\bfseries NINETY}
+, {\bfseries ONE\+\_\+\+EIGHTY}
  \}
 \begin{DoxyCompactList}\small\item\em Enumeration for common rotation angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\Hypertarget{structTransform_a9fb589a9cfea2025a8619666cbb76019}\label{structTransform_a9fb589a9cfea2025a8619666cbb76019} 
+{\bfseries Transform} (float x, float y)
 \item 
-\mbox{\hyperlink{structTransform_a9fb589a9cfea2025a8619666cbb76019}{Transform}} (float x, float y)
+\Hypertarget{structTransform_ac16c75e613acd88b5df26e8f8a36044c}\label{structTransform_ac16c75e613acd88b5df26e8f8a36044c} 
+{\bfseries Transform} (float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}})
 \item 
-\mbox{\hyperlink{structTransform_ac16c75e613acd88b5df26e8f8a36044c}{Transform}} (float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}})
+\Hypertarget{structTransform_aa5680fe9234b4d5870e849b5fce8f25e}\label{structTransform_aa5680fe9234b4d5870e849b5fce8f25e} 
+{\bfseries Transform} (float x, float y, int w, int h, float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}})
 \item 
-\mbox{\hyperlink{structTransform_aa5680fe9234b4d5870e849b5fce8f25e}{Transform}} (float x, float y, int w, int h, float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}})
-\item 
-\mbox{\hyperlink{structTransform_a68861099b410a13f71bda5db1ab9829d}{Transform}} (\mbox{\hyperlink{structVector2D}{Vector2D}} vec)
+\Hypertarget{structTransform_a68861099b410a13f71bda5db1ab9829d}\label{structTransform_a68861099b410a13f71bda5db1ab9829d} 
+{\bfseries Transform} (\mbox{\hyperlink{structVector2D}{Vector2D}} vec)
 \item 
 void \mbox{\hyperlink{structTransform_a9f67e6f75148a2b7da067961e6d46902}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the transform by setting its position. \end{DoxyCompactList}\item 
@@ -63,32 +64,38 @@ void \mbox{\hyperlink{structTransform_af8dca674026ec3d3140314995d5b7c53}{set\+An
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structVector2D}{Vector2D}} \mbox{\hyperlink{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556}{init\+Pos}}
+\Hypertarget{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556}\label{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556} 
+\mbox{\hyperlink{structVector2D}{Vector2D}} {\bfseries init\+Pos}
 \item 
-\mbox{\hyperlink{structVector2D}{Vector2D}} \mbox{\hyperlink{structTransform_a184506ba90094bd001616750a8efeaaa}{pos}}
+\Hypertarget{structTransform_a184506ba90094bd001616750a8efeaaa}\label{structTransform_a184506ba90094bd001616750a8efeaaa} 
+\mbox{\hyperlink{structVector2D}{Vector2D}} {\bfseries pos}
 \item 
-\mbox{\hyperlink{structVector2D}{Vector2D}} \mbox{\hyperlink{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}{vel}}
+\Hypertarget{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}\label{structTransform_adc6af70bf7caaf0ef883e196ab42fb53} 
+\mbox{\hyperlink{structVector2D}{Vector2D}} {\bfseries vel}
 \begin{DoxyCompactList}\small\item\em Initial position, current position, and velocity vectors. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structTransform_aed2cde92529cda428813f16a7054d7a0}{height}} = 50
+\Hypertarget{structTransform_aed2cde92529cda428813f16a7054d7a0}\label{structTransform_aed2cde92529cda428813f16a7054d7a0} 
+int {\bfseries height} = 50
 \begin{DoxyCompactList}\small\item\em The height of the entity\textquotesingle{}s bounding box. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structTransform_ac161d5afc0737803f9cd4abd16c4697a}{width}} = 50
+\Hypertarget{structTransform_ac161d5afc0737803f9cd4abd16c4697a}\label{structTransform_ac161d5afc0737803f9cd4abd16c4697a} 
+int {\bfseries width} = 50
 \begin{DoxyCompactList}\small\item\em The width of the entity\textquotesingle{}s bounding box. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}} = 0.\+6f
+\Hypertarget{structTransform_a631712eb230305f58d164086d492701b}\label{structTransform_a631712eb230305f58d164086d492701b} 
+float {\bfseries scale} = 0.\+6f
 \begin{DoxyCompactList}\small\item\em The rendering scale. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{structTransform_a25a3777aad28148d20cceb0f1900cec4}{speed}} = 240.\+0f
+\Hypertarget{structTransform_a25a3777aad28148d20cceb0f1900cec4}\label{structTransform_a25a3777aad28148d20cceb0f1900cec4} 
+float {\bfseries speed} = 240.\+0f
 \begin{DoxyCompactList}\small\item\em The movement speed multiplier. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}}
+\Hypertarget{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}\label{structTransform_a8fed22a9d295cf0f27facf4cbe99724b} 
+int {\bfseries angle}
 \begin{DoxyCompactList}\small\item\em The rotation angle in degrees. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -96,62 +103,6 @@ int \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}}
 Stores an entity\textquotesingle{}s position, velocity, scale, and rotation. 
 
 This is a fundamental component for any entity that exists in the game world. Its position is updated based on its velocity each frame. 
-
-\doxysubsection{Member Enumeration Documentation}
-\Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6}\index{Transform@{Transform}!Rotations@{Rotations}}
-\index{Rotations@{Rotations}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Rotations}{Rotations}}
-{\footnotesize\ttfamily \label{structTransform_ada80898bd2a05f81a7a1b503c82737f6} 
-enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Transform\+::\+Rotations}}}
-
-
-
-Enumeration for common rotation angles. 
-
-\begin{DoxyEnumFields}[2]{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{NINETY@{NINETY}!Transform@{Transform}}\index{Transform@{Transform}!NINETY@{NINETY}}}\Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f}\label{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f} 
-NINETY&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_EIGHTY@{ONE\_EIGHTY}!Transform@{Transform}}\index{Transform@{Transform}!ONE\_EIGHTY@{ONE\_EIGHTY}}}\Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1}\label{structTransform_ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1} 
-ONE\+\_\+\+EIGHTY&\\
-\hline
-
-\end{DoxyEnumFields}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structTransform_aa08ca4266efabc768973cdeea51945ab}\index{Transform@{Transform}!Transform@{Transform}}
-\index{Transform@{Transform}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
-{\footnotesize\ttfamily \label{structTransform_aa08ca4266efabc768973cdeea51945ab} 
-Transform\+::\+Transform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structTransform_a9fb589a9cfea2025a8619666cbb76019}\index{Transform@{Transform}!Transform@{Transform}}
-\index{Transform@{Transform}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
-{\footnotesize\ttfamily \label{structTransform_a9fb589a9cfea2025a8619666cbb76019} 
-Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structTransform_ac16c75e613acd88b5df26e8f8a36044c}\index{Transform@{Transform}!Transform@{Transform}}
-\index{Transform@{Transform}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
-{\footnotesize\ttfamily \label{structTransform_ac16c75e613acd88b5df26e8f8a36044c} 
-Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{float}]{scale}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structTransform_aa5680fe9234b4d5870e849b5fce8f25e}\index{Transform@{Transform}!Transform@{Transform}}
-\index{Transform@{Transform}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
-{\footnotesize\ttfamily \label{structTransform_aa5680fe9234b4d5870e849b5fce8f25e} 
-Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structTransform_a68861099b410a13f71bda5db1ab9829d}\index{Transform@{Transform}!Transform@{Transform}}
-\index{Transform@{Transform}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
-{\footnotesize\ttfamily \label{structTransform_a68861099b410a13f71bda5db1ab9829d} 
-Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVector2D}{Vector2D}}}]{vec}{}\end{DoxyParamCaption})}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structTransform_a9f67e6f75148a2b7da067961e6d46902}\index{Transform@{Transform}!init@{init}}
@@ -230,82 +181,7 @@ Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728
 
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}\index{Transform@{Transform}!angle@{angle}}
-\index{angle@{angle}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{angle}{angle}}
-{\footnotesize\ttfamily \label{structTransform_a8fed22a9d295cf0f27facf4cbe99724b} 
-int Transform\+::angle}
-
-
-
-The rotation angle in degrees. 
-
-\Hypertarget{structTransform_aed2cde92529cda428813f16a7054d7a0}\index{Transform@{Transform}!height@{height}}
-\index{height@{height}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{height}{height}}
-{\footnotesize\ttfamily \label{structTransform_aed2cde92529cda428813f16a7054d7a0} 
-int Transform\+::height = 50}
-
-
-
-The height of the entity\textquotesingle{}s bounding box. 
-
-\Hypertarget{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556}\index{Transform@{Transform}!initPos@{initPos}}
-\index{initPos@{initPos}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{initPos}{initPos}}
-{\footnotesize\ttfamily \label{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556} 
-\mbox{\hyperlink{structVector2D}{Vector2D}} Transform\+::init\+Pos}
-
-\Hypertarget{structTransform_a184506ba90094bd001616750a8efeaaa}\index{Transform@{Transform}!pos@{pos}}
-\index{pos@{pos}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{pos}{pos}}
-{\footnotesize\ttfamily \label{structTransform_a184506ba90094bd001616750a8efeaaa} 
-\mbox{\hyperlink{structVector2D}{Vector2D}} Transform\+::pos}
-
-\Hypertarget{structTransform_a631712eb230305f58d164086d492701b}\index{Transform@{Transform}!scale@{scale}}
-\index{scale@{scale}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{scale}{scale}}
-{\footnotesize\ttfamily \label{structTransform_a631712eb230305f58d164086d492701b} 
-float Transform\+::scale = 0.\+6f}
-
-
-
-The rendering scale. 
-
-\Hypertarget{structTransform_a25a3777aad28148d20cceb0f1900cec4}\index{Transform@{Transform}!speed@{speed}}
-\index{speed@{speed}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{speed}{speed}}
-{\footnotesize\ttfamily \label{structTransform_a25a3777aad28148d20cceb0f1900cec4} 
-float Transform\+::speed = 240.\+0f}
-
-
-
-The movement speed multiplier. 
-
-\Hypertarget{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}\index{Transform@{Transform}!vel@{vel}}
-\index{vel@{vel}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{vel}{vel}}
-{\footnotesize\ttfamily \label{structTransform_adc6af70bf7caaf0ef883e196ab42fb53} 
-\mbox{\hyperlink{structVector2D}{Vector2D}} Transform\+::vel}
-
-
-
-Initial position, current position, and velocity vectors. 
-
-\Hypertarget{structTransform_ac161d5afc0737803f9cd4abd16c4697a}\index{Transform@{Transform}!width@{width}}
-\index{width@{width}!Transform@{Transform}}
-\doxysubsubsection{\texorpdfstring{width}{width}}
-{\footnotesize\ttfamily \label{structTransform_ac161d5afc0737803f9cd4abd16c4697a} 
-int Transform\+::width = 50}
-
-
-
-The width of the entity\textquotesingle{}s bounding box. 
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Transform_8h}{Transform.\+h}}\item 
-src/\mbox{\hyperlink{Transform_8cpp}{Transform.\+cpp}}\end{DoxyCompactItemize}
+src/Transform.\+cpp\end{DoxyCompactItemize}

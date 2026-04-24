@@ -9,6 +9,5 @@ var searchData=
   ['addgroup_6',['addGroup',['../structEntity.html#aaee4506fc67f002244c8ad2adc92417c',1,'Entity']]],
   ['addscene_7',['addScene',['../structSceneManager.html#a8b195be621119bb20fd7f39f84d182ba',1,'SceneManager']]],
   ['addtogroup_8',['addToGroup',['../structManager.html#a68fd701c4f4a0c4126f30fb0eb46809d',1,'Manager']]],
-  ['animation_9',['Animation',['../structAnimator_1_1Animation.html#ac20e3219d81e062dad817e2895b4a5f2',1,'Animator::Animation::Animation()'],['../structAnimator_1_1Animation.html#ab56e862376a0f56cf99544761475d31a',1,'Animator::Animation::Animation(const char *id)'],['../structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc',1,'Animator::Animation::Animation(const char *id, SDL_Point frameSize, const char *texPath, int speed=100, bool isLooping=true, bool isReversible=false)']]],
-  ['animator_10',['Animator',['../structAnimator.html#a701eeb9283612be2027425efb06bbff7',1,'Animator']]]
+  ['animation_9',['Animation',['../structAnimator_1_1Animation.html#ab56e862376a0f56cf99544761475d31a',1,'Animator::Animation::Animation(const char *id)'],['../structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc',1,'Animator::Animation::Animation(const char *id, SDL_Point frameSize, const char *texPath, int speed=100, bool isLooping=true, bool isReversible=false)']]]
 ];

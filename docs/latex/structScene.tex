@@ -11,8 +11,7 @@ An abstract class representing a distinct part of the game, like a main menu or 
 
 
 
-Collaboration diagram for Scene\+:
-\nopagebreak
+Collaboration diagram for Scene\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -24,19 +23,22 @@ Collaboration diagram for Scene\+:
 \item 
 \mbox{\hyperlink{structScene_a56b1a969dde64f1a33b34cd136ceaa49}{Scene}} (std\+::string \mbox{\hyperlink{structScene_a44b2d6bffa153dda02f026f8533ceb08}{name}}, int \mbox{\hyperlink{structScene_a788a34d3985920dc587460a19ccf2733}{build\+Index}}, bool is\+Panel, bool is\+Locking, int \mbox{\hyperlink{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}{layer}})
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structScene}{Scene}. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}{\texorpdfstring{$\sim$}{\string~}\+Scene}} ()
-\item 
-virtual void \mbox{\hyperlink{structScene_a7edd8111e127173d2d06b571a177d7b1}{init}} ()=0
+\Hypertarget{structScene_a7edd8111e127173d2d06b571a177d7b1}\label{structScene_a7edd8111e127173d2d06b571a177d7b1} 
+virtual void {\bfseries init} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function for scene-\/specific initialization logic. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{structScene_a7faff47f5c1b1ebc986f768c9b9732ec}{update}} ()=0
+\Hypertarget{structScene_a7faff47f5c1b1ebc986f768c9b9732ec}\label{structScene_a7faff47f5c1b1ebc986f768c9b9732ec} 
+virtual void {\bfseries update} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function for scene-\/specific update logic. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{structScene_a24ed31537c3c9c40f708e68295e2f51e}{reload}} ()=0
+\Hypertarget{structScene_a24ed31537c3c9c40f708e68295e2f51e}\label{structScene_a24ed31537c3c9c40f708e68295e2f51e} 
+virtual void {\bfseries reload} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to reset the scene to its initial state. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c}{reload\+With\+State}} ()=0
+\Hypertarget{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c}\label{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c} 
+virtual void {\bfseries reload\+With\+State} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to reload the scene while preserving some state (e.\+g., UI state). \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structScene_a01a5fa609184cdc9470f8ccaf6b34dcf}{handle\+Events}} (SDL\+\_\+\+Event \&event)=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function to handle scene-\/specific SDL events. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{structScene_a789c16961aa1e316b2a4a05b95187546}{draw}} ()=0
+\Hypertarget{structScene_a789c16961aa1e316b2a4a05b95187546}\label{structScene_a789c16961aa1e316b2a4a05b95187546} 
+virtual void {\bfseries draw} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual function for scene-\/specific drawing logic. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structScene_aaa7336b94069dd6a90968bf9f513022f}{add\+Entity\+To\+Scene}} (\mbox{\hyperlink{structEntity}{Entity}} \&entity)
 \begin{DoxyCompactList}\small\item\em Registers an entity as belonging to this scene. \end{DoxyCompactList}\item 
@@ -44,11 +46,14 @@ void \mbox{\hyperlink{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e}{remove\+Ent
 \begin{DoxyCompactList}\small\item\em Removes an entity from this scene\textquotesingle{}s management. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structScene_a83e3e3fa5c0d62e01620acf29c7db751}{exists\+In\+Scene}} (\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
 \begin{DoxyCompactList}\small\item\em Checks if a specific entity is part of this scene. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structScene_a9a6078cc3fc29516f5409544ebd78c39}{clear\+Scene}} ()
+\Hypertarget{structScene_a9a6078cc3fc29516f5409544ebd78c39}\label{structScene_a9a6078cc3fc29516f5409544ebd78c39} 
+void {\bfseries clear\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Removes all entities from the scene. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structScene_aa3e52280b56676471e6fa85692ae8abe}{enable\+Scene}} ()
+\Hypertarget{structScene_aa3e52280b56676471e6fa85692ae8abe}\label{structScene_aa3e52280b56676471e6fa85692ae8abe} 
+void {\bfseries enable\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Activates all entities within the scene. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structScene_a3f612fa63b769ff431831701f1a36eb6}{disable\+Scene}} ()
+\Hypertarget{structScene_a3f612fa63b769ff431831701f1a36eb6}\label{structScene_a3f612fa63b769ff431831701f1a36eb6} 
+void {\bfseries disable\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Deactivates all entities within the scene. \end{DoxyCompactList}\item 
 const bool \& \mbox{\hyperlink{structScene_afd4007289e6a1fab14313ec559cb3db8}{get\+Is\+Panel}} () const
 \begin{DoxyCompactList}\small\item\em Gets whether the scene is a UI panel. \end{DoxyCompactList}\item 
@@ -57,13 +62,17 @@ const bool \& \mbox{\hyperlink{structScene_a6b6e6f58bf56b8a2f563687927e84ca3}{ge
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structScene_a44b2d6bffa153dda02f026f8533ceb08}{name}}
+\Hypertarget{structScene_a44b2d6bffa153dda02f026f8533ceb08}\label{structScene_a44b2d6bffa153dda02f026f8533ceb08} 
+std\+::string {\bfseries name}
 \begin{DoxyCompactList}\small\item\em The unique name of the scene. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structScene_a788a34d3985920dc587460a19ccf2733}{build\+Index}}
+\Hypertarget{structScene_a788a34d3985920dc587460a19ccf2733}\label{structScene_a788a34d3985920dc587460a19ccf2733} 
+int {\bfseries build\+Index}
 \begin{DoxyCompactList}\small\item\em The index of the scene for sequential loading. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}{layer}}
+\Hypertarget{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}\label{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d} 
+int {\bfseries layer}
 \begin{DoxyCompactList}\small\item\em The rendering layer, for handling multiple active scenes (e.\+g., UI panels). \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{structScene_a9835f4115f9424c614b2e5a4ba421713}{mouse\+Button\+Pressed}}
+\Hypertarget{structScene_a9835f4115f9424c614b2e5a4ba421713}\label{structScene_a9835f4115f9424c614b2e5a4ba421713} 
+bool {\bfseries mouse\+Button\+Pressed}
 \end{DoxyCompactItemize}
 
 
@@ -96,12 +105,6 @@ Constructs a \doxylink{structScene}{Scene}.
 {\em layer} & The rendering and update layer. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
-\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
-{\footnotesize\ttfamily \label{structScene_aa0a5be58e2ee2d1fdafc5fb46b5e661e} 
-virtual Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -120,62 +123,6 @@ Registers an entity as belonging to this scene.
 {\em entity} & The entity to add. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structScene_a9a6078cc3fc29516f5409544ebd78c39}\index{Scene@{Scene}!clearScene@{clearScene}}
-\index{clearScene@{clearScene}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{clearScene()}{clearScene()}}
-{\footnotesize\ttfamily \label{structScene_a9a6078cc3fc29516f5409544ebd78c39} 
-void Scene\+::clear\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Removes all entities from the scene. 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=336pt]{structScene_a9a6078cc3fc29516f5409544ebd78c39_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{structScene_a3f612fa63b769ff431831701f1a36eb6}\index{Scene@{Scene}!disableScene@{disableScene}}
-\index{disableScene@{disableScene}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{disableScene()}{disableScene()}}
-{\footnotesize\ttfamily \label{structScene_a3f612fa63b769ff431831701f1a36eb6} 
-void Scene\+::disable\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Deactivates all entities within the scene. 
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=336pt]{structScene_a3f612fa63b769ff431831701f1a36eb6_icgraph}
-\end{center}
-\end{figure}
-\Hypertarget{structScene_a789c16961aa1e316b2a4a05b95187546}\index{Scene@{Scene}!draw@{draw}}
-\index{draw@{draw}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily \label{structScene_a789c16961aa1e316b2a4a05b95187546} 
-virtual void Scene\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Pure virtual function for scene-\/specific drawing logic. 
-
-\Hypertarget{structScene_aa3e52280b56676471e6fa85692ae8abe}\index{Scene@{Scene}!enableScene@{enableScene}}
-\index{enableScene@{enableScene}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{enableScene()}{enableScene()}}
-{\footnotesize\ttfamily \label{structScene_aa3e52280b56676471e6fa85692ae8abe} 
-void Scene\+::enable\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Activates all entities within the scene. 
-
 \Hypertarget{structScene_a83e3e3fa5c0d62e01620acf29c7db751}\index{Scene@{Scene}!existsInScene@{existsInScene}}
 \index{existsInScene@{existsInScene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{existsInScene()}{existsInScene()}}
@@ -194,8 +141,7 @@ Checks if a specific entity is part of this scene.
 \begin{DoxyReturn}{Returns}
 True if the entity is in the scene, false otherwise. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -228,8 +174,7 @@ Gets whether the scene is a UI panel.
 \begin{DoxyReturn}{Returns}
 True if the scene is a panel. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -251,36 +196,6 @@ Pure virtual function to handle scene-\/specific SDL events.
 {\em event} & The SDL\+\_\+\+Event to process. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structScene_a7edd8111e127173d2d06b571a177d7b1}\index{Scene@{Scene}!init@{init}}
-\index{init@{init}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily \label{structScene_a7edd8111e127173d2d06b571a177d7b1} 
-virtual void Scene\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Pure virtual function for scene-\/specific initialization logic. 
-
-\Hypertarget{structScene_a24ed31537c3c9c40f708e68295e2f51e}\index{Scene@{Scene}!reload@{reload}}
-\index{reload@{reload}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
-{\footnotesize\ttfamily \label{structScene_a24ed31537c3c9c40f708e68295e2f51e} 
-virtual void Scene\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Pure virtual function to reset the scene to its initial state. 
-
-\Hypertarget{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c}\index{Scene@{Scene}!reloadWithState@{reloadWithState}}
-\index{reloadWithState@{reloadWithState}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{reloadWithState()}{reloadWithState()}}
-{\footnotesize\ttfamily \label{structScene_a94fd9954ef4f4562e3c29e69f6f27e8c} 
-virtual void Scene\+::reload\+With\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Pure virtual function to reload the scene while preserving some state (e.\+g., UI state). 
-
 \Hypertarget{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e}\index{Scene@{Scene}!removeEntityFromScene@{removeEntityFromScene}}
 \index{removeEntityFromScene@{removeEntityFromScene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{removeEntityFromScene()}{removeEntityFromScene()}}
@@ -296,74 +211,16 @@ Removes an entity from this scene\textquotesingle{}s management.
 {\em entity} & The entity to remove. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structScene_a6d94e9e8483bf03c6aa5d786fb2f948e_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structScene_a7faff47f5c1b1ebc986f768c9b9732ec}\index{Scene@{Scene}!update@{update}}
-\index{update@{update}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{structScene_a7faff47f5c1b1ebc986f768c9b9732ec} 
-virtual void Scene\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Pure virtual function for scene-\/specific update logic. 
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structScene_a7faff47f5c1b1ebc986f768c9b9732ec_icgraph}
-\end{center}
-\end{figure}
-
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structScene_a788a34d3985920dc587460a19ccf2733}\index{Scene@{Scene}!buildIndex@{buildIndex}}
-\index{buildIndex@{buildIndex}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{buildIndex}{buildIndex}}
-{\footnotesize\ttfamily \label{structScene_a788a34d3985920dc587460a19ccf2733} 
-int Scene\+::build\+Index}
-
-
-
-The index of the scene for sequential loading. 
-
-\Hypertarget{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d}\index{Scene@{Scene}!layer@{layer}}
-\index{layer@{layer}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{layer}{layer}}
-{\footnotesize\ttfamily \label{structScene_ae69969ad40d0f10a8d7a7d0fc201ab9d} 
-int Scene\+::layer}
-
-
-
-The rendering layer, for handling multiple active scenes (e.\+g., UI panels). 
-
-\Hypertarget{structScene_a9835f4115f9424c614b2e5a4ba421713}\index{Scene@{Scene}!mouseButtonPressed@{mouseButtonPressed}}
-\index{mouseButtonPressed@{mouseButtonPressed}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{mouseButtonPressed}{mouseButtonPressed}}
-{\footnotesize\ttfamily \label{structScene_a9835f4115f9424c614b2e5a4ba421713} 
-bool Scene\+::mouse\+Button\+Pressed}
-
-\Hypertarget{structScene_a44b2d6bffa153dda02f026f8533ceb08}\index{Scene@{Scene}!name@{name}}
-\index{name@{name}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{name}{name}}
-{\footnotesize\ttfamily \label{structScene_a44b2d6bffa153dda02f026f8533ceb08} 
-std\+::string Scene\+::name}
-
-
-
-The unique name of the scene. 
-
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Scene_8h}{Scene.\+h}}\item 
-src/\mbox{\hyperlink{Scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}
+src/Scene.\+cpp\end{DoxyCompactItemize}

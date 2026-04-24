@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['id_0',['id',['../structAnimator_1_1Animation.html#acd06cfe73803393f46c8edeca6230579',1,'Animator::Animation']]],
-  ['initpos_1',['initPos',['../structTransform.html#a28c1e1d3ed9bf5ae2ff7877f52f2d556',1,'Transform']]]
+  ['id_0',['id',['../structAnimator_1_1Animation.html#acd06cfe73803393f46c8edeca6230579',1,'Animator::Animation']]]
 ];

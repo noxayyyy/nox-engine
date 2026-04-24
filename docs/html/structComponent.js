@@ -1,6 +1,5 @@
 var structComponent =
 [
-    [ "~Component", "structComponent.html#a2e9aa4348314d981f05f67397ad2f872", null ],
     [ "draw", "structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a", null ],
     [ "init", "structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f", null ],
     [ "reload", "structComponent.html#abd8b82630598fe8a13318ecc13a5c159", null ],

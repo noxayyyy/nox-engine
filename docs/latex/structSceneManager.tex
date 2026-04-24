@@ -11,8 +11,7 @@ Manages the lifecycle of all scenes in the game.
 
 
 
-Collaboration diagram for Scene\+Manager\+:
-\nopagebreak
+Collaboration diagram for Scene\+Manager\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,17 +21,15 @@ Collaboration diagram for Scene\+Manager\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{Scene\+Manager}} ()
-\item 
-\mbox{\hyperlink{structSceneManager_a2bb376a85d29e85f47753e26c7539229}{\texorpdfstring{$\sim$}{\string~}\+Scene\+Manager}} ()
-\item 
 void \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{load\+Scene}} (std\+::string id)
 \begin{DoxyCompactList}\small\item\em Loads a scene by its string identifier. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45}{load\+Scene}} (int build\+Index)
 \begin{DoxyCompactList}\small\item\em Loads a scene by its build index. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}{load\+Next\+Scene}} ()
+\Hypertarget{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}\label{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c} 
+void {\bfseries load\+Next\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Loads the scene with the next sequential build index. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}{load\+Prev\+Scene}} ()
+\Hypertarget{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}\label{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664} 
+void {\bfseries load\+Prev\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Loads the scene with the previous sequential build index. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}{get\+Current\+Scene}} ()
 \begin{DoxyCompactList}\small\item\em Gets a pointer to the currently active primary scene. \end{DoxyCompactList}\item 
@@ -40,13 +37,16 @@ void \mbox{\hyperlink{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}{add\
 \begin{DoxyCompactList}\small\item\em Adds a scene to the manager\textquotesingle{}s collection. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}{remove\+Bg\+Scene}} (int layer)
 \begin{DoxyCompactList}\small\item\em Removes a background (panel) scene from a specific layer. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}{update\+Scene}} ()
+\Hypertarget{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}\label{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983} 
+void {\bfseries update\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Calls the update method on the current active scene(s). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15}{call\+Scene\+Events}} (SDL\+\_\+\+Event \&event)
 \begin{DoxyCompactList}\small\item\em Forwards SDL events to the current active scene(s). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}{draw\+Scene}} ()
+\Hypertarget{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}\label{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752} 
+void {\bfseries draw\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Calls the draw method on the current active scene(s). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}{reload\+Scene}} ()
+\Hypertarget{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}\label{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7} 
+void {\bfseries reload\+Scene} ()
 \begin{DoxyCompactList}\small\item\em Calls the reload method on the current active scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -54,21 +54,6 @@ void \mbox{\hyperlink{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}{relo
 Manages the lifecycle of all scenes in the game. 
 
 Handles loading, unloading, and routing updates and draw calls to the active scene(s). 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structSceneManager_a52085e6737c23b491c228e86781af808}\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
-\index{SceneManager@{SceneManager}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}}
-{\footnotesize\ttfamily \label{structSceneManager_a52085e6737c23b491c228e86781af808} 
-Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{structSceneManager_a2bb376a85d29e85f47753e26c7539229}\index{SceneManager@{SceneManager}!````~SceneManager@{\texorpdfstring{$\sim$}{\string~}SceneManager}}
-\index{````~SceneManager@{\texorpdfstring{$\sim$}{\string~}SceneManager}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SceneManager()}{\string~SceneManager()}}
-{\footnotesize\ttfamily \label{structSceneManager_a2bb376a85d29e85f47753e26c7539229} 
-Scene\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Scene\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}\index{SceneManager@{SceneManager}!addScene@{addScene}}
@@ -101,16 +86,6 @@ Forwards SDL events to the current active scene(s).
 {\em event} & The SDL\+\_\+\+Event to process. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}\index{SceneManager@{SceneManager}!drawScene@{drawScene}}
-\index{drawScene@{drawScene}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{drawScene()}{drawScene()}}
-{\footnotesize\ttfamily \label{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752} 
-void Scene\+Manager\+::draw\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the draw method on the current active scene(s). 
-
 \Hypertarget{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}\index{SceneManager@{SceneManager}!getCurrentScene@{getCurrentScene}}
 \index{getCurrentScene@{getCurrentScene}!SceneManager@{SceneManager}}
 \doxysubsubsection{\texorpdfstring{getCurrentScene()}{getCurrentScene()}}
@@ -124,42 +99,6 @@ Gets a pointer to the currently active primary scene.
 \begin{DoxyReturn}{Returns}
 A pointer to the current \doxylink{structScene}{Scene}. 
 \end{DoxyReturn}
-\Hypertarget{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}\index{SceneManager@{SceneManager}!loadNextScene@{loadNextScene}}
-\index{loadNextScene@{loadNextScene}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{loadNextScene()}{loadNextScene()}}
-{\footnotesize\ttfamily \label{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c} 
-void Scene\+Manager\+::load\+Next\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Loads the scene with the next sequential build index. 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c_cgraph}
-\end{center}
-\end{figure}
-\Hypertarget{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}\index{SceneManager@{SceneManager}!loadPrevScene@{loadPrevScene}}
-\index{loadPrevScene@{loadPrevScene}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{loadPrevScene()}{loadPrevScene()}}
-{\footnotesize\ttfamily \label{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664} 
-void Scene\+Manager\+::load\+Prev\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Loads the scene with the previous sequential build index. 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664_cgraph}
-\end{center}
-\end{figure}
 \Hypertarget{structSceneManager_ac4dcda11c1bc1aec408a774a10178d45}\index{SceneManager@{SceneManager}!loadScene@{loadScene}}
 \index{loadScene@{loadScene}!SceneManager@{SceneManager}}
 \doxysubsubsection{\texorpdfstring{loadScene()}{loadScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -175,8 +114,7 @@ Loads a scene by its build index.
 {\em build\+Index} & The index of the scene to load. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -198,32 +136,20 @@ Loads a scene by its string identifier.
 {\em id} & The name of the scene to load. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}\index{SceneManager@{SceneManager}!reloadScene@{reloadScene}}
-\index{reloadScene@{reloadScene}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{reloadScene()}{reloadScene()}}
-{\footnotesize\ttfamily \label{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7} 
-void Scene\+Manager\+::reload\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the reload method on the current active scene. 
-
 \Hypertarget{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}\index{SceneManager@{SceneManager}!removeBgScene@{removeBgScene}}
 \index{removeBgScene@{removeBgScene}!SceneManager@{SceneManager}}
 \doxysubsubsection{\texorpdfstring{removeBgScene()}{removeBgScene()}}
@@ -239,27 +165,9 @@ Removes a background (panel) scene from a specific layer.
 {\em layer} & The layer from which to remove a scene. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}\index{SceneManager@{SceneManager}!updateScene@{updateScene}}
-\index{updateScene@{updateScene}!SceneManager@{SceneManager}}
-\doxysubsubsection{\texorpdfstring{updateScene()}{updateScene()}}
-{\footnotesize\ttfamily \label{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983} 
-void Scene\+Manager\+::update\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Calls the update method on the current active scene(s). 
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983_cgraph}
-\end{center}
-\end{figure}
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{SceneManager_8h}{Scene\+Manager.\+h}}\item 
-src/\mbox{\hyperlink{SceneManager_8cpp}{Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}
+src/Scene\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -150,8 +150,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:addab2525260d7755d1dff0b0eac9ae59" id="r_addab2525260d7755d1dff0b0eac9ae59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addab2525260d7755d1dff0b0eac9ae59">Tile</a> (int x, int y, int w, int h, int id)</td></tr>
 <tr class="memdesc:addab2525260d7755d1dff0b0eac9ae59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structTile.html" title="A component that represents one square in a tilemap.">Tile</a>.  <br /></td></tr>
 <tr class="separator:addab2525260d7755d1dff0b0eac9ae59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98634abbd93fa13d0578d7103202d03d" id="r_a98634abbd93fa13d0578d7103202d03d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98634abbd93fa13d0578d7103202d03d">~Tile</a> ()</td></tr>
-<tr class="separator:a98634abbd93fa13d0578d7103202d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d57b6b85f16bb978f2f4f60b265bf9e" id="r_a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d57b6b85f16bb978f2f4f60b265bf9e">init</a> () override</td></tr>
 <tr class="memdesc:a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the tile by adding <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and Sprite components to its entity.  <br /></td></tr>
 <tr class="separator:a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,29 +166,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
 <tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
-<tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7ff6df2c4a54a1e5f6a630742f8d4014" id="r_a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTransform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff6df2c4a54a1e5f6a630742f8d4014">transform</a></td></tr>
-<tr class="memdesc:a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component.  <br /></td></tr>
+<tr class="memitem:a7ff6df2c4a54a1e5f6a630742f8d4014" id="r_a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="memItemLeft" align="right" valign="top"><a id="a7ff6df2c4a54a1e5f6a630742f8d4014" name="a7ff6df2c4a54a1e5f6a630742f8d4014"></a>
+<a class="el" href="structTransform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>transform</b></td></tr>
+<tr class="memdesc:a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component. <br /></td></tr>
 <tr class="separator:a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad17fd46301d8b9de7da563daa3fec696" id="r_ad17fd46301d8b9de7da563daa3fec696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSprites.html">Sprites</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad17fd46301d8b9de7da563daa3fec696">sprite</a></td></tr>
-<tr class="memdesc:ad17fd46301d8b9de7da563daa3fec696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's Sprite component.  <br /></td></tr>
+<tr class="memitem:ad17fd46301d8b9de7da563daa3fec696" id="r_ad17fd46301d8b9de7da563daa3fec696"><td class="memItemLeft" align="right" valign="top"><a id="ad17fd46301d8b9de7da563daa3fec696" name="ad17fd46301d8b9de7da563daa3fec696"></a>
+<a class="el" href="structSprites.html">Sprites</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sprite</b></td></tr>
+<tr class="memdesc:ad17fd46301d8b9de7da563daa3fec696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's Sprite component. <br /></td></tr>
 <tr class="separator:ad17fd46301d8b9de7da563daa3fec696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5613c963cdbdb8822ec84ecf3a1864" id="r_a5e5613c963cdbdb8822ec84ecf3a1864"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e5613c963cdbdb8822ec84ecf3a1864">tileRect</a></td></tr>
-<tr class="memdesc:a5e5613c963cdbdb8822ec84ecf3a1864"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rectangle defining the tile's position and size.  <br /></td></tr>
+<tr class="memitem:a5e5613c963cdbdb8822ec84ecf3a1864" id="r_a5e5613c963cdbdb8822ec84ecf3a1864"><td class="memItemLeft" align="right" valign="top"><a id="a5e5613c963cdbdb8822ec84ecf3a1864" name="a5e5613c963cdbdb8822ec84ecf3a1864"></a>
+SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>tileRect</b></td></tr>
+<tr class="memdesc:a5e5613c963cdbdb8822ec84ecf3a1864"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rectangle defining the tile's position and size. <br /></td></tr>
 <tr class="separator:a5e5613c963cdbdb8822ec84ecf3a1864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af37b0873afcb54b101422972a2c17e23" id="r_af37b0873afcb54b101422972a2c17e23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af37b0873afcb54b101422972a2c17e23">tileID</a></td></tr>
-<tr class="memdesc:af37b0873afcb54b101422972a2c17e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for the type of tile (e.g., wall, path).  <br /></td></tr>
+<tr class="memitem:af37b0873afcb54b101422972a2c17e23" id="r_af37b0873afcb54b101422972a2c17e23"><td class="memItemLeft" align="right" valign="top"><a id="af37b0873afcb54b101422972a2c17e23" name="af37b0873afcb54b101422972a2c17e23"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tileID</b></td></tr>
+<tr class="memdesc:af37b0873afcb54b101422972a2c17e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for the type of tile (e.g., wall, path). <br /></td></tr>
 <tr class="separator:af37b0873afcb54b101422972a2c17e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add000516854959aea1c6554a832646c3" id="r_add000516854959aea1c6554a832646c3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add000516854959aea1c6554a832646c3">path</a></td></tr>
-<tr class="memdesc:add000516854959aea1c6554a832646c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file path to the tile's texture.  <br /></td></tr>
+<tr class="memitem:add000516854959aea1c6554a832646c3" id="r_add000516854959aea1c6554a832646c3"><td class="memItemLeft" align="right" valign="top"><a id="add000516854959aea1c6554a832646c3" name="add000516854959aea1c6554a832646c3"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+<tr class="memdesc:add000516854959aea1c6554a832646c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file path to the tile's texture. <br /></td></tr>
 <tr class="separator:add000516854959aea1c6554a832646c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
-<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
-<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
+<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component. <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -242,23 +244,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a98634abbd93fa13d0578d7103202d03d" name="a98634abbd93fa13d0578d7103202d03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98634abbd93fa13d0578d7103202d03d">&#9670;&#160;</a></span>~Tile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Tile::~Tile </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -328,90 +313,9 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="add000516854959aea1c6554a832646c3" name="add000516854959aea1c6554a832646c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add000516854959aea1c6554a832646c3">&#9670;&#160;</a></span>path</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* Tile::path</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The file path to the tile's texture. </p>
-
-</div>
-</div>
-<a id="ad17fd46301d8b9de7da563daa3fec696" name="ad17fd46301d8b9de7da563daa3fec696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17fd46301d8b9de7da563daa3fec696">&#9670;&#160;</a></span>sprite</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structSprites.html">Sprites</a>* Tile::sprite</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pointer to the tile's Sprite component. </p>
-
-</div>
-</div>
-<a id="af37b0873afcb54b101422972a2c17e23" name="af37b0873afcb54b101422972a2c17e23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af37b0873afcb54b101422972a2c17e23">&#9670;&#160;</a></span>tileID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Tile::tileID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The identifier for the type of tile (e.g., wall, path). </p>
-
-</div>
-</div>
-<a id="a5e5613c963cdbdb8822ec84ecf3a1864" name="a5e5613c963cdbdb8822ec84ecf3a1864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5613c963cdbdb8822ec84ecf3a1864">&#9670;&#160;</a></span>tileRect</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SDL_Rect Tile::tileRect</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The rectangle defining the tile's position and size. </p>
-
-</div>
-</div>
-<a id="a7ff6df2c4a54a1e5f6a630742f8d4014" name="a7ff6df2c4a54a1e5f6a630742f8d4014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ff6df2c4a54a1e5f6a630742f8d4014">&#9670;&#160;</a></span>transform</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structTransform.html">Transform</a>* Tile::transform</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pointer to the tile's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/<a class="el" href="Tile_8h_source.html">Tile.h</a></li>
-<li>src/<a class="el" href="Tile_8cpp.html">Tile.cpp</a></li>
+<li>src/<b>Tile.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

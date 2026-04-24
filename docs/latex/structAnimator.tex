@@ -11,8 +11,7 @@ Manages sprite sheet animations and transitions between them using a state machi
 
 
 
-Inheritance diagram for Animator\+:
-\nopagebreak
+Inheritance diagram for Animator\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Animator\+:
 \end{figure}
 
 
-Collaboration diagram for Animator\+:
-\nopagebreak
+Collaboration diagram for Animator\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,10 +36,6 @@ struct \mbox{\hyperlink{structAnimator_1_1Edge}{Edge}}
 \begin{DoxyCompactList}\small\item\em Defines a transition edge between two animations in the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{structAnimator_a701eeb9283612be2027425efb06bbff7}{Animator}} ()
-\item 
-\mbox{\hyperlink{structAnimator_a5af4797549f9f466a88657899e17c6ab}{\texorpdfstring{$\sim$}{\string~}\+Animator}} ()
 \item 
 void \mbox{\hyperlink{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the \doxylink{structAnimator}{Animator} component, acquiring the entity\textquotesingle{}s Sprite component. \end{DoxyCompactList}\item 
@@ -59,14 +53,12 @@ std\+::string \mbox{\hyperlink{structAnimator_a05dbf02b17e983baa9984133df8900e9}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
-\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -74,21 +66,6 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 Manages sprite sheet animations and transitions between them using a state machine. 
 
 This component controls an entity\textquotesingle{}s sprite to play different animation sequences. It uses an adjacency matrix to define transitions (Edges) between animations based on conditions. 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structAnimator_a701eeb9283612be2027425efb06bbff7}\index{Animator@{Animator}!Animator@{Animator}}
-\index{Animator@{Animator}!Animator@{Animator}}
-\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}}
-{\footnotesize\ttfamily \label{structAnimator_a701eeb9283612be2027425efb06bbff7} 
-Animator\+::\+Animator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structAnimator_a5af4797549f9f466a88657899e17c6ab}\index{Animator@{Animator}!````~Animator@{\texorpdfstring{$\sim$}{\string~}Animator}}
-\index{````~Animator@{\texorpdfstring{$\sim$}{\string~}Animator}!Animator@{Animator}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Animator()}{\string~Animator()}}
-{\footnotesize\ttfamily \label{structAnimator_a5af4797549f9f466a88657899e17c6ab} 
-Animator\+::\texorpdfstring{$\sim$}{\string~}\+Animator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1}\index{Animator@{Animator}!addAnimation@{addAnimation}}
@@ -193,4 +170,4 @@ Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Animator_8h}{Animator.\+h}}\item 
-src/\mbox{\hyperlink{Animator_8cpp}{Animator.\+cpp}}\end{DoxyCompactItemize}
+src/Animator.\+cpp\end{DoxyCompactItemize}

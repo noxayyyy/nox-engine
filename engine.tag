@@ -18,13 +18,6 @@
     <includes id="Text_8h" name="Text.h" local="yes" import="no" module="no" objc="no">Text.h</includes>
     <includes id="TextureManager_8h" name="TextureManager.h" local="yes" import="no" module="no" objc="no">TextureManager.h</includes>
     <class kind="struct">Button</class>
-    <member kind="variable">
-      <type>Manager</type>
-      <name>manager</name>
-      <anchorfile>Button_8h.html</anchorfile>
-      <anchor>a8b88105956ea929e3c74c65791e92c6f</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>Collider.h</name>
@@ -34,13 +27,6 @@
     <includes id="ECS_8h" name="ECS.h" local="yes" import="no" module="no" objc="no">ECS.h</includes>
     <includes id="Transform_8h" name="Transform.h" local="yes" import="no" module="no" objc="no">Transform.h</includes>
     <class kind="struct">Collider</class>
-    <member kind="variable">
-      <type>std::vector&lt; Entity * &gt;</type>
-      <name>colliders</name>
-      <anchorfile>Collider_8h.html</anchorfile>
-      <anchor>a28f491721073d8d963d518e00b788d0d</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>Components.h</name>
@@ -66,48 +52,6 @@
       <name>GroupLabels</name>
       <anchorfile>Constants_8h.html</anchorfile>
       <anchor>ac691f71a1e791a19456911d213a8143f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MAP</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa4cafa5feda04184537b4d7d346e1e89b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PACMAN</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa6c3e87a9198a1e2acc74b59d20e20ea4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>GHOSTS</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa3d223a154b96a31b5f2de5c61e2b2ed9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>GHOST_BAR</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa4ff7759c640d7a6ec12fb6fdb5cd6788</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PELLETS</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa7f503b6a990026f84f6d17e3310f8429</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>COLLIDERS</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fa99d4a8fe0858416bfc253266896427b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BUTTONS</name>
-      <anchorfile>Constants_8h.html</anchorfile>
-      <anchor>ac691f71a1e791a19456911d213a8143fac0df8ae7b40bd9e09eeffba1facc72dd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -198,41 +142,6 @@
     <class kind="struct">Component</class>
     <class kind="struct">Entity</class>
     <class kind="struct">Manager</class>
-    <member kind="typedef">
-      <type>std::size_t</type>
-      <name>ComponentID</name>
-      <anchorfile>ECS_8h.html</anchorfile>
-      <anchor>a7b5b328beaf99c4cdb76fc8ce54ce91d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::size_t</type>
-      <name>GroupID</name>
-      <anchorfile>ECS_8h.html</anchorfile>
-      <anchor>af05108a2e67a61a15c3f17ae813a3756</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::bitset&lt; MAX_COMPONENTS &gt;</type>
-      <name>ComponentBitSet</name>
-      <anchorfile>ECS_8h.html</anchorfile>
-      <anchor>a3e96c0643a5277139a28fe8168164c93</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::array&lt; std::shared_ptr&lt; Component &gt;, MAX_COMPONENTS &gt;</type>
-      <name>ComponentArray</name>
-      <anchorfile>ECS_8h.html</anchorfile>
-      <anchor>a98e60333e8d716507315fc4d8a435cfe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>std::bitset&lt; MAX_GROUPS &gt;</type>
-      <name>GroupBitSet</name>
-      <anchorfile>ECS_8h.html</anchorfile>
-      <anchor>a8657c60c9c4988cd80991c6dbe6cfcbf</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>ComponentID</type>
       <name>getNewComponentTypeID</name>
@@ -280,13 +189,6 @@
     <filename>SceneManager_8h.html</filename>
     <includes id="Scene_8h" name="Scene.h" local="yes" import="no" module="no" objc="no">Scene.h</includes>
     <class kind="struct">SceneManager</class>
-    <member kind="variable">
-      <type>Manager</type>
-      <name>manager</name>
-      <anchorfile>SceneManager_8h.html</anchorfile>
-      <anchor>a8b88105956ea929e3c74c65791e92c6f</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>Sprites.h</name>
@@ -336,149 +238,9 @@
     <filename>Vector2D_8h.html</filename>
     <class kind="struct">Vector2D</class>
   </compound>
-  <compound kind="file">
-    <name>README.md</name>
-    <path></path>
-    <filename>README_8md.html</filename>
-  </compound>
-  <compound kind="file">
-    <name>Animator.cpp</name>
-    <path>src/</path>
-    <filename>Animator_8cpp.html</filename>
-    <includes id="Animator_8h" name="Animator.h" local="yes" import="no" module="no" objc="no">Animator.h</includes>
-    <includes id="Constants_8h" name="Constants.h" local="yes" import="no" module="no" objc="no">Constants.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Button.cpp</name>
-    <path>src/</path>
-    <filename>Button_8cpp.html</filename>
-    <includes id="Button_8h" name="Button.h" local="yes" import="no" module="no" objc="no">Button.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Collider.cpp</name>
-    <path>src/</path>
-    <filename>Collider_8cpp.html</filename>
-    <includes id="Collider_8h" name="Collider.h" local="yes" import="no" module="no" objc="no">Collider.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Controller.cpp</name>
-    <path>src/</path>
-    <filename>Controller_8cpp.html</filename>
-    <includes id="Controller_8h" name="Controller.h" local="yes" import="no" module="no" objc="no">Controller.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Counters.cpp</name>
-    <path>src/</path>
-    <filename>Counters_8cpp.html</filename>
-    <includes id="Counters_8h" name="Counters.h" local="yes" import="no" module="no" objc="no">Counters.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>ECS.cpp</name>
-    <path>src/</path>
-    <filename>ECS_8cpp.html</filename>
-    <includes id="ECS_8h" name="ECS.h" local="yes" import="no" module="no" objc="no">ECS.h</includes>
-    <includes id="Game_8h" name="Game.h" local="yes" import="no" module="no" objc="no">Game.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>MouseTracker.cpp</name>
-    <path>src/</path>
-    <filename>MouseTracker_8cpp.html</filename>
-    <includes id="MouseTracker_8h" name="MouseTracker.h" local="yes" import="no" module="no" objc="no">MouseTracker.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Scene.cpp</name>
-    <path>src/</path>
-    <filename>Scene_8cpp.html</filename>
-    <includes id="Scene_8h" name="Scene.h" local="yes" import="no" module="no" objc="no">Scene.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>SceneManager.cpp</name>
-    <path>src/</path>
-    <filename>SceneManager_8cpp.html</filename>
-    <includes id="SceneManager_8h" name="SceneManager.h" local="yes" import="no" module="no" objc="no">SceneManager.h</includes>
-    <includes id="Constants_8h" name="Constants.h" local="yes" import="no" module="no" objc="no">Constants.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Sprites.cpp</name>
-    <path>src/</path>
-    <filename>Sprites_8cpp.html</filename>
-    <includes id="Sprites_8h" name="Sprites.h" local="yes" import="no" module="no" objc="no">Sprites.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Text.cpp</name>
-    <path>src/</path>
-    <filename>Text_8cpp.html</filename>
-    <includes id="Text_8h" name="Text.h" local="yes" import="no" module="no" objc="no">Text.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>TextureManager.cpp</name>
-    <path>src/</path>
-    <filename>TextureManager_8cpp.html</filename>
-    <includes id="TextureManager_8h" name="TextureManager.h" local="yes" import="no" module="no" objc="no">TextureManager.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Tile.cpp</name>
-    <path>src/</path>
-    <filename>Tile_8cpp.html</filename>
-    <includes id="Tile_8h" name="Tile.h" local="yes" import="no" module="no" objc="no">Tile.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Transform.cpp</name>
-    <path>src/</path>
-    <filename>Transform_8cpp.html</filename>
-    <includes id="Transform_8h" name="Transform.h" local="yes" import="no" module="no" objc="no">Transform.h</includes>
-  </compound>
-  <compound kind="file">
-    <name>Vector2D.cpp</name>
-    <path>src/</path>
-    <filename>Vector2D_8cpp.html</filename>
-    <includes id="Vector2D_8h" name="Vector2D.h" local="yes" import="no" module="no" objc="no">Vector2D.h</includes>
-    <member kind="function">
-      <type>Vector2D</type>
-      <name>operator+</name>
-      <anchorfile>Vector2D_8cpp.html</anchorfile>
-      <anchor>a3db48e0370c3edfd914cb7959881809d</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D</type>
-      <name>operator-</name>
-      <anchorfile>Vector2D_8cpp.html</anchorfile>
-      <anchor>ab7319729bd817581ecbfeda7a78335dc</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D</type>
-      <name>operator*</name>
-      <anchorfile>Vector2D_8cpp.html</anchorfile>
-      <anchor>ab0796881642926f1c8d53f106f197f1a</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D</type>
-      <name>operator/</name>
-      <anchorfile>Vector2D_8cpp.html</anchorfile>
-      <anchor>a97aa3bf06c59b54596a4ea56aa84a2c2</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::ostream &amp;</type>
-      <name>operator&lt;&lt;</name>
-      <anchorfile>Vector2D_8cpp.html</anchorfile>
-      <anchor>ac84d6114898ff1593dbff7b0196be939</anchor>
-      <arglist>(std::ostream &amp;stream, const Vector2D &amp;vec)</arglist>
-    </member>
-  </compound>
   <compound kind="struct">
     <name>Animator::Animation</name>
     <filename>structAnimator_1_1Animation.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Animation</name>
-      <anchorfile>structAnimator_1_1Animation.html</anchorfile>
-      <anchor>ac20e3219d81e062dad817e2895b4a5f2</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>Animation</name>
@@ -492,13 +254,6 @@
       <anchorfile>structAnimator_1_1Animation.html</anchorfile>
       <anchor>a853555faca34e37e4135b31b02d998dc</anchor>
       <arglist>(const char *id, SDL_Point frameSize, const char *texPath, int speed=100, bool isLooping=true, bool isReversible=false)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Animation</name>
-      <anchorfile>structAnimator_1_1Animation.html</anchorfile>
-      <anchor>aa7897ab04165c1d511e934292f34d47f</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="variable">
       <type>const char *</type>
@@ -549,20 +304,6 @@
     <base>Component</base>
     <class kind="struct">Animator::Animation</class>
     <class kind="struct">Animator::Edge</class>
-    <member kind="function">
-      <type></type>
-      <name>Animator</name>
-      <anchorfile>structAnimator.html</anchorfile>
-      <anchor>a701eeb9283612be2027425efb06bbff7</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Animator</name>
-      <anchorfile>structAnimator.html</anchorfile>
-      <anchor>a5af4797549f9f466a88657899e17c6ab</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>init</name>
@@ -632,13 +373,6 @@
       <arglist>(std::string inStr, int x, int y, int w, int h, std::function&lt; void()&gt; func)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>~Button</name>
-      <anchorfile>structButton.html</anchorfile>
-      <anchor>a2a001eb9c3cc8ae54768a850dd345002</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>init</name>
       <anchorfile>structButton.html</anchorfile>
@@ -684,13 +418,6 @@
       <anchorfile>structCollider.html</anchorfile>
       <anchor>a923208f36ba5546c434755626cf04181</anchor>
       <arglist>(std::string tag)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Collider</name>
-      <anchorfile>structCollider.html</anchorfile>
-      <anchor>a564acde9860f875a32a6638c573d87be</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -759,13 +486,6 @@
       <anchor>a2fc563e2f7e0c20902fc4f9d5e69e02a</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~Component</name>
-      <anchorfile>structComponent.html</anchorfile>
-      <anchor>a2e9aa4348314d981f05f67397ad2f872</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="variable">
       <type>Entity *</type>
       <name>entity</name>
@@ -778,20 +498,6 @@
     <name>Controller</name>
     <filename>structController.html</filename>
     <base>Component</base>
-    <member kind="function">
-      <type></type>
-      <name>Controller</name>
-      <anchorfile>structController.html</anchorfile>
-      <anchor>a95c56822d667e94b031451729ce069a9</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Controller</name>
-      <anchorfile>structController.html</anchorfile>
-      <anchor>a0ab87934c4f7a266cfdb86e0f36bc1b5</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>init</name>
@@ -835,22 +541,8 @@
       <type></type>
       <name>Edge</name>
       <anchorfile>structAnimator_1_1Edge.html</anchorfile>
-      <anchor>ad85e2e0d8036a2ff44c31354bf612033</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Edge</name>
-      <anchorfile>structAnimator_1_1Edge.html</anchorfile>
       <anchor>a51ad0f47db57c06082a3af8569483d75</anchor>
       <arglist>(std::vector&lt; std::shared_ptr&lt; bool &gt; &gt; conditions)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Edge</name>
-      <anchorfile>structAnimator_1_1Edge.html</anchorfile>
-      <anchor>a2f3e19b39df64d3a51e9d87fb9f38c08</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>const bool</type>
@@ -1000,13 +692,6 @@
       <anchorfile>structFPS.html</anchorfile>
       <anchor>a13e40904f5a2cb6a2909d144e29a0cf4</anchor>
       <arglist>(std::string inStr)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~FPS</name>
-      <anchorfile>structFPS.html</anchorfile>
-      <anchor>ae9c26e732f0773feaacd6c812db04e88</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>float</type>
@@ -1185,13 +870,6 @@
     <name>Manager</name>
     <filename>structManager.html</filename>
     <member kind="function">
-      <type></type>
-      <name>Manager</name>
-      <anchorfile>structManager.html</anchorfile>
-      <anchor>a1658ff9f18e38ccd9cb8b0b371b9c20b</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>update</name>
       <anchorfile>structManager.html</anchorfile>
@@ -1253,20 +931,6 @@
     <filename>structMouseTracker.html</filename>
     <base>Component</base>
     <member kind="function">
-      <type></type>
-      <name>MouseTracker</name>
-      <anchorfile>structMouseTracker.html</anchorfile>
-      <anchor>a7451b6ebc2e53854bda9b1ab79531355</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~MouseTracker</name>
-      <anchorfile>structMouseTracker.html</anchorfile>
-      <anchor>a6de82b6a655e3a9ad247023277ddff61</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>init</name>
       <anchorfile>structMouseTracker.html</anchorfile>
@@ -1305,13 +969,6 @@
       <anchorfile>structPoints.html</anchorfile>
       <anchor>a9be248b584db504e01bcf09009de0956</anchor>
       <arglist>(std::string inStr)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Points</name>
-      <anchorfile>structPoints.html</anchorfile>
-      <anchor>a9d56d7dc8b6a6f492e07d354eb379c12</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1365,13 +1022,6 @@
       <anchorfile>structScene.html</anchorfile>
       <anchor>a56b1a969dde64f1a33b34cd136ceaa49</anchor>
       <arglist>(std::string name, int buildIndex, bool isPanel, bool isLocking, int layer)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~Scene</name>
-      <anchorfile>structScene.html</anchorfile>
-      <anchor>aa0a5be58e2ee2d1fdafc5fb46b5e661e</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -1492,31 +1142,10 @@
       <anchor>ae69969ad40d0f10a8d7a7d0fc201ab9d</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable">
-      <type>bool</type>
-      <name>mouseButtonPressed</name>
-      <anchorfile>structScene.html</anchorfile>
-      <anchor>a9835f4115f9424c614b2e5a4ba421713</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>SceneManager</name>
     <filename>structSceneManager.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>SceneManager</name>
-      <anchorfile>structSceneManager.html</anchorfile>
-      <anchor>a52085e6737c23b491c228e86781af808</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~SceneManager</name>
-      <anchorfile>structSceneManager.html</anchorfile>
-      <anchor>a2bb376a85d29e85f47753e26c7539229</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>loadScene</name>
@@ -1614,13 +1243,6 @@
       <arglist>(const char *tex, int nFrames, int mSpeed, bool loop)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>~Sprites</name>
-      <anchorfile>structSprites.html</anchorfile>
-      <anchor>a46633552deb102b94d645b223234de7a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>init</name>
       <anchorfile>structSprites.html</anchorfile>
@@ -1648,13 +1270,6 @@
       <anchor>a9767aacb914fde74ce286c466dd0345a</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="friend">
-      <type>friend struct</type>
-      <name>Animator</name>
-      <anchorfile>structSprites.html</anchorfile>
-      <anchor>a8bed86ffe9cb5dc9d845e50c5ea96129</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>Text</name>
@@ -1680,13 +1295,6 @@
       <anchorfile>structText.html</anchorfile>
       <anchor>a3708b595d0ef813e44b22c07bed5c34a</anchor>
       <arglist>(std::string inStr, int x, int y)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Text</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a4e7641708dfbf9c6bbbd41e897e9139c</anchor>
-      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1722,41 +1330,6 @@
       <anchorfile>structText.html</anchorfile>
       <anchor>a8791ce14f2670ec8fa98f9de34414e90</anchor>
       <arglist>(const char *text)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>std::string</type>
-      <name>data</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a032059fb32d2304c4a38b89d85b168b3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>float</type>
-      <name>scale</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a4792bbb71878bcb9aa41d4bb7f68e33b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>SDL_Texture *</type>
-      <name>textTex</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a1be16c24549bf25debf21d52ba29faba</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>SDL_Colour</type>
-      <name>textColour</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a0bbb8742e8ed2109988b868579b0923e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>SDL_Rect</type>
-      <name>destRect</name>
-      <anchorfile>structText.html</anchorfile>
-      <anchor>a3bf3dadf3713e965b57343d1dad5c15b</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1838,13 +1411,6 @@
       <arglist>(int x, int y, int w, int h, int id)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>~Tile</name>
-      <anchorfile>structTile.html</anchorfile>
-      <anchor>a98634abbd93fa13d0578d7103202d03d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>init</name>
       <anchorfile>structTile.html</anchorfile>
@@ -1905,65 +1471,6 @@
       <anchor>ada80898bd2a05f81a7a1b503c82737f6</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>NINETY</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ONE_EIGHTY</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NINETY</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ONE_EIGHTY</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Transform</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>aa08ca4266efabc768973cdeea51945ab</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Transform</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>a9fb589a9cfea2025a8619666cbb76019</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Transform</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>ac16c75e613acd88b5df26e8f8a36044c</anchor>
-      <arglist>(float scale)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Transform</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>aa5680fe9234b4d5870e849b5fce8f25e</anchor>
-      <arglist>(float x, float y, int w, int h, float scale)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Transform</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>a68861099b410a13f71bda5db1ab9829d</anchor>
-      <arglist>(Vector2D vec)</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>init</name>
@@ -1998,20 +1505,6 @@
       <anchorfile>structTransform.html</anchorfile>
       <anchor>af8dca674026ec3d3140314995d5b7c53</anchor>
       <arglist>(double angle)</arglist>
-    </member>
-    <member kind="variable">
-      <type>Vector2D</type>
-      <name>initPos</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>a28c1e1d3ed9bf5ae2ff7877f52f2d556</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Vector2D</type>
-      <name>pos</name>
-      <anchorfile>structTransform.html</anchorfile>
-      <anchor>a184506ba90094bd001616750a8efeaaa</anchor>
-      <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Vector2D</type>
@@ -2060,20 +1553,6 @@
     <name>Vector2D</name>
     <filename>structVector2D.html</filename>
     <member kind="function">
-      <type></type>
-      <name>Vector2D</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a98e9997ebb7a629f4db52397d4e0d653</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Vector2D</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a166ca1df158a260a7cbf3b57ff147a4a</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
       <type>Vector2D &amp;</type>
       <name>add</name>
       <anchorfile>structVector2D.html</anchorfile>
@@ -2103,52 +1582,10 @@
     </member>
     <member kind="function">
       <type>Vector2D &amp;</type>
-      <name>operator+=</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a235f488009733ad1a38d62505c4a76a0</anchor>
-      <arglist>(const Vector2D &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D &amp;</type>
-      <name>operator-=</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>af07ae19525e66b2e3a8e5bcd35507e24</anchor>
-      <arglist>(const Vector2D &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D &amp;</type>
-      <name>operator*=</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>afd9ffbbcd33bec3a7df2e8ec761e6ef9</anchor>
-      <arglist>(const Vector2D &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D &amp;</type>
-      <name>operator/=</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a3f975b1c402d06663ef5d27d9e56af4d</anchor>
-      <arglist>(const Vector2D &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type>Vector2D &amp;</type>
       <name>operator*</name>
       <anchorfile>structVector2D.html</anchorfile>
       <anchor>a3365fdbe09c701b88caac54ef64dc7f2</anchor>
       <arglist>(const int &amp;i)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>operator==</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>aee0e11d38c159d70a9ec687085becb15</anchor>
-      <arglist>(const Vector2D &amp;vec)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>operator!</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a51931a0526b17e07406227c2a908b777</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>Vector2D &amp;</type>
@@ -2156,55 +1593,6 @@
       <anchorfile>structVector2D.html</anchorfile>
       <anchor>a71c2a3a356c2c20dc2307d47d47dc349</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>x</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>aeb4253ba6555251d010ea4450619029e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>y</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a85215519d3f71d0e6be7d636346f3b7d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="friend">
-      <type>friend Vector2D</type>
-      <name>operator+</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a3db48e0370c3edfd914cb7959881809d</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="friend">
-      <type>friend Vector2D</type>
-      <name>operator-</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>ab7319729bd817581ecbfeda7a78335dc</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="friend">
-      <type>friend Vector2D</type>
-      <name>operator*</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>ab0796881642926f1c8d53f106f197f1a</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="friend">
-      <type>friend Vector2D</type>
-      <name>operator/</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a97aa3bf06c59b54596a4ea56aa84a2c2</anchor>
-      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
-    </member>
-    <member kind="friend">
-      <type>friend std::ostream &amp;</type>
-      <name>operator&lt;&lt;</name>
-      <anchorfile>structVector2D.html</anchorfile>
-      <anchor>ac84d6114898ff1593dbff7b0196be939</anchor>
-      <arglist>(std::ostream &amp;stream, const Vector2D &amp;vec)</arglist>
     </member>
   </compound>
   <compound kind="page">

@@ -11,8 +11,7 @@ The central class responsible for the game loop, window creation, and event hand
 
 
 
-Collaboration diagram for Game\+:
-\nopagebreak
+Collaboration diagram for Game\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,21 +21,28 @@ Collaboration diagram for Game\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65} 
+{\bfseries Game} ()
 \begin{DoxyCompactList}\small\item\em \doxylink{classGame}{Game} constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Game} ()
 \begin{DoxyCompactList}\small\item\em \doxylink{classGame}{Game} deconstructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGame_a6fb6ab188f447a0b1448f77426a2ad79}{init}} (const char \texorpdfstring{$\ast$}{*}title, int xpos, int ypos, int width, int height, bool fullscreen)
 \begin{DoxyCompactList}\small\item\em Initializes the SDL window, renderer, and subsystems. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handle\+Events}} ()
+\Hypertarget{classGame_adb5563f62c0c82e3e42ec36501aa5698}\label{classGame_adb5563f62c0c82e3e42ec36501aa5698} 
+void {\bfseries handle\+Events} ()
 \begin{DoxyCompactList}\small\item\em Processes SDL events such as keyboard input and window closure. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_adbbce2f78e1de148e187a4bc70b493d7}{ghost\+Spawn}} ()
+\Hypertarget{classGame_adbbce2f78e1de148e187a4bc70b493d7}\label{classGame_adbbce2f78e1de148e187a4bc70b493d7} 
+void {\bfseries ghost\+Spawn} ()
 \begin{DoxyCompactList}\small\item\em Placeholder function for ghost spawning logic. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\Hypertarget{classGame_a79df6376b332d63c9eca0dcee30305c3}\label{classGame_a79df6376b332d63c9eca0dcee30305c3} 
+void {\bfseries update} ()
 \begin{DoxyCompactList}\small\item\em Updates the state of the game world. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}} ()
+\Hypertarget{classGame_a15ddd769261d923827a3cdf41499c843}\label{classGame_a15ddd769261d923827a3cdf41499c843} 
+void {\bfseries render} ()
 \begin{DoxyCompactList}\small\item\em Renders all game objects to the screen. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}} ()
+\Hypertarget{classGame_ad4f36a72a2d06696f7973788606f57fc}\label{classGame_ad4f36a72a2d06696f7973788606f57fc} 
+void {\bfseries clean} ()
 \begin{DoxyCompactList}\small\item\em Cleans up resources and shuts down SDL. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classGame_afd9af52dcc5835f2a8c37f441a256b9d}{running}} ()
 \begin{DoxyCompactList}\small\item\em Checks if the game loop is currently running. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -50,57 +56,30 @@ static const bool \mbox{\hyperlink{classGame_aa153f0da6707884d25383acc9fd711f1}{
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static float \mbox{\hyperlink{classGame_ad918e31c1644966465f822d912585f16}{delta\+Time}}
+\Hypertarget{classGame_ad918e31c1644966465f822d912585f16}\label{classGame_ad918e31c1644966465f822d912585f16} 
+static float {\bfseries delta\+Time}
 \begin{DoxyCompactList}\small\item\em The time in seconds it took to complete the last frame. \end{DoxyCompactList}\item 
-static float \mbox{\hyperlink{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}{time\+Scale}}
+\Hypertarget{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}\label{classGame_aa67a1eb6b517d48fc49bf39a2477c35d} 
+static float {\bfseries time\+Scale}
 \begin{DoxyCompactList}\small\item\em A factor to scale time, allowing for slow-\/motion or fast-\/forward effects. \end{DoxyCompactList}\item 
-static SDL\+\_\+\+Event \mbox{\hyperlink{classGame_ac50bda5dab77dc40a78db21a883d23b3}{event}}
+\Hypertarget{classGame_ac50bda5dab77dc40a78db21a883d23b3}\label{classGame_ac50bda5dab77dc40a78db21a883d23b3} 
+static SDL\+\_\+\+Event {\bfseries event}
 \begin{DoxyCompactList}\small\item\em The global SDL event object. \end{DoxyCompactList}\item 
-static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ae5164c37c0dc74cfb56041174017bf57}{renderer}}
+\Hypertarget{classGame_ae5164c37c0dc74cfb56041174017bf57}\label{classGame_ae5164c37c0dc74cfb56041174017bf57} 
+static SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries renderer}
 \begin{DoxyCompactList}\small\item\em The global SDL renderer. \end{DoxyCompactList}\item 
-static SDL\+\_\+\+Point \mbox{\hyperlink{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}{mouse\+Coords}}
+\Hypertarget{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}\label{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb} 
+static SDL\+\_\+\+Point {\bfseries mouse\+Coords}
 \begin{DoxyCompactList}\small\item\em The current screen coordinates of the mouse. \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classGame_a2a7362eac9054b5735967829046edb7d}{mouse\+Button\+Pressed}}
+\Hypertarget{classGame_a2a7362eac9054b5735967829046edb7d}\label{classGame_a2a7362eac9054b5735967829046edb7d} 
+static bool {\bfseries mouse\+Button\+Pressed}
 \begin{DoxyCompactList}\small\item\em True if the primary mouse button is currently pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The central class responsible for the game loop, window creation, and event handling. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\index{Game@{Game}!Game@{Game}}
-\index{Game@{Game}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
-{\footnotesize\ttfamily \label{classGame_ad59df6562a58a614fda24622d3715b65} 
-Game\+::\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-\doxylink{classGame}{Game} constructor. 
-
-\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
-\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
-{\footnotesize\ttfamily \label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
-Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-\doxylink{classGame}{Game} deconstructor. 
-
-
-
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classGame_ad4f36a72a2d06696f7973788606f57fc}\index{Game@{Game}!clean@{clean}}
-\index{clean@{clean}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
-{\footnotesize\ttfamily \label{classGame_ad4f36a72a2d06696f7973788606f57fc} 
-void Game\+::clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Cleans up resources and shuts down SDL. 
-
 \Hypertarget{classGame_aa153f0da6707884d25383acc9fd711f1}\index{Game@{Game}!getPaused@{getPaused}}
 \index{getPaused@{getPaused}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{getPaused()}{getPaused()}}
@@ -114,34 +93,13 @@ Gets the current paused state of the game.
 \begin{DoxyReturn}{Returns}
 True if the game is paused, false otherwise. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=321pt]{classGame_aa153f0da6707884d25383acc9fd711f1_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{classGame_adbbce2f78e1de148e187a4bc70b493d7}\index{Game@{Game}!ghostSpawn@{ghostSpawn}}
-\index{ghostSpawn@{ghostSpawn}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{ghostSpawn()}{ghostSpawn()}}
-{\footnotesize\ttfamily \label{classGame_adbbce2f78e1de148e187a4bc70b493d7} 
-void Game\+::ghost\+Spawn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Placeholder function for ghost spawning logic. 
-
-\Hypertarget{classGame_adb5563f62c0c82e3e42ec36501aa5698}\index{Game@{Game}!handleEvents@{handleEvents}}
-\index{handleEvents@{handleEvents}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
-{\footnotesize\ttfamily \label{classGame_adb5563f62c0c82e3e42ec36501aa5698} 
-void Game\+::handle\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Processes SDL events such as keyboard input and window closure. 
-
 \Hypertarget{classGame_a6fb6ab188f447a0b1448f77426a2ad79}\index{Game@{Game}!init@{init}}
 \index{init@{init}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
@@ -167,16 +125,6 @@ Initializes the SDL window, renderer, and subsystems.
 {\em fullscreen} & Whether to start the game in fullscreen mode. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classGame_a15ddd769261d923827a3cdf41499c843}\index{Game@{Game}!render@{render}}
-\index{render@{render}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{render()}{render()}}
-{\footnotesize\ttfamily \label{classGame_a15ddd769261d923827a3cdf41499c843} 
-void Game\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Renders all game objects to the screen. 
-
 \Hypertarget{classGame_afd9af52dcc5835f2a8c37f441a256b9d}\index{Game@{Game}!running@{running}}
 \index{running@{running}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{running()}{running()}}
@@ -205,79 +153,6 @@ Sets the paused state of the game.
 {\em pause} & True to pause the game, false to resume. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classGame_a79df6376b332d63c9eca0dcee30305c3}\index{Game@{Game}!update@{update}}
-\index{update@{update}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily \label{classGame_a79df6376b332d63c9eca0dcee30305c3} 
-void Game\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Updates the state of the game world. 
-
-
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{classGame_ad918e31c1644966465f822d912585f16}\index{Game@{Game}!deltaTime@{deltaTime}}
-\index{deltaTime@{deltaTime}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{deltaTime}{deltaTime}}
-{\footnotesize\ttfamily \label{classGame_ad918e31c1644966465f822d912585f16} 
-float Game\+::delta\+Time\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The time in seconds it took to complete the last frame. 
-
-\Hypertarget{classGame_ac50bda5dab77dc40a78db21a883d23b3}\index{Game@{Game}!event@{event}}
-\index{event@{event}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{event}{event}}
-{\footnotesize\ttfamily \label{classGame_ac50bda5dab77dc40a78db21a883d23b3} 
-SDL\+\_\+\+Event Game\+::event\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The global SDL event object. 
-
-\Hypertarget{classGame_a2a7362eac9054b5735967829046edb7d}\index{Game@{Game}!mouseButtonPressed@{mouseButtonPressed}}
-\index{mouseButtonPressed@{mouseButtonPressed}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{mouseButtonPressed}{mouseButtonPressed}}
-{\footnotesize\ttfamily \label{classGame_a2a7362eac9054b5735967829046edb7d} 
-bool Game\+::mouse\+Button\+Pressed\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-True if the primary mouse button is currently pressed. 
-
-\Hypertarget{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}\index{Game@{Game}!mouseCoords@{mouseCoords}}
-\index{mouseCoords@{mouseCoords}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{mouseCoords}{mouseCoords}}
-{\footnotesize\ttfamily \label{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb} 
-SDL\+\_\+\+Point Game\+::mouse\+Coords\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The current screen coordinates of the mouse. 
-
-\Hypertarget{classGame_ae5164c37c0dc74cfb56041174017bf57}\index{Game@{Game}!renderer@{renderer}}
-\index{renderer@{renderer}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
-{\footnotesize\ttfamily \label{classGame_ae5164c37c0dc74cfb56041174017bf57} 
-SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} Game\+::renderer\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-The global SDL renderer. 
-
-\Hypertarget{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}\index{Game@{Game}!timeScale@{timeScale}}
-\index{timeScale@{timeScale}!Game@{Game}}
-\doxysubsubsection{\texorpdfstring{timeScale}{timeScale}}
-{\footnotesize\ttfamily \label{classGame_aa67a1eb6b517d48fc49bf39a2477c35d} 
-float Game\+::time\+Scale\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-A factor to scale time, allowing for slow-\/motion or fast-\/forward effects. 
-
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

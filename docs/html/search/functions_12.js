@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_0',['zero',['../structVector2D.html#a71c2a3a356c2c20dc2307d47d47dc349',1,'Vector2D']]]
+  ['_7egame_0',['~Game',['../classGame.html#ae3d112ca6e0e55150d2fdbc704474530',1,'Game']]]
 ];

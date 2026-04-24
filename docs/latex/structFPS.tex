@@ -11,8 +11,7 @@ A \doxylink{structText}{Text} component that automatically calculates and displa
 
 
 
-Inheritance diagram for FPS\+:
-\nopagebreak
+Inheritance diagram for FPS\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for FPS\+:
 \end{figure}
 
 
-Collaboration diagram for FPS\+:
-\nopagebreak
+Collaboration diagram for FPS\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,31 +32,27 @@ Collaboration diagram for FPS\+:
 \item 
 \mbox{\hyperlink{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4}{FPS}} (std\+::string in\+Str)
 \begin{DoxyCompactList}\small\item\em Constructs an \doxylink{structFPS}{FPS} counter. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structFPS_ae9c26e732f0773feaacd6c812db04e88}{\texorpdfstring{$\sim$}{\string~}\+FPS}} ()
-\item 
 float \mbox{\hyperlink{structFPS_aebad3ebf6b14fbf70a5f2b8a7d1e1b84}{calc\+Avg}} ()
 \begin{DoxyCompactList}\small\item\em Calculates the average \doxylink{structFPS}{FPS} over a sample of frames. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structFPS_a2eb4adf219fe41837ef4e48ff4ada160}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates the \doxylink{structFPS}{FPS} calculation and the displayed text. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structFPS_adfc6d925757aafc98ea17e9540b866df}{reload}} () override
 \begin{DoxyCompactList}\small\item\em Resets the frame counter history. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structFPS_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\mbox{\hyperlink{structFPS_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float scale, SDL\+\_\+\+Color color)
 \begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structFPS_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\mbox{\hyperlink{structFPS_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float scale)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structFPS_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
+\mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float scale, SDL\+\_\+\+Color color)
 \begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
+\mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float scale)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structText_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
 \begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structText_a4e7641708dfbf9c6bbbd41e897e9139c}{\texorpdfstring{$\sim$}{\string~}\+Text}} () override
-\item 
 void \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{update}} () override
 \begin{DoxyCompactList}\small\item\em Updates the destination rectangle for rendering. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{draw}} () override
@@ -71,18 +65,17 @@ void \mbox{\hyperlink{structText_ae74b78f8759c0db114a86db64b6d8d67}{centre\+Text
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
-\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{structFPS_a56699d62767d20dd0732f31025839c94}{value}}
+\Hypertarget{structFPS_a56699d62767d20dd0732f31025839c94}\label{structFPS_a56699d62767d20dd0732f31025839c94} 
+int {\bfseries value}
 \begin{DoxyCompactList}\small\item\em The current \doxylink{structFPS}{FPS} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
@@ -93,15 +86,15 @@ void \mbox{\hyperlink{structText_a8791ce14f2670ec8fa98f9de34414e90}{set\+Tex}} (
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{structText_a032059fb32d2304c4a38b89d85b168b3}{data}}
+std\+::string {\bfseries data}
 \item 
-float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}
+float {\bfseries scale}
 \item 
-SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structText_a1be16c24549bf25debf21d52ba29faba}{text\+Tex}}
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} {\bfseries text\+Tex}
 \item 
-SDL\+\_\+\+Colour \mbox{\hyperlink{structText_a0bbb8742e8ed2109988b868579b0923e}{text\+Colour}}
+SDL\+\_\+\+Colour {\bfseries text\+Colour}
 \item 
-SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{dest\+Rect}}
+SDL\+\_\+\+Rect {\bfseries dest\+Rect}
 \end{DoxyCompactItemize}
 
 
@@ -124,20 +117,13 @@ Constructs an \doxylink{structFPS}{FPS} counter.
 {\em in\+Str} & The prefix string to display (e.\+g., "{}\+FPS\+: "{}). \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structFPS_a13e40904f5a2cb6a2909d144e29a0cf4_cgraph}
 \end{center}
 \end{figure}
-\Hypertarget{structFPS_ae9c26e732f0773feaacd6c812db04e88}\index{FPS@{FPS}!````~FPS@{\texorpdfstring{$\sim$}{\string~}FPS}}
-\index{````~FPS@{\texorpdfstring{$\sim$}{\string~}FPS}!FPS@{FPS}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FPS()}{\string~FPS()}}
-{\footnotesize\ttfamily \label{structFPS_ae9c26e732f0773feaacd6c812db04e88} 
-FPS\+::\texorpdfstring{$\sim$}{\string~}\+FPS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Function Documentation}
@@ -154,8 +140,7 @@ Calculates the average \doxylink{structFPS}{FPS} over a sample of frames.
 \begin{DoxyReturn}{Returns}
 The average frames per second. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -239,8 +224,7 @@ Constructs a fully customized \doxylink{structText}{Text} component.
 {\em color} & The color of the text. \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -261,8 +245,7 @@ Updates the \doxylink{structFPS}{FPS} calculation and the displayed text.
 
 Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -271,20 +254,7 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structFPS_a56699d62767d20dd0732f31025839c94}\index{FPS@{FPS}!value@{value}}
-\index{value@{value}!FPS@{FPS}}
-\doxysubsubsection{\texorpdfstring{value}{value}}
-{\footnotesize\ttfamily \label{structFPS_a56699d62767d20dd0732f31025839c94} 
-int FPS\+::value}
-
-
-
-The current \doxylink{structFPS}{FPS} value. 
-
-
-
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Counters_8h}{Counters.\+h}}\item 
-src/\mbox{\hyperlink{Counters_8cpp}{Counters.\+cpp}}\end{DoxyCompactItemize}
+src/Counters.\+cpp\end{DoxyCompactItemize}

@@ -1,7 +1,5 @@
 var structSceneManager =
 [
-    [ "SceneManager", "structSceneManager.html#a52085e6737c23b491c228e86781af808", null ],
-    [ "~SceneManager", "structSceneManager.html#a2bb376a85d29e85f47753e26c7539229", null ],
     [ "addScene", "structSceneManager.html#a8b195be621119bb20fd7f39f84d182ba", null ],
     [ "callSceneEvents", "structSceneManager.html#a665f2125a95a37a8c96af8a3ea489d15", null ],
     [ "drawScene", "structSceneManager.html#ab3b6a9d787bc950ad83ec50c0688f752", null ],

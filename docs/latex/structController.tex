@@ -11,8 +11,7 @@ Translates keyboard input (WASD) into entity movement.
 
 
 
-Inheritance diagram for Controller\+:
-\nopagebreak
+Inheritance diagram for Controller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Controller\+:
 \end{figure}
 
 
-Collaboration diagram for Controller\+:
-\nopagebreak
+Collaboration diagram for Controller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,10 +29,6 @@ Collaboration diagram for Controller\+:
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\hyperlink{structController_a95c56822d667e94b031451729ce069a9}{Controller}} ()
-\item 
-\mbox{\hyperlink{structController_a0ab87934c4f7a266cfdb86e0f36bc1b5}{\texorpdfstring{$\sim$}{\string~}\+Controller}} ()
 \item 
 void \mbox{\hyperlink{structController_afd3de74c4b224affca8fb73bc75374a9}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initializes the controller, grabbing the entity\textquotesingle{}s \doxylink{structTransform}{Transform} and \doxylink{structCollider}{Collider}. \end{DoxyCompactList}\item 
@@ -50,14 +44,12 @@ void \mbox{\hyperlink{structController_a66dcd5056f1c90515405d4a77f86dd67}{reload
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
+\mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries entity}
 \begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -65,21 +57,6 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 Translates keyboard input (WASD) into entity movement. 
 
 Reads keyboard state changes and updates the entity\textquotesingle{}s \doxylink{structTransform}{Transform} component\textquotesingle{}s velocity. 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{structController_a95c56822d667e94b031451729ce069a9}\index{Controller@{Controller}!Controller@{Controller}}
-\index{Controller@{Controller}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
-{\footnotesize\ttfamily \label{structController_a95c56822d667e94b031451729ce069a9} 
-Controller\+::\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-\Hypertarget{structController_a0ab87934c4f7a266cfdb86e0f36bc1b5}\index{Controller@{Controller}!````~Controller@{\texorpdfstring{$\sim$}{\string~}Controller}}
-\index{````~Controller@{\texorpdfstring{$\sim$}{\string~}Controller}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Controller()}{\string~Controller()}}
-{\footnotesize\ttfamily \label{structController_a0ab87934c4f7a266cfdb86e0f36bc1b5} 
-Controller\+::\texorpdfstring{$\sim$}{\string~}\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structController_afd3de74c4b224affca8fb73bc75374a9}\index{Controller@{Controller}!init@{init}}
@@ -124,8 +101,7 @@ Calculates and applies velocity to the \doxylink{structTransform}{Transform} bas
 
 Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{Component}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -167,4 +143,4 @@ Updates the state when a key is released.
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 include/\mbox{\hyperlink{Controller_8h}{Controller.\+h}}\item 
-src/\mbox{\hyperlink{Controller_8cpp}{Controller.\+cpp}}\end{DoxyCompactItemize}
+src/Controller.\+cpp\end{DoxyCompactItemize}

@@ -138,10 +138,6 @@ Collaboration diagram for Controller:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95c56822d667e94b031451729ce069a9" id="r_a95c56822d667e94b031451729ce069a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c56822d667e94b031451729ce069a9">Controller</a> ()</td></tr>
-<tr class="separator:a95c56822d667e94b031451729ce069a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab87934c4f7a266cfdb86e0f36bc1b5" id="r_a0ab87934c4f7a266cfdb86e0f36bc1b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab87934c4f7a266cfdb86e0f36bc1b5">~Controller</a> ()</td></tr>
-<tr class="separator:a0ab87934c4f7a266cfdb86e0f36bc1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3de74c4b224affca8fb73bc75374a9" id="r_afd3de74c4b224affca8fb73bc75374a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd3de74c4b224affca8fb73bc75374a9">init</a> () override</td></tr>
 <tr class="memdesc:afd3de74c4b224affca8fb73bc75374a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the controller, grabbing the entity's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and <a class="el" href="structCollider.html" title="Provides an entity with a physical bounding box for collision detection.">Collider</a>.  <br /></td></tr>
 <tr class="separator:afd3de74c4b224affca8fb73bc75374a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,55 +157,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
 <tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
-<tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
-<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
-<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
+<tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component. <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Translates keyboard input (WASD) into entity movement. </p>
 <p>Reads keyboard state changes and updates the entity's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component's velocity. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a95c56822d667e94b031451729ce069a9" name="a95c56822d667e94b031451729ce069a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95c56822d667e94b031451729ce069a9">&#9670;&#160;</a></span>Controller()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::Controller </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0ab87934c4f7a266cfdb86e0f36bc1b5" name="a0ab87934c4f7a266cfdb86e0f36bc1b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab87934c4f7a266cfdb86e0f36bc1b5">&#9670;&#160;</a></span>~Controller()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::~Controller </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afd3de74c4b224affca8fb73bc75374a9" name="afd3de74c4b224affca8fb73bc75374a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd3de74c4b224affca8fb73bc75374a9">&#9670;&#160;</a></span>init()</h2>
 
@@ -359,7 +319,7 @@ Here is the call graph for this function:</div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>include/<a class="el" href="Controller_8h_source.html">Controller.h</a></li>
-<li>src/<a class="el" href="Controller_8cpp.html">Controller.cpp</a></li>
+<li>src/<b>Controller.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

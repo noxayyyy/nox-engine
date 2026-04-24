@@ -2,8 +2,6 @@ var structAnimator =
 [
     [ "Animation", "structAnimator_1_1Animation.html", "structAnimator_1_1Animation" ],
     [ "Edge", "structAnimator_1_1Edge.html", "structAnimator_1_1Edge" ],
-    [ "Animator", "structAnimator.html#a701eeb9283612be2027425efb06bbff7", null ],
-    [ "~Animator", "structAnimator.html#a5af4797549f9f466a88657899e17c6ab", null ],
     [ "addAnimation", "structAnimator.html#a48a95ea818a364fbd5fd2140b4120cf1", null ],
     [ "addEdge", "structAnimator.html#a11922ec826afced3bfac9098fa55b8ea", null ],
     [ "draw", "structAnimator.html#a23e378fb2dc1cb48c685015ddc885c29", null ],

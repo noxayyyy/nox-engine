@@ -10,8 +10,7 @@ var searchData=
   ['addscene_7',['addScene',['../structSceneManager.html#a8b195be621119bb20fd7f39f84d182ba',1,'SceneManager']]],
   ['addtogroup_8',['addToGroup',['../structManager.html#a68fd701c4f4a0c4126f30fb0eb46809d',1,'Manager']]],
   ['angle_9',['angle',['../structTransform.html#a8fed22a9d295cf0f27facf4cbe99724b',1,'Transform']]],
-  ['animation_10',['Animation',['../structAnimator_1_1Animation.html',1,'Animator::Animation'],['../structAnimator_1_1Animation.html#ac20e3219d81e062dad817e2895b4a5f2',1,'Animator::Animation::Animation()'],['../structAnimator_1_1Animation.html#ab56e862376a0f56cf99544761475d31a',1,'Animator::Animation::Animation(const char *id)'],['../structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc',1,'Animator::Animation::Animation(const char *id, SDL_Point frameSize, const char *texPath, int speed=100, bool isLooping=true, bool isReversible=false)']]],
-  ['animator_11',['Animator',['../structAnimator.html',1,'Animator'],['../structSprites.html#a8bed86ffe9cb5dc9d845e50c5ea96129',1,'Sprites::Animator()'],['../structAnimator.html#a701eeb9283612be2027425efb06bbff7',1,'Animator::Animator()']]],
-  ['animator_2ecpp_12',['Animator.cpp',['../Animator_8cpp.html',1,'']]],
-  ['animator_2eh_13',['Animator.h',['../Animator_8h.html',1,'']]]
+  ['animation_10',['Animation',['../structAnimator_1_1Animation.html',1,'Animator::Animation'],['../structAnimator_1_1Animation.html#ab56e862376a0f56cf99544761475d31a',1,'Animator::Animation::Animation(const char *id)'],['../structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc',1,'Animator::Animation::Animation(const char *id, SDL_Point frameSize, const char *texPath, int speed=100, bool isLooping=true, bool isReversible=false)']]],
+  ['animator_11',['Animator',['../structAnimator.html',1,'']]],
+  ['animator_2eh_12',['Animator.h',['../Animator_8h.html',1,'']]]
 ];
