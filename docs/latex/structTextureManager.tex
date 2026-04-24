@@ -2,6 +2,11 @@
 \hypertarget{structTextureManager}{}\label{structTextureManager}\index{TextureManager@{TextureManager}}
 
 
+Provides a centralized, static interface for all texture-\/related operations.  
+
+
+
+
 {\ttfamily \#include $<$Texture\+Manager.\+h$>$}
 
 
@@ -18,27 +23,32 @@ Collaboration diagram for Texture\+Manager\+:
 \begin{DoxyCompactItemize}
 \item 
 static SDL\+\_\+\+Point \mbox{\hyperlink{structTextureManager_affabc7a219da0e5c10988c64f9a97466}{Get\+Size\+Of\+Surface}} (const char \texorpdfstring{$\ast$}{*}file\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the dimensions of an image file without loading the full texture. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597}{Load\+Texture}} (const char \texorpdfstring{$\ast$}{*}file\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads a texture from an image file. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_af0ef10e05ccd7d1cffd18eef53295a2d}{Load\+Texture}} (const SDL\+\_\+\+Colour colour, const char \texorpdfstring{$\ast$}{*}text)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a texture by rendering text. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_ae93507f1515dbfa355cc2b6d8980ad32}{Load\+Texture}} (SDL\+\_\+\+Rect \&rect, SDL\+\_\+\+Colour colour)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates a solid-\/color rectangular texture. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&src, SDL\+\_\+\+Rect \&dest)
-\item 
+\begin{DoxyCompactList}\small\item\em Draws a portion of a texture. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&dest)
-\item 
+\begin{DoxyCompactList}\small\item\em Draws an entire texture to a destination rectangle. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{structTextureManager_aef20b2103e28306a714abf1161d41174}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&src, SDL\+\_\+\+Rect \&dest, const double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Draws a portion of a texture with rotation. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{structTextureManager_a0a7be48af9b877305284415aea6ec09f}{Draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}tex, SDL\+\_\+\+Rect \&dest, const double angle)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Draws an entire texture with rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 static TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024}{font}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The global font used for text rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Provides a centralized, static interface for all texture-\/related operations. 
+
+This class handles loading textures from files, creating textures from text or colors, and drawing them to the global renderer. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
@@ -47,18 +57,55 @@ static TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structTexture
 {\footnotesize\ttfamily \label{structTextureManager_a7023e6a32143039536b93f4d2f4c20a9} 
 void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Draws an entire texture to a destination rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The source texture. \\
+\hline
+{\em dest} & The destination rectangle on the screen. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structTextureManager_a0a7be48af9b877305284415aea6ec09f}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
 \index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
 \doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily \label{structTextureManager_a0a7be48af9b877305284415aea6ec09f} 
 void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{, }\item[{const double}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Draws an entire texture with rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The source texture. \\
+\hline
+{\em dest} & The destination rectangle. \\
+\hline
+{\em angle} & The rotation angle in degrees. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8}\index{TextureManager@{TextureManager}!DrawTexture@{DrawTexture}}
 \index{DrawTexture@{DrawTexture}!TextureManager@{TextureManager}}
 \doxysubsubsection{\texorpdfstring{DrawTexture()}{DrawTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily \label{structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8} 
 void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{src}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Draws a portion of a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The source texture. \\
+\hline
+{\em src} & The source rectangle defining the portion to draw. \\
+\hline
+{\em dest} & The destination rectangle on the screen. \\
+\hline
+\end{DoxyParams}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -73,12 +120,39 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{structTextureManager_aef20b2103e28306a714abf1161d41174} 
 void Texture\+Manager\+::\+Draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{SDL\+\_\+\+Rect \&}]{src}{, }\item[{SDL\+\_\+\+Rect \&}]{dest}{, }\item[{const double}]{angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Draws a portion of a texture with rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The source texture. \\
+\hline
+{\em src} & The source rectangle. \\
+\hline
+{\em dest} & The destination rectangle. \\
+\hline
+{\em angle} & The rotation angle in degrees. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structTextureManager_affabc7a219da0e5c10988c64f9a97466}\index{TextureManager@{TextureManager}!GetSizeOfSurface@{GetSizeOfSurface}}
 \index{GetSizeOfSurface@{GetSizeOfSurface}!TextureManager@{TextureManager}}
 \doxysubsubsection{\texorpdfstring{GetSizeOfSurface()}{GetSizeOfSurface()}}
 {\footnotesize\ttfamily \label{structTextureManager_affabc7a219da0e5c10988c64f9a97466} 
 SDL\+\_\+\+Point Texture\+Manager\+::\+Get\+Size\+Of\+Surface (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Gets the dimensions of an image file without loading the full texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The path to the image file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Point containing the width and height. 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -93,6 +167,18 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597} 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Loads a texture from an image file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The path to the image file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the loaded SDL\+\_\+\+Texture. 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -107,6 +193,20 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{structTextureManager_af0ef10e05ccd7d1cffd18eef53295a2d} 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Colour}]{colour}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Creates a texture by rendering text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & The color of the text. \\
+\hline
+{\em text} & The string to render. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created SDL\+\_\+\+Texture. 
+\end{DoxyReturn}
 \Hypertarget{structTextureManager_ae93507f1515dbfa355cc2b6d8980ad32}\index{TextureManager@{TextureManager}!LoadTexture@{LoadTexture}}
 \index{LoadTexture@{LoadTexture}!TextureManager@{TextureManager}}
 \doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
@@ -115,12 +215,30 @@ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Texture\+Manager\+::\+Load\+Textur
 
 
 
+Creates a solid-\/color rectangular texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & The dimensions of the texture to create. \\
+\hline
+{\em colour} & The color of the texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created SDL\+\_\+\+Texture. 
+\end{DoxyReturn}
+
+
 \doxysubsection{Member Data Documentation}
 \Hypertarget{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024}\index{TextureManager@{TextureManager}!font@{font}}
 \index{font@{font}!TextureManager@{TextureManager}}
 \doxysubsubsection{\texorpdfstring{font}{font}}
 {\footnotesize\ttfamily \label{structTextureManager_a5cb81454baf19b530a84c08ddb2e3024} 
 TTF\+\_\+\+Font\texorpdfstring{$\ast$}{*} Texture\+Manager\+::font\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The global font used for text rendering. 
 
 
 

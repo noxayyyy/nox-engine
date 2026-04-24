@@ -1,7 +1,7 @@
 <map id="Entity::getComponent" name="Entity::getComponent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,33"/>
-<area shape="rect" id="Node000002" href="$ECS_8h.html#a6618a945314f27cb6b96b1a770a33c36" title=" " alt="" coords="216,5,377,33"/>
+<area shape="rect" id="Node000001" title="Retrieves a component from the entity." alt="" coords="5,5,168,33"/>
+<area shape="rect" id="Node000002" href="$ECS_8h.html#a6618a945314f27cb6b96b1a770a33c36" title="Gets the unique ID for a given component type." alt="" coords="216,5,377,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,16,200,16,200,22,168,22"/>
-<area shape="rect" id="Node000003" href="$ECS_8h.html#a506292c7895583d174f94fd9b1f5b1e3" title=" " alt="" coords="425,5,615,33"/>
+<area shape="rect" id="Node000003" href="$ECS_8h.html#a506292c7895583d174f94fd9b1f5b1e3" title="Generates a unique ID for a new component type at runtime." alt="" coords="425,5,615,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,16,409,16,409,22,378,22"/>
 </map>

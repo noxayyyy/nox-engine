@@ -1,10 +1,10 @@
 <map id="include/Game.h" name="include/Game.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="701,5,824,33"/>
-<area shape="rect" id="Node000002" href="$Constants_8h.html" title=" " alt="" coords="50,157,149,184"/>
+<area shape="rect" id="Node000001" title="Defines the main Game class that orchestrates the entire application." alt="" coords="701,5,824,33"/>
+<area shape="rect" id="Node000002" href="$Constants_8h.html" title="Defines global constants and enums used throughout the engine and game." alt="" coords="50,157,149,184"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="700,29,544,49,451,64,359,84,244,118,147,153,145,148,242,113,358,78,450,59,544,43,700,24"/>
-<area shape="rect" id="Node000005" href="$ECS_8h.html" title=" " alt="" coords="370,81,429,109"/>
+<area shape="rect" id="Node000005" href="$ECS_8h.html" title="Defines the core classes for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="370,81,429,109"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="701,33,586,53,445,83,444,78,585,48,700,28"/>
-<area shape="rect" id="Node000012" href="$Vector2D_8h.html" title=" " alt="" coords="454,81,546,109"/>
+<area shape="rect" id="Node000012" href="$Vector2D_8h.html" title="Defines a simple 2D vector class for position and velocity calculations." alt="" coords="454,81,546,109"/>
 <area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="716,36,562,79,560,74,715,31"/>
 <area shape="rect" id="Node000014" title=" " alt="" coords="569,81,665,109"/>
 <area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="738,36,658,76,655,71,735,31"/>

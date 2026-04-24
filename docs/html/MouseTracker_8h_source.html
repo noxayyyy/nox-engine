@@ -105,42 +105,44 @@ $(function(){initNavTree('MouseTracker_8h_source.html',''); initResizable(true);
   <div class="headertitle"><div class="title">MouseTracker.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="MouseTracker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Collider_8h.html">Collider.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="ECS_8h.html">ECS.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Transform_8h.html">Transform.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structMouseTracker.html">    7</a></span><span class="keyword">struct </span><a class="code hl_function" href="structMouseTracker.html#a7451b6ebc2e53854bda9b1ab79531355">MouseTracker</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structComponent.html">Component</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_function" href="structMouseTracker.html#a7451b6ebc2e53854bda9b1ab79531355">MouseTracker</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="structMouseTracker.html#a6de82b6a655e3a9ad247023277ddff61">~MouseTracker</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#a1b92139b782973f6dbe135f9be3158a7">init</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#afd5dfe7e64afed79934b732654c5bff0">update</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#aa37b0f2556c8b0c64bf5197a30eafb81">reload</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb">getMouseButtonPressed</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structTransform.html">Transform</a>* transform;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="structCollider.html">Collider</a>* collider;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isPressed;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<a href="MouseTracker_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Collider_8h.html">Collider.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="ECS_8h.html">ECS.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="Transform_8h.html">Transform.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structMouseTracker.html">   17</a></span><span class="keyword">struct </span><a class="code hl_function" href="structMouseTracker.html#a7451b6ebc2e53854bda9b1ab79531355">MouseTracker</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structComponent.html">Component</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="structMouseTracker.html#a7451b6ebc2e53854bda9b1ab79531355">MouseTracker</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="structMouseTracker.html#a6de82b6a655e3a9ad247023277ddff61">~MouseTracker</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#a1b92139b782973f6dbe135f9be3158a7">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#afd5dfe7e64afed79934b732654c5bff0">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structMouseTracker.html#aa37b0f2556c8b0c64bf5197a30eafb81">reload</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb">getMouseButtonPressed</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_struct" href="structTransform.html">Transform</a>* transform;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="structCollider.html">Collider</a>* collider;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isPressed;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
-<div class="ttc" id="aCollider_8h_html"><div class="ttname"><a href="Collider_8h.html">Collider.h</a></div></div>
-<div class="ttc" id="aECS_8h_html"><div class="ttname"><a href="ECS_8h.html">ECS.h</a></div></div>
-<div class="ttc" id="aTransform_8h_html"><div class="ttname"><a href="Transform_8h.html">Transform.h</a></div></div>
-<div class="ttc" id="astructCollider_html"><div class="ttname"><a href="structCollider.html">Collider</a></div><div class="ttdef"><b>Definition</b> Collider.h:12</div></div>
-<div class="ttc" id="astructComponent_html"><div class="ttname"><a href="structComponent.html">Component</a></div><div class="ttdef"><b>Definition</b> ECS.h:35</div></div>
-<div class="ttc" id="astructMouseTracker_html_a1b92139b782973f6dbe135f9be3158a7"><div class="ttname"><a href="structMouseTracker.html#a1b92139b782973f6dbe135f9be3158a7">MouseTracker::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:12</div></div>
+<div class="ttc" id="aCollider_8h_html"><div class="ttname"><a href="Collider_8h.html">Collider.h</a></div><div class="ttdoc">Defines a component for collision detection.</div></div>
+<div class="ttc" id="aECS_8h_html"><div class="ttname"><a href="ECS_8h.html">ECS.h</a></div><div class="ttdoc">Defines the core classes for the Entity-Component-System (ECS) architecture.</div></div>
+<div class="ttc" id="aTransform_8h_html"><div class="ttname"><a href="Transform_8h.html">Transform.h</a></div><div class="ttdoc">Defines the component for managing an entity&#39;s position, rotation, and scale.</div></div>
+<div class="ttc" id="astructCollider_html"><div class="ttname"><a href="structCollider.html">Collider</a></div><div class="ttdoc">Provides an entity with a physical bounding box for collision detection.</div><div class="ttdef"><b>Definition</b> Collider.h:22</div></div>
+<div class="ttc" id="astructComponent_html"><div class="ttname"><a href="structComponent.html">Component</a></div><div class="ttdoc">The base class for all components in the ECS.</div><div class="ttdef"><b>Definition</b> ECS.h:53</div></div>
+<div class="ttc" id="astructMouseTracker_html_a1b92139b782973f6dbe135f9be3158a7"><div class="ttname"><a href="structMouseTracker.html#a1b92139b782973f6dbe135f9be3158a7">MouseTracker::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Initializes the component by getting the entity&#39;s transform and collider.</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:12</div></div>
 <div class="ttc" id="astructMouseTracker_html_a6de82b6a655e3a9ad247023277ddff61"><div class="ttname"><a href="structMouseTracker.html#a6de82b6a655e3a9ad247023277ddff61">MouseTracker::~MouseTracker</a></div><div class="ttdeci">~MouseTracker()</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:7</div></div>
 <div class="ttc" id="astructMouseTracker_html_a7451b6ebc2e53854bda9b1ab79531355"><div class="ttname"><a href="structMouseTracker.html#a7451b6ebc2e53854bda9b1ab79531355">MouseTracker::MouseTracker</a></div><div class="ttdeci">MouseTracker()</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:3</div></div>
-<div class="ttc" id="astructMouseTracker_html_aa37b0f2556c8b0c64bf5197a30eafb81"><div class="ttname"><a href="structMouseTracker.html#aa37b0f2556c8b0c64bf5197a30eafb81">MouseTracker::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:24</div></div>
-<div class="ttc" id="astructMouseTracker_html_af9a7225b5f043ca4eac2bdbee0aafcdb"><div class="ttname"><a href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb">MouseTracker::getMouseButtonPressed</a></div><div class="ttdeci">static const bool getMouseButtonPressed()</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:28</div></div>
-<div class="ttc" id="astructMouseTracker_html_afd5dfe7e64afed79934b732654c5bff0"><div class="ttname"><a href="structMouseTracker.html#afd5dfe7e64afed79934b732654c5bff0">MouseTracker::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:18</div></div>
-<div class="ttc" id="astructTransform_html"><div class="ttname"><a href="structTransform.html">Transform</a></div><div class="ttdef"><b>Definition</b> Transform.h:7</div></div>
+<div class="ttc" id="astructMouseTracker_html_aa37b0f2556c8b0c64bf5197a30eafb81"><div class="ttname"><a href="structMouseTracker.html#aa37b0f2556c8b0c64bf5197a30eafb81">MouseTracker::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdoc">Resets the mouse pressed state.</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:24</div></div>
+<div class="ttc" id="astructMouseTracker_html_af9a7225b5f043ca4eac2bdbee0aafcdb"><div class="ttname"><a href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb">MouseTracker::getMouseButtonPressed</a></div><div class="ttdeci">static const bool getMouseButtonPressed()</div><div class="ttdoc">Gets the current state of the primary mouse button.</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:28</div></div>
+<div class="ttc" id="astructMouseTracker_html_afd5dfe7e64afed79934b732654c5bff0"><div class="ttname"><a href="structMouseTracker.html#afd5dfe7e64afed79934b732654c5bff0">MouseTracker::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Updates the entity&#39;s position to match the mouse cursor&#39;s current coordinates.</div><div class="ttdef"><b>Definition</b> MouseTracker.cpp:18</div></div>
+<div class="ttc" id="astructTransform_html"><div class="ttname"><a href="structTransform.html">Transform</a></div><div class="ttdoc">Stores an entity&#39;s position, velocity, scale, and rotation.</div><div class="ttdef"><b>Definition</b> Transform.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

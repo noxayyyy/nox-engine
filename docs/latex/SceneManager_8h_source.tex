@@ -2,39 +2,41 @@
 \hypertarget{SceneManager_8h_source}{}\label{SceneManager_8h_source}\index{include/SceneManager.h@{include/SceneManager.h}}
 \mbox{\hyperlink{SceneManager_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Scene_8h}{Scene.h}}"{}}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structManager}{Manager}}\ \mbox{\hyperlink{Button_8h_a8b88105956ea929e3c74c65791e92c6f}{manager}};}
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{SceneManager}}\ \{}
-\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{SceneManager}}()\ \{\}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{structSceneManager_a2bb376a85d29e85f47753e26c7539229}{\string~SceneManager}}()\ \{\}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{loadScene}}(std::string\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{loadScene}}(\textcolor{keywordtype}{int}\ buildIndex);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}{loadNextScene}}();}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}{loadPrevScene}}();}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ \mbox{\hyperlink{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}{getCurrentScene}}();}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}{addScene}}(\mbox{\hyperlink{structScene}{Scene}}*\ scene);}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}{removeBgScene}}(\textcolor{keywordtype}{int}\ layer);}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Scene_8h}{Scene.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structManager}{Manager}}\ \mbox{\hyperlink{Button_8h_a8b88105956ea929e3c74c65791e92c6f}{manager}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{SceneManager}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structSceneManager_a52085e6737c23b491c228e86781af808}{SceneManager}}()\ \{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structSceneManager_a2bb376a85d29e85f47753e26c7539229}{\string~SceneManager}}()\ \{\}}
 \DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}{updateScene}}();}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15}{callSceneEvents}}(SDL\_Event\&\ event);}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}{drawScene}}();}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}{reloadScene}}();}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ scenes[\mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}];}
-\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ bgScenes[\mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}];}
-\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ currentScene;}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ currentSceneIndex;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ getSceneById(std::string\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{loadScene}}(std::string\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8c05a859c26e5b7b26e773e0f08dc0be}{loadScene}}(\textcolor{keywordtype}{int}\ buildIndex);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a932ab29dbfb95b976c333cba5f2cbb3c}{loadNextScene}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a220fb279ec5d75c5932ebb873a5c6664}{loadPrevScene}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ \mbox{\hyperlink{structSceneManager_ad307aea07c7664dcdcd8a18ac41fce89}{getCurrentScene}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8b195be621119bb20fd7f39f84d182ba}{addScene}}(\mbox{\hyperlink{structScene}{Scene}}*\ scene);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a8fba3fa586bae5b43a2e7397c7f8ec19}{removeBgScene}}(\textcolor{keywordtype}{int}\ layer);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a66eb8582ca7e36bc1ad1ffe4fef7e983}{updateScene}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a665f2125a95a37a8c96af8a3ea489d15}{callSceneEvents}}(SDL\_Event\&\ event);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_ab3b6a9d787bc950ad83ec50c0688f752}{drawScene}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSceneManager_a480638fd9cd3f8b96e7ba0f5b5feefa7}{reloadScene}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ scenes[\mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}];}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ bgScenes[\mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}];}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ currentScene;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ currentSceneIndex;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{structScene}{Scene}}*\ getSceneById(std::string\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00082\ \};}
 
 \end{DoxyCode}

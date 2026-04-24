@@ -1,5 +1,5 @@
 <map id="MouseTracker" name="MouseTracker">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,215,200,399"/>
-<area shape="rect" id="Node000002" href="$structComponent.html" title=" " alt="" coords="41,5,164,167"/>
+<area shape="rect" id="Node000001" title="A component attached to an entity that follows the mouse cursor." alt="" coords="5,215,200,399"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title="The base class for all components in the ECS." alt="" coords="41,5,164,167"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,182,106,215,100,215,100,182"/>
 </map>

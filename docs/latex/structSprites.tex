@@ -2,6 +2,11 @@
 \hypertarget{structSprites}{}\label{structSprites}\index{Sprites@{Sprites}}
 
 
+A component that gives an entity a visual representation using a texture.  
+
+
+
+
 {\ttfamily \#include $<$Sprites.\+h$>$}
 
 
@@ -28,24 +33,24 @@ Collaboration diagram for Sprites\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}} (const char \texorpdfstring{$\ast$}{*}tex)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a sprite from a texture path. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}{Sprites}} (const char \texorpdfstring{$\ast$}{*}tex, int n\+Frames, int m\+Speed, bool loop)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a sprite with simple, built-\/in animation capabilities. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structSprites_a46633552deb102b94d645b223234de7a}{\texorpdfstring{$\sim$}{\string~}\+Sprites}} ()
 \item 
 void \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the sprite, getting the entity\textquotesingle{}s transform and loading the texture. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the destination rectangle for rendering based on the transform. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{draw}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Draws the sprite\textquotesingle{}s current texture to the screen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structSprites_a9767aacb914fde74ce286c466dd0345a}{recalc\+Sprite\+Dimensions}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Recalculates the sprite\textquotesingle{}s on-\/screen dimensions based on texture size and transform scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
@@ -58,8 +63,13 @@ struct \mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animato
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A component that gives an entity a visual representation using a texture. 
+
+This component is responsible for drawing a texture at the entity\textquotesingle{}s position. It can be controlled by an \doxylink{structAnimator}{Animator} component for animated sprites. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structSprites_a90c58c4968e7c990a5accd46b58cefd7}\index{Sprites@{Sprites}!Sprites@{Sprites}}
@@ -68,12 +78,36 @@ struct \mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animato
 {\footnotesize\ttfamily \label{structSprites_a90c58c4968e7c990a5accd46b58cefd7} 
 Sprites\+::\+Sprites (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tex}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a sprite from a texture path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The file path to the texture. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}\index{Sprites@{Sprites}!Sprites@{Sprites}}
 \index{Sprites@{Sprites}!Sprites@{Sprites}}
 \doxysubsubsection{\texorpdfstring{Sprites()}{Sprites()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6} 
 Sprites\+::\+Sprites (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tex}{, }\item[{int}]{n\+Frames}{, }\item[{int}]{m\+Speed}{, }\item[{bool}]{loop}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a sprite with simple, built-\/in animation capabilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & The file path to the sprite sheet. \\
+\hline
+{\em n\+Frames} & The number of frames in the animation. \\
+\hline
+{\em m\+Speed} & The delay in milliseconds between frames. \\
+\hline
+{\em loop} & Whether the animation should loop. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structSprites_a46633552deb102b94d645b223234de7a}\index{Sprites@{Sprites}!````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}}
 \index{````~Sprites@{\texorpdfstring{$\sim$}{\string~}Sprites}!Sprites@{Sprites}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sprites()}{\string~Sprites()}}
@@ -88,6 +122,10 @@ Sprites\+::\texorpdfstring{$\sim$}{\string~}\+Sprites (\begin{DoxyParamCaption}{
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily \label{structSprites_acf0999cbe0c8a23f168b357cab07b3d4} 
 void Sprites\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the sprite\textquotesingle{}s current texture to the screen. 
 
 
 
@@ -109,6 +147,10 @@ void Sprites\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace
 
 
 
+Initializes the sprite, getting the entity\textquotesingle{}s transform and loading the texture. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
 
 \Hypertarget{structSprites_a9767aacb914fde74ce286c466dd0345a}\index{Sprites@{Sprites}!recalcSpriteDimensions@{recalcSpriteDimensions}}
@@ -117,11 +159,19 @@ Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e76
 {\footnotesize\ttfamily \label{structSprites_a9767aacb914fde74ce286c466dd0345a} 
 void Sprites\+::recalc\+Sprite\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Recalculates the sprite\textquotesingle{}s on-\/screen dimensions based on texture size and transform scale. 
+
 \Hypertarget{structSprites_ad357d4d5deb0293597ad6a7953afb434}\index{Sprites@{Sprites}!update@{update}}
 \index{update@{update}!Sprites@{Sprites}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structSprites_ad357d4d5deb0293597ad6a7953afb434} 
 void Sprites\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the destination rectangle for rendering based on the transform. 
 
 
 

@@ -1,5 +1,5 @@
 <map id="Text::draw" name="Text::draw">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,94,33"/>
-<area shape="rect" id="Node000002" href="$structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title=" " alt="" coords="142,5,358,33"/>
+<area shape="rect" id="Node000001" title="Draws the text texture to the screen." alt="" coords="5,5,94,33"/>
+<area shape="rect" id="Node000002" href="$structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title="Draws a portion of a texture." alt="" coords="142,5,358,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,16,126,16,126,22,94,22"/>
 </map>

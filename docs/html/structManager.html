@@ -109,13 +109,16 @@ $(function(){initNavTree('structManager.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Manages all entities and their groups within the game.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ECS_8h_source.html">ECS.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Manager:</div>
 <div class="dyncontent">
 <div class="center"><img src="structManager__coll__graph.png" border="0" usemap="#aManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aManager_coll__map" id="aManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,163,256"/>
+<area shape="rect" title="Manages all entities and their groups within the game." alt="" coords="5,5,163,256"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -124,23 +127,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1658ff9f18e38ccd9cb8b0b371b9c20b" id="r_a1658ff9f18e38ccd9cb8b0b371b9c20b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1658ff9f18e38ccd9cb8b0b371b9c20b">Manager</a> ()</td></tr>
 <tr class="separator:a1658ff9f18e38ccd9cb8b0b371b9c20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af43da42550bd9746c5ea61a6aeee80de" id="r_af43da42550bd9746c5ea61a6aeee80de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af43da42550bd9746c5ea61a6aeee80de">update</a> ()</td></tr>
+<tr class="memdesc:af43da42550bd9746c5ea61a6aeee80de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all active entities.  <br /></td></tr>
 <tr class="separator:af43da42550bd9746c5ea61a6aeee80de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad688d8d92b4d0c1049913500ca9ba9f3" id="r_ad688d8d92b4d0c1049913500ca9ba9f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad688d8d92b4d0c1049913500ca9ba9f3">draw</a> ()</td></tr>
+<tr class="memdesc:ad688d8d92b4d0c1049913500ca9ba9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all active entities.  <br /></td></tr>
 <tr class="separator:ad688d8d92b4d0c1049913500ca9ba9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91664ffe84b1acc07269ce65eb504d79" id="r_a91664ffe84b1acc07269ce65eb504d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91664ffe84b1acc07269ce65eb504d79">refreshGroups</a> ()</td></tr>
+<tr class="memdesc:a91664ffe84b1acc07269ce65eb504d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-evaluates group memberships for all entities.  <br /></td></tr>
 <tr class="separator:a91664ffe84b1acc07269ce65eb504d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5c66704fd1b0a9b9d38de8fdcb3748" id="r_adc5c66704fd1b0a9b9d38de8fdcb3748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc5c66704fd1b0a9b9d38de8fdcb3748">refresh</a> ()</td></tr>
+<tr class="memdesc:adc5c66704fd1b0a9b9d38de8fdcb3748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes disabled entities and re-evaluates groups.  <br /></td></tr>
 <tr class="separator:adc5c66704fd1b0a9b9d38de8fdcb3748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68fd701c4f4a0c4126f30fb0eb46809d" id="r_a68fd701c4f4a0c4126f30fb0eb46809d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68fd701c4f4a0c4126f30fb0eb46809d">addToGroup</a> (<a class="el" href="structEntity.html">Entity</a> *memEntity, <a class="el" href="ECS_8h.html#af05108a2e67a61a15c3f17ae813a3756">GroupID</a> memGroup)</td></tr>
+<tr class="memdesc:a68fd701c4f4a0c4126f30fb0eb46809d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entity to a specified group.  <br /></td></tr>
 <tr class="separator:a68fd701c4f4a0c4126f30fb0eb46809d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e1017b17f0612ad6a2b5dad02efad5c" id="r_a5e1017b17f0612ad6a2b5dad02efad5c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structEntity.html">Entity</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1017b17f0612ad6a2b5dad02efad5c">getGroupMembers</a> (<a class="el" href="ECS_8h.html#af05108a2e67a61a15c3f17ae813a3756">GroupID</a> memGroup)</td></tr>
+<tr class="memdesc:a5e1017b17f0612ad6a2b5dad02efad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all entities belonging to a specific group.  <br /></td></tr>
 <tr class="separator:a5e1017b17f0612ad6a2b5dad02efad5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e037085d72bac9204b47734b3aae3c" id="r_a47e037085d72bac9204b47734b3aae3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e037085d72bac9204b47734b3aae3c">addEntity</a> (std::string id)</td></tr>
+<tr class="memdesc:a47e037085d72bac9204b47734b3aae3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new entity and adds it to the manager.  <br /></td></tr>
 <tr class="separator:a47e037085d72bac9204b47734b3aae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fcc1945934b4c4cf7c5f0e308d3709" id="r_aa6fcc1945934b4c4cf7c5f0e308d3709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6fcc1945934b4c4cf7c5f0e308d3709">destroyAll</a> ()</td></tr>
+<tr class="memdesc:aa6fcc1945934b4c4cf7c5f0e308d3709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys all entities managed by this object.  <br /></td></tr>
 <tr class="separator:aa6fcc1945934b4c4cf7c5f0e308d3709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages all entities and their groups within the game. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1658ff9f18e38ccd9cb8b0b371b9c20b" name="a1658ff9f18e38ccd9cb8b0b371b9c20b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1658ff9f18e38ccd9cb8b0b371b9c20b">&#9670;&#160;</a></span>Manager()</h2>
 
@@ -174,6 +187,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a new entity and adds it to the manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The string identifier for the new entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the newly created entity. </dd></dl>
+
 </div>
 </div>
 <a id="a68fd701c4f4a0c4126f30fb0eb46809d" name="a68fd701c4f4a0c4126f30fb0eb46809d"></a>
@@ -195,6 +217,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Adds an entity to a specified group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memEntity</td><td>The entity to add. </td></tr>
+    <tr><td class="paramname">memGroup</td><td>The group to add the entity to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa6fcc1945934b4c4cf7c5f0e308d3709" name="aa6fcc1945934b4c4cf7c5f0e308d3709"></a>
@@ -211,15 +242,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destroys all entities managed by this object. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structManager_aa6fcc1945934b4c4cf7c5f0e308d3709_cgraph.png" border="0" usemap="#astructManager_aa6fcc1945934b4c4cf7c5f0e308d3709_cgraph" alt=""/></div>
 <map name="astructManager_aa6fcc1945934b4c4cf7c5f0e308d3709_cgraph" id="astructManager_aa6fcc1945934b4c4cf7c5f0e308d3709_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,158,33"/>
-<area shape="rect" href="structManager.html#adc5c66704fd1b0a9b9d38de8fdcb3748" title=" " alt="" coords="206,5,338,33"/>
+<area shape="rect" title="Destroys all entities managed by this object." alt="" coords="5,5,158,33"/>
+<area shape="rect" href="structManager.html#adc5c66704fd1b0a9b9d38de8fdcb3748" title="Removes disabled entities and re&#45;evaluates groups." alt="" coords="206,5,338,33"/>
 <area shape="poly" title=" " alt="" coords="158,16,191,16,191,22,158,22"/>
-<area shape="rect" href="structManager.html#a91664ffe84b1acc07269ce65eb504d79" title=" " alt="" coords="386,5,564,33"/>
+<area shape="rect" href="structManager.html#a91664ffe84b1acc07269ce65eb504d79" title="Re&#45;evaluates group memberships for all entities." alt="" coords="386,5,564,33"/>
 <area shape="poly" title=" " alt="" coords="338,16,371,16,371,22,338,22"/>
 </map>
 </div>
@@ -241,6 +274,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Draws all active entities. </p>
+
 </div>
 </div>
 <a id="a5e1017b17f0612ad6a2b5dad02efad5c" name="a5e1017b17f0612ad6a2b5dad02efad5c"></a>
@@ -258,6 +293,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Retrieves all entities belonging to a specific group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memGroup</td><td>The group whose members are to be retrieved. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of pointers to the entities in the group. </dd></dl>
+
 </div>
 </div>
 <a id="adc5c66704fd1b0a9b9d38de8fdcb3748" name="adc5c66704fd1b0a9b9d38de8fdcb3748"></a>
@@ -274,13 +318,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Removes disabled entities and re-evaluates groups. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structManager_adc5c66704fd1b0a9b9d38de8fdcb3748_cgraph.png" border="0" usemap="#astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_cgraph" alt=""/></div>
 <map name="astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_cgraph" id="astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,138,33"/>
-<area shape="rect" href="structManager.html#a91664ffe84b1acc07269ce65eb504d79" title=" " alt="" coords="186,5,364,33"/>
+<area shape="rect" title="Removes disabled entities and re&#45;evaluates groups." alt="" coords="5,5,138,33"/>
+<area shape="rect" href="structManager.html#a91664ffe84b1acc07269ce65eb504d79" title="Re&#45;evaluates group memberships for all entities." alt="" coords="186,5,364,33"/>
 <area shape="poly" title=" " alt="" coords="138,16,170,16,170,22,138,22"/>
 </map>
 </div>
@@ -289,8 +335,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structManager_adc5c66704fd1b0a9b9d38de8fdcb3748_icgraph.png" border="0" usemap="#astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_icgraph" alt=""/></div>
 <map name="astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_icgraph" id="astructManager_adc5c66704fd1b0a9b9d38de8fdcb3748_icgraph">
-<area shape="rect" title=" " alt="" coords="206,5,338,33"/>
-<area shape="rect" href="structManager.html#aa6fcc1945934b4c4cf7c5f0e308d3709" title=" " alt="" coords="5,5,158,33"/>
+<area shape="rect" title="Removes disabled entities and re&#45;evaluates groups." alt="" coords="206,5,338,33"/>
+<area shape="rect" href="structManager.html#aa6fcc1945934b4c4cf7c5f0e308d3709" title="Destroys all entities managed by this object." alt="" coords="5,5,158,33"/>
 <area shape="poly" title=" " alt="" coords="190,22,158,22,158,16,190,16"/>
 </map>
 </div>
@@ -311,15 +357,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Re-evaluates group memberships for all entities. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structManager_a91664ffe84b1acc07269ce65eb504d79_icgraph.png" border="0" usemap="#astructManager_a91664ffe84b1acc07269ce65eb504d79_icgraph" alt=""/></div>
 <map name="astructManager_a91664ffe84b1acc07269ce65eb504d79_icgraph" id="astructManager_a91664ffe84b1acc07269ce65eb504d79_icgraph">
-<area shape="rect" title=" " alt="" coords="386,5,564,33"/>
-<area shape="rect" href="structManager.html#adc5c66704fd1b0a9b9d38de8fdcb3748" title=" " alt="" coords="206,5,338,33"/>
+<area shape="rect" title="Re&#45;evaluates group memberships for all entities." alt="" coords="386,5,564,33"/>
+<area shape="rect" href="structManager.html#adc5c66704fd1b0a9b9d38de8fdcb3748" title="Removes disabled entities and re&#45;evaluates groups." alt="" coords="206,5,338,33"/>
 <area shape="poly" title=" " alt="" coords="371,22,338,22,338,16,371,16"/>
-<area shape="rect" href="structManager.html#aa6fcc1945934b4c4cf7c5f0e308d3709" title=" " alt="" coords="5,5,158,33"/>
+<area shape="rect" href="structManager.html#aa6fcc1945934b4c4cf7c5f0e308d3709" title="Destroys all entities managed by this object." alt="" coords="5,5,158,33"/>
 <area shape="poly" title=" " alt="" coords="190,22,158,22,158,16,190,16"/>
 </map>
 </div>
@@ -340,6 +388,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates all active entities. </p>
 
 </div>
 </div>

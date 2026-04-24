@@ -1,5 +1,5 @@
 <map id="Vector2D::subtract" name="Vector2D::subtract">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,33"/>
+<area shape="rect" id="Node000001" title="Subtracts another vector from this one." alt="" coords="5,5,147,33"/>
 <area shape="rect" id="Node000002" href="$structVector2D.html#a98e9997ebb7a629f4db52397d4e0d653" title=" " alt="" coords="195,5,342,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,22,147,22"/>
 </map>

@@ -1,14 +1,14 @@
 <map id="getNewComponentTypeID" name="getNewComponentTypeID">
-<area shape="rect" id="Node000001" title=" " alt="" coords="640,54,831,82"/>
-<area shape="rect" id="Node000002" href="$ECS_8h.html#a6618a945314f27cb6b96b1a770a33c36" title=" " alt="" coords="431,54,592,82"/>
+<area shape="rect" id="Node000001" title="Generates a unique ID for a new component type at runtime." alt="" coords="640,54,831,82"/>
+<area shape="rect" id="Node000002" href="$ECS_8h.html#a6618a945314f27cb6b96b1a770a33c36" title="Gets the unique ID for a given component type." alt="" coords="431,54,592,82"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="625,70,593,70,593,65,625,65"/>
-<area shape="rect" id="Node000003" href="$structEntity.html#aafe23d7d7ea7f427ca40454edcae460e" title=" " alt="" coords="5,54,171,82"/>
+<area shape="rect" id="Node000003" href="$structEntity.html#aafe23d7d7ea7f427ca40454edcae460e" title="Adds a component to the entity." alt="" coords="5,54,171,82"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,49,428,32,382,18,337,11,301,8,265,11,219,18,164,35,117,56,115,51,162,30,218,13,264,5,301,3,337,5,384,13,430,27,472,44"/>
-<area shape="rect" id="Node000004" href="$structEntity.html#a0c59911f0b4747b26e004796d5a9f85d" title=" " alt="" coords="220,27,382,55"/>
+<area shape="rect" id="Node000004" href="$structEntity.html#a0c59911f0b4747b26e004796d5a9f85d" title="Removes a component of a specific type from the entity." alt="" coords="220,27,382,55"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="415,58,382,54,382,49,416,53"/>
-<area shape="rect" id="Node000005" href="$structEntity.html#ad5ce9d4246498a5a2ffd163a2d38c98f" title=" " alt="" coords="220,79,382,107"/>
+<area shape="rect" id="Node000005" href="$structEntity.html#ad5ce9d4246498a5a2ffd163a2d38c98f" title="Retrieves a component from the entity." alt="" coords="220,79,382,107"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="416,82,383,86,382,81,415,77"/>
-<area shape="rect" id="Node000006" href="$structEntity.html#aa622a8d79153a90d0e3b9b992ca2d38b" title=" " alt="" coords="219,131,383,159"/>
+<area shape="rect" id="Node000006" href="$structEntity.html#aa622a8d79153a90d0e3b9b992ca2d38b" title="Checks if the entity has a component of a specific type." alt="" coords="219,131,383,159"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="463,90,384,121,349,133,347,128,382,116,461,85"/>
 <area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="239,128,218,121,123,85,125,80,220,116,241,123"/>
 </map>

@@ -1,23 +1,23 @@
 <map id="src/Animator.cpp" name="src/Animator.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="1175,5,1305,33"/>
-<area shape="rect" id="Node000002" href="$Animator_8h.html" title=" " alt="" coords="1194,81,1286,109"/>
+<area shape="rect" id="Node000002" href="$Animator_8h.html" title="Defines a state&#45;machine&#45;based animation component for entities." alt="" coords="1194,81,1286,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1243,34,1243,65,1237,65,1237,34"/>
-<area shape="rect" id="Node000005" href="$Constants_8h.html" title=" " alt="" coords="463,459,561,487"/>
+<area shape="rect" id="Node000005" href="$Constants_8h.html" title="Defines global constants and enums used throughout the engine and game." alt="" coords="463,459,561,487"/>
 <area shape="poly" id="edge35_Node000001_Node000005" title=" " alt="" coords="1175,24,885,32,693,42,495,55,309,74,154,99,93,114,48,131,19,150,12,159,9,169,9,323,10,372,17,391,34,409,64,426,107,440,160,451,219,458,342,467,447,470,447,475,342,472,219,464,159,456,106,445,62,431,30,413,13,393,5,373,4,323,4,169,7,157,15,146,45,127,92,109,153,94,309,69,495,50,693,36,884,27,1175,19"/>
 <area shape="rect" id="Node000011" title=" " alt="" coords="1399,459,1476,487"/>
 <area shape="poly" id="edge36_Node000001_Node000011" title=" " alt="" coords="1289,31,1337,50,1386,78,1407,97,1425,118,1436,142,1440,169,1440,323,1440,443,1435,443,1435,323,1435,169,1431,143,1420,121,1404,100,1383,83,1335,55,1287,36"/>
-<area shape="rect" id="Node000003" href="$Sprites_8h.html" title=" " alt="" coords="1033,157,1111,184"/>
+<area shape="rect" id="Node000003" href="$Sprites_8h.html" title="Defines the component for rendering a static or animated sprite." alt="" coords="1033,157,1111,184"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1211,112,1117,153,1115,148,1209,107"/>
 <area shape="poly" id="edge33_Node000002_Node000011" title=" " alt="" coords="1243,109,1243,245,1243,323,1246,348,1257,370,1272,390,1292,408,1338,436,1385,455,1383,460,1336,440,1289,412,1268,394,1252,373,1241,350,1237,323,1237,245,1237,109"/>
 <area shape="rect" id="Node000026" title=" " alt="" coords="1277,157,1400,184"/>
 <area shape="poly" id="edge34_Node000002_Node000026" title=" " alt="" coords="1259,107,1311,145,1308,150,1256,111"/>
-<area shape="rect" id="Node000004" href="$ECS_8h.html" title=" " alt="" coords="1144,384,1203,411"/>
+<area shape="rect" id="Node000004" href="$ECS_8h.html" title="Defines the core classes for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="1144,384,1203,411"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1092,183,1115,204,1136,231,1152,266,1163,303,1174,368,1169,369,1158,305,1147,268,1131,234,1111,207,1088,187"/>
-<area shape="rect" id="Node000014" href="$TextureManager_8h.html" title=" " alt="" coords="545,232,682,260"/>
+<area shape="rect" id="Node000014" href="$TextureManager_8h.html" title="A static utility class for loading and drawing textures." alt="" coords="545,232,682,260"/>
 <area shape="poly" id="edge14_Node000003_Node000014" title=" " alt="" coords="1033,181,698,234,697,229,1032,175"/>
 <area shape="rect" id="Node000018" title=" " alt="" coords="44,384,140,411"/>
 <area shape="poly" id="edge32_Node000003_Node000018" title=" " alt="" coords="1033,176,942,180,818,190,676,208,533,235,417,268,306,308,134,379,132,374,304,303,416,263,531,230,675,202,817,185,942,175,1032,170"/>
-<area shape="rect" id="Node000025" href="$Transform_8h.html" title=" " alt="" coords="1023,232,1121,260"/>
+<area shape="rect" id="Node000025" href="$Transform_8h.html" title="Defines the component for managing an entity&#39;s position, rotation, and scale." alt="" coords="1023,232,1121,260"/>
 <area shape="poly" id="edge28_Node000003_Node000025" title=" " alt="" coords="1075,185,1075,217,1069,217,1069,185"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1144,411,1133,414,977,439,822,456,577,472,577,467,822,451,976,434,1132,409,1143,406"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="734,535,792,563"/>
@@ -36,7 +36,7 @@
 <area shape="rect" id="Node000006" title=" " alt="" coords="448,535,576,563"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="515,488,515,519,509,519,509,488"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="558,485,720,532,718,537,556,490"/>
-<area shape="rect" id="Node000015" href="$Game_8h.html" title=" " alt="" coords="644,308,716,336"/>
+<area shape="rect" id="Node000015" href="$Game_8h.html" title="Defines the main Game class that orchestrates the entire application." alt="" coords="644,308,716,336"/>
 <area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="627,259,660,295,656,298,623,262"/>
 <area shape="rect" id="Node000023" title=" " alt="" coords="163,384,280,411"/>
 <area shape="poly" id="edge27_Node000014_Node000023" title=" " alt="" coords="580,263,271,380,269,375,578,258"/>
@@ -44,7 +44,7 @@
 <area shape="poly" id="edge26_Node000014_Node000024" title=" " alt="" coords="604,262,572,298,568,295,600,259"/>
 <area shape="poly" id="edge17_Node000015_Node000004" title=" " alt="" coords="717,323,891,342,1008,358,1129,381,1128,386,1007,364,890,347,716,329"/>
 <area shape="poly" id="edge16_Node000015_Node000005" title=" " alt="" coords="644,336,632,338,566,345,480,349,397,360,366,370,345,385,337,399,338,411,346,421,360,431,401,448,448,459,447,464,399,453,358,436,342,425,333,412,332,398,341,382,363,366,396,355,479,343,566,339,632,333,643,330"/>
-<area shape="rect" id="Node000016" href="$Vector2D_8h.html" title=" " alt="" coords="1027,384,1120,411"/>
+<area shape="rect" id="Node000016" href="$Vector2D_8h.html" title="Defines a simple 2D vector class for position and velocity calculations." alt="" coords="1027,384,1120,411"/>
 <area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="717,327,1012,381,1011,386,716,332"/>
 <area shape="poly" id="edge20_Node000015_Node000018" title=" " alt="" coords="644,336,633,338,500,357,395,364,290,370,155,386,155,381,289,365,395,359,500,352,632,333,643,331"/>
 <area shape="rect" id="Node000019" title=" " alt="" coords="355,384,501,411"/>

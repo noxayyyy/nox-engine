@@ -1,5 +1,5 @@
 <map id="Scene::update" name="Scene::update">
-<area shape="rect" id="Node000001" title=" " alt="" coords="263,5,376,33"/>
-<area shape="rect" id="Node000002" href="$structSceneManager.html#a66eb8582ca7e36bc1ad1ffe4fef7e983" title=" " alt="" coords="5,5,215,33"/>
+<area shape="rect" id="Node000001" title="Pure virtual function for scene&#45;specific update logic." alt="" coords="263,5,376,33"/>
+<area shape="rect" id="Node000002" href="$structSceneManager.html#a66eb8582ca7e36bc1ad1ffe4fef7e983" title="Calls the update method on the current active scene(s)." alt="" coords="5,5,215,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,22,215,22,215,16,247,16"/>
 </map>

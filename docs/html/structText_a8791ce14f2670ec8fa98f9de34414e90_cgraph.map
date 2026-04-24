@@ -1,5 +1,5 @@
 <map id="Text::setTex" name="Text::setTex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,104,33"/>
-<area shape="rect" id="Node000002" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title=" " alt="" coords="152,5,365,33"/>
+<area shape="rect" id="Node000001" title="Creates a new texture from a string of text." alt="" coords="5,5,104,33"/>
+<area shape="rect" id="Node000002" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title="Loads a texture from an image file." alt="" coords="152,5,365,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,16,136,16,136,22,104,22"/>
 </map>

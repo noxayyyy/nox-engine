@@ -13,5 +13,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Text.cpp", "Text_8cpp.html", null ],
     [ "TextureManager.cpp", "TextureManager_8cpp.html", null ],
     [ "Tile.cpp", "Tile_8cpp.html", null ],
-    [ "Transform.cpp", "Transform_8cpp.html", null ]
+    [ "Transform.cpp", "Transform_8cpp.html", null ],
+    [ "Vector2D.cpp", "Vector2D_8cpp.html", "Vector2D_8cpp" ]
 ];

@@ -1,7 +1,7 @@
 <map id="SceneManager::loadScene" name="SceneManager::loadScene">
-<area shape="rect" id="Node000001" title=" " alt="" coords="277,32,469,60"/>
-<area shape="rect" id="Node000002" href="$structSceneManager.html#a932ab29dbfb95b976c333cba5f2cbb3c" title=" " alt="" coords="5,5,229,33"/>
+<area shape="rect" id="Node000001" title="Loads a scene by its string identifier." alt="" coords="277,32,469,60"/>
+<area shape="rect" id="Node000002" href="$structSceneManager.html#a932ab29dbfb95b976c333cba5f2cbb3c" title="Loads the scene with the next sequential build index." alt="" coords="5,5,229,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,37,229,33,229,28,261,32"/>
-<area shape="rect" id="Node000003" href="$structSceneManager.html#a220fb279ec5d75c5932ebb873a5c6664" title=" " alt="" coords="6,57,228,85"/>
+<area shape="rect" id="Node000003" href="$structSceneManager.html#a220fb279ec5d75c5932ebb873a5c6664" title="Loads the scene with the previous sequential build index." alt="" coords="6,57,228,85"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,60,228,63,228,58,261,54"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="include/ECS.h" name="include/ECS.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="345,5,454,33"/>
-<area shape="rect" id="Node000002" href="$Constants_8h.html" title=" " alt="" coords="50,81,149,109"/>
+<area shape="rect" id="Node000001" title="Defines the core classes for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="345,5,454,33"/>
+<area shape="rect" id="Node000002" href="$Constants_8h.html" title="Defines global constants and enums used throughout the engine and game." alt="" coords="50,81,149,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,36,164,80,163,75,345,31"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="157,157,216,184"/>
 <area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="345,27,312,33,276,44,243,60,214,83,197,111,190,142,185,141,192,109,210,79,240,56,275,39,310,28,344,22"/>

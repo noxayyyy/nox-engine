@@ -2,6 +2,11 @@
 \hypertarget{structAnimator_1_1Edge}{}\label{structAnimator_1_1Edge}\index{Animator::Edge@{Animator::Edge}}
 
 
+Defines a transition edge between two animations in the state machine.  
+
+
+
+
 {\ttfamily \#include $<$Animator.\+h$>$}
 
 
@@ -20,17 +25,20 @@ Collaboration diagram for Animator\+::Edge\+:
 \mbox{\hyperlink{structAnimator_1_1Edge_ad85e2e0d8036a2ff44c31354bf612033}{Edge}} ()
 \item 
 \mbox{\hyperlink{structAnimator_1_1Edge_a51ad0f47db57c06082a3af8569483d75}{Edge}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$ \mbox{\hyperlink{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0}{conditions}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{structAnimator_1_1Edge}{Edge} with a set of transition conditions. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structAnimator_1_1Edge_a2f3e19b39df64d3a51e9d87fb9f38c08}{\texorpdfstring{$\sim$}{\string~}\+Edge}} ()
 \item 
 const bool \mbox{\hyperlink{structAnimator_1_1Edge_a58af165137d9797b872f07b80584e907}{can\+Traverse}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if all conditions for traversing this edge are met. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$ \mbox{\hyperlink{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0}{conditions}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Defines a transition edge between two animations in the state machine. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structAnimator_1_1Edge_ad85e2e0d8036a2ff44c31354bf612033}\index{Animator::Edge@{Animator::Edge}!Edge@{Edge}}
@@ -45,6 +53,15 @@ Animator\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}
 {\footnotesize\ttfamily \label{structAnimator_1_1Edge_a51ad0f47db57c06082a3af8569483d75} 
 Animator\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$}]{conditions}{}\end{DoxyParamCaption})}
 
+
+
+Constructs an \doxylink{structAnimator_1_1Edge}{Edge} with a set of transition conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conditions} & A vector of shared pointers to booleans. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structAnimator_1_1Edge_a2f3e19b39df64d3a51e9d87fb9f38c08}\index{Animator::Edge@{Animator::Edge}!````~Edge@{\texorpdfstring{$\sim$}{\string~}Edge}}
 \index{````~Edge@{\texorpdfstring{$\sim$}{\string~}Edge}!Animator::Edge@{Animator::Edge}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Edge()}{\string~Edge()}}
@@ -62,6 +79,13 @@ const bool Animator\+::\+Edge\+::can\+Traverse (\begin{DoxyParamCaption}{}{}\end
 
 
 
+Checks if all conditions for traversing this edge are met. 
+
+\begin{DoxyReturn}{Returns}
+True if the transition can occur, false otherwise. 
+\end{DoxyReturn}
+
+
 \doxysubsection{Member Data Documentation}
 \Hypertarget{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0}\index{Animator::Edge@{Animator::Edge}!conditions@{conditions}}
 \index{conditions@{conditions}!Animator::Edge@{Animator::Edge}}
@@ -69,7 +93,7 @@ const bool Animator\+::\+Edge\+::can\+Traverse (\begin{DoxyParamCaption}{}{}\end
 {\footnotesize\ttfamily \label{structAnimator_1_1Edge_a8f36bd0d7382ff64a167ecbabc2439d0} 
 std\+::vector$<$std\+::shared\+\_\+ptr$<$bool$>$ $>$ Animator\+::\+Edge\+::conditions}
 
-
+A list of conditions that must all be true for this edge to be traversed. 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

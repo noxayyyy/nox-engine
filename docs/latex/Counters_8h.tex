@@ -1,5 +1,10 @@
 \doxysection{include/\+Counters.h File Reference}
 \hypertarget{Counters_8h}{}\label{Counters_8h}\index{include/Counters.h@{include/Counters.h}}
+
+
+Defines UI components for displaying numerical data like \doxylink{structFPS}{FPS} and points.  
+
+
 {\ttfamily \#include "{}Text.\+h"{}}\newline
 {\ttfamily \#include $<$SDL2/\+SDL\+\_\+render.\+h$>$}\newline
 Include dependency graph for Counters.\+h\+:
@@ -22,6 +27,11 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structFPS}{FPS}}
-\item 
+\begin{DoxyCompactList}\small\item\em A \doxylink{structText}{Text} component that automatically calculates and displays the current \doxylink{structFPS}{FPS}. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structPoints}{Points}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A \doxylink{structText}{Text} component that displays a score or point value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines UI components for displaying numerical data like \doxylink{structFPS}{FPS} and points. 
+

@@ -1,5 +1,5 @@
 <map id="include/Constants.h" name="include/Constants.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="53,5,202,33"/>
+<area shape="rect" id="Node000001" title="Defines global constants and enums used throughout the engine and game." alt="" coords="53,5,202,33"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,81,133,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,35,91,70,87,67,115,32"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="157,81,216,109"/>

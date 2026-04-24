@@ -2,6 +2,11 @@
 \hypertarget{structButton}{}\label{structButton}\index{Button@{Button}}
 
 
+A UI component that can be clicked to trigger a callback function.  
+
+
+
+
 {\ttfamily \#include $<$Button.\+h$>$}
 
 
@@ -28,21 +33,21 @@ Collaboration diagram for Button\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structButton_ab254bfae7efdeabe2a474d39b260c19b}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, float scale, SDL\+\_\+\+Colour def\+Colour, SDL\+\_\+\+Colour hover\+Colour, SDL\+\_\+\+Colour text\+Colour, std\+::function$<$ void()$>$ func)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structButton}{Button}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, float scale, std\+::function$<$ void()$>$ func)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structButton}{Button} with default colors. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structButton_a4c24ca26da1399b4ece25bdd05d27d98}{Button}} (std\+::string in\+Str, int x, int y, int w, int h, std\+::function$<$ void()$>$ func)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structButton}{Button} with default colors and scale. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structButton_a2a001eb9c3cc8ae54768a850dd345002}{\texorpdfstring{$\sim$}{\string~}\+Button}} ()
 \item 
 void \mbox{\hyperlink{structButton_a94132a198aa03cd94f0337d29109b20c}{init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the button\textquotesingle{}s components (transform, collider, text). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Checks for mouse hover and click events to update the button\textquotesingle{}s state. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332}{reload}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Reloads the button\textquotesingle{}s texture, useful after state changes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structButton_af4d14cf544d8e0620f4ffcd7984103f7}{draw}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Draws the button\textquotesingle{}s background and text. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -53,8 +58,13 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A UI component that can be clicked to trigger a callback function. 
+
+Combines a collider, text, and transform to create an interactive button. It changes color on hover and executes a function when pressed. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structButton_ab254bfae7efdeabe2a474d39b260c19b}\index{Button@{Button}!Button@{Button}}
@@ -63,18 +73,85 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 {\footnotesize\ttfamily \label{structButton_ab254bfae7efdeabe2a474d39b260c19b} 
 Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{, }\item[{SDL\+\_\+\+Colour}]{def\+Colour}{, }\item[{SDL\+\_\+\+Colour}]{hover\+Colour}{, }\item[{SDL\+\_\+\+Colour}]{text\+Colour}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a fully customized \doxylink{structButton}{Button}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The text to display on the button. \\
+\hline
+{\em x} & The x-\/position of the button. \\
+\hline
+{\em y} & The y-\/position of the button. \\
+\hline
+{\em w} & The width of the button. \\
+\hline
+{\em h} & The height of the button. \\
+\hline
+{\em scale} & The rendering scale of the button text. \\
+\hline
+{\em def\+Colour} & The default background color. \\
+\hline
+{\em hover\+Colour} & The background color when the mouse hovers over it. \\
+\hline
+{\em text\+Colour} & The color of the button\textquotesingle{}s text. \\
+\hline
+{\em func} & The callback function to execute when the button is pressed. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf}\index{Button@{Button}!Button@{Button}}
 \index{Button@{Button}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{structButton_a6af6a898011243f6e8e9c2ec6a41a4cf} 
 Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{float}]{scale}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structButton}{Button} with default colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The text to display on the button. \\
+\hline
+{\em x} & The x-\/position of the button. \\
+\hline
+{\em y} & The y-\/position of the button. \\
+\hline
+{\em w} & The width of the button. \\
+\hline
+{\em h} & The height of the button. \\
+\hline
+{\em scale} & The rendering scale of the button text. \\
+\hline
+{\em func} & The callback function to execute when the button is pressed. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structButton_a4c24ca26da1399b4ece25bdd05d27d98}\index{Button@{Button}!Button@{Button}}
 \index{Button@{Button}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{structButton_a4c24ca26da1399b4ece25bdd05d27d98} 
 Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{, }\item[{std\+::function$<$ void()$>$}]{func}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structButton}{Button} with default colors and scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The text to display on the button. \\
+\hline
+{\em x} & The x-\/position of the button. \\
+\hline
+{\em y} & The y-\/position of the button. \\
+\hline
+{\em w} & The width of the button. \\
+\hline
+{\em h} & The height of the button. \\
+\hline
+{\em func} & The callback function to execute when the button is pressed. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structButton_a2a001eb9c3cc8ae54768a850dd345002}\index{Button@{Button}!````~Button@{\texorpdfstring{$\sim$}{\string~}Button}}
 \index{````~Button@{\texorpdfstring{$\sim$}{\string~}Button}!Button@{Button}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Button()}{\string~Button()}}
@@ -89,6 +166,10 @@ Button\+::\texorpdfstring{$\sim$}{\string~}\+Button (\begin{DoxyParamCaption}{}{
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily \label{structButton_af4d14cf544d8e0620f4ffcd7984103f7} 
 void Button\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the button\textquotesingle{}s background and text. 
 
 
 
@@ -110,6 +191,10 @@ void Button\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{
 
 
 
+Initializes the button\textquotesingle{}s components (transform, collider, text). 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
 
 Here is the call graph for this function\+:
@@ -128,6 +213,10 @@ void Button\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspac
 
 
 
+Reloads the button\textquotesingle{}s texture, useful after state changes. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{Component}}.
 
 \Hypertarget{structButton_abda97f1ae8e081da3dbd0b77a27cad9d}\index{Button@{Button}!update@{update}}
@@ -135,6 +224,10 @@ Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structButton_abda97f1ae8e081da3dbd0b77a27cad9d} 
 void Button\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks for mouse hover and click events to update the button\textquotesingle{}s state. 
 
 
 

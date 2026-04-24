@@ -1,5 +1,5 @@
 <map id="FPS::calcAvg" name="FPS::calcAvg">
-<area shape="rect" id="Node000001" title=" " alt="" coords="152,5,255,33"/>
-<area shape="rect" id="Node000002" href="$structFPS.html#a2eb4adf219fe41837ef4e48ff4ada160" title=" " alt="" coords="5,5,104,33"/>
+<area shape="rect" id="Node000001" title="Calculates the average FPS over a sample of frames." alt="" coords="152,5,255,33"/>
+<area shape="rect" id="Node000002" href="$structFPS.html#a2eb4adf219fe41837ef4e48ff4ada160" title="Updates the FPS calculation and the displayed text." alt="" coords="5,5,104,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,22,104,22,104,16,136,16"/>
 </map>

@@ -2,6 +2,11 @@
 \hypertarget{structAnimator}{}\label{structAnimator}\index{Animator@{Animator}}
 
 
+Manages sprite sheet animations and transitions between them using a state machine.  
+
+
+
+
 {\ttfamily \#include $<$Animator.\+h$>$}
 
 
@@ -28,9 +33,9 @@ Collaboration diagram for Animator\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structAnimator_1_1Animation}{Animation}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents a single, self-\/contained animation sequence. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structAnimator_1_1Edge}{Edge}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines a transition edge between two animations in the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,22 +44,22 @@ struct \mbox{\hyperlink{structAnimator_1_1Edge}{Edge}}
 \mbox{\hyperlink{structAnimator_a5af4797549f9f466a88657899e17c6ab}{\texorpdfstring{$\sim$}{\string~}\+Animator}} ()
 \item 
 void \mbox{\hyperlink{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}{init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the \doxylink{structAnimator}{Animator} component, acquiring the entity\textquotesingle{}s Sprite component. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e956735}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the current animation state, checking for transitions and advancing the frame. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}{draw}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Draws the current frame of the active animation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1}{add\+Animation}} (const char \texorpdfstring{$\ast$}{*}id, const char \texorpdfstring{$\ast$}{*}tex\+Path, int speed=100, const bool is\+Looping=true, const bool is\+Reversible=false)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds a new animation state to the animator\textquotesingle{}s state machine. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structAnimator_a11922ec826afced3bfac9098fa55b8ea}{add\+Edge}} (const char \texorpdfstring{$\ast$}{*}id\+From, const char \texorpdfstring{$\ast$}{*}id\+To, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$ conditions)
-\item 
+\begin{DoxyCompactList}\small\item\em Defines a conditional transition between two animations. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{structAnimator_a05dbf02b17e983baa9984133df8900e9}{get\+Curr\+Anim\+ID}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the currently playing animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
@@ -62,8 +67,13 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Manages sprite sheet animations and transitions between them using a state machine. 
+
+This component controls an entity\textquotesingle{}s sprite to play different animation sequences. It uses an adjacency matrix to define transitions (Edges) between animations based on conditions. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structAnimator_a701eeb9283612be2027425efb06bbff7}\index{Animator@{Animator}!Animator@{Animator}}
@@ -87,17 +97,51 @@ Animator\+::\texorpdfstring{$\sim$}{\string~}\+Animator (\begin{DoxyParamCaption
 {\footnotesize\ttfamily \label{structAnimator_a48a95ea818a364fbd5fd2140b4120cf1} 
 void Animator\+::add\+Animation (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{tex\+Path}{, }\item[{int}]{speed}{ = {\ttfamily 100}, }\item[{const bool}]{is\+Looping}{ = {\ttfamily true}, }\item[{const bool}]{is\+Reversible}{ = {\ttfamily false}}\end{DoxyParamCaption})}
 
+
+
+Adds a new animation state to the animator\textquotesingle{}s state machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the new animation. \\
+\hline
+{\em tex\+Path} & The file path to the sprite sheet texture. \\
+\hline
+{\em speed} & The delay in milliseconds between frames. \\
+\hline
+{\em is\+Looping} & Whether the animation should loop. \\
+\hline
+{\em is\+Reversible} & Whether the animation should play in reverse after finishing. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structAnimator_a11922ec826afced3bfac9098fa55b8ea}\index{Animator@{Animator}!addEdge@{addEdge}}
 \index{addEdge@{addEdge}!Animator@{Animator}}
 \doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
 {\footnotesize\ttfamily \label{structAnimator_a11922ec826afced3bfac9098fa55b8ea} 
 void Animator\+::add\+Edge (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id\+From}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{id\+To}{, }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ bool $>$ $>$}]{conditions}{}\end{DoxyParamCaption})}
 
+
+
+Defines a conditional transition between two animations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+From} & The ID of the source animation state. \\
+\hline
+{\em id\+To} & The ID of the destination animation state. \\
+\hline
+{\em conditions} & A vector of pointers to booleans that must be true to transition. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}\index{Animator@{Animator}!draw@{draw}}
 \index{draw@{draw}!Animator@{Animator}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily \label{structAnimator_a23e378fb2dc1cb48c685015ddc885c29} 
 void Animator\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the current frame of the active animation. 
 
 
 
@@ -109,11 +153,22 @@ Reimplemented from \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e6
 {\footnotesize\ttfamily \label{structAnimator_a05dbf02b17e983baa9984133df8900e9} 
 std\+::string Animator\+::get\+Curr\+Anim\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Gets the ID of the currently playing animation. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the ID of the current animation. 
+\end{DoxyReturn}
 \Hypertarget{structAnimator_a399c69a70f729b5a9f5d3cd463da020b}\index{Animator@{Animator}!init@{init}}
 \index{init@{init}!Animator@{Animator}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily \label{structAnimator_a399c69a70f729b5a9f5d3cd463da020b} 
 void Animator\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the \doxylink{structAnimator}{Animator} component, acquiring the entity\textquotesingle{}s Sprite component. 
 
 
 
@@ -124,6 +179,10 @@ Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e76
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structAnimator_a59b9903253d8ce084048f7600e956735} 
 void Animator\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the current animation state, checking for transitions and advancing the frame. 
 
 
 

@@ -2,6 +2,11 @@
 \hypertarget{structAnimator_1_1Animation}{}\label{structAnimator_1_1Animation}\index{Animator::Animation@{Animator::Animation}}
 
 
+Represents a single, self-\/contained animation sequence.  
+
+
+
+
 {\ttfamily \#include $<$Animator.\+h$>$}
 
 
@@ -20,27 +25,30 @@ Collaboration diagram for Animator\+::Animation\+:
 \mbox{\hyperlink{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}{Animation}} ()
 \item 
 \mbox{\hyperlink{structAnimator_1_1Animation_ab56e862376a0f56cf99544761475d31a}{Animation}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579}{id}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{structAnimator_1_1Animation}{Animation} with a given ID. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc}{Animation}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579}{id}}, SDL\+\_\+\+Point frame\+Size, const char \texorpdfstring{$\ast$}{*}tex\+Path, int \mbox{\hyperlink{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7}{speed}}=100, bool is\+Looping=true, bool is\+Reversible=false)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs and initializes a complete \doxylink{structAnimator_1_1Animation}{Animation} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structAnimator_1_1Animation_aa7897ab04165c1d511e934292f34d47f}{\texorpdfstring{$\sim$}{\string~}\+Animation}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579}{id}}
-\item 
+\begin{DoxyCompactList}\small\item\em Unique identifier for the animation. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structAnimator_1_1Animation_a601ea6202862535ec720150aecab37f8}{frames}}
-\item 
+\begin{DoxyCompactList}\small\item\em The number of frames in the sprite sheet. \end{DoxyCompactList}\item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structAnimator_1_1Animation_a7978793e8615eb44486843a0ea72666b}{texture}}
-\item 
+\begin{DoxyCompactList}\small\item\em The texture containing the animation frames. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7}{speed}} = 100
-\item 
+\begin{DoxyCompactList}\small\item\em The delay in milliseconds between frames. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structAnimator_1_1Animation_a263600b19edbf1bf843c7cfc584cb1a3}{loop}}
-\item 
+\begin{DoxyCompactList}\small\item\em Whether the animation should loop upon completion. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structAnimator_1_1Animation_a309d420a31e2da9522188aec21ff5b6f}{reversible}} = false
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em If true, the animation plays forwards then backwards. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Represents a single, self-\/contained animation sequence. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structAnimator_1_1Animation_ac20e3219d81e062dad817e2895b4a5f2}\index{Animator::Animation@{Animator::Animation}!Animation@{Animation}}
@@ -55,12 +63,40 @@ Animator\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyPar
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_ab56e862376a0f56cf99544761475d31a} 
 Animator\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id}{}\end{DoxyParamCaption})}
 
+
+
+Constructs an \doxylink{structAnimator_1_1Animation}{Animation} with a given ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for this animation. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc}\index{Animator::Animation@{Animator::Animation}!Animation@{Animation}}
 \index{Animation@{Animation}!Animator::Animation@{Animator::Animation}}
 \doxysubsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc} 
 Animator\+::\+Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{id}{, }\item[{SDL\+\_\+\+Point}]{frame\+Size}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{tex\+Path}{, }\item[{int}]{speed}{ = {\ttfamily 100}, }\item[{bool}]{is\+Looping}{ = {\ttfamily true}, }\item[{bool}]{is\+Reversible}{ = {\ttfamily false}}\end{DoxyParamCaption})}
 
+
+
+Constructs and initializes a complete \doxylink{structAnimator_1_1Animation}{Animation} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for this animation. \\
+\hline
+{\em frame\+Size} & The dimensions (width, height) of a single frame. \\
+\hline
+{\em tex\+Path} & The file path to the sprite sheet texture. \\
+\hline
+{\em speed} & The delay in milliseconds between frames. \\
+\hline
+{\em is\+Looping} & Whether the animation should loop. \\
+\hline
+{\em is\+Reversible} & Whether the animation should play in reverse after finishing. \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -84,11 +120,19 @@ Animator\+::\+Animation\+::\texorpdfstring{$\sim$}{\string~}\+Animation (\begin{
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a601ea6202862535ec720150aecab37f8} 
 int Animator\+::\+Animation\+::frames}
 
+
+
+The number of frames in the sprite sheet. 
+
 \Hypertarget{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579}\index{Animator::Animation@{Animator::Animation}!id@{id}}
 \index{id@{id}!Animator::Animation@{Animator::Animation}}
 \doxysubsubsection{\texorpdfstring{id}{id}}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_acd06cfe73803393f46c8edeca6230579} 
 const char\texorpdfstring{$\ast$}{*} Animator\+::\+Animation\+::id}
+
+
+
+Unique identifier for the animation. 
 
 \Hypertarget{structAnimator_1_1Animation_a263600b19edbf1bf843c7cfc584cb1a3}\index{Animator::Animation@{Animator::Animation}!loop@{loop}}
 \index{loop@{loop}!Animator::Animation@{Animator::Animation}}
@@ -96,11 +140,19 @@ const char\texorpdfstring{$\ast$}{*} Animator\+::\+Animation\+::id}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a263600b19edbf1bf843c7cfc584cb1a3} 
 bool Animator\+::\+Animation\+::loop}
 
+
+
+Whether the animation should loop upon completion. 
+
 \Hypertarget{structAnimator_1_1Animation_a309d420a31e2da9522188aec21ff5b6f}\index{Animator::Animation@{Animator::Animation}!reversible@{reversible}}
 \index{reversible@{reversible}!Animator::Animation@{Animator::Animation}}
 \doxysubsubsection{\texorpdfstring{reversible}{reversible}}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a309d420a31e2da9522188aec21ff5b6f} 
 bool Animator\+::\+Animation\+::reversible = false}
+
+
+
+If true, the animation plays forwards then backwards. 
 
 \Hypertarget{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7}\index{Animator::Animation@{Animator::Animation}!speed@{speed}}
 \index{speed@{speed}!Animator::Animation@{Animator::Animation}}
@@ -108,11 +160,19 @@ bool Animator\+::\+Animation\+::reversible = false}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a7c1e3cda189e256fcc68279e11937fd7} 
 int Animator\+::\+Animation\+::speed = 100}
 
+
+
+The delay in milliseconds between frames. 
+
 \Hypertarget{structAnimator_1_1Animation_a7978793e8615eb44486843a0ea72666b}\index{Animator::Animation@{Animator::Animation}!texture@{texture}}
 \index{texture@{texture}!Animator::Animation@{Animator::Animation}}
 \doxysubsubsection{\texorpdfstring{texture}{texture}}
 {\footnotesize\ttfamily \label{structAnimator_1_1Animation_a7978793e8615eb44486843a0ea72666b} 
 SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Animator\+::\+Animation\+::texture}
+
+
+
+The texture containing the animation frames. 
 
 
 

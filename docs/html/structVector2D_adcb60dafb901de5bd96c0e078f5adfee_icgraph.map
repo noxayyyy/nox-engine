@@ -1,6 +1,6 @@
 <map id="Vector2D::divide" name="Vector2D::divide">
-<area shape="rect" id="Node000001" title=" " alt="" coords="212,32,340,60"/>
-<area shape="rect" id="Node000002" href="$structVector2D.html#a9940d5af33a1c4e29a07d2715df82358" title=" " alt="" coords="11,5,158,33"/>
+<area shape="rect" id="Node000001" title="Divides this vector by another, component&#45;wise." alt="" coords="212,32,340,60"/>
+<area shape="rect" id="Node000002" href="$structVector2D.html#a97aa3bf06c59b54596a4ea56aa84a2c2" title=" " alt="" coords="11,5,158,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,37,158,32,159,27,197,32"/>
 <area shape="rect" id="Node000003" href="$structVector2D.html#a3f975b1c402d06663ef5d27d9e56af4d" title=" " alt="" coords="5,57,164,85"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,59,164,63,164,58,196,54"/>

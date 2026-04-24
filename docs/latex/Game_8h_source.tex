@@ -2,52 +2,52 @@
 \hypertarget{Game_8h_source}{}\label{Game_8h_source}\index{include/Game.h@{include/Game.h}}
 \mbox{\hyperlink{Game_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_events.h>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_image.h>}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_mixer.h>}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_mouse.h>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_ttf.h>}}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}\ \{}
-\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Game\ constructor}}
-\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}();}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Game\ deconstructor}}
-\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGame_ad918e31c1644966465f822d912585f16}{deltaTime}};}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}{timeScale}};}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Event\ \mbox{\hyperlink{classGame_ac50bda5dab77dc40a78db21a883d23b3}{event}};}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Renderer*\ \mbox{\hyperlink{classGame_ae5164c37c0dc74cfb56041174017bf57}{renderer}};}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Point\ \mbox{\hyperlink{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}{mouseCoords}};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_a2a7362eac9054b5735967829046edb7d}{mouseButtonPressed}};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ declare\ game\ functions\ in\ class}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a6fb6ab188f447a0b1448f77426a2ad79}{init}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ title,\ \textcolor{keywordtype}{int}\ xpos,\ \textcolor{keywordtype}{int}\ ypos,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{bool}\ fullscreen);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handleEvents}}();}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_adbbce2f78e1de148e187a4bc70b493d7}{ghostSpawn}}();}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}}();}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}}();}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}}();}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_afd9af52dcc5835f2a8c37f441a256b9d}{running}}()\ \{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isRunning;}
-\DoxyCodeLine{00037\ \ \ \ \ \}}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a474f21af42dbf8a9644a8472af45b611}{setPause}}(\textcolor{keywordtype}{bool}\ pause);}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_aa153f0da6707884d25383acc9fd711f1}{getPaused}}();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRunning;}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ isPaused;}
-\DoxyCodeLine{00045\ \ \ \ \ SDL\_Window*\ window;}
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{structEntity}{Entity}}\&\ mouse;}
-\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Vector2D_8h}{Vector2D.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_events.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_image.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_mixer.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_mouse.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_ttf.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGame_ad918e31c1644966465f822d912585f16}{deltaTime}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGame_aa67a1eb6b517d48fc49bf39a2477c35d}{timeScale}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Event\ \mbox{\hyperlink{classGame_ac50bda5dab77dc40a78db21a883d23b3}{event}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Renderer*\ \mbox{\hyperlink{classGame_ae5164c37c0dc74cfb56041174017bf57}{renderer}};\ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ SDL\_Point\ \mbox{\hyperlink{classGame_acec487bb7f3db1ca0d4bdcfff1776bdb}{mouseCoords}};\ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_a2a7362eac9054b5735967829046edb7d}{mouseButtonPressed}};\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a6fb6ab188f447a0b1448f77426a2ad79}{init}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ title,\ \textcolor{keywordtype}{int}\ xpos,\ \textcolor{keywordtype}{int}\ ypos,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{bool}\ fullscreen);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_adb5563f62c0c82e3e42ec36501aa5698}{handleEvents}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_adbbce2f78e1de148e187a4bc70b493d7}{ghostSpawn}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a15ddd769261d923827a3cdf41499c843}{render}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_ad4f36a72a2d06696f7973788606f57fc}{clean}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_afd9af52dcc5835f2a8c37f441a256b9d}{running}}()\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isRunning;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGame_a474f21af42dbf8a9644a8472af45b611}{setPause}}(\textcolor{keywordtype}{bool}\ pause);}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGame_aa153f0da6707884d25383acc9fd711f1}{getPaused}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRunning;}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ isPaused;}
+\DoxyCodeLine{00093\ \ \ \ \ SDL\_Window*\ window;}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{structEntity}{Entity}}\&\ mouse;}
+\DoxyCodeLine{00095\ \};}
 
 \end{DoxyCode}

@@ -109,14 +109,17 @@ $(function(){initNavTree('structController.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Translates keyboard input (WASD) into entity movement.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Controller_8h_source.html">Controller.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Controller:</div>
 <div class="dyncontent">
 <div class="center"><img src="structController__inherit__graph.png" border="0" usemap="#aController_inherit__map" alt="Inheritance graph"/></div>
 <map name="aController_inherit__map" id="aController_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,215,148,421"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="15,5,138,167"/>
+<area shape="rect" title="Translates keyboard input (WASD) into entity movement." alt="" coords="5,215,148,421"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="15,5,138,167"/>
 <area shape="poly" title=" " alt="" coords="80,182,80,215,74,215,74,182"/>
 </map>
 </div>
@@ -125,10 +128,10 @@ Collaboration diagram for Controller:</div>
 <div class="dyncontent">
 <div class="center"><img src="structController__coll__graph.png" border="0" usemap="#aController_coll__map" alt="Collaboration graph"/></div>
 <map name="aController_coll__map" id="aController_coll__map">
-<area shape="rect" title=" " alt="" coords="5,577,148,783"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="15,366,138,528"/>
+<area shape="rect" title="Translates keyboard input (WASD) into entity movement." alt="" coords="5,577,148,783"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="15,366,138,528"/>
 <area shape="poly" title=" " alt="" coords="80,543,80,577,74,577,74,543"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="20,5,133,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="20,5,133,301"/>
 <area shape="poly" title=" " alt="" coords="80,301,80,349,74,349,74,301"/>
 </map>
 </div>
@@ -140,17 +143,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ab87934c4f7a266cfdb86e0f36bc1b5" id="r_a0ab87934c4f7a266cfdb86e0f36bc1b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab87934c4f7a266cfdb86e0f36bc1b5">~Controller</a> ()</td></tr>
 <tr class="separator:a0ab87934c4f7a266cfdb86e0f36bc1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3de74c4b224affca8fb73bc75374a9" id="r_afd3de74c4b224affca8fb73bc75374a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd3de74c4b224affca8fb73bc75374a9">init</a> () override</td></tr>
+<tr class="memdesc:afd3de74c4b224affca8fb73bc75374a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the controller, grabbing the entity's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and <a class="el" href="structCollider.html" title="Provides an entity with a physical bounding box for collision detection.">Collider</a>.  <br /></td></tr>
 <tr class="separator:afd3de74c4b224affca8fb73bc75374a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a7be803734580a81e16cf0fe3a47e54" id="r_a5a7be803734580a81e16cf0fe3a47e54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a7be803734580a81e16cf0fe3a47e54">updateKeyDown</a> (SDL_Keycode key)</td></tr>
+<tr class="memdesc:a5a7be803734580a81e16cf0fe3a47e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state when a key is pressed down.  <br /></td></tr>
 <tr class="separator:a5a7be803734580a81e16cf0fe3a47e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e5d63f1095f76c5c5deac68a42dbd3" id="r_af7e5d63f1095f76c5c5deac68a42dbd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e5d63f1095f76c5c5deac68a42dbd3">updateKeyUp</a> (SDL_Keycode key)</td></tr>
+<tr class="memdesc:af7e5d63f1095f76c5c5deac68a42dbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state when a key is released.  <br /></td></tr>
 <tr class="separator:af7e5d63f1095f76c5c5deac68a42dbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e598a359e9327b6bb625c7b377ee7" id="r_a612e598a359e9327b6bb625c7b377ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a612e598a359e9327b6bb625c7b377ee7">update</a> () override</td></tr>
+<tr class="memdesc:a612e598a359e9327b6bb625c7b377ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and applies velocity to the <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> based on current key states.  <br /></td></tr>
 <tr class="separator:a612e598a359e9327b6bb625c7b377ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66dcd5056f1c90515405d4a77f86dd67" id="r_a66dcd5056f1c90515405d4a77f86dd67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66dcd5056f1c90515405d4a77f86dd67">reload</a> () override</td></tr>
+<tr class="memdesc:a66dcd5056f1c90515405d4a77f86dd67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the controller's state.  <br /></td></tr>
 <tr class="separator:a66dcd5056f1c90515405d4a77f86dd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
+<tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,9 +168,13 @@ Public Member Functions</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Translates keyboard input (WASD) into entity movement. </p>
+<p>Reads keyboard state changes and updates the entity's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component's velocity. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95c56822d667e94b031451729ce069a9" name="a95c56822d667e94b031451729ce069a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95c56822d667e94b031451729ce069a9">&#9670;&#160;</a></span>Controller()</h2>
 
@@ -220,6 +233,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the controller, grabbing the entity's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and <a class="el" href="structCollider.html" title="Provides an entity with a physical bounding box for collision detection.">Collider</a>. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
 </div>
@@ -246,6 +261,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Resets the controller's state. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">Component</a>.</p>
 
@@ -274,14 +291,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Calculates and applies velocity to the <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> based on current key states. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structController_a612e598a359e9327b6bb625c7b377ee7_cgraph.png" border="0" usemap="#astructController_a612e598a359e9327b6bb625c7b377ee7_cgraph" alt=""/></div>
 <map name="astructController_a612e598a359e9327b6bb625c7b377ee7_cgraph" id="astructController_a612e598a359e9327b6bb625c7b377ee7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,144,33"/>
-<area shape="rect" href="classGame.html#aa153f0da6707884d25383acc9fd711f1" title=" " alt="" coords="192,5,327,33"/>
+<area shape="rect" title="Calculates and applies velocity to the Transform based on current key states." alt="" coords="5,5,144,33"/>
+<area shape="rect" href="classGame.html#aa153f0da6707884d25383acc9fd711f1" title="Gets the current paused state of the game." alt="" coords="192,5,327,33"/>
 <area shape="poly" title=" " alt="" coords="144,16,176,16,176,22,144,22"/>
 </map>
 </div>
@@ -303,6 +322,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Updates the state when a key is pressed down. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The SDL_Keycode of the pressed key. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af7e5d63f1095f76c5c5deac68a42dbd3" name="af7e5d63f1095f76c5c5deac68a42dbd3"></a>
@@ -319,6 +346,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the state when a key is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The SDL_Keycode of the released key. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

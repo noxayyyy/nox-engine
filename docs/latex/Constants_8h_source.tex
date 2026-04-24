@@ -2,44 +2,47 @@
 \hypertarget{Constants_8h_source}{}\label{Constants_8h_source}\index{include/Constants.h@{include/Constants.h}}
 \mbox{\hyperlink{Constants_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_rect.h>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00001\ }
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143f}{GroupLabels}}\ :\ std::size\_t\ \{}
-\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa4cafa5feda04184537b4d7d346e1e89b}{MAP}},}
-\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa6c3e87a9198a1e2acc74b59d20e20ea4}{PACMAN}},}
-\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa3d223a154b96a31b5f2de5c61e2b2ed9}{GHOSTS}},}
-\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa4ff7759c640d7a6ec12fb6fdb5cd6788}{GHOST\_BAR}},}
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa7f503b6a990026f84f6d17e3310f8429}{PELLETS}},}
-\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa99d4a8fe0858416bfc253266896427b5}{COLLIDERS}},}
-\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fac0df8ae7b40bd9e09eeffba1facc72dd}{BUTTONS}},}
-\DoxyCodeLine{00014\ \};}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{comment}{//\ main}}
-\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a22d0558ee434b9d1d225c989de09d44e}{FPS\_CAP}}\ =\ 60;}
-\DoxyCodeLine{00018\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{Constants_8h_a8dc5ff637d6956de293b541e44a9ed4e}{FRAME\_DELAY}}\ =\ 1.0f\ /\ (float)\mbox{\hyperlink{Constants_8h_a22d0558ee434b9d1d225c989de09d44e}{FPS\_CAP}};}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \textcolor{comment}{//\ ECS}}
-\DoxyCodeLine{00021\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{Constants_8h_a17f156982a410ef4a1cafb028b3040f5}{MAX\_COMPONENTS}}\ =\ 32;}
-\DoxyCodeLine{00022\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{Constants_8h_ad59744fbb5d5fe498c1422756801fce6}{MAX\_GROUPS}}\ =\ 32;}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <SDL2/SDL\_rect.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143f}{GroupLabels}}\ :\ std::size\_t\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa4cafa5feda04184537b4d7d346e1e89b}{MAP}},}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa6c3e87a9198a1e2acc74b59d20e20ea4}{PACMAN}},}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa3d223a154b96a31b5f2de5c61e2b2ed9}{GHOSTS}},}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa4ff7759c640d7a6ec12fb6fdb5cd6788}{GHOST\_BAR}},}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa7f503b6a990026f84f6d17e3310f8429}{PELLETS}},}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fa99d4a8fe0858416bfc253266896427b5}{COLLIDERS}},}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{Constants_8h_ac691f71a1e791a19456911d213a8143fac0df8ae7b40bd9e09eeffba1facc72dd}{BUTTONS}},}
+\DoxyCodeLine{00022\ \};}
 \DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{comment}{//\ game}}
-\DoxyCodeLine{00025\ \textcolor{keyword}{const}\ SDL\_Point\ \mbox{\hyperlink{Constants_8h_a9933eff67efeb4a374d4ec801eb7c44a}{WINDOW\_SIZE}}\ \{\ 1366,\ 768\ \};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{comment}{//\ scene\ manager}}
-\DoxyCodeLine{00028\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}\ =\ 10;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{comment}{//\ counters}}
-\DoxyCodeLine{00031\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a191736070a43725b355e77d1f5aca17c}{SAMPLE\_COUNT}}\ =\ 10;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \textcolor{comment}{//\ mouse}}
-\DoxyCodeLine{00034\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{Constants_8h_aacda571ab5709e1d30f29dc301c13aec}{MOUSE\_TAG}}\ =\ \textcolor{stringliteral}{"{}mouse"{}};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{Constants_8h_af957daf65130df0f33ffdb3f1a97a4aa}{WALL\_TAG}}\ =\ \textcolor{stringliteral}{"{}wall"{}};}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ main}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a22d0558ee434b9d1d225c989de09d44e}{FPS\_CAP}}\ =\ 60;\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{Constants_8h_a8dc5ff637d6956de293b541e44a9ed4e}{FRAME\_DELAY}}\ =\ 1.0f\ /\ (float)\mbox{\hyperlink{Constants_8h_a22d0558ee434b9d1d225c989de09d44e}{FPS\_CAP}};\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ ECS}}
+\DoxyCodeLine{00029\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{Constants_8h_a17f156982a410ef4a1cafb028b3040f5}{MAX\_COMPONENTS}}\ =\ 32;\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{const}\ std::size\_t\ \mbox{\hyperlink{Constants_8h_ad59744fbb5d5fe498c1422756801fce6}{MAX\_GROUPS}}\ =\ 32;\ \ \ \ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ game}}
+\DoxyCodeLine{00033\ \textcolor{keyword}{const}\ SDL\_Point\ \mbox{\hyperlink{Constants_8h_a9933eff67efeb4a374d4ec801eb7c44a}{WINDOW\_SIZE}}\ \{\ 1366,\ 768\ \};\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{//\ scene\ manager}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a8b149dbb25cf3c7b2b32747b4c61d451}{MAX\_SCENE\_COUNT}}\ =\ 10;\ }
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{comment}{//\ anim}}
-\DoxyCodeLine{00039\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ANIM\_ENTRY\ =\ \textcolor{stringliteral}{"{}animentry"{}};}
+\DoxyCodeLine{00038\ \textcolor{comment}{//\ counters}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Constants_8h_a191736070a43725b355e77d1f5aca17c}{SAMPLE\_COUNT}}\ =\ 10;\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ mouse}}
+\DoxyCodeLine{00042\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{Constants_8h_aacda571ab5709e1d30f29dc301c13aec}{MOUSE\_TAG}}\ =\ \textcolor{stringliteral}{"{}mouse"{}};\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{Constants_8h_af957daf65130df0f33ffdb3f1a97a4aa}{WALL\_TAG}}\ =\ \textcolor{stringliteral}{"{}wall"{}};\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ anim}}
+\DoxyCodeLine{00047\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ANIM\_ENTRY\ =}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{stringliteral}{"{}animentry"{}};\ }
 
 \end{DoxyCode}

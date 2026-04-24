@@ -428,6 +428,47 @@
     <filename>Transform_8cpp.html</filename>
     <includes id="Transform_8h" name="Transform.h" local="yes" import="no" module="no" objc="no">Transform.h</includes>
   </compound>
+  <compound kind="file">
+    <name>Vector2D.cpp</name>
+    <path>src/</path>
+    <filename>Vector2D_8cpp.html</filename>
+    <includes id="Vector2D_8h" name="Vector2D.h" local="yes" import="no" module="no" objc="no">Vector2D.h</includes>
+    <member kind="function">
+      <type>Vector2D</type>
+      <name>operator+</name>
+      <anchorfile>Vector2D_8cpp.html</anchorfile>
+      <anchor>a3db48e0370c3edfd914cb7959881809d</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2D</type>
+      <name>operator-</name>
+      <anchorfile>Vector2D_8cpp.html</anchorfile>
+      <anchor>ab7319729bd817581ecbfeda7a78335dc</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2D</type>
+      <name>operator*</name>
+      <anchorfile>Vector2D_8cpp.html</anchorfile>
+      <anchor>ab0796881642926f1c8d53f106f197f1a</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2D</type>
+      <name>operator/</name>
+      <anchorfile>Vector2D_8cpp.html</anchorfile>
+      <anchor>a97aa3bf06c59b54596a4ea56aa84a2c2</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Vector2D_8cpp.html</anchorfile>
+      <anchor>ac84d6114898ff1593dbff7b0196be939</anchor>
+      <arglist>(std::ostream &amp;stream, const Vector2D &amp;vec)</arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>Animator::Animation</name>
     <filename>structAnimator_1_1Animation.html</filename>
@@ -2131,32 +2172,32 @@
       <arglist></arglist>
     </member>
     <member kind="friend">
-      <type>friend Vector2D &amp;</type>
+      <type>friend Vector2D</type>
       <name>operator+</name>
       <anchorfile>structVector2D.html</anchorfile>
-      <anchor>ac640f3cc75789f25259df4815d74affa</anchor>
-      <arglist>(Vector2D &amp;v1, const Vector2D &amp;v2)</arglist>
+      <anchor>a3db48e0370c3edfd914cb7959881809d</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
     </member>
     <member kind="friend">
-      <type>friend Vector2D &amp;</type>
+      <type>friend Vector2D</type>
       <name>operator-</name>
       <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a965d7a2a1029710ecfca725992bf4047</anchor>
-      <arglist>(Vector2D &amp;v1, const Vector2D &amp;v2)</arglist>
+      <anchor>ab7319729bd817581ecbfeda7a78335dc</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
     </member>
     <member kind="friend">
-      <type>friend Vector2D &amp;</type>
+      <type>friend Vector2D</type>
       <name>operator*</name>
       <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a20676d1769c063498335466d37930824</anchor>
-      <arglist>(Vector2D &amp;v1, const Vector2D &amp;v2)</arglist>
+      <anchor>ab0796881642926f1c8d53f106f197f1a</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
     </member>
     <member kind="friend">
-      <type>friend Vector2D &amp;</type>
+      <type>friend Vector2D</type>
       <name>operator/</name>
       <anchorfile>structVector2D.html</anchorfile>
-      <anchor>a9940d5af33a1c4e29a07d2715df82358</anchor>
-      <arglist>(Vector2D &amp;v1, const Vector2D &amp;v2)</arglist>
+      <anchor>a97aa3bf06c59b54596a4ea56aa84a2c2</anchor>
+      <arglist>(Vector2D v1, const Vector2D &amp;v2)</arglist>
     </member>
     <member kind="friend">
       <type>friend std::ostream &amp;</type>

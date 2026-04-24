@@ -2,32 +2,34 @@
 \hypertarget{Sprites_8h_source}{}\label{Sprites_8h_source}\index{include/Sprites.h@{include/Sprites.h}}
 \mbox{\hyperlink{Sprites_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animator}};}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex);}
-\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}{Sprites}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex,\ \textcolor{keywordtype}{int}\ nFrames,\ \textcolor{keywordtype}{int}\ mSpeed,\ \textcolor{keywordtype}{bool}\ loop);}
-\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{structSprites_a46633552deb102b94d645b223234de7a}{\string~Sprites}}();}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{init}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{update}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{draw}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_a9767aacb914fde74ce286c466dd0345a}{recalcSpriteDimensions}}();}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TextureManager_8h}{TextureManager.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSprites_a8bed86ffe9cb5dc9d845e50c5ea96129}{Animator}};}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ transform;}
-\DoxyCodeLine{00023\ \ \ \ \ SDL\_Texture*\ texture;}
-\DoxyCodeLine{00024\ \ \ \ \ SDL\_Rect\ srcRect,\ destRect;}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ setTex(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex);}
-\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{structSprites_a90c58c4968e7c990a5accd46b58cefd7}{Sprites}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex);}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structSprites_ad43a62cd40b3edd7bb1b4a4193ab1dc6}{Sprites}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex,\ \textcolor{keywordtype}{int}\ nFrames,\ \textcolor{keywordtype}{int}\ mSpeed,\ \textcolor{keywordtype}{bool}\ loop);}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structSprites_a46633552deb102b94d645b223234de7a}{\string~Sprites}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_ac4bef9081db1e53ea8e764d4c21239ea}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_ad357d4d5deb0293597ad6a7953afb434}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{draw}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSprites_a9767aacb914fde74ce286c466dd0345a}{recalcSpriteDimensions}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ transform;}
+\DoxyCodeLine{00057\ \ \ \ \ SDL\_Texture*\ texture;}
+\DoxyCodeLine{00058\ \ \ \ \ SDL\_Rect\ srcRect,\ destRect;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ setTex(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tex);}
+\DoxyCodeLine{00065\ \};}
 
 \end{DoxyCode}

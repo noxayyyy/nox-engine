@@ -110,13 +110,16 @@ $(function(){initNavTree('structAnimator_1_1Animation.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a single, self-contained animation sequence.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Animator_8h_source.html">Animator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Animator::Animation:</div>
 <div class="dyncontent">
 <div class="center"><img src="structAnimator_1_1Animation__coll__graph.png" border="0" usemap="#aAnimator_1_1Animation_coll__map" alt="Collaboration graph"/></div>
 <map name="aAnimator_1_1Animation_coll__map" id="aAnimator_1_1Animation_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,151,256"/>
+<area shape="rect" title="Represents a single, self&#45;contained animation sequence." alt="" coords="5,5,151,256"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,8 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac20e3219d81e062dad817e2895b4a5f2" id="r_ac20e3219d81e062dad817e2895b4a5f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac20e3219d81e062dad817e2895b4a5f2">Animation</a> ()</td></tr>
 <tr class="separator:ac20e3219d81e062dad817e2895b4a5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56e862376a0f56cf99544761475d31a" id="r_ab56e862376a0f56cf99544761475d31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab56e862376a0f56cf99544761475d31a">Animation</a> (const char *<a class="el" href="#acd06cfe73803393f46c8edeca6230579">id</a>)</td></tr>
+<tr class="memdesc:ab56e862376a0f56cf99544761475d31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="structAnimator_1_1Animation.html" title="Represents a single, self-contained animation sequence.">Animation</a> with a given ID.  <br /></td></tr>
 <tr class="separator:ab56e862376a0f56cf99544761475d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853555faca34e37e4135b31b02d998dc" id="r_a853555faca34e37e4135b31b02d998dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a853555faca34e37e4135b31b02d998dc">Animation</a> (const char *<a class="el" href="#acd06cfe73803393f46c8edeca6230579">id</a>, SDL_Point frameSize, const char *texPath, int <a class="el" href="#a7c1e3cda189e256fcc68279e11937fd7">speed</a>=100, bool isLooping=true, bool isReversible=false)</td></tr>
+<tr class="memdesc:a853555faca34e37e4135b31b02d998dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs and initializes a complete <a class="el" href="structAnimator_1_1Animation.html" title="Represents a single, self-contained animation sequence.">Animation</a> object.  <br /></td></tr>
 <tr class="separator:a853555faca34e37e4135b31b02d998dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7897ab04165c1d511e934292f34d47f" id="r_aa7897ab04165c1d511e934292f34d47f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7897ab04165c1d511e934292f34d47f">~Animation</a> ()</td></tr>
 <tr class="separator:aa7897ab04165c1d511e934292f34d47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,19 +139,27 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acd06cfe73803393f46c8edeca6230579" id="r_acd06cfe73803393f46c8edeca6230579"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd06cfe73803393f46c8edeca6230579">id</a></td></tr>
+<tr class="memdesc:acd06cfe73803393f46c8edeca6230579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier for the animation.  <br /></td></tr>
 <tr class="separator:acd06cfe73803393f46c8edeca6230579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a601ea6202862535ec720150aecab37f8" id="r_a601ea6202862535ec720150aecab37f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601ea6202862535ec720150aecab37f8">frames</a></td></tr>
+<tr class="memdesc:a601ea6202862535ec720150aecab37f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of frames in the sprite sheet.  <br /></td></tr>
 <tr class="separator:a601ea6202862535ec720150aecab37f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7978793e8615eb44486843a0ea72666b" id="r_a7978793e8615eb44486843a0ea72666b"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7978793e8615eb44486843a0ea72666b">texture</a></td></tr>
+<tr class="memdesc:a7978793e8615eb44486843a0ea72666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The texture containing the animation frames.  <br /></td></tr>
 <tr class="separator:a7978793e8615eb44486843a0ea72666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c1e3cda189e256fcc68279e11937fd7" id="r_a7c1e3cda189e256fcc68279e11937fd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c1e3cda189e256fcc68279e11937fd7">speed</a> = 100</td></tr>
+<tr class="memdesc:a7c1e3cda189e256fcc68279e11937fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delay in milliseconds between frames.  <br /></td></tr>
 <tr class="separator:a7c1e3cda189e256fcc68279e11937fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263600b19edbf1bf843c7cfc584cb1a3" id="r_a263600b19edbf1bf843c7cfc584cb1a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263600b19edbf1bf843c7cfc584cb1a3">loop</a></td></tr>
+<tr class="memdesc:a263600b19edbf1bf843c7cfc584cb1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the animation should loop upon completion.  <br /></td></tr>
 <tr class="separator:a263600b19edbf1bf843c7cfc584cb1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a309d420a31e2da9522188aec21ff5b6f" id="r_a309d420a31e2da9522188aec21ff5b6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a309d420a31e2da9522188aec21ff5b6f">reversible</a> = false</td></tr>
+<tr class="memdesc:a309d420a31e2da9522188aec21ff5b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the animation plays forwards then backwards.  <br /></td></tr>
 <tr class="separator:a309d420a31e2da9522188aec21ff5b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a single, self-contained animation sequence. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac20e3219d81e062dad817e2895b4a5f2" name="ac20e3219d81e062dad817e2895b4a5f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac20e3219d81e062dad817e2895b4a5f2">&#9670;&#160;</a></span>Animation() <span class="overload">[1/3]</span></h2>
 
@@ -178,6 +191,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="structAnimator_1_1Animation.html" title="Represents a single, self-contained animation sequence.">Animation</a> with a given ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The unique identifier for this animation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -219,15 +240,28 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs and initializes a complete <a class="el" href="structAnimator_1_1Animation.html" title="Represents a single, self-contained animation sequence.">Animation</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The unique identifier for this animation. </td></tr>
+    <tr><td class="paramname">frameSize</td><td>The dimensions (width, height) of a single frame. </td></tr>
+    <tr><td class="paramname">texPath</td><td>The file path to the sprite sheet texture. </td></tr>
+    <tr><td class="paramname">speed</td><td>The delay in milliseconds between frames. </td></tr>
+    <tr><td class="paramname">isLooping</td><td>Whether the animation should loop. </td></tr>
+    <tr><td class="paramname">isReversible</td><td>Whether the animation should play in reverse after finishing. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc_cgraph.png" border="0" usemap="#astructAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc_cgraph" alt=""/></div>
 <map name="astructAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc_cgraph" id="astructAnimator_1_1Animation_a853555faca34e37e4135b31b02d998dc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,36,162,81"/>
-<area shape="rect" href="structTextureManager.html#affabc7a219da0e5c10988c64f9a97466" title=" " alt="" coords="217,5,416,50"/>
+<area shape="rect" title="Constructs and initializes a complete Animation object." alt="" coords="5,36,162,81"/>
+<area shape="rect" href="structTextureManager.html#affabc7a219da0e5c10988c64f9a97466" title="Gets the dimensions of an image file without loading the full texture." alt="" coords="217,5,416,50"/>
 <area shape="poly" title=" " alt="" coords="162,45,201,40,202,45,162,51"/>
-<area shape="rect" href="structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title=" " alt="" coords="210,74,423,102"/>
+<area shape="rect" href="structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title="Loads a texture from an image file." alt="" coords="210,74,423,102"/>
 <area shape="poly" title=" " alt="" coords="162,66,195,70,194,75,162,71"/>
 </map>
 </div>
@@ -264,6 +298,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>The number of frames in the sprite sheet. </p>
+
 </div>
 </div>
 <a id="acd06cfe73803393f46c8edeca6230579" name="acd06cfe73803393f46c8edeca6230579"></a>
@@ -277,6 +313,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Unique identifier for the animation. </p>
 
 </div>
 </div>
@@ -292,6 +330,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Whether the animation should loop upon completion. </p>
+
 </div>
 </div>
 <a id="a309d420a31e2da9522188aec21ff5b6f" name="a309d420a31e2da9522188aec21ff5b6f"></a>
@@ -305,6 +345,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>If true, the animation plays forwards then backwards. </p>
 
 </div>
 </div>
@@ -320,6 +362,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>The delay in milliseconds between frames. </p>
+
 </div>
 </div>
 <a id="a7978793e8615eb44486843a0ea72666b" name="a7978793e8615eb44486843a0ea72666b"></a>
@@ -333,6 +377,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The texture containing the animation frames. </p>
 
 </div>
 </div>

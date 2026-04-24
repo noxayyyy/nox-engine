@@ -109,14 +109,17 @@ $(function(){initNavTree('structButton.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>A UI component that can be clicked to trigger a callback function.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Button_8h_source.html">Button.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="structButton__inherit__graph.png" border="0" usemap="#aButton_inherit__map" alt="Inheritance graph"/></div>
 <map name="aButton_inherit__map" id="aButton_inherit__map">
-<area shape="rect" title=" " alt="" coords="21,215,112,444"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="5,5,128,167"/>
+<area shape="rect" title="A UI component that can be clicked to trigger a callback function." alt="" coords="21,215,112,444"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,5,128,167"/>
 <area shape="poly" title=" " alt="" coords="70,182,70,215,64,215,64,182"/>
 </map>
 </div>
@@ -125,10 +128,10 @@ Collaboration diagram for Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="structButton__coll__graph.png" border="0" usemap="#aButton_coll__map" alt="Collaboration graph"/></div>
 <map name="aButton_coll__map" id="aButton_coll__map">
-<area shape="rect" title=" " alt="" coords="21,577,112,806"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="5,366,128,528"/>
+<area shape="rect" title="A UI component that can be clicked to trigger a callback function." alt="" coords="21,577,112,806"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,366,128,528"/>
 <area shape="poly" title=" " alt="" coords="70,543,70,577,64,577,64,543"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="10,5,123,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="10,5,123,301"/>
 <area shape="poly" title=" " alt="" coords="70,301,70,349,64,349,64,301"/>
 </map>
 </div>
@@ -136,20 +139,27 @@ Collaboration diagram for Button:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab254bfae7efdeabe2a474d39b260c19b" id="r_ab254bfae7efdeabe2a474d39b260c19b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab254bfae7efdeabe2a474d39b260c19b">Button</a> (std::string inStr, int x, int y, int w, int h, float scale, SDL_Colour defColour, SDL_Colour hoverColour, SDL_Colour textColour, std::function&lt; void()&gt; func)</td></tr>
+<tr class="memdesc:ab254bfae7efdeabe2a474d39b260c19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a fully customized <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a>.  <br /></td></tr>
 <tr class="separator:ab254bfae7efdeabe2a474d39b260c19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af6a898011243f6e8e9c2ec6a41a4cf" id="r_a6af6a898011243f6e8e9c2ec6a41a4cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6af6a898011243f6e8e9c2ec6a41a4cf">Button</a> (std::string inStr, int x, int y, int w, int h, float scale, std::function&lt; void()&gt; func)</td></tr>
+<tr class="memdesc:a6af6a898011243f6e8e9c2ec6a41a4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a> with default colors.  <br /></td></tr>
 <tr class="separator:a6af6a898011243f6e8e9c2ec6a41a4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c24ca26da1399b4ece25bdd05d27d98" id="r_a4c24ca26da1399b4ece25bdd05d27d98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c24ca26da1399b4ece25bdd05d27d98">Button</a> (std::string inStr, int x, int y, int w, int h, std::function&lt; void()&gt; func)</td></tr>
+<tr class="memdesc:a4c24ca26da1399b4ece25bdd05d27d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a> with default colors and scale.  <br /></td></tr>
 <tr class="separator:a4c24ca26da1399b4ece25bdd05d27d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a001eb9c3cc8ae54768a850dd345002" id="r_a2a001eb9c3cc8ae54768a850dd345002"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a001eb9c3cc8ae54768a850dd345002">~Button</a> ()</td></tr>
 <tr class="separator:a2a001eb9c3cc8ae54768a850dd345002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94132a198aa03cd94f0337d29109b20c" id="r_a94132a198aa03cd94f0337d29109b20c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94132a198aa03cd94f0337d29109b20c">init</a> () override</td></tr>
+<tr class="memdesc:a94132a198aa03cd94f0337d29109b20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the button's components (transform, collider, text).  <br /></td></tr>
 <tr class="separator:a94132a198aa03cd94f0337d29109b20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda97f1ae8e081da3dbd0b77a27cad9d" id="r_abda97f1ae8e081da3dbd0b77a27cad9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abda97f1ae8e081da3dbd0b77a27cad9d">update</a> () override</td></tr>
+<tr class="memdesc:abda97f1ae8e081da3dbd0b77a27cad9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for mouse hover and click events to update the button's state.  <br /></td></tr>
 <tr class="separator:abda97f1ae8e081da3dbd0b77a27cad9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac73fe4dc081674c116aabe8145386332" id="r_ac73fe4dc081674c116aabe8145386332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac73fe4dc081674c116aabe8145386332">reload</a> () override</td></tr>
+<tr class="memdesc:ac73fe4dc081674c116aabe8145386332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads the button's texture, useful after state changes.  <br /></td></tr>
 <tr class="separator:ac73fe4dc081674c116aabe8145386332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d14cf544d8e0620f4ffcd7984103f7" id="r_af4d14cf544d8e0620f4ffcd7984103f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d14cf544d8e0620f4ffcd7984103f7">draw</a> () override</td></tr>
+<tr class="memdesc:af4d14cf544d8e0620f4ffcd7984103f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the button's background and text.  <br /></td></tr>
 <tr class="separator:af4d14cf544d8e0620f4ffcd7984103f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
@@ -159,9 +169,13 @@ Public Member Functions</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A UI component that can be clicked to trigger a callback function. </p>
+<p>Combines a collider, text, and transform to create an interactive button. It changes color on hover and executes a function when pressed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab254bfae7efdeabe2a474d39b260c19b" name="ab254bfae7efdeabe2a474d39b260c19b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab254bfae7efdeabe2a474d39b260c19b">&#9670;&#160;</a></span>Button() <span class="overload">[1/3]</span></h2>
 
@@ -221,6 +235,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a fully customized <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inStr</td><td>The text to display on the button. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-position of the button. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-position of the button. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the button. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the button. </td></tr>
+    <tr><td class="paramname">scale</td><td>The rendering scale of the button text. </td></tr>
+    <tr><td class="paramname">defColour</td><td>The default background color. </td></tr>
+    <tr><td class="paramname">hoverColour</td><td>The background color when the mouse hovers over it. </td></tr>
+    <tr><td class="paramname">textColour</td><td>The color of the button's text. </td></tr>
+    <tr><td class="paramname">func</td><td>The callback function to execute when the button is pressed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6af6a898011243f6e8e9c2ec6a41a4cf" name="a6af6a898011243f6e8e9c2ec6a41a4cf"></a>
@@ -267,6 +298,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a> with default colors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inStr</td><td>The text to display on the button. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-position of the button. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-position of the button. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the button. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the button. </td></tr>
+    <tr><td class="paramname">scale</td><td>The rendering scale of the button text. </td></tr>
+    <tr><td class="paramname">func</td><td>The callback function to execute when the button is pressed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4c24ca26da1399b4ece25bdd05d27d98" name="a4c24ca26da1399b4ece25bdd05d27d98"></a>
@@ -307,6 +352,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structButton.html" title="A UI component that can be clicked to trigger a callback function.">Button</a> with default colors and scale. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inStr</td><td>The text to display on the button. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-position of the button. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-position of the button. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the button. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the button. </td></tr>
+    <tr><td class="paramname">func</td><td>The callback function to execute when the button is pressed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -351,14 +409,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the button's background and text. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">Component</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structButton_af4d14cf544d8e0620f4ffcd7984103f7_cgraph.png" border="0" usemap="#astructButton_af4d14cf544d8e0620f4ffcd7984103f7_cgraph" alt=""/></div>
 <map name="astructButton_af4d14cf544d8e0620f4ffcd7984103f7_cgraph" id="astructButton_af4d14cf544d8e0620f4ffcd7984103f7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,110,33"/>
-<area shape="rect" href="structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title=" " alt="" coords="158,5,374,33"/>
+<area shape="rect" title="Draws the button&#39;s background and text." alt="" coords="5,5,110,33"/>
+<area shape="rect" href="structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title="Draws a portion of a texture." alt="" coords="158,5,374,33"/>
 <area shape="poly" title=" " alt="" coords="110,16,142,16,142,22,110,22"/>
 </map>
 </div>
@@ -388,16 +448,18 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the button's components (transform, collider, text). </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structButton_a94132a198aa03cd94f0337d29109b20c_cgraph.png" border="0" usemap="#astructButton_a94132a198aa03cd94f0337d29109b20c_cgraph" alt=""/></div>
 <map name="astructButton_a94132a198aa03cd94f0337d29109b20c_cgraph" id="astructButton_a94132a198aa03cd94f0337d29109b20c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,36,99,64"/>
-<area shape="rect" href="structText.html#ae74b78f8759c0db114a86db64b6d8d67" title=" " alt="" coords="197,5,322,33"/>
+<area shape="rect" title="Initializes the button&#39;s components (transform, collider, text)." alt="" coords="5,36,99,64"/>
+<area shape="rect" href="structText.html#ae74b78f8759c0db114a86db64b6d8d67" title="Adjusts the text&#39;s position to be centered within a parent rectangle." alt="" coords="197,5,322,33"/>
 <area shape="poly" title=" " alt="" coords="99,40,181,28,182,33,100,46"/>
-<area shape="rect" href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb" title=" " alt="" coords="147,57,372,102"/>
+<area shape="rect" href="structMouseTracker.html#af9a7225b5f043ca4eac2bdbee0aafcdb" title="Gets the current state of the primary mouse button." alt="" coords="147,57,372,102"/>
 <area shape="poly" title=" " alt="" coords="100,54,132,58,131,64,99,59"/>
 </map>
 </div>
@@ -427,6 +489,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Reloads the button's texture, useful after state changes. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">Component</a>.</p>
 
 </div>
@@ -453,6 +517,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Checks for mouse hover and click events to update the button's state. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 

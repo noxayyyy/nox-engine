@@ -110,41 +110,56 @@ $(function(){initNavTree('structTextureManager.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
+<p>Provides a centralized, static interface for all texture-related operations.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TextureManager_8h_source.html">TextureManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for TextureManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTextureManager__coll__graph.png" border="0" usemap="#aTextureManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aTextureManager_coll__map" id="aTextureManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,156,234"/>
+<area shape="rect" title="Provides a centralized, static interface for all texture&#45;related operations." alt="" coords="5,5,156,234"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:affabc7a219da0e5c10988c64f9a97466" id="r_affabc7a219da0e5c10988c64f9a97466"><td class="memItemLeft" align="right" valign="top">static SDL_Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affabc7a219da0e5c10988c64f9a97466">GetSizeOfSurface</a> (const char *fileName)</td></tr>
+<tr class="memdesc:affabc7a219da0e5c10988c64f9a97466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the dimensions of an image file without loading the full texture.  <br /></td></tr>
 <tr class="separator:affabc7a219da0e5c10988c64f9a97466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf0937165b2ce8ce8514bcaf50c3597" id="r_a8cf0937165b2ce8ce8514bcaf50c3597"><td class="memItemLeft" align="right" valign="top">static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf0937165b2ce8ce8514bcaf50c3597">LoadTexture</a> (const char *fileName)</td></tr>
+<tr class="memdesc:a8cf0937165b2ce8ce8514bcaf50c3597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a texture from an image file.  <br /></td></tr>
 <tr class="separator:a8cf0937165b2ce8ce8514bcaf50c3597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0ef10e05ccd7d1cffd18eef53295a2d" id="r_af0ef10e05ccd7d1cffd18eef53295a2d"><td class="memItemLeft" align="right" valign="top">static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0ef10e05ccd7d1cffd18eef53295a2d">LoadTexture</a> (const SDL_Colour colour, const char *text)</td></tr>
+<tr class="memdesc:af0ef10e05ccd7d1cffd18eef53295a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a texture by rendering text.  <br /></td></tr>
 <tr class="separator:af0ef10e05ccd7d1cffd18eef53295a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93507f1515dbfa355cc2b6d8980ad32" id="r_ae93507f1515dbfa355cc2b6d8980ad32"><td class="memItemLeft" align="right" valign="top">static SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93507f1515dbfa355cc2b6d8980ad32">LoadTexture</a> (SDL_Rect &amp;rect, SDL_Colour colour)</td></tr>
+<tr class="memdesc:ae93507f1515dbfa355cc2b6d8980ad32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a solid-color rectangular texture.  <br /></td></tr>
 <tr class="separator:ae93507f1515dbfa355cc2b6d8980ad32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec4ea2167d0b919edeb74a5db3cf7ff8" id="r_aec4ea2167d0b919edeb74a5db3cf7ff8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec4ea2167d0b919edeb74a5db3cf7ff8">DrawTexture</a> (SDL_Texture *tex, SDL_Rect &amp;src, SDL_Rect &amp;dest)</td></tr>
+<tr class="memdesc:aec4ea2167d0b919edeb74a5db3cf7ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a portion of a texture.  <br /></td></tr>
 <tr class="separator:aec4ea2167d0b919edeb74a5db3cf7ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7023e6a32143039536b93f4d2f4c20a9" id="r_a7023e6a32143039536b93f4d2f4c20a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7023e6a32143039536b93f4d2f4c20a9">DrawTexture</a> (SDL_Texture *tex, SDL_Rect &amp;dest)</td></tr>
+<tr class="memdesc:a7023e6a32143039536b93f4d2f4c20a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an entire texture to a destination rectangle.  <br /></td></tr>
 <tr class="separator:a7023e6a32143039536b93f4d2f4c20a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef20b2103e28306a714abf1161d41174" id="r_aef20b2103e28306a714abf1161d41174"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef20b2103e28306a714abf1161d41174">DrawTexture</a> (SDL_Texture *tex, SDL_Rect &amp;src, SDL_Rect &amp;dest, const double angle)</td></tr>
+<tr class="memdesc:aef20b2103e28306a714abf1161d41174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a portion of a texture with rotation.  <br /></td></tr>
 <tr class="separator:aef20b2103e28306a714abf1161d41174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7be48af9b877305284415aea6ec09f" id="r_a0a7be48af9b877305284415aea6ec09f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7be48af9b877305284415aea6ec09f">DrawTexture</a> (SDL_Texture *tex, SDL_Rect &amp;dest, const double angle)</td></tr>
+<tr class="memdesc:a0a7be48af9b877305284415aea6ec09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an entire texture with rotation.  <br /></td></tr>
 <tr class="separator:a0a7be48af9b877305284415aea6ec09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5cb81454baf19b530a84c08ddb2e3024" id="r_a5cb81454baf19b530a84c08ddb2e3024"><td class="memItemLeft" align="right" valign="top">static TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb81454baf19b530a84c08ddb2e3024">font</a></td></tr>
+<tr class="memdesc:a5cb81454baf19b530a84c08ddb2e3024"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global font used for text rendering.  <br /></td></tr>
 <tr class="separator:a5cb81454baf19b530a84c08ddb2e3024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides a centralized, static interface for all texture-related operations. </p>
+<p>This class handles loading textures from files, creating textures from text or colors, and drawing them to the global renderer. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7023e6a32143039536b93f4d2f4c20a9" name="a7023e6a32143039536b93f4d2f4c20a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7023e6a32143039536b93f4d2f4c20a9">&#9670;&#160;</a></span>DrawTexture() <span class="overload">[1/4]</span></h2>
 
@@ -171,6 +186,15 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draws an entire texture to a destination rectangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The source texture. </td></tr>
+    <tr><td class="paramname">dest</td><td>The destination rectangle on the screen. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -206,6 +230,16 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws an entire texture with rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The source texture. </td></tr>
+    <tr><td class="paramname">dest</td><td>The destination rectangle. </td></tr>
+    <tr><td class="paramname">angle</td><td>The rotation angle in degrees. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aec4ea2167d0b919edeb74a5db3cf7ff8" name="aec4ea2167d0b919edeb74a5db3cf7ff8"></a>
@@ -239,17 +273,27 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draws a portion of a texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The source texture. </td></tr>
+    <tr><td class="paramname">src</td><td>The source rectangle defining the portion to draw. </td></tr>
+    <tr><td class="paramname">dest</td><td>The destination rectangle on the screen. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8_icgraph.png" border="0" usemap="#astructTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8_icgraph" alt=""/></div>
 <map name="astructTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8_icgraph" id="astructTextureManager_aec4ea2167d0b919edeb74a5db3cf7ff8_icgraph">
-<area shape="rect" title=" " alt="" coords="160,57,376,85"/>
-<area shape="rect" href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7" title=" " alt="" coords="6,5,111,33"/>
+<area shape="rect" title="Draws a portion of a texture." alt="" coords="160,57,376,85"/>
+<area shape="rect" href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7" title="Draws the button&#39;s background and text." alt="" coords="6,5,111,33"/>
 <area shape="poly" title=" " alt="" coords="193,56,110,35,112,29,195,50"/>
-<area shape="rect" href="structSprites.html#acf0999cbe0c8a23f168b357cab07b3d4" title=" " alt="" coords="5,57,112,85"/>
+<area shape="rect" href="structSprites.html#acf0999cbe0c8a23f168b357cab07b3d4" title="Draws the sprite&#39;s current texture to the screen." alt="" coords="5,57,112,85"/>
 <area shape="poly" title=" " alt="" coords="144,74,112,74,112,68,144,68"/>
-<area shape="rect" href="structText.html#a8f486a54a21fafc7a5dfb75975f1621f" title=" " alt="" coords="14,109,103,137"/>
+<area shape="rect" href="structText.html#a8f486a54a21fafc7a5dfb75975f1621f" title="Draws the text texture to the screen." alt="" coords="14,109,103,137"/>
 <area shape="poly" title=" " alt="" coords="195,92,104,115,103,110,194,87"/>
 </map>
 </div>
@@ -293,6 +337,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Draws a portion of a texture with rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The source texture. </td></tr>
+    <tr><td class="paramname">src</td><td>The source rectangle. </td></tr>
+    <tr><td class="paramname">dest</td><td>The destination rectangle. </td></tr>
+    <tr><td class="paramname">angle</td><td>The rotation angle in degrees. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="affabc7a219da0e5c10988c64f9a97466" name="affabc7a219da0e5c10988c64f9a97466"></a>
@@ -317,13 +372,22 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the dimensions of an image file without loading the full texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The path to the image file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Point containing the width and height. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTextureManager_affabc7a219da0e5c10988c64f9a97466_icgraph.png" border="0" usemap="#astructTextureManager_affabc7a219da0e5c10988c64f9a97466_icgraph" alt=""/></div>
 <map name="astructTextureManager_affabc7a219da0e5c10988c64f9a97466_icgraph" id="astructTextureManager_affabc7a219da0e5c10988c64f9a97466_icgraph">
-<area shape="rect" title=" " alt="" coords="210,5,409,50"/>
-<area shape="rect" href="structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc" title=" " alt="" coords="5,5,162,50"/>
+<area shape="rect" title="Gets the dimensions of an image file without loading the full texture." alt="" coords="210,5,409,50"/>
+<area shape="rect" href="structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc" title="Constructs and initializes a complete Animation object." alt="" coords="5,5,162,50"/>
 <area shape="poly" title=" " alt="" coords="194,30,162,30,162,25,194,25"/>
 </map>
 </div>
@@ -352,29 +416,38 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Loads a texture from an image file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The path to the image file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the loaded SDL_Texture. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597_icgraph.png" border="0" usemap="#astructTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597_icgraph" alt=""/></div>
 <map name="astructTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597_icgraph" id="astructTextureManager_a8cf0937165b2ce8ce8514bcaf50c3597_icgraph">
-<area shape="rect" title=" " alt="" coords="372,132,585,160"/>
-<area shape="rect" href="structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc" title=" " alt="" coords="168,93,324,138"/>
+<area shape="rect" title="Loads a texture from an image file." alt="" coords="372,132,585,160"/>
+<area shape="rect" href="structAnimator_1_1Animation.html#a853555faca34e37e4135b31b02d998dc" title="Constructs and initializes a complete Animation object." alt="" coords="168,93,324,138"/>
 <area shape="poly" title=" " alt="" coords="356,132,324,128,325,123,357,127"/>
-<area shape="rect" href="structText.html#a8791ce14f2670ec8fa98f9de34414e90" title=" " alt="" coords="197,161,295,189"/>
+<area shape="rect" href="structText.html#a8791ce14f2670ec8fa98f9de34414e90" title="Creates a new texture from a string of text." alt="" coords="197,161,295,189"/>
 <area shape="poly" title=" " alt="" coords="357,164,295,172,295,166,356,159"/>
-<area shape="rect" href="structFPS.html#a13e40904f5a2cb6a2909d144e29a0cf4" title=" " alt="" coords="24,5,101,33"/>
+<area shape="rect" href="structFPS.html#a13e40904f5a2cb6a2909d144e29a0cf4" title="Constructs an FPS counter." alt="" coords="24,5,101,33"/>
 <area shape="poly" title=" " alt="" coords="181,162,166,152,154,139,147,125,140,99,134,74,118,48,100,35,103,31,122,44,139,72,145,98,152,123,158,136,169,148,184,158"/>
-<area shape="rect" href="structPoints.html#a9be248b584db504e01bcf09009de0956" title=" " alt="" coords="8,57,117,85"/>
+<area shape="rect" href="structPoints.html#a9be248b584db504e01bcf09009de0956" title="Constructs a Points counter." alt="" coords="8,57,117,85"/>
 <area shape="poly" title=" " alt="" coords="181,160,166,152,151,139,141,126,132,113,118,100,98,88,101,83,121,96,136,110,145,123,155,135,169,148,183,155"/>
-<area shape="rect" href="structText.html#a3708b595d0ef813e44b22c07bed5c34a" title=" " alt="" coords="21,109,104,137"/>
+<area shape="rect" href="structText.html#a5ecdd4b00938ce0c10f14fa52a1f8a88" title="Constructs a Text component with a default color." alt="" coords="21,109,104,137"/>
 <area shape="poly" title=" " alt="" coords="181,160,104,137,105,132,182,154"/>
-<area shape="rect" href="structText.html#a5ecdd4b00938ce0c10f14fa52a1f8a88" title=" " alt="" coords="21,161,104,189"/>
+<area shape="rect" href="structText.html#af0a355f99999e8690c9d450f9464bfe3" title="Constructs a fully customized Text component." alt="" coords="21,161,104,189"/>
 <area shape="poly" title=" " alt="" coords="181,178,104,178,104,172,181,172"/>
-<area shape="rect" href="structFPS.html#a2eb4adf219fe41837ef4e48ff4ada160" title=" " alt="" coords="13,213,112,241"/>
+<area shape="rect" href="structFPS.html#a2eb4adf219fe41837ef4e48ff4ada160" title="Updates the FPS calculation and the displayed text." alt="" coords="13,213,112,241"/>
 <area shape="poly" title=" " alt="" coords="182,196,112,216,111,211,181,191"/>
-<area shape="rect" href="structPoints.html#adad983d6f230a1e9ccb71a2dd87d1516" title=" " alt="" coords="5,265,120,293"/>
+<area shape="rect" href="structPoints.html#adad983d6f230a1e9ccb71a2dd87d1516" title="Updates the displayed text if the point value has changed." alt="" coords="5,265,120,293"/>
 <area shape="poly" title=" " alt="" coords="212,200,121,255,97,267,94,262,118,250,209,196"/>
-<area shape="rect" href="structText.html#aec022b3d70204a615b0d107975dfb518" title=" " alt="" coords="12,317,113,345"/>
+<area shape="rect" href="structText.html#aec022b3d70204a615b0d107975dfb518" title="Updates the destination rectangle for rendering." alt="" coords="12,317,113,345"/>
 <area shape="poly" title=" " alt="" coords="226,203,181,254,121,307,100,319,97,315,118,302,177,250,222,200"/>
 </map>
 </div>
@@ -408,6 +481,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a texture by rendering text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colour</td><td>The color of the text. </td></tr>
+    <tr><td class="paramname">text</td><td>The string to render. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the created SDL_Texture. </dd></dl>
+
 </div>
 </div>
 <a id="ae93507f1515dbfa355cc2b6d8980ad32" name="ae93507f1515dbfa355cc2b6d8980ad32"></a>
@@ -437,6 +520,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a solid-color rectangular texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>The dimensions of the texture to create. </td></tr>
+    <tr><td class="paramname">colour</td><td>The color of the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the created SDL_Texture. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -459,6 +552,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The global font used for text rendering. </p>
 
 </div>
 </div>

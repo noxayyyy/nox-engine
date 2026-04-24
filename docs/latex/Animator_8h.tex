@@ -1,5 +1,10 @@
 \doxysection{include/\+Animator.h File Reference}
 \hypertarget{Animator_8h}{}\label{Animator_8h}\index{include/Animator.h@{include/Animator.h}}
+
+
+Defines a state-\/machine-\/based animation component for entities.  
+
+
 {\ttfamily \#include "{}Sprites.\+h"{}}\newline
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
@@ -23,8 +28,13 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structAnimator}{Animator}}
-\item 
+\begin{DoxyCompactList}\small\item\em Manages sprite sheet animations and transitions between them using a state machine. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structAnimator_1_1Animation}{Animator\+::\+Animation}}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents a single, self-\/contained animation sequence. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structAnimator_1_1Edge}{Animator\+::\+Edge}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defines a transition edge between two animations in the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a state-\/machine-\/based animation component for entities. 
+

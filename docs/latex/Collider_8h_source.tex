@@ -2,46 +2,48 @@
 \hypertarget{Collider_8h_source}{}\label{Collider_8h_source}\index{include/Collider.h@{include/Collider.h}}
 \mbox{\hyperlink{Collider_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <functional>}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{extern}\ std::vector<Entity*>\ \mbox{\hyperlink{Collider_8h_a28f491721073d8d963d518e00b788d0d}{colliders}};}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
-\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}};}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}(}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}},\ std::function<\textcolor{keywordtype}{void}(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)>\ \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{onCollision}},\ \textcolor{keywordtype}{bool}\ isTrigger\ =\ \textcolor{keyword}{false},}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isStatic\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ considerVel\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ isUi\ =\ \textcolor{keyword}{false}}
-\DoxyCodeLine{00019\ \ \ \ \ );}
-\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}(std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}});}
-\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structCollider_a564acde9860f875a32a6638c573d87be}{\string~Collider}}();}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}{init}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{update}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{onCollision}}(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other);}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structCollider_a6b742fe2cb5dd449723ff4148de4a959}{isColliding}}(std::string\ collTag);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00029\ \ \ \ \ SDL\_Rect\ collider;}
-\DoxyCodeLine{00030\ \ \ \ \ std::function<void(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)>\ collFunc;}
-\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ transform;}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ considerVel;}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ isTrigger;}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ isStatic;}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ isUi;}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ checkCollision(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABB(\textcolor{keyword}{const}\ SDL\_Rect\&\ otherRect)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABB(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ otherColl)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABBvel(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ otherColl)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{extern}\ std::vector<Entity*>\ \mbox{\hyperlink{Collider_8h_a28f491721073d8d963d518e00b788d0d}{colliders}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}};\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}},\ std::function<\textcolor{keywordtype}{void}(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)>\ \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{onCollision}},\ \textcolor{keywordtype}{bool}\ isTrigger\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isStatic\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ considerVel\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ isUi\ =\ \textcolor{keyword}{false}}
+\DoxyCodeLine{00039\ \ \ \ \ );}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}(std::string\ \mbox{\hyperlink{structCollider_a47553d89c2a08d0df50e2e4934572902}{tag}});}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{structCollider_a564acde9860f875a32a6638c573d87be}{\string~Collider}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_aed04ad82be15bcba1d3dc6a09f76dae6}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_aec6345e2c307d0a680360352f35e1779}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structCollider_a6b79610fbf8052480ee21ca2f7b3fbd5}{onCollision}}(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structCollider_a6b742fe2cb5dd449723ff4148de4a959}{isColliding}}(std::string\ collTag);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ SDL\_Rect\ collider;}
+\DoxyCodeLine{00069\ \ \ \ \ std::function<void(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)>\ collFunc;}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ transform;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ considerVel;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{bool}\ isTrigger;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ isStatic;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ isUi;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ checkCollision(\mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABB(\textcolor{keyword}{const}\ SDL\_Rect\&\ otherRect)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABB(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ otherColl)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ AABBvel(\textcolor{keyword}{const}\ \mbox{\hyperlink{structCollider_a80a564c1cb6930ffc7810f559381a5e4}{Collider}}\&\ otherColl)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ \};}
 
 \end{DoxyCode}

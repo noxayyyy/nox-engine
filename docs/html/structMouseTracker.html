@@ -110,14 +110,17 @@ $(function(){initNavTree('structMouseTracker.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>A component attached to an entity that follows the mouse cursor.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="MouseTracker_8h_source.html">MouseTracker.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MouseTracker:</div>
 <div class="dyncontent">
 <div class="center"><img src="structMouseTracker__inherit__graph.png" border="0" usemap="#aMouseTracker_inherit__map" alt="Inheritance graph"/></div>
 <map name="aMouseTracker_inherit__map" id="aMouseTracker_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,215,200,399"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="41,5,164,167"/>
+<area shape="rect" title="A component attached to an entity that follows the mouse cursor." alt="" coords="5,215,200,399"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="41,5,164,167"/>
 <area shape="poly" title=" " alt="" coords="106,182,106,215,100,215,100,182"/>
 </map>
 </div>
@@ -126,10 +129,10 @@ Collaboration diagram for MouseTracker:</div>
 <div class="dyncontent">
 <div class="center"><img src="structMouseTracker__coll__graph.png" border="0" usemap="#aMouseTracker_coll__map" alt="Collaboration graph"/></div>
 <map name="aMouseTracker_coll__map" id="aMouseTracker_coll__map">
-<area shape="rect" title=" " alt="" coords="5,577,200,761"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="41,366,164,528"/>
+<area shape="rect" title="A component attached to an entity that follows the mouse cursor." alt="" coords="5,577,200,761"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="41,366,164,528"/>
 <area shape="poly" title=" " alt="" coords="106,542,106,577,100,577,100,542"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="46,5,159,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="46,5,159,301"/>
 <area shape="poly" title=" " alt="" coords="106,301,106,349,100,349,100,301"/>
 </map>
 </div>
@@ -141,13 +144,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6de82b6a655e3a9ad247023277ddff61" id="r_a6de82b6a655e3a9ad247023277ddff61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de82b6a655e3a9ad247023277ddff61">~MouseTracker</a> ()</td></tr>
 <tr class="separator:a6de82b6a655e3a9ad247023277ddff61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b92139b782973f6dbe135f9be3158a7" id="r_a1b92139b782973f6dbe135f9be3158a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b92139b782973f6dbe135f9be3158a7">init</a> () override</td></tr>
+<tr class="memdesc:a1b92139b782973f6dbe135f9be3158a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the component by getting the entity's transform and collider.  <br /></td></tr>
 <tr class="separator:a1b92139b782973f6dbe135f9be3158a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5dfe7e64afed79934b732654c5bff0" id="r_afd5dfe7e64afed79934b732654c5bff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd5dfe7e64afed79934b732654c5bff0">update</a> () override</td></tr>
+<tr class="memdesc:afd5dfe7e64afed79934b732654c5bff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the entity's position to match the mouse cursor's current coordinates.  <br /></td></tr>
 <tr class="separator:afd5dfe7e64afed79934b732654c5bff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa37b0f2556c8b0c64bf5197a30eafb81" id="r_aa37b0f2556c8b0c64bf5197a30eafb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37b0f2556c8b0c64bf5197a30eafb81">reload</a> () override</td></tr>
+<tr class="memdesc:aa37b0f2556c8b0c64bf5197a30eafb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the mouse pressed state.  <br /></td></tr>
 <tr class="separator:aa37b0f2556c8b0c64bf5197a30eafb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
+<tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,15 +162,20 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af9a7225b5f043ca4eac2bdbee0aafcdb" id="r_af9a7225b5f043ca4eac2bdbee0aafcdb"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a7225b5f043ca4eac2bdbee0aafcdb">getMouseButtonPressed</a> ()</td></tr>
+<tr class="memdesc:af9a7225b5f043ca4eac2bdbee0aafcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current state of the primary mouse button.  <br /></td></tr>
 <tr class="separator:af9a7225b5f043ca4eac2bdbee0aafcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component attached to an entity that follows the mouse cursor. </p>
+<p>This is typically used for a single, global "mouse" entity that can interact with UI elements like buttons. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7451b6ebc2e53854bda9b1ab79531355" name="a7451b6ebc2e53854bda9b1ab79531355"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7451b6ebc2e53854bda9b1ab79531355">&#9670;&#160;</a></span>MouseTracker()</h2>
 
@@ -221,13 +233,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the current state of the primary mouse button. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the mouse button is pressed, false otherwise. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structMouseTracker_af9a7225b5f043ca4eac2bdbee0aafcdb_icgraph.png" border="0" usemap="#astructMouseTracker_af9a7225b5f043ca4eac2bdbee0aafcdb_icgraph" alt=""/></div>
 <map name="astructMouseTracker_af9a7225b5f043ca4eac2bdbee0aafcdb_icgraph" id="astructMouseTracker_af9a7225b5f043ca4eac2bdbee0aafcdb_icgraph">
-<area shape="rect" title=" " alt="" coords="147,5,372,50"/>
-<area shape="rect" href="structButton.html#a94132a198aa03cd94f0337d29109b20c" title=" " alt="" coords="5,14,99,42"/>
+<area shape="rect" title="Gets the current state of the primary mouse button." alt="" coords="147,5,372,50"/>
+<area shape="rect" href="structButton.html#a94132a198aa03cd94f0337d29109b20c" title="Initializes the button&#39;s components (transform, collider, text)." alt="" coords="5,14,99,42"/>
 <area shape="poly" title=" " alt="" coords="131,30,99,30,99,25,131,25"/>
 </map>
 </div>
@@ -257,6 +272,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the component by getting the entity's transform and collider. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
 </div>
@@ -284,6 +301,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Resets the mouse pressed state. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">Component</a>.</p>
 
 </div>
@@ -310,6 +329,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the entity's position to match the mouse cursor's current coordinates. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 

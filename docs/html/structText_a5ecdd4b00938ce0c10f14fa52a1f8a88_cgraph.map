@@ -1,7 +1,7 @@
 <map id="Text::Text" name="Text::Text">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,89,33"/>
-<area shape="rect" id="Node000002" href="$structText.html#a8791ce14f2670ec8fa98f9de34414e90" title=" " alt="" coords="137,5,235,33"/>
+<area shape="rect" id="Node000001" title="Constructs a Text component with a default color." alt="" coords="5,5,89,33"/>
+<area shape="rect" id="Node000002" href="$structText.html#a8791ce14f2670ec8fa98f9de34414e90" title="Creates a new texture from a string of text." alt="" coords="137,5,235,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,16,121,16,121,22,89,22"/>
-<area shape="rect" id="Node000003" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title=" " alt="" coords="283,5,496,33"/>
+<area shape="rect" id="Node000003" href="$structTextureManager.html#a8cf0937165b2ce8ce8514bcaf50c3597" title="Loads a texture from an image file." alt="" coords="283,5,496,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,16,267,16,267,22,235,22"/>
 </map>

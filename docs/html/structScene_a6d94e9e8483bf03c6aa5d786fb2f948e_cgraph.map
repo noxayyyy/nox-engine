@@ -1,5 +1,5 @@
 <map id="Scene::removeEntityFromScene" name="Scene::removeEntityFromScene">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,234,33"/>
-<area shape="rect" id="Node000002" href="$structScene.html#a83e3e3fa5c0d62e01620acf29c7db751" title=" " alt="" coords="282,5,440,33"/>
+<area shape="rect" id="Node000001" title="Removes an entity from this scene&#39;s management." alt="" coords="5,5,234,33"/>
+<area shape="rect" id="Node000002" href="$structScene.html#a83e3e3fa5c0d62e01620acf29c7db751" title="Checks if a specific entity is part of this scene." alt="" coords="282,5,440,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,16,266,16,266,22,234,22"/>
 </map>

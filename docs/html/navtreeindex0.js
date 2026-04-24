@@ -75,6 +75,12 @@ var NAVTREEINDEX0 =
 "Transform_8cpp.html":[2,0,1,13],
 "Transform_8h.html":[2,0,0,16],
 "Transform_8h_source.html":[2,0,0,16],
+"Vector2D_8cpp.html":[2,0,1,14],
+"Vector2D_8cpp.html#a3db48e0370c3edfd914cb7959881809d":[2,0,1,14,1],
+"Vector2D_8cpp.html#a97aa3bf06c59b54596a4ea56aa84a2c2":[2,0,1,14,3],
+"Vector2D_8cpp.html#ab0796881642926f1c8d53f106f197f1a":[2,0,1,14,0],
+"Vector2D_8cpp.html#ab7319729bd817581ecbfeda7a78335dc":[2,0,1,14,2],
+"Vector2D_8cpp.html#ac84d6114898ff1593dbff7b0196be939":[2,0,1,14,4],
 "Vector2D_8h.html":[2,0,0,17],
 "Vector2D_8h_source.html":[2,0,0,17],
 "annotated.html":[1,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX0 =
 "structPoints.html#a9be248b584db504e01bcf09009de0956":[1,0,10,0],
 "structPoints.html#a9d56d7dc8b6a6f492e07d354eb379c12":[1,0,10,1],
 "structPoints.html#adad983d6f230a1e9ccb71a2dd87d1516":[1,0,10,6],
-"structPoints.html#af0a355f99999e8690c9d450f9464bfe3":[1,0,10,5],
-"structScene.html":[1,0,11],
-"structScene.html#a01a5fa609184cdc9470f8ccaf6b34dcf":[1,0,11,10],
-"structScene.html#a24ed31537c3c9c40f708e68295e2f51e":[1,0,11,12],
-"structScene.html#a3f612fa63b769ff431831701f1a36eb6":[1,0,11,4],
-"structScene.html#a44b2d6bffa153dda02f026f8533ceb08":[1,0,11,19],
-"structScene.html#a56b1a969dde64f1a33b34cd136ceaa49":[1,0,11,0]
+"structPoints.html#af0a355f99999e8690c9d450f9464bfe3":[1,0,10,5]
 };

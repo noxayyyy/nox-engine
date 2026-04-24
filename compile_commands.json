@@ -1,0 +1,257 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Animator.o",
+      "src/Animator.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Animator.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Animator.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Button.o",
+      "src/Button.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Button.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Button.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Collider.o",
+      "src/Collider.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Collider.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Collider.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Controller.o",
+      "src/Controller.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Controller.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Controller.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Counters.o",
+      "src/Counters.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Counters.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Counters.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/ECS.o",
+      "src/ECS.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/ECS.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/ECS.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/MouseTracker.o",
+      "src/MouseTracker.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/MouseTracker.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/MouseTracker.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Scene.o",
+      "src/Scene.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Scene.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Scene.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/SceneManager.o",
+      "src/SceneManager.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/SceneManager.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/SceneManager.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Sprites.o",
+      "src/Sprites.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Sprites.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Sprites.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Text.o",
+      "src/Text.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Text.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Text.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/TextureManager.o",
+      "src/TextureManager.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/TextureManager.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/TextureManager.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Tile.o",
+      "src/Tile.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Tile.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Tile.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Transform.o",
+      "src/Transform.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Transform.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Transform.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-I./include",
+      "-c",
+      "-o",
+      "obj/./src/Vector2D.o",
+      "src/Vector2D.cpp"
+    ],
+    "directory": "/home/mfareed/repos/nox-engine",
+    "file": "/home/mfareed/repos/nox-engine/src/Vector2D.cpp",
+    "output": "/home/mfareed/repos/nox-engine/obj/src/Vector2D.o"
+  }
+]

@@ -110,14 +110,17 @@ $(function(){initNavTree('structSprites.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>A component that gives an entity a visual representation using a texture.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Sprites_8h_source.html">Sprites.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Sprites:</div>
 <div class="dyncontent">
 <div class="center"><img src="structSprites__inherit__graph.png" border="0" usemap="#aSprites_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSprites_inherit__map" id="aSprites_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,215,196,421"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="39,5,162,167"/>
+<area shape="rect" title="A component that gives an entity a visual representation using a texture." alt="" coords="5,215,196,421"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="39,5,162,167"/>
 <area shape="poly" title=" " alt="" coords="104,182,104,215,98,215,98,182"/>
 </map>
 </div>
@@ -126,10 +129,10 @@ Collaboration diagram for Sprites:</div>
 <div class="dyncontent">
 <div class="center"><img src="structSprites__coll__graph.png" border="0" usemap="#aSprites_coll__map" alt="Collaboration graph"/></div>
 <map name="aSprites_coll__map" id="aSprites_coll__map">
-<area shape="rect" title=" " alt="" coords="5,577,196,783"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="39,366,162,528"/>
+<area shape="rect" title="A component that gives an entity a visual representation using a texture." alt="" coords="5,577,196,783"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="39,366,162,528"/>
 <area shape="poly" title=" " alt="" coords="104,543,104,577,98,577,98,543"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="44,5,157,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="44,5,157,301"/>
 <area shape="poly" title=" " alt="" coords="104,301,104,349,98,349,98,301"/>
 </map>
 </div>
@@ -137,21 +140,28 @@ Collaboration diagram for Sprites:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a90c58c4968e7c990a5accd46b58cefd7" id="r_a90c58c4968e7c990a5accd46b58cefd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c58c4968e7c990a5accd46b58cefd7">Sprites</a> (const char *tex)</td></tr>
+<tr class="memdesc:a90c58c4968e7c990a5accd46b58cefd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a sprite from a texture path.  <br /></td></tr>
 <tr class="separator:a90c58c4968e7c990a5accd46b58cefd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43a62cd40b3edd7bb1b4a4193ab1dc6" id="r_ad43a62cd40b3edd7bb1b4a4193ab1dc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43a62cd40b3edd7bb1b4a4193ab1dc6">Sprites</a> (const char *tex, int nFrames, int mSpeed, bool loop)</td></tr>
+<tr class="memdesc:ad43a62cd40b3edd7bb1b4a4193ab1dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a sprite with simple, built-in animation capabilities.  <br /></td></tr>
 <tr class="separator:ad43a62cd40b3edd7bb1b4a4193ab1dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46633552deb102b94d645b223234de7a" id="r_a46633552deb102b94d645b223234de7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46633552deb102b94d645b223234de7a">~Sprites</a> ()</td></tr>
 <tr class="separator:a46633552deb102b94d645b223234de7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4bef9081db1e53ea8e764d4c21239ea" id="r_ac4bef9081db1e53ea8e764d4c21239ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4bef9081db1e53ea8e764d4c21239ea">init</a> () override</td></tr>
+<tr class="memdesc:ac4bef9081db1e53ea8e764d4c21239ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sprite, getting the entity's transform and loading the texture.  <br /></td></tr>
 <tr class="separator:ac4bef9081db1e53ea8e764d4c21239ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad357d4d5deb0293597ad6a7953afb434" id="r_ad357d4d5deb0293597ad6a7953afb434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad357d4d5deb0293597ad6a7953afb434">update</a> () override</td></tr>
+<tr class="memdesc:ad357d4d5deb0293597ad6a7953afb434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the destination rectangle for rendering based on the transform.  <br /></td></tr>
 <tr class="separator:ad357d4d5deb0293597ad6a7953afb434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0999cbe0c8a23f168b357cab07b3d4" id="r_acf0999cbe0c8a23f168b357cab07b3d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0999cbe0c8a23f168b357cab07b3d4">draw</a> () override</td></tr>
+<tr class="memdesc:acf0999cbe0c8a23f168b357cab07b3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the sprite's current texture to the screen.  <br /></td></tr>
 <tr class="separator:acf0999cbe0c8a23f168b357cab07b3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9767aacb914fde74ce286c466dd0345a" id="r_a9767aacb914fde74ce286c466dd0345a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9767aacb914fde74ce286c466dd0345a">recalcSpriteDimensions</a> ()</td></tr>
+<tr class="memdesc:a9767aacb914fde74ce286c466dd0345a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates the sprite's on-screen dimensions based on texture size and transform scale.  <br /></td></tr>
 <tr class="separator:a9767aacb914fde74ce286c466dd0345a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent" id="r_abd8b82630598fe8a13318ecc13a5c159"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">reload</a> ()</td></tr>
+<tr class="memdesc:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to reset the component's state.  <br /></td></tr>
 <tr class="separator:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,9 +175,13 @@ Friends</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component that gives an entity a visual representation using a texture. </p>
+<p>This component is responsible for drawing a texture at the entity's position. It can be controlled by an <a class="el" href="structAnimator.html" title="Manages sprite sheet animations and transitions between them using a state machine.">Animator</a> component for animated sprites. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a90c58c4968e7c990a5accd46b58cefd7" name="a90c58c4968e7c990a5accd46b58cefd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90c58c4968e7c990a5accd46b58cefd7">&#9670;&#160;</a></span>Sprites() <span class="overload">[1/2]</span></h2>
 
@@ -182,6 +196,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a sprite from a texture path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The file path to the texture. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -213,6 +235,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a sprite with simple, built-in animation capabilities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tex</td><td>The file path to the sprite sheet. </td></tr>
+    <tr><td class="paramname">nFrames</td><td>The number of frames in the animation. </td></tr>
+    <tr><td class="paramname">mSpeed</td><td>The delay in milliseconds between frames. </td></tr>
+    <tr><td class="paramname">loop</td><td>Whether the animation should loop. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -257,14 +290,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the sprite's current texture to the screen. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">Component</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structSprites_acf0999cbe0c8a23f168b357cab07b3d4_cgraph.png" border="0" usemap="#astructSprites_acf0999cbe0c8a23f168b357cab07b3d4_cgraph" alt=""/></div>
 <map name="astructSprites_acf0999cbe0c8a23f168b357cab07b3d4_cgraph" id="astructSprites_acf0999cbe0c8a23f168b357cab07b3d4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,112,33"/>
-<area shape="rect" href="structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title=" " alt="" coords="160,5,376,33"/>
+<area shape="rect" title="Draws the sprite&#39;s current texture to the screen." alt="" coords="5,5,112,33"/>
+<area shape="rect" href="structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title="Draws a portion of a texture." alt="" coords="160,5,376,33"/>
 <area shape="poly" title=" " alt="" coords="112,16,144,16,144,22,112,22"/>
 </map>
 </div>
@@ -294,6 +329,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the sprite, getting the entity's transform and loading the texture. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
 </div>
@@ -312,6 +349,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Recalculates the sprite's on-screen dimensions based on texture size and transform scale. </p>
 
 </div>
 </div>
@@ -337,6 +376,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the destination rectangle for rendering based on the transform. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 

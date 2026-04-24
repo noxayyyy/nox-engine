@@ -2,6 +2,11 @@
 \hypertarget{structController}{}\label{structController}\index{Controller@{Controller}}
 
 
+Translates keyboard input (WASD) into entity movement.  
+
+
+
+
 {\ttfamily \#include $<$Controller.\+h$>$}
 
 
@@ -32,20 +37,20 @@ Collaboration diagram for Controller\+:
 \mbox{\hyperlink{structController_a0ab87934c4f7a266cfdb86e0f36bc1b5}{\texorpdfstring{$\sim$}{\string~}\+Controller}} ()
 \item 
 void \mbox{\hyperlink{structController_afd3de74c4b224affca8fb73bc75374a9}{init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the controller, grabbing the entity\textquotesingle{}s \doxylink{structTransform}{Transform} and \doxylink{structCollider}{Collider}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structController_a5a7be803734580a81e16cf0fe3a47e54}{update\+Key\+Down}} (SDL\+\_\+\+Keycode key)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the state when a key is pressed down. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structController_af7e5d63f1095f76c5c5deac68a42dbd3}{update\+Key\+Up}} (SDL\+\_\+\+Keycode key)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the state when a key is released. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structController_a612e598a359e9327b6bb625c7b377ee7}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates and applies velocity to the \doxylink{structTransform}{Transform} based on current key states. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structController_a66dcd5056f1c90515405d4a77f86dd67}{reload}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resets the controller\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
@@ -53,8 +58,13 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Translates keyboard input (WASD) into entity movement. 
+
+Reads keyboard state changes and updates the entity\textquotesingle{}s \doxylink{structTransform}{Transform} component\textquotesingle{}s velocity. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structController_a95c56822d667e94b031451729ce069a9}\index{Controller@{Controller}!Controller@{Controller}}
@@ -80,6 +90,10 @@ void Controller\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hsp
 
 
 
+Initializes the controller, grabbing the entity\textquotesingle{}s \doxylink{structTransform}{Transform} and \doxylink{structCollider}{Collider}. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
 
 \Hypertarget{structController_a66dcd5056f1c90515405d4a77f86dd67}\index{Controller@{Controller}!reload@{reload}}
@@ -90,6 +104,10 @@ void Controller\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\h
 
 
 
+Resets the controller\textquotesingle{}s state. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{Component}}.
 
 \Hypertarget{structController_a612e598a359e9327b6bb625c7b377ee7}\index{Controller@{Controller}!update@{update}}
@@ -97,6 +115,10 @@ Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structController_a612e598a359e9327b6bb625c7b377ee7} 
 void Controller\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and applies velocity to the \doxylink{structTransform}{Transform} based on current key states. 
 
 
 
@@ -116,12 +138,30 @@ Here is the call graph for this function\+:
 {\footnotesize\ttfamily \label{structController_a5a7be803734580a81e16cf0fe3a47e54} 
 void Controller\+::update\+Key\+Down (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Keycode}]{key}{}\end{DoxyParamCaption})}
 
+
+
+Updates the state when a key is pressed down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The SDL\+\_\+\+Keycode of the pressed key. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structController_af7e5d63f1095f76c5c5deac68a42dbd3}\index{Controller@{Controller}!updateKeyUp@{updateKeyUp}}
 \index{updateKeyUp@{updateKeyUp}!Controller@{Controller}}
 \doxysubsubsection{\texorpdfstring{updateKeyUp()}{updateKeyUp()}}
 {\footnotesize\ttfamily \label{structController_af7e5d63f1095f76c5c5deac68a42dbd3} 
 void Controller\+::update\+Key\+Up (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Keycode}]{key}{}\end{DoxyParamCaption})}
 
+
+
+Updates the state when a key is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The SDL\+\_\+\+Keycode of the released key. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -110,14 +110,17 @@ $(function(){initNavTree('structAnimator.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Manages sprite sheet animations and transitions between them using a state machine.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Animator_8h_source.html">Animator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Animator:</div>
 <div class="dyncontent">
 <div class="center"><img src="structAnimator__inherit__graph.png" border="0" usemap="#aAnimator_inherit__map" alt="Inheritance graph"/></div>
 <map name="aAnimator_inherit__map" id="aAnimator_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,215,138,444"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="10,5,133,167"/>
+<area shape="rect" title="Manages sprite sheet animations and transitions between them using a state machine." alt="" coords="5,215,138,444"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="10,5,133,167"/>
 <area shape="poly" title=" " alt="" coords="74,182,74,215,69,215,69,182"/>
 </map>
 </div>
@@ -126,10 +129,10 @@ Collaboration diagram for Animator:</div>
 <div class="dyncontent">
 <div class="center"><img src="structAnimator__coll__graph.png" border="0" usemap="#aAnimator_coll__map" alt="Collaboration graph"/></div>
 <map name="aAnimator_coll__map" id="aAnimator_coll__map">
-<area shape="rect" title=" " alt="" coords="5,577,138,806"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="10,366,133,528"/>
+<area shape="rect" title="Manages sprite sheet animations and transitions between them using a state machine." alt="" coords="5,577,138,806"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="10,366,133,528"/>
 <area shape="poly" title=" " alt="" coords="74,543,74,577,69,577,69,543"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="15,5,128,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="15,5,128,301"/>
 <area shape="poly" title=" " alt="" coords="74,301,74,349,69,349,69,301"/>
 </map>
 </div>
@@ -137,8 +140,10 @@ Collaboration diagram for Animator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnimator_1_1Animation.html">Animation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single, self-contained animation sequence.  <a href="structAnimator_1_1Animation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnimator_1_1Edge.html">Edge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a transition edge between two animations in the state machine.  <a href="structAnimator_1_1Edge.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -148,19 +153,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5af4797549f9f466a88657899e17c6ab" id="r_a5af4797549f9f466a88657899e17c6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af4797549f9f466a88657899e17c6ab">~Animator</a> ()</td></tr>
 <tr class="separator:a5af4797549f9f466a88657899e17c6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399c69a70f729b5a9f5d3cd463da020b" id="r_a399c69a70f729b5a9f5d3cd463da020b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399c69a70f729b5a9f5d3cd463da020b">init</a> () override</td></tr>
+<tr class="memdesc:a399c69a70f729b5a9f5d3cd463da020b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structAnimator.html" title="Manages sprite sheet animations and transitions between them using a state machine.">Animator</a> component, acquiring the entity's Sprite component.  <br /></td></tr>
 <tr class="separator:a399c69a70f729b5a9f5d3cd463da020b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b9903253d8ce084048f7600e956735" id="r_a59b9903253d8ce084048f7600e956735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b9903253d8ce084048f7600e956735">update</a> () override</td></tr>
+<tr class="memdesc:a59b9903253d8ce084048f7600e956735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current animation state, checking for transitions and advancing the frame.  <br /></td></tr>
 <tr class="separator:a59b9903253d8ce084048f7600e956735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e378fb2dc1cb48c685015ddc885c29" id="r_a23e378fb2dc1cb48c685015ddc885c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23e378fb2dc1cb48c685015ddc885c29">draw</a> () override</td></tr>
+<tr class="memdesc:a23e378fb2dc1cb48c685015ddc885c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the current frame of the active animation.  <br /></td></tr>
 <tr class="separator:a23e378fb2dc1cb48c685015ddc885c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a95ea818a364fbd5fd2140b4120cf1" id="r_a48a95ea818a364fbd5fd2140b4120cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a95ea818a364fbd5fd2140b4120cf1">addAnimation</a> (const char *id, const char *texPath, int speed=100, const bool isLooping=true, const bool isReversible=false)</td></tr>
+<tr class="memdesc:a48a95ea818a364fbd5fd2140b4120cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new animation state to the animator's state machine.  <br /></td></tr>
 <tr class="separator:a48a95ea818a364fbd5fd2140b4120cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11922ec826afced3bfac9098fa55b8ea" id="r_a11922ec826afced3bfac9098fa55b8ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11922ec826afced3bfac9098fa55b8ea">addEdge</a> (const char *idFrom, const char *idTo, std::vector&lt; std::shared_ptr&lt; bool &gt; &gt; conditions)</td></tr>
+<tr class="memdesc:a11922ec826afced3bfac9098fa55b8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a conditional transition between two animations.  <br /></td></tr>
 <tr class="separator:a11922ec826afced3bfac9098fa55b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05dbf02b17e983baa9984133df8900e9" id="r_a05dbf02b17e983baa9984133df8900e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05dbf02b17e983baa9984133df8900e9">getCurrAnimID</a> ()</td></tr>
+<tr class="memdesc:a05dbf02b17e983baa9984133df8900e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ID of the currently playing animation.  <br /></td></tr>
 <tr class="separator:a05dbf02b17e983baa9984133df8900e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent" id="r_abd8b82630598fe8a13318ecc13a5c159"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">reload</a> ()</td></tr>
+<tr class="memdesc:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to reset the component's state.  <br /></td></tr>
 <tr class="separator:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,9 +181,13 @@ Public Member Functions</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages sprite sheet animations and transitions between them using a state machine. </p>
+<p>This component controls an entity's sprite to play different animation sequences. It uses an adjacency matrix to define transitions (Edges) between animations based on conditions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a701eeb9283612be2027425efb06bbff7" name="a701eeb9283612be2027425efb06bbff7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a701eeb9283612be2027425efb06bbff7">&#9670;&#160;</a></span>Animator()</h2>
 
@@ -241,6 +257,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Adds a new animation state to the animator's state machine. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The unique identifier for the new animation. </td></tr>
+    <tr><td class="paramname">texPath</td><td>The file path to the sprite sheet texture. </td></tr>
+    <tr><td class="paramname">speed</td><td>The delay in milliseconds between frames. </td></tr>
+    <tr><td class="paramname">isLooping</td><td>Whether the animation should loop. </td></tr>
+    <tr><td class="paramname">isReversible</td><td>Whether the animation should play in reverse after finishing. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a11922ec826afced3bfac9098fa55b8ea" name="a11922ec826afced3bfac9098fa55b8ea"></a>
@@ -267,6 +295,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Defines a conditional transition between two animations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idFrom</td><td>The ID of the source animation state. </td></tr>
+    <tr><td class="paramname">idTo</td><td>The ID of the destination animation state. </td></tr>
+    <tr><td class="paramname">conditions</td><td>A vector of pointers to booleans that must be true to transition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a23e378fb2dc1cb48c685015ddc885c29" name="a23e378fb2dc1cb48c685015ddc885c29"></a>
@@ -292,6 +330,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the current frame of the active animation. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">Component</a>.</p>
 
 </div>
@@ -310,6 +350,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the ID of the currently playing animation. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the ID of the current animation. </dd></dl>
 
 </div>
 </div>
@@ -335,6 +378,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initializes the <a class="el" href="structAnimator.html" title="Manages sprite sheet animations and transitions between them using a state machine.">Animator</a> component, acquiring the entity's Sprite component. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
@@ -362,6 +407,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the current animation state, checking for transitions and advancing the frame. </p>
 
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 

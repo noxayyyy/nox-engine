@@ -2,6 +2,11 @@
 \hypertarget{structTransform}{}\label{structTransform}\index{Transform@{Transform}}
 
 
+Stores an entity\textquotesingle{}s position, velocity, scale, and rotation.  
+
+
+
+
 {\ttfamily \#include $<$Transform.\+h$>$}
 
 
@@ -30,7 +35,7 @@ Collaboration diagram for Transform\+:
 enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}} \{ \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f}{NINETY}}
 , \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1}{ONE\+\_\+\+EIGHTY}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enumeration for common rotation angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,20 +50,20 @@ enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotatio
 \mbox{\hyperlink{structTransform_a68861099b410a13f71bda5db1ab9829d}{Transform}} (\mbox{\hyperlink{structVector2D}{Vector2D}} vec)
 \item 
 void \mbox{\hyperlink{structTransform_a9f67e6f75148a2b7da067961e6d46902}{init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the transform by setting its position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structTransform_a95f43abca9677142b734c1536bf1b886}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the position based on velocity, delta time, and time scale. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structTransform_a4f24046feadc161265f75f821b162a22}{reload}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Resets the position to its initial state. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structTransform_a0067e69d59b0510d386bd6ffd5ddaeb6}{rotate}} (\mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}} rotation, bool anticlockwise)
-\item 
+\begin{DoxyCompactList}\small\item\em Rotates the transform by a predefined amount. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structTransform_af8dca674026ec3d3140314995d5b7c53}{set\+Angle}} (double \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the transform\textquotesingle{}s angle to a specific value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
@@ -69,23 +74,28 @@ virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\tex
 \mbox{\hyperlink{structVector2D}{Vector2D}} \mbox{\hyperlink{structTransform_a184506ba90094bd001616750a8efeaaa}{pos}}
 \item 
 \mbox{\hyperlink{structVector2D}{Vector2D}} \mbox{\hyperlink{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}{vel}}
-\item 
+\begin{DoxyCompactList}\small\item\em Initial position, current position, and velocity vectors. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structTransform_aed2cde92529cda428813f16a7054d7a0}{height}} = 50
-\item 
+\begin{DoxyCompactList}\small\item\em The height of the entity\textquotesingle{}s bounding box. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structTransform_ac161d5afc0737803f9cd4abd16c4697a}{width}} = 50
-\item 
+\begin{DoxyCompactList}\small\item\em The width of the entity\textquotesingle{}s bounding box. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{structTransform_a631712eb230305f58d164086d492701b}{scale}} = 0.\+6f
-\item 
+\begin{DoxyCompactList}\small\item\em The rendering scale. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{structTransform_a25a3777aad28148d20cceb0f1900cec4}{speed}} = 240.\+0f
-\item 
+\begin{DoxyCompactList}\small\item\em The movement speed multiplier. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The rotation angle in degrees. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Stores an entity\textquotesingle{}s position, velocity, scale, and rotation. 
+
+This is a fundamental component for any entity that exists in the game world. Its position is updated based on its velocity each frame. 
 
 \doxysubsection{Member Enumeration Documentation}
 \Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6}\index{Transform@{Transform}!Rotations@{Rotations}}
@@ -93,6 +103,10 @@ int \mbox{\hyperlink{structTransform_a8fed22a9d295cf0f27facf4cbe99724b}{angle}}
 \doxysubsubsection{\texorpdfstring{Rotations}{Rotations}}
 {\footnotesize\ttfamily \label{structTransform_ada80898bd2a05f81a7a1b503c82737f6} 
 enum \mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Transform\+::\+Rotations}}}
+
+
+
+Enumeration for common rotation angles. 
 
 \begin{DoxyEnumFields}[2]{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{NINETY@{NINETY}!Transform@{Transform}}\index{Transform@{Transform}!NINETY@{NINETY}}}\Hypertarget{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f}\label{structTransform_ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f} 
@@ -148,6 +162,10 @@ void Transform\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspa
 
 
 
+Initializes the transform by setting its position. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{Component}}.
 
 \Hypertarget{structTransform_a4f24046feadc161265f75f821b162a22}\index{Transform@{Transform}!reload@{reload}}
@@ -155,6 +173,10 @@ Reimplemented from \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e76
 \doxysubsubsection{\texorpdfstring{reload()}{reload()}}
 {\footnotesize\ttfamily \label{structTransform_a4f24046feadc161265f75f821b162a22} 
 void Transform\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Resets the position to its initial state. 
 
 
 
@@ -166,17 +188,41 @@ Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a
 {\footnotesize\ttfamily \label{structTransform_a0067e69d59b0510d386bd6ffd5ddaeb6} 
 void Transform\+::rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTransform_ada80898bd2a05f81a7a1b503c82737f6}{Rotations}}}]{rotation}{, }\item[{bool}]{anticlockwise}{}\end{DoxyParamCaption})}
 
+
+
+Rotates the transform by a predefined amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & The rotation to apply (NINETY or ONE\+\_\+\+EIGHTY). \\
+\hline
+{\em anticlockwise} & If true, rotates counter-\/clockwise. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structTransform_af8dca674026ec3d3140314995d5b7c53}\index{Transform@{Transform}!setAngle@{setAngle}}
 \index{setAngle@{setAngle}!Transform@{Transform}}
 \doxysubsubsection{\texorpdfstring{setAngle()}{setAngle()}}
 {\footnotesize\ttfamily \label{structTransform_af8dca674026ec3d3140314995d5b7c53} 
 void Transform\+::set\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle}{}\end{DoxyParamCaption})}
 
+
+
+Sets the transform\textquotesingle{}s angle to a specific value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The new angle in degrees. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structTransform_a95f43abca9677142b734c1536bf1b886}\index{Transform@{Transform}!update@{update}}
 \index{update@{update}!Transform@{Transform}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structTransform_a95f43abca9677142b734c1536bf1b886} 
 void Transform\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the position based on velocity, delta time, and time scale. 
 
 
 
@@ -191,11 +237,19 @@ Reimplemented from \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728
 {\footnotesize\ttfamily \label{structTransform_a8fed22a9d295cf0f27facf4cbe99724b} 
 int Transform\+::angle}
 
+
+
+The rotation angle in degrees. 
+
 \Hypertarget{structTransform_aed2cde92529cda428813f16a7054d7a0}\index{Transform@{Transform}!height@{height}}
 \index{height@{height}!Transform@{Transform}}
 \doxysubsubsection{\texorpdfstring{height}{height}}
 {\footnotesize\ttfamily \label{structTransform_aed2cde92529cda428813f16a7054d7a0} 
 int Transform\+::height = 50}
+
+
+
+The height of the entity\textquotesingle{}s bounding box. 
 
 \Hypertarget{structTransform_a28c1e1d3ed9bf5ae2ff7877f52f2d556}\index{Transform@{Transform}!initPos@{initPos}}
 \index{initPos@{initPos}!Transform@{Transform}}
@@ -215,11 +269,19 @@ int Transform\+::height = 50}
 {\footnotesize\ttfamily \label{structTransform_a631712eb230305f58d164086d492701b} 
 float Transform\+::scale = 0.\+6f}
 
+
+
+The rendering scale. 
+
 \Hypertarget{structTransform_a25a3777aad28148d20cceb0f1900cec4}\index{Transform@{Transform}!speed@{speed}}
 \index{speed@{speed}!Transform@{Transform}}
 \doxysubsubsection{\texorpdfstring{speed}{speed}}
 {\footnotesize\ttfamily \label{structTransform_a25a3777aad28148d20cceb0f1900cec4} 
 float Transform\+::speed = 240.\+0f}
+
+
+
+The movement speed multiplier. 
 
 \Hypertarget{structTransform_adc6af70bf7caaf0ef883e196ab42fb53}\index{Transform@{Transform}!vel@{vel}}
 \index{vel@{vel}!Transform@{Transform}}
@@ -227,11 +289,19 @@ float Transform\+::speed = 240.\+0f}
 {\footnotesize\ttfamily \label{structTransform_adc6af70bf7caaf0ef883e196ab42fb53} 
 \mbox{\hyperlink{structVector2D}{Vector2D}} Transform\+::vel}
 
+
+
+Initial position, current position, and velocity vectors. 
+
 \Hypertarget{structTransform_ac161d5afc0737803f9cd4abd16c4697a}\index{Transform@{Transform}!width@{width}}
 \index{width@{width}!Transform@{Transform}}
 \doxysubsubsection{\texorpdfstring{width}{width}}
 {\footnotesize\ttfamily \label{structTransform_ac161d5afc0737803f9cd4abd16c4697a} 
 int Transform\+::width = 50}
+
+
+
+The width of the entity\textquotesingle{}s bounding box. 
 
 
 

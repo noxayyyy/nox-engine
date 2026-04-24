@@ -105,68 +105,70 @@ $(function(){initNavTree('Button_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Button.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Button_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Collider_8h.html">Collider.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="MouseTracker_8h.html">MouseTracker.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="Text_8h.html">Text.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">extern</span> <a class="code hl_struct" href="structManager.html">Manager</a> <a class="code hl_variable" href="Button_8h.html#a8b88105956ea929e3c74c65791e92c6f">manager</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structButton.html">   11</a></span><span class="keyword">struct </span><a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structComponent.html">Component</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">float</span> scale, SDL_Colour defColour,</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        SDL_Colour hoverColour, SDL_Colour textColour, std::function&lt;<span class="keywordtype">void</span>()&gt; func</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    );</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">float</span> scale, std::function&lt;<span class="keywordtype">void</span>()&gt; func);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, std::function&lt;<span class="keywordtype">void</span>()&gt; func);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="structButton.html#a2a001eb9c3cc8ae54768a850dd345002">~Button</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#a94132a198aa03cd94f0337d29109b20c">init</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#abda97f1ae8e081da3dbd0b77a27cad9d">update</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#ac73fe4dc081674c116aabe8145386332">reload</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7">draw</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">float</span> scale;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> isPressed;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::string content;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    std::function&lt;void()&gt; pressFunc;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="structTransform.html">Transform</a>* transform;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structCollider.html">Collider</a>* collider;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="structText.html">Text</a>* text;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    SDL_Rect buttonRect;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    SDL_Texture* texture;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    SDL_Colour defColour;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    SDL_Colour hoverColour;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    SDL_Colour textColour;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> setTex(SDL_Colour&amp; colour);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<a href="Button_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Collider_8h.html">Collider.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="MouseTracker_8h.html">MouseTracker.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="Text_8h.html">Text.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="TextureManager_8h.html">TextureManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">extern</span> <a class="code hl_struct" href="structManager.html">Manager</a> <a class="code hl_variable" href="Button_8h.html#a8b88105956ea929e3c74c65791e92c6f">manager</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structButton.html">   21</a></span><span class="keyword">struct </span><a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structComponent.html">Component</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">float</span> scale, SDL_Colour defColour,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        SDL_Colour hoverColour, SDL_Colour textColour, std::function&lt;<span class="keywordtype">void</span>()&gt; func</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    );</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">float</span> scale, std::function&lt;<span class="keywordtype">void</span>()&gt; func);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button</a>(std::string inStr, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, std::function&lt;<span class="keywordtype">void</span>()&gt; func);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="structButton.html#a2a001eb9c3cc8ae54768a850dd345002">~Button</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#a94132a198aa03cd94f0337d29109b20c">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#abda97f1ae8e081da3dbd0b77a27cad9d">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#ac73fe4dc081674c116aabe8145386332">reload</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7">draw</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">float</span> scale;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> isPressed;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    std::string content;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    std::function&lt;void()&gt; pressFunc;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_struct" href="structTransform.html">Transform</a>* transform;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_struct" href="structCollider.html">Collider</a>* collider;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_struct" href="structText.html">Text</a>* text;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    SDL_Rect buttonRect;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    SDL_Texture* texture;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    SDL_Colour defColour;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    SDL_Colour hoverColour;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    SDL_Colour textColour;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> setTex(SDL_Colour&amp; colour);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
 </div>
 <div class="ttc" id="aButton_8h_html_a8b88105956ea929e3c74c65791e92c6f"><div class="ttname"><a href="Button_8h.html#a8b88105956ea929e3c74c65791e92c6f">manager</a></div><div class="ttdeci">Manager manager</div></div>
-<div class="ttc" id="aCollider_8h_html"><div class="ttname"><a href="Collider_8h.html">Collider.h</a></div></div>
-<div class="ttc" id="aMouseTracker_8h_html"><div class="ttname"><a href="MouseTracker_8h.html">MouseTracker.h</a></div></div>
-<div class="ttc" id="aText_8h_html"><div class="ttname"><a href="Text_8h.html">Text.h</a></div></div>
-<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div></div>
+<div class="ttc" id="aCollider_8h_html"><div class="ttname"><a href="Collider_8h.html">Collider.h</a></div><div class="ttdoc">Defines a component for collision detection.</div></div>
+<div class="ttc" id="aMouseTracker_8h_html"><div class="ttname"><a href="MouseTracker_8h.html">MouseTracker.h</a></div><div class="ttdoc">Defines a component that tracks the mouse position and state.</div></div>
+<div class="ttc" id="aText_8h_html"><div class="ttname"><a href="Text_8h.html">Text.h</a></div><div class="ttdoc">Defines a component for rendering text.</div></div>
+<div class="ttc" id="aTextureManager_8h_html"><div class="ttname"><a href="TextureManager_8h.html">TextureManager.h</a></div><div class="ttdoc">A static utility class for loading and drawing textures.</div></div>
 <div class="ttc" id="astructButton_html_a2a001eb9c3cc8ae54768a850dd345002"><div class="ttname"><a href="structButton.html#a2a001eb9c3cc8ae54768a850dd345002">Button::~Button</a></div><div class="ttdeci">~Button()</div><div class="ttdef"><b>Definition</b> Button.cpp:57</div></div>
-<div class="ttc" id="astructButton_html_a94132a198aa03cd94f0337d29109b20c"><div class="ttname"><a href="structButton.html#a94132a198aa03cd94f0337d29109b20c">Button::init</a></div><div class="ttdeci">void init() override</div><div class="ttdef"><b>Definition</b> Button.cpp:63</div></div>
-<div class="ttc" id="astructButton_html_ab254bfae7efdeabe2a474d39b260c19b"><div class="ttname"><a href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button::Button</a></div><div class="ttdeci">Button(std::string inStr, int x, int y, int w, int h, float scale, SDL_Colour defColour, SDL_Colour hoverColour, SDL_Colour textColour, std::function&lt; void()&gt; func)</div><div class="ttdef"><b>Definition</b> Button.cpp:4</div></div>
-<div class="ttc" id="astructButton_html_abda97f1ae8e081da3dbd0b77a27cad9d"><div class="ttname"><a href="structButton.html#abda97f1ae8e081da3dbd0b77a27cad9d">Button::update</a></div><div class="ttdeci">void update() override</div><div class="ttdef"><b>Definition</b> Button.cpp:92</div></div>
-<div class="ttc" id="astructButton_html_ac73fe4dc081674c116aabe8145386332"><div class="ttname"><a href="structButton.html#ac73fe4dc081674c116aabe8145386332">Button::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdef"><b>Definition</b> Button.cpp:98</div></div>
-<div class="ttc" id="astructButton_html_af4d14cf544d8e0620f4ffcd7984103f7"><div class="ttname"><a href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7">Button::draw</a></div><div class="ttdeci">void draw() override</div><div class="ttdef"><b>Definition</b> Button.cpp:103</div></div>
-<div class="ttc" id="astructCollider_html"><div class="ttname"><a href="structCollider.html">Collider</a></div><div class="ttdef"><b>Definition</b> Collider.h:12</div></div>
-<div class="ttc" id="astructComponent_html"><div class="ttname"><a href="structComponent.html">Component</a></div><div class="ttdef"><b>Definition</b> ECS.h:35</div></div>
-<div class="ttc" id="astructManager_html"><div class="ttname"><a href="structManager.html">Manager</a></div><div class="ttdef"><b>Definition</b> ECS.h:130</div></div>
-<div class="ttc" id="astructText_html"><div class="ttname"><a href="structText.html">Text</a></div><div class="ttdef"><b>Definition</b> Text.h:7</div></div>
-<div class="ttc" id="astructTransform_html"><div class="ttname"><a href="structTransform.html">Transform</a></div><div class="ttdef"><b>Definition</b> Transform.h:7</div></div>
+<div class="ttc" id="astructButton_html_a94132a198aa03cd94f0337d29109b20c"><div class="ttname"><a href="structButton.html#a94132a198aa03cd94f0337d29109b20c">Button::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Initializes the button&#39;s components (transform, collider, text).</div><div class="ttdef"><b>Definition</b> Button.cpp:63</div></div>
+<div class="ttc" id="astructButton_html_ab254bfae7efdeabe2a474d39b260c19b"><div class="ttname"><a href="structButton.html#ab254bfae7efdeabe2a474d39b260c19b">Button::Button</a></div><div class="ttdeci">Button(std::string inStr, int x, int y, int w, int h, float scale, SDL_Colour defColour, SDL_Colour hoverColour, SDL_Colour textColour, std::function&lt; void()&gt; func)</div><div class="ttdoc">Constructs a fully customized Button.</div><div class="ttdef"><b>Definition</b> Button.cpp:4</div></div>
+<div class="ttc" id="astructButton_html_abda97f1ae8e081da3dbd0b77a27cad9d"><div class="ttname"><a href="structButton.html#abda97f1ae8e081da3dbd0b77a27cad9d">Button::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Checks for mouse hover and click events to update the button&#39;s state.</div><div class="ttdef"><b>Definition</b> Button.cpp:92</div></div>
+<div class="ttc" id="astructButton_html_ac73fe4dc081674c116aabe8145386332"><div class="ttname"><a href="structButton.html#ac73fe4dc081674c116aabe8145386332">Button::reload</a></div><div class="ttdeci">void reload() override</div><div class="ttdoc">Reloads the button&#39;s texture, useful after state changes.</div><div class="ttdef"><b>Definition</b> Button.cpp:98</div></div>
+<div class="ttc" id="astructButton_html_af4d14cf544d8e0620f4ffcd7984103f7"><div class="ttname"><a href="structButton.html#af4d14cf544d8e0620f4ffcd7984103f7">Button::draw</a></div><div class="ttdeci">void draw() override</div><div class="ttdoc">Draws the button&#39;s background and text.</div><div class="ttdef"><b>Definition</b> Button.cpp:103</div></div>
+<div class="ttc" id="astructCollider_html"><div class="ttname"><a href="structCollider.html">Collider</a></div><div class="ttdoc">Provides an entity with a physical bounding box for collision detection.</div><div class="ttdef"><b>Definition</b> Collider.h:22</div></div>
+<div class="ttc" id="astructComponent_html"><div class="ttname"><a href="structComponent.html">Component</a></div><div class="ttdoc">The base class for all components in the ECS.</div><div class="ttdef"><b>Definition</b> ECS.h:53</div></div>
+<div class="ttc" id="astructManager_html"><div class="ttname"><a href="structManager.html">Manager</a></div><div class="ttdoc">Manages all entities and their groups within the game.</div><div class="ttdef"><b>Definition</b> ECS.h:234</div></div>
+<div class="ttc" id="astructText_html"><div class="ttname"><a href="structText.html">Text</a></div><div class="ttdoc">A component that renders a string of text on the screen.</div><div class="ttdef"><b>Definition</b> Text.h:16</div></div>
+<div class="ttc" id="astructTransform_html"><div class="ttname"><a href="structTransform.html">Transform</a></div><div class="ttdoc">Stores an entity&#39;s position, velocity, scale, and rotation.</div><div class="ttdef"><b>Definition</b> Transform.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

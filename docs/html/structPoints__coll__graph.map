@@ -1,9 +1,9 @@
 <map id="Points" name="Points">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,967,111,1173"/>
-<area shape="rect" id="Node000002" href="$structText.html" title=" " alt="" coords="11,577,122,917"/>
+<area shape="rect" id="Node000001" title="A Text component that displays a score or point value." alt="" coords="23,967,111,1173"/>
+<area shape="rect" id="Node000002" href="$structText.html" title="A component that renders a string of text on the screen." alt="" coords="11,577,122,917"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,932,70,967,64,967,64,932"/>
-<area shape="rect" id="Node000003" href="$structComponent.html" title=" " alt="" coords="5,366,128,528"/>
+<area shape="rect" id="Node000003" href="$structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,366,128,528"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,543,70,578,64,578,64,543"/>
-<area shape="rect" id="Node000004" href="$structEntity.html" title=" " alt="" coords="10,5,123,301"/>
+<area shape="rect" id="Node000004" href="$structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="10,5,123,301"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="70,301,70,349,64,349,64,301"/>
 </map>

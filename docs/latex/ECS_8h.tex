@@ -1,5 +1,10 @@
 \doxysection{include/\+ECS.h File Reference}
 \hypertarget{ECS_8h}{}\label{ECS_8h}\index{include/ECS.h@{include/ECS.h}}
+
+
+Defines the core classes for the Entity-\/\+Component-\/\+System (ECS) architecture.  
+
+
 {\ttfamily \#include "{}Constants.\+h"{}}\newline
 {\ttfamily \#include $<$algorithm$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
@@ -28,11 +33,11 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structComponent}{Component}}
-\item 
+\begin{DoxyCompactList}\small\item\em The base class for all components in the ECS. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structEntity}{Entity}}
-\item 
+\begin{DoxyCompactList}\small\item\em A general-\/purpose object in the game world. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structManager}{Manager}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Manages all entities and their groups within the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,9 +55,14 @@ using \mbox{\hyperlink{ECS_8h_a8657c60c9c4988cd80991c6dbe6cfcbf}{Group\+Bit\+Set
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID}} \mbox{\hyperlink{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3}{get\+New\+Component\+Type\+ID}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Generates a unique ID for a new component type at runtime. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\\mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID}} \mbox{\hyperlink{ECS_8h_a6618a945314f27cb6b96b1a770a33c36}{get\+Component\+Type\+ID}} () noexcept
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the unique ID for a given component type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the core classes for the Entity-\/\+Component-\/\+System (ECS) architecture. 
+
 
 
 \doxysubsection{Typedef Documentation}
@@ -96,6 +106,18 @@ using \mbox{\hyperlink{ECS_8h_af05108a2e67a61a15c3f17ae813a3756}{Group\+ID}} = s
 template$<$typename T$>$ \\
 \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID}} get\+Component\+Type\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
+
+
+Gets the unique ID for a given component type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The component type. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The unique \doxylink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID} for type T. 
+\end{DoxyReturn}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -118,6 +140,13 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{ECS_8h_a506292c7895583d174f94fd9b1f5b1e3} 
 \mbox{\hyperlink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID}} get\+New\+Component\+Type\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Generates a unique ID for a new component type at runtime. 
+
+\begin{DoxyReturn}{Returns}
+A new \doxylink{ECS_8h_a7b5b328beaf99c4cdb76fc8ce54ce91d}{Component\+ID}. 
+\end{DoxyReturn}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]

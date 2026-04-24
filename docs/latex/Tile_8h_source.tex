@@ -2,27 +2,29 @@
 \hypertarget{Tile_8h_source}{}\label{Tile_8h_source}\index{include/Tile.h@{include/Tile.h}}
 \mbox{\hyperlink{Tile_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ }
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Sprites_8h}{Sprites.h}}"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ \mbox{\hyperlink{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}{transform}};}
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{structSprites}{Sprites}}*\ \mbox{\hyperlink{structTile_ad17fd46301d8b9de7da563daa3fec696}{sprite}};}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ECS_8h}{ECS.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Sprites_8h}{Sprites.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <SDL2/SDL.h>}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}{tileRect}};}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTile_af37b0873afcb54b101422972a2c17e23}{tileID}};}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structTile_add000516854959aea1c6554a832646c3}{path}};}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{structTile_a98634abbd93fa13d0578d7103202d03d}{\string~Tile}}();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}{init}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTile_a2a78af6e82cf111b1d078f8c96a444ab}{resizeTile}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{float}\ scale\ =\ 0.64f);}
-\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structComponent}{Component}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structTransform}{Transform}}*\ \mbox{\hyperlink{structTile_a7ff6df2c4a54a1e5f6a630742f8d4014}{transform}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structSprites}{Sprites}}*\ \mbox{\hyperlink{structTile_ad17fd46301d8b9de7da563daa3fec696}{sprite}};\ \ \ \ \ \ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{structTile_a5e5613c963cdbdb8822ec84ecf3a1864}{tileRect}};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTile_af37b0873afcb54b101422972a2c17e23}{tileID}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structTile_add000516854959aea1c6554a832646c3}{path}};\ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structTile_addab2525260d7755d1dff0b0eac9ae59}{Tile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{structTile_a98634abbd93fa13d0578d7103202d03d}{\string~Tile}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTile_a2d57b6b85f16bb978f2f4f60b265bf9e}{init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTile_a2a78af6e82cf111b1d078f8c96a444ab}{resizeTile}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{float}\ scale\ =\ 0.64f);}
+\DoxyCodeLine{00049\ \};}
 
 \end{DoxyCode}

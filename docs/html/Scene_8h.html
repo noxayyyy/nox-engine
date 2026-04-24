@@ -107,6 +107,9 @@ $(function(){initNavTree('Scene_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Scene.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the abstract base class for all game scenes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Collider_8h_source.html">Collider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ECS_8h_source.html">ECS.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -115,19 +118,19 @@ Include dependency graph for Scene.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="Scene_8h__incl.png" border="0" usemap="#ainclude_2Scene_8h" alt=""/></div>
 <map name="ainclude_2Scene_8h" id="ainclude_2Scene_8h">
-<area shape="rect" title=" " alt="" coords="1269,5,1392,33"/>
-<area shape="rect" href="Collider_8h.html" title=" " alt="" coords="1079,81,1161,109"/>
+<area shape="rect" title="Defines the abstract base class for all game scenes." alt="" coords="1269,5,1392,33"/>
+<area shape="rect" href="Collider_8h.html" title="Defines a component for collision detection." alt="" coords="1079,81,1161,109"/>
 <area shape="poly" title=" " alt="" coords="1294,36,1173,78,1171,73,1292,31"/>
-<area shape="rect" href="ECS_8h.html" title=" " alt="" coords="1231,308,1289,336"/>
+<area shape="rect" href="ECS_8h.html" title="Defines the core classes for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="1231,308,1289,336"/>
 <area shape="poly" title=" " alt="" coords="1333,34,1323,129,1312,195,1295,261,1279,296,1274,293,1289,259,1307,194,1318,129,1327,33"/>
 <area shape="rect" title=" " alt="" coords="1564,384,1626,411"/>
 <area shape="poly" title=" " alt="" coords="1361,31,1398,52,1437,83,1455,101,1469,122,1478,144,1481,169,1481,247,1483,267,1489,286,1510,320,1536,349,1564,372,1560,376,1533,353,1505,323,1484,288,1478,268,1476,248,1476,169,1473,146,1464,124,1450,104,1434,86,1395,57,1359,36"/>
-<area shape="rect" href="Constants_8h.html" title=" " alt="" coords="910,384,1008,411"/>
+<area shape="rect" href="Constants_8h.html" title="Defines global constants and enums used throughout the engine and game." alt="" coords="910,384,1008,411"/>
 <area shape="poly" title=" " alt="" coords="1126,109,1133,150,1138,210,1136,243,1130,276,1120,308,1103,337,1090,349,1069,360,1018,381,1016,376,1067,356,1087,345,1099,334,1115,306,1125,275,1131,243,1132,210,1128,151,1121,110"/>
 <area shape="rect" title=" " alt="" coords="871,459,929,487"/>
 <area shape="poly" title=" " alt="" coords="1078,100,825,110,650,120,466,134,292,154,145,179,88,193,44,209,17,227,10,236,8,245,8,323,11,347,21,365,35,377,54,385,102,396,157,409,219,423,301,435,503,453,706,463,855,468,855,473,705,468,502,458,301,440,218,428,155,414,101,401,52,390,32,381,16,368,6,349,3,323,3,245,5,234,13,223,42,205,86,188,144,173,291,148,466,129,650,115,825,105,1078,95"/>
 <area shape="poly" title=" " alt="" coords="1163,100,1213,118,1237,134,1257,155,1272,190,1277,227,1275,263,1270,293,1265,292,1270,262,1271,227,1267,191,1252,158,1234,138,1211,123,1161,105"/>
-<area shape="rect" href="Transform_8h.html" title=" " alt="" coords="839,157,937,184"/>
+<area shape="rect" href="Transform_8h.html" title="Defines the component for managing an entity&#39;s position, rotation, and scale." alt="" coords="839,157,937,184"/>
 <area shape="poly" title=" " alt="" coords="1079,112,945,154,943,149,1078,107"/>
 <area shape="rect" title=" " alt="" coords="43,308,138,336"/>
 <area shape="poly" title=" " alt="" coords="1079,107,827,159,154,309,153,303,826,154,1078,102"/>
@@ -150,9 +153,9 @@ Include dependency graph for Scene.h:</div>
 <area shape="poly" title=" " alt="" coords="1290,330,1442,376,1440,381,1289,335"/>
 <area shape="poly" title=" " alt="" coords="1290,326,1400,347,1549,380,1548,386,1399,352,1289,331"/>
 <area shape="poly" title=" " alt="" coords="921,182,1218,301,1216,306,919,187"/>
-<area shape="rect" href="Game_8h.html" title=" " alt="" coords="708,232,780,260"/>
+<area shape="rect" href="Game_8h.html" title="Defines the main Game class that orchestrates the entire application." alt="" coords="708,232,780,260"/>
 <area shape="poly" title=" " alt="" coords="863,187,784,227,782,223,861,183"/>
-<area shape="rect" href="Vector2D_8h.html" title=" " alt="" coords="162,308,254,336"/>
+<area shape="rect" href="Vector2D_8h.html" title="Defines a simple 2D vector class for position and velocity calculations." alt="" coords="162,308,254,336"/>
 <area shape="poly" title=" " alt="" coords="839,185,270,310,269,304,838,180"/>
 <area shape="poly" title=" " alt="" coords="781,246,856,250,946,260,1028,278,1060,290,1081,306,1087,318,1088,330,1075,350,1050,367,1019,380,1017,375,1047,362,1071,346,1083,328,1082,320,1077,310,1057,295,1027,283,945,265,855,255,781,251"/>
 <area shape="poly" title=" " alt="" coords="781,250,1216,312,1215,317,780,255"/>
@@ -177,8 +180,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Scene_8h__dep__incl.png" border="0" usemap="#ainclude_2Scene_8hdep" alt=""/></div>
 <map name="ainclude_2Scene_8hdep" id="ainclude_2Scene_8hdep">
-<area shape="rect" title=" " alt="" coords="117,5,241,33"/>
-<area shape="rect" href="SceneManager_8h.html" title=" " alt="" coords="5,81,185,109"/>
+<area shape="rect" title="Defines the abstract base class for all game scenes." alt="" coords="117,5,241,33"/>
+<area shape="rect" href="SceneManager_8h.html" title="Defines the manager for loading, updating, and transitioning between scenes." alt="" coords="5,81,185,109"/>
 <area shape="poly" title=" " alt="" coords="154,46,112,83,108,79,151,42"/>
 <area shape="rect" href="Scene_8cpp.html" title=" " alt="" coords="209,81,320,109"/>
 <area shape="poly" title=" " alt="" coords="208,41,251,79,247,83,204,46"/>
@@ -192,9 +195,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScene.html">Scene</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class representing a distinct part of the game, like a main menu or a level.  <a href="structScene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the abstract base class for all game scenes. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,3 +1,8 @@
+/**
+ * @file Components.h
+ * @brief A convenience header to include all standard engine components.
+ */
+
 #pragma once
 
 #include "Animator.h"

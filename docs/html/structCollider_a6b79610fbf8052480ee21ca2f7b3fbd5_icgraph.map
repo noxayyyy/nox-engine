@@ -1,14 +1,14 @@
 <map id="Collider::onCollision" name="Collider::onCollision">
-<area shape="rect" id="Node000001" title=" " alt="" coords="378,59,529,86"/>
-<area shape="rect" id="Node000002" href="$structCollider.html#a80a564c1cb6930ffc7810f559381a5e4" title=" " alt="" coords="201,59,330,86"/>
+<area shape="rect" id="Node000001" title="Executes the collision callback function." alt="" coords="378,59,529,86"/>
+<area shape="rect" id="Node000002" href="$structCollider.html#a80a564c1cb6930ffc7810f559381a5e4" title="Constructs a fully configured Collider." alt="" coords="201,59,330,86"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="362,84,331,84,331,78,362,79"/>
-<area shape="rect" id="Node000005" href="$structCollider.html#aec6345e2c307d0a680360352f35e1779" title=" " alt="" coords="17,109,141,137"/>
+<area shape="rect" id="Node000005" href="$structCollider.html#aec6345e2c307d0a680360352f35e1779" title="Updates the collider&#39;s position and checks for collisions against other colliders." alt="" coords="17,109,141,137"/>
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="375,93,330,100,231,113,142,121,141,116,231,108,330,95,374,87"/>
 <area shape="poly" id="edge5_Node000002_Node000001" title=" " alt="" coords="346,61,377,61,377,66,346,66"/>
 <area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="297,46,286,40,265,37,246,39,236,44,233,49,238,57,233,59,228,50,232,40,245,34,265,32,287,35,299,41"/>
-<area shape="rect" id="Node000003" href="$structCollider.html#a923208f36ba5546c434755626cf04181" title=" " alt="" coords="14,5,144,33"/>
+<area shape="rect" id="Node000003" href="$structCollider.html#a923208f36ba5546c434755626cf04181" title="Constructs a simple Collider with only a tag." alt="" coords="14,5,144,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,56,129,36,131,31,200,51"/>
-<area shape="rect" id="Node000004" href="$structCollider.html#a6b742fe2cb5dd449723ff4148de4a959" title=" " alt="" coords="5,57,153,85"/>
+<area shape="rect" id="Node000004" href="$structCollider.html#a6b742fe2cb5dd449723ff4148de4a959" title="Checks if this collider is currently colliding with any collider of a specific tag." alt="" coords="5,57,153,85"/>
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="185,75,153,74,153,69,185,69"/>
 <area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="198,93,133,111,132,106,197,88"/>
 </map>

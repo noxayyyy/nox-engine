@@ -1,5 +1,5 @@
 <map id="Animator" name="Animator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,215,138,444"/>
-<area shape="rect" id="Node000002" href="$structComponent.html" title=" " alt="" coords="10,5,133,167"/>
+<area shape="rect" id="Node000001" title="Manages sprite sheet animations and transitions between them using a state machine." alt="" coords="5,215,138,444"/>
+<area shape="rect" id="Node000002" href="$structComponent.html" title="The base class for all components in the ECS." alt="" coords="10,5,133,167"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,182,74,215,69,215,69,182"/>
 </map>

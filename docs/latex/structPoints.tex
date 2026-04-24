@@ -2,6 +2,11 @@
 \hypertarget{structPoints}{}\label{structPoints}\index{Points@{Points}}
 
 
+A \doxylink{structText}{Text} component that displays a score or point value.  
+
+
+
+
 {\ttfamily \#include $<$Counters.\+h$>$}
 
 
@@ -28,61 +33,61 @@ Collaboration diagram for Points\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structPoints_a9be248b584db504e01bcf09009de0956}{Points}} (std\+::string in\+Str)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structPoints}{Points} counter. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structPoints_a9d56d7dc8b6a6f492e07d354eb379c12}{\texorpdfstring{$\sim$}{\string~}\+Points}} ()
 \item 
 void \mbox{\hyperlink{structPoints_adad983d6f230a1e9ccb71a2dd87d1516}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the displayed text if the point value has changed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structPoints_a9b6c82fcf421a12d2ca76483622fdfbb}{reload}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Resets the points value to its initial state. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structPoints_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structPoints_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structPoints_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structText_af0a355f99999e8690c9d450f9464bfe3}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}}, SDL\+\_\+\+Color color)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a fully customized \doxylink{structText}{Text} component. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structText_a5ecdd4b00938ce0c10f14fa52a1f8a88}{Text}} (std\+::string in\+Str, int x, int y, float \mbox{\hyperlink{structText_a4792bbb71878bcb9aa41d4bb7f68e33b}{scale}})
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structText_a3708b595d0ef813e44b22c07bed5c34a}{Text}} (std\+::string in\+Str, int x, int y)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structText}{Text} component with a default color and scale. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structText_a4e7641708dfbf9c6bbbd41e897e9139c}{\texorpdfstring{$\sim$}{\string~}\+Text}} () override
 \item 
 void \mbox{\hyperlink{structText_aec022b3d70204a615b0d107975dfb518}{update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the destination rectangle for rendering. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{draw}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Draws the text texture to the screen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structText_ab1d94af2f78ab8ec80e50cdb88402380}{change\+Text}} (std\+::string text)
-\item 
+\begin{DoxyCompactList}\small\item\em Changes the text content and regenerates the texture. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structText_ae74b78f8759c0db114a86db64b6d8d67}{centre\+Text}} (SDL\+\_\+\+Rect \&parent\+Rect)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Adjusts the text\textquotesingle{}s position to be centered within a parent rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{structPoints_a15e92100b114c6783de5a570530d7fea}{value}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The numerical score value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{structComponent}{Component}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{structText_a8791ce14f2670ec8fa98f9de34414e90}{set\+Tex}} (const char \texorpdfstring{$\ast$}{*}text)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates a new texture from a string of text. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{structText}{Text}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -98,6 +103,9 @@ SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{d
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A \doxylink{structText}{Text} component that displays a score or point value. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structPoints_a9be248b584db504e01bcf09009de0956}\index{Points@{Points}!Points@{Points}}
 \index{Points@{Points}!Points@{Points}}
@@ -105,6 +113,15 @@ SDL\+\_\+\+Rect \mbox{\hyperlink{structText_a3bf3dadf3713e965b57343d1dad5c15b}{d
 {\footnotesize\ttfamily \label{structPoints_a9be248b584db504e01bcf09009de0956} 
 Points\+::\+Points (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structPoints}{Points} counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The prefix string to display (e.\+g., "{}\+Score\+: "{}). \\
+\hline
+\end{DoxyParams}
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -130,6 +147,10 @@ void Points\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspac
 
 
 
+Resets the points value to its initial state. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{Component}}.
 
 \Hypertarget{structPoints_a3708b595d0ef813e44b22c07bed5c34a}\index{Points@{Points}!Text@{Text}}
@@ -138,18 +159,63 @@ Reimplemented from \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a
 {\footnotesize\ttfamily \label{structPoints_a3708b595d0ef813e44b22c07bed5c34a} 
 Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structText}{Text} component with a default color and scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The initial string to display. \\
+\hline
+{\em x} & The x-\/position. \\
+\hline
+{\em y} & The y-\/position. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structPoints_a5ecdd4b00938ce0c10f14fa52a1f8a88}\index{Points@{Points}!Text@{Text}}
 \index{Text@{Text}!Points@{Points}}
 \doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{structPoints_a5ecdd4b00938ce0c10f14fa52a1f8a88} 
 Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structText}{Text} component with a default color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The initial string to display. \\
+\hline
+{\em x} & The x-\/position. \\
+\hline
+{\em y} & The y-\/position. \\
+\hline
+{\em scale} & The rendering scale. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structPoints_af0a355f99999e8690c9d450f9464bfe3}\index{Points@{Points}!Text@{Text}}
 \index{Text@{Text}!Points@{Points}}
 \doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{structPoints_af0a355f99999e8690c9d450f9464bfe3} 
 Text\+::\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{in\+Str}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{scale}{, }\item[{SDL\+\_\+\+Color}]{color}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a fully customized \doxylink{structText}{Text} component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Str} & The initial string to display. \\
+\hline
+{\em x} & The x-\/position. \\
+\hline
+{\em y} & The y-\/position. \\
+\hline
+{\em scale} & The rendering scale. \\
+\hline
+{\em color} & The color of the text. \\
+\hline
+\end{DoxyParams}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -163,6 +229,10 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structPoints_adad983d6f230a1e9ccb71a2dd87d1516} 
 void Points\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the displayed text if the point value has changed. 
 
 
 
@@ -184,6 +254,10 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{value}{value}}
 {\footnotesize\ttfamily \label{structPoints_a15e92100b114c6783de5a570530d7fea} 
 int Points\+::value}
+
+
+
+The numerical score value. 
 
 
 

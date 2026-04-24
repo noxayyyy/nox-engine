@@ -111,14 +111,17 @@ $(function(){initNavTree('structTransform.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>Stores an entity's position, velocity, scale, and rotation.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Transform_8h_source.html">Transform.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Transform:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTransform__inherit__graph.png" border="0" usemap="#aTransform_inherit__map" alt="Inheritance graph"/></div>
 <map name="aTransform_inherit__map" id="aTransform_inherit__map">
-<area shape="rect" title=" " alt="" coords="16,215,118,645"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="5,5,128,167"/>
+<area shape="rect" title="Stores an entity&#39;s position, velocity, scale, and rotation." alt="" coords="16,215,118,645"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,5,128,167"/>
 <area shape="poly" title=" " alt="" coords="70,182,70,215,64,215,64,182"/>
 </map>
 </div>
@@ -127,12 +130,12 @@ Collaboration diagram for Transform:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTransform__coll__graph.png" border="0" usemap="#aTransform_coll__map" alt="Collaboration graph"/></div>
 <map name="aTransform_coll__map" id="aTransform_coll__map">
-<area shape="rect" title=" " alt="" coords="86,850,188,1213"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="5,478,128,639"/>
+<area shape="rect" title="Stores an entity&#39;s position, velocity, scale, and rotation." alt="" coords="86,850,188,1213"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,478,128,639"/>
 <area shape="poly" title=" " alt="" coords="84,654,113,850,108,851,78,654"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="10,5,123,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="10,5,123,301"/>
 <area shape="poly" title=" " alt="" coords="70,300,70,461,64,461,64,300"/>
-<area shape="rect" href="structVector2D.html" title=" " alt="" coords="152,366,266,751"/>
+<area shape="rect" href="structVector2D.html" title="A simple struct for 2D mathematics (points, vectors)." alt="" coords="152,366,266,751"/>
 <area shape="poly" title=" " alt="" coords="183,751,170,834,165,833,178,750"/>
 </map>
 </div>
@@ -142,6 +145,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ada80898bd2a05f81a7a1b503c82737f6" id="r_ada80898bd2a05f81a7a1b503c82737f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada80898bd2a05f81a7a1b503c82737f6">Rotations</a> { <a class="el" href="#ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f">NINETY</a>
 , <a class="el" href="#ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1">ONE_EIGHTY</a>
  }</td></tr>
+<tr class="memdesc:ada80898bd2a05f81a7a1b503c82737f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for common rotation angles.  <a href="#ada80898bd2a05f81a7a1b503c82737f6">More...</a><br /></td></tr>
 <tr class="separator:ada80898bd2a05f81a7a1b503c82737f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -157,17 +161,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68861099b410a13f71bda5db1ab9829d" id="r_a68861099b410a13f71bda5db1ab9829d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68861099b410a13f71bda5db1ab9829d">Transform</a> (<a class="el" href="structVector2D.html">Vector2D</a> vec)</td></tr>
 <tr class="separator:a68861099b410a13f71bda5db1ab9829d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f67e6f75148a2b7da067961e6d46902" id="r_a9f67e6f75148a2b7da067961e6d46902"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f67e6f75148a2b7da067961e6d46902">init</a> () override</td></tr>
+<tr class="memdesc:a9f67e6f75148a2b7da067961e6d46902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the transform by setting its position.  <br /></td></tr>
 <tr class="separator:a9f67e6f75148a2b7da067961e6d46902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f43abca9677142b734c1536bf1b886" id="r_a95f43abca9677142b734c1536bf1b886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95f43abca9677142b734c1536bf1b886">update</a> () override</td></tr>
+<tr class="memdesc:a95f43abca9677142b734c1536bf1b886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the position based on velocity, delta time, and time scale.  <br /></td></tr>
 <tr class="separator:a95f43abca9677142b734c1536bf1b886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f24046feadc161265f75f821b162a22" id="r_a4f24046feadc161265f75f821b162a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f24046feadc161265f75f821b162a22">reload</a> () override</td></tr>
+<tr class="memdesc:a4f24046feadc161265f75f821b162a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the position to its initial state.  <br /></td></tr>
 <tr class="separator:a4f24046feadc161265f75f821b162a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0067e69d59b0510d386bd6ffd5ddaeb6" id="r_a0067e69d59b0510d386bd6ffd5ddaeb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0067e69d59b0510d386bd6ffd5ddaeb6">rotate</a> (<a class="el" href="#ada80898bd2a05f81a7a1b503c82737f6">Rotations</a> rotation, bool anticlockwise)</td></tr>
+<tr class="memdesc:a0067e69d59b0510d386bd6ffd5ddaeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the transform by a predefined amount.  <br /></td></tr>
 <tr class="separator:a0067e69d59b0510d386bd6ffd5ddaeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8dca674026ec3d3140314995d5b7c53" id="r_af8dca674026ec3d3140314995d5b7c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8dca674026ec3d3140314995d5b7c53">setAngle</a> (double <a class="el" href="#a8fed22a9d295cf0f27facf4cbe99724b">angle</a>)</td></tr>
+<tr class="memdesc:af8dca674026ec3d3140314995d5b7c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transform's angle to a specific value.  <br /></td></tr>
 <tr class="separator:af8dca674026ec3d3140314995d5b7c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
+<tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,22 +189,32 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a184506ba90094bd001616750a8efeaaa" id="r_a184506ba90094bd001616750a8efeaaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a184506ba90094bd001616750a8efeaaa">pos</a></td></tr>
 <tr class="separator:a184506ba90094bd001616750a8efeaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc6af70bf7caaf0ef883e196ab42fb53" id="r_adc6af70bf7caaf0ef883e196ab42fb53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2D.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6af70bf7caaf0ef883e196ab42fb53">vel</a></td></tr>
+<tr class="memdesc:adc6af70bf7caaf0ef883e196ab42fb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial position, current position, and velocity vectors.  <br /></td></tr>
 <tr class="separator:adc6af70bf7caaf0ef883e196ab42fb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2cde92529cda428813f16a7054d7a0" id="r_aed2cde92529cda428813f16a7054d7a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed2cde92529cda428813f16a7054d7a0">height</a> = 50</td></tr>
+<tr class="memdesc:aed2cde92529cda428813f16a7054d7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height of the entity's bounding box.  <br /></td></tr>
 <tr class="separator:aed2cde92529cda428813f16a7054d7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac161d5afc0737803f9cd4abd16c4697a" id="r_ac161d5afc0737803f9cd4abd16c4697a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac161d5afc0737803f9cd4abd16c4697a">width</a> = 50</td></tr>
+<tr class="memdesc:ac161d5afc0737803f9cd4abd16c4697a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width of the entity's bounding box.  <br /></td></tr>
 <tr class="separator:ac161d5afc0737803f9cd4abd16c4697a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a631712eb230305f58d164086d492701b" id="r_a631712eb230305f58d164086d492701b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631712eb230305f58d164086d492701b">scale</a> = 0.6f</td></tr>
+<tr class="memdesc:a631712eb230305f58d164086d492701b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rendering scale.  <br /></td></tr>
 <tr class="separator:a631712eb230305f58d164086d492701b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a3777aad28148d20cceb0f1900cec4" id="r_a25a3777aad28148d20cceb0f1900cec4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25a3777aad28148d20cceb0f1900cec4">speed</a> = 240.0f</td></tr>
+<tr class="memdesc:a25a3777aad28148d20cceb0f1900cec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The movement speed multiplier.  <br /></td></tr>
 <tr class="separator:a25a3777aad28148d20cceb0f1900cec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fed22a9d295cf0f27facf4cbe99724b" id="r_a8fed22a9d295cf0f27facf4cbe99724b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fed22a9d295cf0f27facf4cbe99724b">angle</a></td></tr>
+<tr class="memdesc:a8fed22a9d295cf0f27facf4cbe99724b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rotation angle in degrees.  <br /></td></tr>
 <tr class="separator:a8fed22a9d295cf0f27facf4cbe99724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores an entity's position, velocity, scale, and rotation. </p>
+<p>This is a fundamental component for any entity that exists in the game world. Its position is updated based on its velocity each frame. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ada80898bd2a05f81a7a1b503c82737f6" name="ada80898bd2a05f81a7a1b503c82737f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada80898bd2a05f81a7a1b503c82737f6">&#9670;&#160;</a></span>Rotations</h2>
 
@@ -206,6 +226,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enumeration for common rotation angles. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f" name="ada80898bd2a05f81a7a1b503c82737f6a84566d5dba51dfe1a177cd19275c8f2f"></a>NINETY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1" name="ada80898bd2a05f81a7a1b503c82737f6a3bc7ecdd728d6449e62e06bfb05740e1"></a>ONE_EIGHTY&#160;</td><td class="fielddoc"></td></tr>
@@ -346,6 +368,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the transform by setting its position. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
 </div>
@@ -373,6 +397,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Resets the position to its initial state. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">Component</a>.</p>
 
 </div>
@@ -396,6 +422,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Rotates the transform by a predefined amount. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>The rotation to apply (NINETY or ONE_EIGHTY). </td></tr>
+    <tr><td class="paramname">anticlockwise</td><td>If true, rotates counter-clockwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af8dca674026ec3d3140314995d5b7c53" name="af8dca674026ec3d3140314995d5b7c53"></a>
@@ -412,6 +447,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the transform's angle to a specific value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>The new angle in degrees. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -438,6 +481,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Updates the position based on velocity, delta time, and time scale. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">Component</a>.</p>
 
 </div>
@@ -455,6 +500,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The rotation angle in degrees. </p>
+
 </div>
 </div>
 <a id="aed2cde92529cda428813f16a7054d7a0" name="aed2cde92529cda428813f16a7054d7a0"></a>
@@ -468,6 +515,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The height of the entity's bounding box. </p>
 
 </div>
 </div>
@@ -511,6 +560,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The rendering scale. </p>
+
 </div>
 </div>
 <a id="a25a3777aad28148d20cceb0f1900cec4" name="a25a3777aad28148d20cceb0f1900cec4"></a>
@@ -524,6 +575,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The movement speed multiplier. </p>
 
 </div>
 </div>
@@ -539,6 +592,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initial position, current position, and velocity vectors. </p>
+
 </div>
 </div>
 <a id="ac161d5afc0737803f9cd4abd16c4697a" name="ac161d5afc0737803f9cd4abd16c4697a"></a>
@@ -552,6 +607,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The width of the entity's bounding box. </p>
 
 </div>
 </div>

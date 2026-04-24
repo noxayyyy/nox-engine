@@ -2,6 +2,11 @@
 \hypertarget{structComponent}{}\label{structComponent}\index{Component@{Component}}
 
 
+The base class for all components in the ECS.  
+
+
+
+
 {\ttfamily \#include $<$ECS.\+h$>$}
 
 
@@ -28,21 +33,26 @@ Collaboration diagram for Component\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once when the component is added to an entity. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once per frame. Contains the component\textquotesingle{}s main logic. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_abd8b82630598fe8a13318ecc13a5c159}{reload}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called to reset the component\textquotesingle{}s state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structComponent_a2fc563e2f7e0c20902fc4f9d5e69e02a}{draw}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called once per frame after update. Used for rendering. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structComponent_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structEntity}{Entity}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structComponent_a6acb3f00c9d114d961c8763ede390d2c}{entity}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointer to the entity that owns this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The base class for all components in the ECS. 
+
+Components contain data and logic that can be attached to entities. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structComponent_a2e9aa4348314d981f05f67397ad2f872}\index{Component@{Component}!````~Component@{\texorpdfstring{$\sim$}{\string~}Component}}
@@ -62,6 +72,10 @@ virtual void Component\+::draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaptio
 
 
 
+Called once per frame after update. Used for rendering. 
+
+
+
 Reimplemented in \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c29}{Animator}}, \mbox{\hyperlink{structButton_af4d14cf544d8e0620f4ffcd7984103f7}{Button}}, \mbox{\hyperlink{structSprites_acf0999cbe0c8a23f168b357cab07b3d4}{Sprites}}, and \mbox{\hyperlink{structText_a8f486a54a21fafc7a5dfb75975f1621f}{Text}}.
 
 \Hypertarget{structComponent_a162f8cdc070537a71f2ad0b5e763b86f}\index{Component@{Component}!init@{init}}
@@ -69,6 +83,10 @@ Reimplemented in \mbox{\hyperlink{structAnimator_a23e378fb2dc1cb48c685015ddc885c
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily \label{structComponent_a162f8cdc070537a71f2ad0b5e763b86f} 
 virtual void Component\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Called once when the component is added to an entity. 
 
 
 
@@ -82,6 +100,10 @@ virtual void Component\+::reload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapt
 
 
 
+Called to reset the component\textquotesingle{}s state. 
+
+
+
 Reimplemented in \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332}{Button}}, \mbox{\hyperlink{structController_a66dcd5056f1c90515405d4a77f86dd67}{Controller}}, \mbox{\hyperlink{structFPS_adfc6d925757aafc98ea17e9540b866df}{FPS}}, \mbox{\hyperlink{structMouseTracker_aa37b0f2556c8b0c64bf5197a30eafb81}{Mouse\+Tracker}}, \mbox{\hyperlink{structPoints_a9b6c82fcf421a12d2ca76483622fdfbb}{Points}}, and \mbox{\hyperlink{structTransform_a4f24046feadc161265f75f821b162a22}{Transform}}.
 
 \Hypertarget{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae}\index{Component@{Component}!update@{update}}
@@ -89,6 +111,10 @@ Reimplemented in \mbox{\hyperlink{structButton_ac73fe4dc081674c116aabe8145386332
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily \label{structComponent_a2c9d95ea989f2d69381ad9b6728b51ae} 
 virtual void Component\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Called once per frame. Contains the component\textquotesingle{}s main logic. 
 
 
 
@@ -102,6 +128,10 @@ Reimplemented in \mbox{\hyperlink{structAnimator_a59b9903253d8ce084048f7600e9567
 \doxysubsubsection{\texorpdfstring{entity}{entity}}
 {\footnotesize\ttfamily \label{structComponent_a6acb3f00c9d114d961c8763ede390d2c} 
 \mbox{\hyperlink{structEntity}{Entity}}\texorpdfstring{$\ast$}{*} Component\+::entity}
+
+
+
+Pointer to the entity that owns this component. 
 
 
 

@@ -110,14 +110,17 @@ $(function(){initNavTree('structTile.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>A component that represents one square in a tilemap.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Tile_8h_source.html">Tile.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tile:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTile__inherit__graph.png" border="0" usemap="#aTile_inherit__map" alt="Inheritance graph"/></div>
 <map name="aTile_inherit__map" id="aTile_inherit__map">
-<area shape="rect" title=" " alt="" coords="17,215,117,444"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="5,5,128,167"/>
+<area shape="rect" title="A component that represents one square in a tilemap." alt="" coords="17,215,117,444"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="5,5,128,167"/>
 <area shape="poly" title=" " alt="" coords="70,182,70,215,64,215,64,182"/>
 </map>
 </div>
@@ -126,17 +129,17 @@ Collaboration diagram for Tile:</div>
 <div class="dyncontent">
 <div class="center"><img src="structTile__coll__graph.png" border="0" usemap="#aTile_coll__map" alt="Collaboration graph"/></div>
 <map name="aTile_coll__map" id="aTile_coll__map">
-<area shape="rect" title=" " alt="" coords="147,1278,247,1462"/>
-<area shape="rect" href="structComponent.html" title=" " alt="" coords="144,478,266,639"/>
+<area shape="rect" title="A component that represents one square in a tilemap." alt="" coords="147,1278,247,1462"/>
+<area shape="rect" href="structComponent.html" title="The base class for all components in the ECS." alt="" coords="144,478,266,639"/>
 <area shape="poly" title=" " alt="" coords="207,654,201,1278,195,1278,201,654"/>
-<area shape="rect" href="structTransform.html" title=" " alt="" coords="47,850,149,1213"/>
+<area shape="rect" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation." alt="" coords="47,850,149,1213"/>
 <area shape="poly" title=" " alt="" coords="186,654,142,851,137,850,181,653"/>
-<area shape="rect" href="structSprites.html" title=" " alt="" coords="235,928,426,1134"/>
+<area shape="rect" href="structSprites.html" title="A component that gives an entity a visual representation using a texture." alt="" coords="235,928,426,1134"/>
 <area shape="poly" title=" " alt="" coords="233,653,306,928,301,929,227,654"/>
-<area shape="rect" href="structEntity.html" title=" " alt="" coords="148,5,262,301"/>
+<area shape="rect" href="structEntity.html" title="A general&#45;purpose object in the game world." alt="" coords="148,5,262,301"/>
 <area shape="poly" title=" " alt="" coords="208,300,208,461,202,461,202,300"/>
 <area shape="poly" title=" " alt="" coords="91,1212,102,1253,117,1283,138,1311,134,1314,113,1286,97,1255,86,1213"/>
-<area shape="rect" href="structVector2D.html" title=" " alt="" coords="5,366,119,751"/>
+<area shape="rect" href="structVector2D.html" title="A simple struct for 2D mathematics (points, vectors)." alt="" coords="5,366,119,751"/>
 <area shape="poly" title=" " alt="" coords="75,751,81,826,81,833,76,833,75,826,70,751"/>
 <area shape="poly" title=" " alt="" coords="292,1135,242,1263,237,1261,287,1133"/>
 </map>
@@ -145,19 +148,25 @@ Collaboration diagram for Tile:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:addab2525260d7755d1dff0b0eac9ae59" id="r_addab2525260d7755d1dff0b0eac9ae59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addab2525260d7755d1dff0b0eac9ae59">Tile</a> (int x, int y, int w, int h, int id)</td></tr>
+<tr class="memdesc:addab2525260d7755d1dff0b0eac9ae59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structTile.html" title="A component that represents one square in a tilemap.">Tile</a>.  <br /></td></tr>
 <tr class="separator:addab2525260d7755d1dff0b0eac9ae59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98634abbd93fa13d0578d7103202d03d" id="r_a98634abbd93fa13d0578d7103202d03d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98634abbd93fa13d0578d7103202d03d">~Tile</a> ()</td></tr>
 <tr class="separator:a98634abbd93fa13d0578d7103202d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d57b6b85f16bb978f2f4f60b265bf9e" id="r_a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d57b6b85f16bb978f2f4f60b265bf9e">init</a> () override</td></tr>
+<tr class="memdesc:a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the tile by adding <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and Sprite components to its entity.  <br /></td></tr>
 <tr class="separator:a2d57b6b85f16bb978f2f4f60b265bf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a78af6e82cf111b1d078f8c96a444ab" id="r_a2a78af6e82cf111b1d078f8c96a444ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a78af6e82cf111b1d078f8c96a444ab">resizeTile</a> (int w, int h, float scale=0.64f)</td></tr>
+<tr class="memdesc:a2a78af6e82cf111b1d078f8c96a444ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the tile's underlying components.  <br /></td></tr>
 <tr class="separator:a2a78af6e82cf111b1d078f8c96a444ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a2c9d95ea989f2d69381ad9b6728b51ae inherit pub_methods_structComponent" id="r_a2c9d95ea989f2d69381ad9b6728b51ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2c9d95ea989f2d69381ad9b6728b51ae">update</a> ()</td></tr>
+<tr class="memdesc:a2c9d95ea989f2d69381ad9b6728b51ae inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame. Contains the component's main logic.  <br /></td></tr>
 <tr class="separator:a2c9d95ea989f2d69381ad9b6728b51ae inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent" id="r_abd8b82630598fe8a13318ecc13a5c159"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#abd8b82630598fe8a13318ecc13a5c159">reload</a> ()</td></tr>
+<tr class="memdesc:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to reset the component's state.  <br /></td></tr>
 <tr class="separator:abd8b82630598fe8a13318ecc13a5c159 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent" id="r_a2fc563e2f7e0c20902fc4f9d5e69e02a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2fc563e2f7e0c20902fc4f9d5e69e02a">draw</a> ()</td></tr>
+<tr class="memdesc:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame after update. Used for rendering.  <br /></td></tr>
 <tr class="separator:a2fc563e2f7e0c20902fc4f9d5e69e02a inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent" id="r_a2e9aa4348314d981f05f67397ad2f872"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a2e9aa4348314d981f05f67397ad2f872">~Component</a> ()</td></tr>
 <tr class="separator:a2e9aa4348314d981f05f67397ad2f872 inherit pub_methods_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,20 +174,29 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7ff6df2c4a54a1e5f6a630742f8d4014" id="r_a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTransform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff6df2c4a54a1e5f6a630742f8d4014">transform</a></td></tr>
+<tr class="memdesc:a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component.  <br /></td></tr>
 <tr class="separator:a7ff6df2c4a54a1e5f6a630742f8d4014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17fd46301d8b9de7da563daa3fec696" id="r_ad17fd46301d8b9de7da563daa3fec696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSprites.html">Sprites</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad17fd46301d8b9de7da563daa3fec696">sprite</a></td></tr>
+<tr class="memdesc:ad17fd46301d8b9de7da563daa3fec696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tile's Sprite component.  <br /></td></tr>
 <tr class="separator:ad17fd46301d8b9de7da563daa3fec696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5613c963cdbdb8822ec84ecf3a1864" id="r_a5e5613c963cdbdb8822ec84ecf3a1864"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e5613c963cdbdb8822ec84ecf3a1864">tileRect</a></td></tr>
+<tr class="memdesc:a5e5613c963cdbdb8822ec84ecf3a1864"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rectangle defining the tile's position and size.  <br /></td></tr>
 <tr class="separator:a5e5613c963cdbdb8822ec84ecf3a1864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37b0873afcb54b101422972a2c17e23" id="r_af37b0873afcb54b101422972a2c17e23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af37b0873afcb54b101422972a2c17e23">tileID</a></td></tr>
+<tr class="memdesc:af37b0873afcb54b101422972a2c17e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for the type of tile (e.g., wall, path).  <br /></td></tr>
 <tr class="separator:af37b0873afcb54b101422972a2c17e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add000516854959aea1c6554a832646c3" id="r_add000516854959aea1c6554a832646c3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add000516854959aea1c6554a832646c3">path</a></td></tr>
+<tr class="memdesc:add000516854959aea1c6554a832646c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file path to the tile's texture.  <br /></td></tr>
 <tr class="separator:add000516854959aea1c6554a832646c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structComponent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structComponent.html">Component</a></td></tr>
 <tr class="memitem:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent" id="r_a6acb3f00c9d114d961c8763ede390d2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structComponent.html#a6acb3f00c9d114d961c8763ede390d2c">entity</a></td></tr>
+<tr class="memdesc:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the entity that owns this component.  <br /></td></tr>
 <tr class="separator:a6acb3f00c9d114d961c8763ede390d2c inherit pub_attribs_structComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component that represents one square in a tilemap. </p>
+<p>This is a convenience component that combines a <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and a Sprite and holds data specific to its role in a map, like its ID. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addab2525260d7755d1dff0b0eac9ae59" name="addab2525260d7755d1dff0b0eac9ae59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addab2525260d7755d1dff0b0eac9ae59">&#9670;&#160;</a></span>Tile()</h2>
 
@@ -212,6 +230,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structTile.html" title="A component that represents one square in a tilemap.">Tile</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The grid x-coordinate. </td></tr>
+    <tr><td class="paramname">y</td><td>The grid y-coordinate. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the tile. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the tile. </td></tr>
+    <tr><td class="paramname">id</td><td>The tile's type ID. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -256,6 +286,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the tile by adding <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> and Sprite components to its entity. </p>
+
 <p>Reimplemented from <a class="el" href="structComponent.html#a162f8cdc070537a71f2ad0b5e763b86f">Component</a>.</p>
 
 </div>
@@ -284,6 +316,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Resizes the tile's underlying components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>The new width. </td></tr>
+    <tr><td class="paramname">h</td><td>The new height. </td></tr>
+    <tr><td class="paramname">scale</td><td>The new rendering scale. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -299,6 +341,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The file path to the tile's texture. </p>
+
 </div>
 </div>
 <a id="ad17fd46301d8b9de7da563daa3fec696" name="ad17fd46301d8b9de7da563daa3fec696"></a>
@@ -312,6 +356,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pointer to the tile's Sprite component. </p>
 
 </div>
 </div>
@@ -327,6 +373,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The identifier for the type of tile (e.g., wall, path). </p>
+
 </div>
 </div>
 <a id="a5e5613c963cdbdb8822ec84ecf3a1864" name="a5e5613c963cdbdb8822ec84ecf3a1864"></a>
@@ -341,6 +389,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The rectangle defining the tile's position and size. </p>
+
 </div>
 </div>
 <a id="a7ff6df2c4a54a1e5f6a630742f8d4014" name="a7ff6df2c4a54a1e5f6a630742f8d4014"></a>
@@ -354,6 +404,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pointer to the tile's <a class="el" href="structTransform.html" title="Stores an entity&#39;s position, velocity, scale, and rotation.">Transform</a> component. </p>
 
 </div>
 </div>

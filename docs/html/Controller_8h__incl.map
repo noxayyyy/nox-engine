@@ -1,17 +1,17 @@
 <map id="include/Controller.h" name="include/Controller.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="706,5,853,33"/>
-<area shape="rect" id="Node000002" href="$Collider_8h.html" title=" " alt="" coords="738,81,820,109"/>
+<area shape="rect" id="Node000001" title="Defines a keyboard input controller component for player&#45;controlled entities." alt="" coords="706,5,853,33"/>
+<area shape="rect" id="Node000002" href="$Collider_8h.html" title="Defines a component for collision detection." alt="" coords="738,81,820,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="782,34,782,65,776,65,776,34"/>
-<area shape="rect" id="Node000006" href="$ECS_8h.html" title=" " alt="" coords="313,308,371,336"/>
+<area shape="rect" id="Node000006" href="$ECS_8h.html" title="Defines the core classes for the Entity&#45;Component&#45;System (ECS) architecture." alt="" coords="313,308,371,336"/>
 <area shape="poly" id="edge31_Node000001_Node000006" title=" " alt="" coords="749,36,644,85,581,120,519,159,474,194,431,232,365,299,362,295,428,228,471,190,516,154,578,115,642,80,747,31"/>
 <area shape="rect" id="Node000024" title=" " alt="" coords="844,81,912,109"/>
 <area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="798,31,850,70,847,74,795,36"/>
-<area shape="rect" id="Node000003" href="$Constants_8h.html" title=" " alt="" coords="727,384,826,411"/>
+<area shape="rect" id="Node000003" href="$Constants_8h.html" title="Defines global constants and enums used throughout the engine and game." alt="" coords="727,384,826,411"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="821,104,1006,154,1096,173,1194,185,1384,205,1458,220,1485,231,1506,244,1517,262,1518,283,1508,308,1485,338,1472,346,1451,354,1389,367,1305,377,1209,385,1006,394,841,398,841,393,1005,389,1208,380,1305,372,1388,362,1449,349,1469,342,1481,334,1503,306,1513,282,1512,263,1502,248,1483,235,1456,225,1383,210,1193,191,1095,178,1005,159,820,109"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="689,459,747,487"/>
 <area shape="poly" id="edge30_Node000002_Node000005" title=" " alt="" coords="821,103,833,106,910,115,1014,118,1256,125,1372,136,1424,145,1469,156,1507,172,1536,191,1555,215,1562,245,1562,324,1557,336,1544,338,1513,338,1304,377,1139,398,973,420,876,437,763,462,762,456,875,432,972,415,1138,393,1303,371,1512,333,1543,333,1553,331,1557,323,1557,245,1550,218,1533,195,1505,176,1467,161,1422,150,1371,141,1256,130,1014,124,910,120,832,111,820,109"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="738,105,655,123,608,139,563,159,527,183,503,207,480,233,446,262,381,303,379,298,443,258,476,229,499,204,524,179,561,154,606,134,653,118,737,99"/>
-<area shape="rect" id="Node000013" href="$Transform_8h.html" title=" " alt="" coords="574,157,672,184"/>
+<area shape="rect" id="Node000013" href="$Transform_8h.html" title="Defines the component for managing an entity&#39;s position, rotation, and scale." alt="" coords="574,157,672,184"/>
 <area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="752,112,666,152,664,147,750,107"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="1376,308,1471,336"/>
 <area shape="poly" id="edge28_Node000002_Node000017" title=" " alt="" coords="817,107,1372,300,1370,305,816,112"/>
@@ -35,9 +35,9 @@
 <area shape="rect" id="Node000012" title=" " alt="" coords="5,384,68,411"/>
 <area shape="poly" id="edge13_Node000006_Node000012" title=" " alt="" coords="313,332,83,385,82,380,312,327"/>
 <area shape="poly" id="edge15_Node000013_Node000006" title=" " alt="" coords="610,187,565,223,506,262,453,284,386,308,385,303,451,279,503,258,562,219,607,183"/>
-<area shape="rect" id="Node000014" href="$Game_8h.html" title=" " alt="" coords="715,232,787,260"/>
+<area shape="rect" id="Node000014" href="$Game_8h.html" title="Defines the main Game class that orchestrates the entire application." alt="" coords="715,232,787,260"/>
 <area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="647,183,717,222,714,227,645,187"/>
-<area shape="rect" id="Node000015" href="$Vector2D_8h.html" title=" " alt="" coords="396,308,488,336"/>
+<area shape="rect" id="Node000015" href="$Vector2D_8h.html" title="Defines a simple 2D vector class for position and velocity calculations." alt="" coords="396,308,488,336"/>
 <area shape="poly" id="edge27_Node000013_Node000015" title=" " alt="" coords="619,186,597,223,562,262,528,286,493,304,490,299,525,281,559,258,592,219,614,183"/>
 <area shape="poly" id="edge17_Node000014_Node000003" title=" " alt="" coords="744,261,726,295,722,315,724,335,735,355,751,372,747,375,731,358,719,337,716,315,721,294,739,259"/>
 <area shape="poly" id="edge18_Node000014_Node000006" title=" " alt="" coords="715,255,575,275,387,310,386,305,574,269,714,249"/>

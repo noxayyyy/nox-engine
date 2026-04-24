@@ -111,60 +111,82 @@ $(function(){initNavTree('classGame.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
+<p>The central class responsible for the game loop, window creation, and event handling.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Game_8h_source.html">Game.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Game:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGame__coll__graph.png" border="0" usemap="#aGame_coll__map" alt="Collaboration graph"/></div>
 <map name="aGame_coll__map" id="aGame_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,170,413"/>
+<area shape="rect" title="The central class responsible for the game loop, window creation, and event handling." alt="" coords="5,5,170,413"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad59df6562a58a614fda24622d3715b65" id="r_ad59df6562a58a614fda24622d3715b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59df6562a58a614fda24622d3715b65">Game</a> ()</td></tr>
+<tr class="memdesc:ad59df6562a58a614fda24622d3715b65"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html" title="The central class responsible for the game loop, window creation, and event handling.">Game</a> constructor.  <br /></td></tr>
 <tr class="separator:ad59df6562a58a614fda24622d3715b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d112ca6e0e55150d2fdbc704474530" id="r_ae3d112ca6e0e55150d2fdbc704474530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d112ca6e0e55150d2fdbc704474530">~Game</a> ()</td></tr>
+<tr class="memdesc:ae3d112ca6e0e55150d2fdbc704474530"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classGame.html" title="The central class responsible for the game loop, window creation, and event handling.">Game</a> deconstructor.  <br /></td></tr>
 <tr class="separator:ae3d112ca6e0e55150d2fdbc704474530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fb6ab188f447a0b1448f77426a2ad79" id="r_a6fb6ab188f447a0b1448f77426a2ad79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fb6ab188f447a0b1448f77426a2ad79">init</a> (const char *title, int xpos, int ypos, int width, int height, bool fullscreen)</td></tr>
+<tr class="memdesc:a6fb6ab188f447a0b1448f77426a2ad79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDL window, renderer, and subsystems.  <br /></td></tr>
 <tr class="separator:a6fb6ab188f447a0b1448f77426a2ad79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb5563f62c0c82e3e42ec36501aa5698" id="r_adb5563f62c0c82e3e42ec36501aa5698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb5563f62c0c82e3e42ec36501aa5698">handleEvents</a> ()</td></tr>
+<tr class="memdesc:adb5563f62c0c82e3e42ec36501aa5698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes SDL events such as keyboard input and window closure.  <br /></td></tr>
 <tr class="separator:adb5563f62c0c82e3e42ec36501aa5698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbbce2f78e1de148e187a4bc70b493d7" id="r_adbbce2f78e1de148e187a4bc70b493d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbbce2f78e1de148e187a4bc70b493d7">ghostSpawn</a> ()</td></tr>
+<tr class="memdesc:adbbce2f78e1de148e187a4bc70b493d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder function for ghost spawning logic.  <br /></td></tr>
 <tr class="separator:adbbce2f78e1de148e187a4bc70b493d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79df6376b332d63c9eca0dcee30305c3" id="r_a79df6376b332d63c9eca0dcee30305c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79df6376b332d63c9eca0dcee30305c3">update</a> ()</td></tr>
+<tr class="memdesc:a79df6376b332d63c9eca0dcee30305c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the game world.  <br /></td></tr>
 <tr class="separator:a79df6376b332d63c9eca0dcee30305c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15ddd769261d923827a3cdf41499c843" id="r_a15ddd769261d923827a3cdf41499c843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15ddd769261d923827a3cdf41499c843">render</a> ()</td></tr>
+<tr class="memdesc:a15ddd769261d923827a3cdf41499c843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders all game objects to the screen.  <br /></td></tr>
 <tr class="separator:a15ddd769261d923827a3cdf41499c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f36a72a2d06696f7973788606f57fc" id="r_ad4f36a72a2d06696f7973788606f57fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f36a72a2d06696f7973788606f57fc">clean</a> ()</td></tr>
+<tr class="memdesc:ad4f36a72a2d06696f7973788606f57fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up resources and shuts down SDL.  <br /></td></tr>
 <tr class="separator:ad4f36a72a2d06696f7973788606f57fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9af52dcc5835f2a8c37f441a256b9d" id="r_afd9af52dcc5835f2a8c37f441a256b9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd9af52dcc5835f2a8c37f441a256b9d">running</a> ()</td></tr>
+<tr class="memdesc:afd9af52dcc5835f2a8c37f441a256b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game loop is currently running.  <br /></td></tr>
 <tr class="separator:afd9af52dcc5835f2a8c37f441a256b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a474f21af42dbf8a9644a8472af45b611" id="r_a474f21af42dbf8a9644a8472af45b611"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474f21af42dbf8a9644a8472af45b611">setPause</a> (bool pause)</td></tr>
+<tr class="memdesc:a474f21af42dbf8a9644a8472af45b611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the paused state of the game.  <br /></td></tr>
 <tr class="separator:a474f21af42dbf8a9644a8472af45b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa153f0da6707884d25383acc9fd711f1" id="r_aa153f0da6707884d25383acc9fd711f1"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa153f0da6707884d25383acc9fd711f1">getPaused</a> ()</td></tr>
+<tr class="memdesc:aa153f0da6707884d25383acc9fd711f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current paused state of the game.  <br /></td></tr>
 <tr class="separator:aa153f0da6707884d25383acc9fd711f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad918e31c1644966465f822d912585f16" id="r_ad918e31c1644966465f822d912585f16"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad918e31c1644966465f822d912585f16">deltaTime</a></td></tr>
+<tr class="memdesc:ad918e31c1644966465f822d912585f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time in seconds it took to complete the last frame.  <br /></td></tr>
 <tr class="separator:ad918e31c1644966465f822d912585f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67a1eb6b517d48fc49bf39a2477c35d" id="r_aa67a1eb6b517d48fc49bf39a2477c35d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67a1eb6b517d48fc49bf39a2477c35d">timeScale</a></td></tr>
+<tr class="memdesc:aa67a1eb6b517d48fc49bf39a2477c35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A factor to scale time, allowing for slow-motion or fast-forward effects.  <br /></td></tr>
 <tr class="separator:aa67a1eb6b517d48fc49bf39a2477c35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50bda5dab77dc40a78db21a883d23b3" id="r_ac50bda5dab77dc40a78db21a883d23b3"><td class="memItemLeft" align="right" valign="top">static SDL_Event&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50bda5dab77dc40a78db21a883d23b3">event</a></td></tr>
+<tr class="memdesc:ac50bda5dab77dc40a78db21a883d23b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global SDL event object.  <br /></td></tr>
 <tr class="separator:ac50bda5dab77dc40a78db21a883d23b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5164c37c0dc74cfb56041174017bf57" id="r_ae5164c37c0dc74cfb56041174017bf57"><td class="memItemLeft" align="right" valign="top">static SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5164c37c0dc74cfb56041174017bf57">renderer</a></td></tr>
+<tr class="memdesc:ae5164c37c0dc74cfb56041174017bf57"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global SDL renderer.  <br /></td></tr>
 <tr class="separator:ae5164c37c0dc74cfb56041174017bf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec487bb7f3db1ca0d4bdcfff1776bdb" id="r_acec487bb7f3db1ca0d4bdcfff1776bdb"><td class="memItemLeft" align="right" valign="top">static SDL_Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec487bb7f3db1ca0d4bdcfff1776bdb">mouseCoords</a></td></tr>
+<tr class="memdesc:acec487bb7f3db1ca0d4bdcfff1776bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current screen coordinates of the mouse.  <br /></td></tr>
 <tr class="separator:acec487bb7f3db1ca0d4bdcfff1776bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a7362eac9054b5735967829046edb7d" id="r_a2a7362eac9054b5735967829046edb7d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a7362eac9054b5735967829046edb7d">mouseButtonPressed</a></td></tr>
+<tr class="memdesc:a2a7362eac9054b5735967829046edb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the primary mouse button is currently pressed.  <br /></td></tr>
 <tr class="separator:a2a7362eac9054b5735967829046edb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The central class responsible for the game loop, window creation, and event handling. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad59df6562a58a614fda24622d3715b65" name="ad59df6562a58a614fda24622d3715b65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad59df6562a58a614fda24622d3715b65">&#9670;&#160;</a></span>Game()</h2>
 
@@ -179,6 +201,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classGame.html" title="The central class responsible for the game loop, window creation, and event handling.">Game</a> constructor. </p>
 
 </div>
 </div>
@@ -197,6 +221,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classGame.html" title="The central class responsible for the game loop, window creation, and event handling.">Game</a> deconstructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -214,6 +240,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Cleans up resources and shuts down SDL. </p>
 
 </div>
 </div>
@@ -239,13 +267,16 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the current paused state of the game. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is paused, false otherwise. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGame_aa153f0da6707884d25383acc9fd711f1_icgraph.png" border="0" usemap="#aclassGame_aa153f0da6707884d25383acc9fd711f1_icgraph" alt=""/></div>
 <map name="aclassGame_aa153f0da6707884d25383acc9fd711f1_icgraph" id="aclassGame_aa153f0da6707884d25383acc9fd711f1_icgraph">
-<area shape="rect" title=" " alt="" coords="192,5,327,33"/>
-<area shape="rect" href="structController.html#a612e598a359e9327b6bb625c7b377ee7" title=" " alt="" coords="5,5,144,33"/>
+<area shape="rect" title="Gets the current paused state of the game." alt="" coords="192,5,327,33"/>
+<area shape="rect" href="structController.html#a612e598a359e9327b6bb625c7b377ee7" title="Calculates and applies velocity to the Transform based on current key states." alt="" coords="5,5,144,33"/>
 <area shape="poly" title=" " alt="" coords="176,22,144,22,144,16,176,16"/>
 </map>
 </div>
@@ -267,6 +298,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Placeholder function for ghost spawning logic. </p>
+
 </div>
 </div>
 <a id="adb5563f62c0c82e3e42ec36501aa5698" name="adb5563f62c0c82e3e42ec36501aa5698"></a>
@@ -283,6 +316,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Processes SDL events such as keyboard input and window closure. </p>
 
 </div>
 </div>
@@ -325,6 +360,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes the SDL window, renderer, and subsystems. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The title of the window. </td></tr>
+    <tr><td class="paramname">xpos</td><td>The initial x-position of the window. </td></tr>
+    <tr><td class="paramname">ypos</td><td>The initial y-position of the window. </td></tr>
+    <tr><td class="paramname">width</td><td>The width of the window. </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the window. </td></tr>
+    <tr><td class="paramname">fullscreen</td><td>Whether to start the game in fullscreen mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a15ddd769261d923827a3cdf41499c843" name="a15ddd769261d923827a3cdf41499c843"></a>
@@ -341,6 +389,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Renders all game objects to the screen. </p>
 
 </div>
 </div>
@@ -367,6 +417,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Checks if the game loop is currently running. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the game is running, false otherwise. </dd></dl>
+
 </div>
 </div>
 <a id="a474f21af42dbf8a9644a8472af45b611" name="a474f21af42dbf8a9644a8472af45b611"></a>
@@ -392,6 +445,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Sets the paused state of the game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pause</td><td>True to pause the game, false to resume. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a79df6376b332d63c9eca0dcee30305c3" name="a79df6376b332d63c9eca0dcee30305c3"></a>
@@ -408,6 +469,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the state of the game world. </p>
 
 </div>
 </div>
@@ -432,6 +495,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>The time in seconds it took to complete the last frame. </p>
+
 </div>
 </div>
 <a id="ac50bda5dab77dc40a78db21a883d23b3" name="ac50bda5dab77dc40a78db21a883d23b3"></a>
@@ -453,6 +518,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The global SDL event object. </p>
 
 </div>
 </div>
@@ -476,6 +543,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>True if the primary mouse button is currently pressed. </p>
+
 </div>
 </div>
 <a id="acec487bb7f3db1ca0d4bdcfff1776bdb" name="acec487bb7f3db1ca0d4bdcfff1776bdb"></a>
@@ -497,6 +566,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The current screen coordinates of the mouse. </p>
 
 </div>
 </div>
@@ -520,6 +591,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>The global SDL renderer. </p>
+
 </div>
 </div>
 <a id="aa67a1eb6b517d48fc49bf39a2477c35d" name="aa67a1eb6b517d48fc49bf39a2477c35d"></a>
@@ -541,6 +614,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A factor to scale time, allowing for slow-motion or fast-forward effects. </p>
 
 </div>
 </div>

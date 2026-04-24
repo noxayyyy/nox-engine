@@ -1,5 +1,5 @@
 <map id="Button::draw" name="Button::draw">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,110,33"/>
-<area shape="rect" id="Node000002" href="$structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title=" " alt="" coords="158,5,374,33"/>
+<area shape="rect" id="Node000001" title="Draws the button&#39;s background and text." alt="" coords="5,5,110,33"/>
+<area shape="rect" id="Node000002" href="$structTextureManager.html#aec4ea2167d0b919edeb74a5db3cf7ff8" title="Draws a portion of a texture." alt="" coords="158,5,374,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,16,142,16,142,22,110,22"/>
 </map>
