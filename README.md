@@ -30,7 +30,7 @@ The Engine is typically built automatically by the parent project's Makefile, bu
 ```bash
 # Clone the repository
 git clone https://github.com/noxayyyy/nox-engine.git
-cd YOUR_ENGINE_REPO
+cd nox-engine
 
 # Compile the static library (libnox_engine.a)
 make
