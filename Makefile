@@ -6,7 +6,7 @@ INC_DIRS=./include
 OBJ_DIRS=./obj
 
 DEP_FLAGS=-MP -MMD
-CFLAGS=-Wall -Wextra -Wpedantic -g $(foreach D,$(INC_DIRS),-I$(D)) $(DEP_FLAGS)
+CFLAGS=-std=c++17 -Wall -Wextra -Wpedantic -g $(foreach D,$(INC_DIRS),-I$(D)) $(DEP_FLAGS)
 
 CFILES=$(wildcard $(SRC_DIRS)/*.cpp)
 OBJECTS=$(patsubst %.cpp, $(OBJ_DIRS)/%.o, $(CFILES))
