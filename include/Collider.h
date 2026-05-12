@@ -62,7 +62,7 @@ public:
 	 * @param collTag The tag to check for collision against.
 	 * @return True if a collision is occurring, false otherwise.
 	 */
-	const bool isColliding(std::string collTag);
+	bool isColliding(std::string collTag);
 
 private:
 	SDL_Rect collider;
@@ -73,7 +73,7 @@ private:
 	bool isStatic;
 	bool isUi;
 
-	const bool checkCollision(Collider& other) const;
+	bool checkCollision(Collider& other) const;
 	bool AABB(const SDL_Rect& otherRect) const;
 	bool AABB(const Collider& otherColl) const;
 	bool AABBvel(const Collider& otherColl) const;

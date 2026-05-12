@@ -16,7 +16,7 @@
  */
 struct TextureManager {
 public:
-	static TTF_Font* font; ///< The global font used for text rendering.
+	// static TTF_Font* font; ///< The global font used for text rendering.
 
 	/**
 	 * @brief Gets the dimensions of an image file without loading the full texture.
@@ -36,7 +36,7 @@ public:
 	 * @param text The string to render.
 	 * @return A pointer to the created SDL_Texture.
 	 */
-	static SDL_Texture* LoadTexture(const SDL_Colour colour, const char* text);
+	// static SDL_Texture* LoadTexture(const SDL_Colour colour, const char* text);
 	/**
 	 * @brief Creates a solid-color rectangular texture.
 	 * @param rect The dimensions of the texture to create.

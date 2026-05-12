@@ -85,7 +85,7 @@ private:
 
 	Transform* transform;
 	Collider* collider;
-	Text* text;
+	// Text* text;
 
 	SDL_Rect buttonRect;
 	SDL_Texture* texture;

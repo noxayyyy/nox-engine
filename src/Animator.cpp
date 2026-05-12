@@ -46,7 +46,7 @@ Animator::Edge::Edge(std::vector<std::shared_ptr<bool>> conditions) {
 
 Animator::Edge::~Edge() {}
 
-const bool Animator::Edge::canTraverse() const {
+bool Animator::Edge::canTraverse() const {
 	return std::all_of(conditions.begin(), conditions.end(), [](std::shared_ptr<bool> c) {
 		return *c;
 	});

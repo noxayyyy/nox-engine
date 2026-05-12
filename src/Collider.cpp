@@ -60,7 +60,7 @@ void Collider::onCollision(Collider& other) {
 	collFunc(other);
 }
 
-const bool Collider::isColliding(std::string collTag) {
+bool Collider::isColliding(std::string collTag) {
 	for (auto& e : colliders) {
 		Collider other = e->getComponent<Collider>();
 
@@ -70,7 +70,7 @@ const bool Collider::isColliding(std::string collTag) {
 	return false;
 }
 
-const bool Collider::checkCollision(Collider& other) const {
+bool Collider::checkCollision(Collider& other) const {
 	if (isUi) {
 		return other.tag != MOUSE_TAG ? false : AABB(other);
 	}

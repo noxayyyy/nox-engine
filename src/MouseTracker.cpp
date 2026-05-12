@@ -25,6 +25,6 @@ void MouseTracker::reload() {
 	isPressed = false;
 }
 
-const bool MouseTracker::getMouseButtonPressed() {
+bool MouseTracker::getMouseButtonPressed() {
 	return isPressed;
 }

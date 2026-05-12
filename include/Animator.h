@@ -66,7 +66,7 @@ public:
 		 * @brief Checks if all conditions for traversing this edge are met.
 		 * @return True if the transition can occur, false otherwise.
 		 */
-		const bool canTraverse() const;
+		bool canTraverse() const;
 	};
 
 	Animator();

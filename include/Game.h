@@ -85,7 +85,7 @@ public:
 	 * @brief Gets the current paused state of the game.
 	 * @return True if the game is paused, false otherwise.
 	 */
-	static const bool getPaused();
+	static bool getPaused();
 
 private:
 	bool isRunning;

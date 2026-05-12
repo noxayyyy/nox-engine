@@ -82,8 +82,8 @@ void Button::init() {
 		false,
 		true
 	);
-	text = &entity->addComponent<Text>(content, buttonRect.x, buttonRect.y, scale, textColour);
-	text->centreText(buttonRect);
+	// text = &entity->addComponent<Text>(content, buttonRect.x, buttonRect.y, scale, textColour);
+	// text->centreText(buttonRect);
 
 	setTex(defColour);
 	manager.addToGroup(entity, BUTTONS);

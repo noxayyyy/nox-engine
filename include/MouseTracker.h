@@ -36,7 +36,7 @@ public:
 	 * @brief Gets the current state of the primary mouse button.
 	 * @return True if the mouse button is pressed, false otherwise.
 	 */
-	static const bool getMouseButtonPressed();
+	static bool getMouseButtonPressed();
 
 private:
 	Transform* transform;
