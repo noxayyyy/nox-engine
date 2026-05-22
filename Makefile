@@ -1,4 +1,5 @@
 CC=arm-linux-g++
+AR=arm-linux-ar
 LIB=libnox_engine.a
 
 SRC_DIRS=./src
@@ -17,7 +18,7 @@ DEPFILES=$(OBJECTS:.o=.d)
 all: $(LIB)
 
 $(LIB): $(OBJECTS)
-	ar rcs $@ $^
+	$(AR) rcs $@ $^
 
 $(OBJ_DIRS)/%.o: %.cpp
 	@mkdir -p $(@D)
