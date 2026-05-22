@@ -8,6 +8,7 @@
 #include "Collider.h"
 #include "ECS.h"
 #include <csignal>
+#include <unordered_map>
 
 /**
  * @brief Translates keyboard input (WASD) into entity movement.
