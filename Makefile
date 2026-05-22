@@ -1,4 +1,4 @@
-CC=clang++
+CC=arm-linux-g++
 LIB=libnox_engine.a
 
 SRC_DIRS=./src
