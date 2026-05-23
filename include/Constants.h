@@ -51,7 +51,7 @@ const std::size_t MAX_COMPONENTS = 32; ///< Maximum number of components an enti
 const std::size_t MAX_GROUPS = 32;     ///< Maximum number of groups available in the manager.
 
 // game
-const SDL_Point WINDOW_SIZE { 1366, 768 }; ///< Default window dimensions.
+const SDL_Point WINDOW_SIZE { 480, 272 }; ///< Default window dimensions.
 
 // scene manager
 const int MAX_SCENE_COUNT = 10; ///< Maximum number of scenes the manager can hold.
