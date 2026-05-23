@@ -8,15 +8,15 @@ Entity::Entity(Manager& memManager, std::string _id) : manager(memManager), acti
 
 void Entity::update() {
 	if (!active) return;
-	for (auto& x : components) {
-		x->update();
+	for (auto it = components.begin(); it != components.end(); it++) {
+		(*it)->update();
 	}
 }
 
 void Entity::draw() {
 	if (!active) return;
-	for (auto& x : components) {
-		x->draw();
+	for (auto it = components.begin(); it != components.end(); it++) {
+		(*it)->draw();
 	}
 }
 
@@ -39,9 +39,9 @@ void Entity::disable() {
 void Entity::refresh() {}
 
 void Entity::reload() {
-	for (auto& x : components) {
+	for (auto it = components.begin(); it != components.end(); it++) {
 		// if (!active) return;
-		x->reload();
+		(*it)->reload();
 	}
 }
 
@@ -75,15 +75,15 @@ Manager::Manager() {
 }
 
 void Manager::update() {
-	for (auto& e : entities) {
-		if (!e) continue;
-		e->update();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		if (!(*it)) continue;
+		(*it)->update();
 	}
 }
 
 void Manager::draw() {
-	for (auto& e : entities) {
-		e->draw();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->draw();
 	}
 }
 
@@ -113,8 +113,8 @@ void Manager::refresh() {
 		entities.end()
 	);
 
-	for (auto& x : entities) {
-		x->refresh();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->refresh();
 	}
 }
 
@@ -133,9 +133,9 @@ Entity& Manager::addEntity(std::string id) {
 }
 
 void Manager::destroyAll() {
-	for (auto& x : entities) {
-		x->deleteAllComponents();
-		x->disable();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->deleteAllComponents();
+		(*it)->disable();
 	}
 	refresh();
 }

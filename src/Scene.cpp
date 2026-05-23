@@ -35,14 +35,14 @@ void Scene::clearScene() {
 }
 
 void Scene::enableScene() {
-	for (auto& e : entities) {
-		e->enable();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->enable();
 	}
 }
 
 void Scene::disableScene() {
-	for (auto& e : entities) {
-		e->disable();
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->disable();
 	}
 }
 

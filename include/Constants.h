@@ -10,6 +10,7 @@
 #endif
 
 #if __GNUC__ == 4 && __GNUC_MINOR__ < 6
+#define noexcept /* Ignored in GCC < 4.6 */
 #define nullptr NULL
 #endif
 

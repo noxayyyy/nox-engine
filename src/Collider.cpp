@@ -41,7 +41,8 @@ void Collider::update() {
 	collider.w = (int)((float)transform->width * transform->scale);
 	collider.h = (int)((float)transform->height * transform->scale);
 	if (isStatic) return;
-	for (auto& e : colliders) {
+	for (auto it = colliders.begin(); it != colliders.end(); it++) {
+		Entity* e = *it;
 		if (!e) break;
 		if (!e->hasComponent<Collider>() || !e->hasGroup(COLLIDERS))
 			break; // edge case on forced reload where loop still ongoing caused segfault
@@ -61,7 +62,8 @@ void Collider::onCollision(Collider& other) {
 }
 
 bool Collider::isColliding(std::string collTag) {
-	for (auto& e : colliders) {
+	for (auto it = colliders.begin(); it != colliders.end(); it++) {
+		Entity* e = *it;
 		Collider other = e->getComponent<Collider>();
 
 		if (other.tag != collTag) continue;

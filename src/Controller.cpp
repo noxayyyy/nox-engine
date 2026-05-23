@@ -64,7 +64,7 @@ void Controller::update() {
 }
 
 void Controller::reload() {
-	for (auto& key : KEY_STATES) {
-		key.second = false;
+	for (auto it = KEY_STATES.begin(); it != KEY_STATES.end(); it++) {
+		it->second = false;
 	}
 }

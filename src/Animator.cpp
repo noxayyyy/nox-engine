@@ -79,10 +79,11 @@ void Animator::update() {
 	}
 	if (adjMatrix.find(currentAnimation->id) == adjMatrix.end()) return;
 
-	for (auto& connection : adjMatrix.at(currentAnimation->id)) {
-		if (!connection.second.canTraverse()) continue;
+	auto& connections = adjMatrix.at(currentAnimation->id);
+	for (auto it = connections.begin(); it != connections.end(); it++) {
+		if (!it->second.canTraverse()) continue;
 
-		currentAnimation = animations.at(connection.first);
+		currentAnimation = animations.at(it->first);
 		sprite->texture = currentAnimation->texture;
 		sprite->srcRect.x = sprite->srcRect.y = 0;
 

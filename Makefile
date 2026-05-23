@@ -1,13 +1,13 @@
-CC=arm-linux-g++
-AR=arm-linux-ar
+CC=clang++
+AR=ar
 LIB=libnox_engine.a
 
 SRC_DIRS=./src
-INC_DIRS=./include
+INC_DIRS=./include /usr/local/old-sdl2/include/SDL2 /usr/local/old-sdl2/include
 OBJ_DIRS=./obj
 
 DEP_FLAGS=-MP -MMD
-CFLAGS=-std=c++11 -Wall -Wextra -pedantic -g $(foreach D,$(INC_DIRS),-I$(D)) $(DEP_FLAGS)
+CFLAGS=-std=c++0x -Wall -Wextra -Wpedantic -g $(foreach D,$(INC_DIRS),-I$(D)) $(DEP_FLAGS)
 
 CFILES=$(wildcard $(SRC_DIRS)/*.cpp)
 OBJECTS=$(patsubst %.cpp, $(OBJ_DIRS)/%.o, $(CFILES))

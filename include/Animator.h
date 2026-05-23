@@ -18,12 +18,12 @@ public:
 	 * @brief Represents a single, self-contained animation sequence.
 	 */
 	struct Animation {
-		const char* id;          ///< Unique identifier for the animation.
-		int frames;              ///< The number of frames in the sprite sheet.
-		SDL_Texture* texture;    ///< The texture containing the animation frames.
-		int speed = 100;         ///< The delay in milliseconds between frames.
-		bool loop;               ///< Whether the animation should loop upon completion.
-		bool reversible = false; ///< If true, the animation plays forwards then backwards.
+		const char* id;       ///< Unique identifier for the animation.
+		int frames;           ///< The number of frames in the sprite sheet.
+		SDL_Texture* texture; ///< The texture containing the animation frames.
+		int speed;            ///< The delay in milliseconds between frames.
+		bool loop;            ///< Whether the animation should loop upon completion.
+		bool reversible;      ///< If true, the animation plays forwards then backwards.
 
 		Animation();
 		/**

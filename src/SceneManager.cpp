@@ -76,9 +76,9 @@ void SceneManager::updateScene() {
 void SceneManager::callSceneEvents(SDL_Event& event) {
 	currentScene->handleEvents(event);
 	if (currentScene->getIsLocking()) return;
-	for (auto& x : bgScenes) {
-		if (!x) continue;
-		x->handleEvents(event);
+	for (int i = 0; i < MAX_SCENE_COUNT; i++) {
+		if (!bgScenes[i]) continue;
+		bgScenes[i]->handleEvents(event);
 	}
 }
 
