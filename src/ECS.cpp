@@ -62,7 +62,7 @@ void Entity::addGroup(GroupID memGroup) {
 
 void Entity::deleteAllComponents() {
 	componentBitSet.reset();
-	componentArray.fill(nullptr);
+	componentArray.fill(std::shared_ptr<Component>());
 	components.clear();
 	// for (auto& x : this->components) {
 	// 	this->delComponent<decltype(x)>();
