@@ -95,8 +95,9 @@ void SceneManager::reloadScene() {
 }
 
 Scene* SceneManager::getSceneById(std::string id) {
-	auto it = std::find_if(std::begin(scenes), std::end(scenes), [id](Scene* x) {
-		return x ? x->name == id : false;
-	});
-	return it != std::end(scenes) ? *it : nullptr;
+	auto scenes_end = scenes + (sizeof(scenes) / sizeof(scenes[0]));
+	auto it =
+		std::find_if(scenes, scenes_end, [id](Scene* x) { return x ? x->name == id : false; });
+
+	return it != scenes_end ? *it : nullptr;
 }
