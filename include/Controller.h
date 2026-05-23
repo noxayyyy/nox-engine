@@ -48,10 +48,5 @@ private:
 	Transform* transform;
 	Collider* collider;
 
-	std::unordered_map<SDL_Keycode, bool> KEY_STATES {
-		{ SDLK_w, false },
-		{ SDLK_s, false },
-		{ SDLK_a, false },
-		{ SDLK_d, false },
-	};
+	std::unordered_map<SDL_Keycode, bool> KEY_STATES;
 };

@@ -1,6 +1,11 @@
 #include "Controller.h"
 
-Controller::Controller() {}
+Controller::Controller() {
+	KEY_STATES[SDLK_w] = false;
+	KEY_STATES[SDLK_s] = false;
+	KEY_STATES[SDLK_a] = false;
+	KEY_STATES[SDLK_d] = false;
+}
 
 Controller::~Controller() {
 	transform = nullptr;
