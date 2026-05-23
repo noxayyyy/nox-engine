@@ -11,9 +11,10 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_events.h>
 #include <SDL2/SDL_image.h>
-#include <SDL2/SDL_mixer.h>
+// #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_mouse.h>
-#include <SDL2/SDL_ttf.h>
+
+// #include <SDL2/SDL_ttf.h>
 
 /**
  * @brief The central class responsible for the game loop, window creation, and event handling.

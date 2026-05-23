@@ -7,7 +7,8 @@
 
 #include "Game.h"
 #include <SDL2/SDL_render.h>
-#include <SDL2/SDL_ttf.h>
+
+// #include <SDL2/SDL_ttf.h>
 
 /**
  * @brief Provides a centralized, static interface for all texture-related operations.
