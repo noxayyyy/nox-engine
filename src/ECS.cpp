@@ -2,7 +2,7 @@
 #include "Game.h"
 
 // Entity Class
-Entity::Entity(Manager& memManager, std::string _id) : manager(memManager) {
+Entity::Entity(Manager& memManager, std::string _id) : manager(memManager), active(false) {
 	id = _id;
 }
 

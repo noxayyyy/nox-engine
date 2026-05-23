@@ -5,6 +5,14 @@
 
 #pragma once
 
+#if __GNUC__ == 4 && __GNUC_MINOR__ < 7
+#define override /* Ignored in GCC < 4.7 */
+#endif
+
+#if __GNUC__ == 4 && __GNUC_MINOR__ < 6
+#define nullptr NULL
+#endif
+
 #include <SDL2/SDL_rect.h>
 #include <string>
 

@@ -18,8 +18,8 @@ struct Component;
 struct Entity;
 struct Manager;
 
-using ComponentID = std::size_t;
-using GroupID = std::size_t;
+typedef std::size_t ComponentID;
+typedef std::size_t GroupID;
 
 /**
  * @brief Generates a unique ID for a new component type at runtime.
@@ -41,10 +41,10 @@ inline ComponentID getComponentTypeID() noexcept {
 	return typeID;
 }
 
-using ComponentBitSet = std::bitset<MAX_COMPONENTS>;
-using ComponentArray = std::array<std::shared_ptr<Component>, MAX_COMPONENTS>;
+typedef std::bitset<MAX_COMPONENTS> ComponentBitSet;
+typedef std::array<std::shared_ptr<Component>, MAX_COMPONENTS> ComponentArray;
 
-using GroupBitSet = std::bitset<MAX_GROUPS>;
+typedef std::bitset<MAX_GROUPS> GroupBitSet;
 
 /**
  * @brief The base class for all components in the ECS.
@@ -219,7 +219,7 @@ public:
 
 private:
 	Manager& manager;
-	bool active = false;
+	bool active;
 	std::string id;
 	std::vector<std::shared_ptr<Component>> components;
 

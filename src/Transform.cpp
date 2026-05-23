@@ -1,21 +1,21 @@
 #include "Transform.h"
 
-Transform::Transform() {
+Transform::Transform() : height(50), width(50), scale(0.6f), speed(240.0f) {
 	pos.zero();
 	initPos.zero();
 }
 
-Transform::Transform(float x, float y) {
+Transform::Transform(float x, float y) : height(50), width(50), scale(0.6f), speed(240.0f) {
 	initPos.x = pos.x = x;
 	initPos.y = pos.y = y;
 }
 
-Transform::Transform(float scale) {
+Transform::Transform(float scale) : height(50), width(50), speed(240.0f) {
 	pos.zero();
 	this->scale = scale;
 }
 
-Transform::Transform(float x, float y, int w, int h, float scale) {
+Transform::Transform(float x, float y, int w, int h, float scale) : speed(240.0f) {
 	initPos.x = pos.x = x;
 	initPos.y = pos.y = y;
 	height = h;

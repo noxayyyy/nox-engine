@@ -21,10 +21,10 @@ struct Transform : public Component {
 	enum Rotations { NINETY, ONE_EIGHTY };
 
 	Vector2D initPos, pos, vel; ///< Initial position, current position, and velocity vectors.
-	int height = 50;            ///< The height of the entity's bounding box.
-	int width = 50;             ///< The width of the entity's bounding box.
-	float scale = 0.6f;         ///< The rendering scale.
-	float speed = 240.0f;       ///< The movement speed multiplier.
+	int height;                 ///< The height of the entity's bounding box.
+	int width;                  ///< The width of the entity's bounding box.
+	float scale;                ///< The rendering scale.
+	float speed;                ///< The movement speed multiplier.
 	int angle;                  ///< The rotation angle in degrees.
 
 	Transform();
