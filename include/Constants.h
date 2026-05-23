@@ -12,6 +12,16 @@
 #if __GNUC__ == 4 && __GNUC_MINOR__ < 6
 #define noexcept /* Ignored in GCC < 4.6 */
 #define nullptr NULL
+
+#include <sstream>
+#include <string>
+
+template<typename T>
+inline std::string to_string(T value) {
+	std::ostringstream os;
+	os << value;
+	return os.str();
+}
 #endif
 
 #include <SDL2/SDL_rect.h>
