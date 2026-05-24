@@ -1,10 +1,11 @@
 #include "Controller.h"
+#include <cstdio>
 
 Controller::Controller() {
-	KEY_STATES[SDLK_w] = false;
-	KEY_STATES[SDLK_s] = false;
-	KEY_STATES[SDLK_a] = false;
-	KEY_STATES[SDLK_d] = false;
+	// KEY_STATES[SDLK_w] = false;
+	// KEY_STATES[SDLK_s] = false;
+	// KEY_STATES[SDLK_a] = false;
+	// KEY_STATES[SDLK_d] = false;
 }
 
 Controller::~Controller() {
@@ -22,15 +23,15 @@ void Controller::init() {
 	}
 }
 
-void Controller::updateKeyDown(SDL_Keycode key) {
-	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
-	KEY_STATES[key] = true;
-}
-
-void Controller::updateKeyUp(SDL_Keycode key) {
-	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
-	KEY_STATES[key] = false;
-}
+// void Controller::updateKeyDown(SDL_Keycode key) {
+// 	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
+// 	KEY_STATES[key] = true;
+// }
+//
+// void Controller::updateKeyUp(SDL_Keycode key) {
+// 	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
+// 	KEY_STATES[key] = false;
+// }
 
 void Controller::update() {
 	if (Game::getPaused()) {
@@ -39,22 +40,22 @@ void Controller::update() {
 	lastVel = transform->vel;
 	lastAngle = transform->angle;
 
-	if (KEY_STATES[SDLK_w]) {
+	if (Game::getBtnState(5) == '1') {
 		transform->vel.x = 0;
 		transform->vel.y = -1;
 		transform->setAngle(-90);
 	}
-	if (KEY_STATES[SDLK_a]) {
+	if (Game::getBtnState(4) == '1') {
 		transform->vel.x = -1;
 		transform->vel.y = 0;
 		transform->setAngle(180);
 	}
-	if (KEY_STATES[SDLK_s]) {
+	if (Game::getBtnState(3) == '1') {
 		transform->vel.x = 0;
 		transform->vel.y = 1;
 		transform->setAngle(90);
 	}
-	if (KEY_STATES[SDLK_d]) {
+	if (Game::getBtnState(2) == '1') {
 		transform->vel.x = 1;
 		transform->vel.y = 0;
 		transform->setAngle(0);
@@ -69,7 +70,7 @@ void Controller::update() {
 }
 
 void Controller::reload() {
-	for (auto it = KEY_STATES.begin(); it != KEY_STATES.end(); it++) {
-		it->second = false;
-	}
+	// for (auto it = KEY_STATES.begin(); it != KEY_STATES.end(); it++) {
+	// 	it->second = false;
+	// }
 }

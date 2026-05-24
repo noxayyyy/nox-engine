@@ -88,9 +88,13 @@ public:
 	 */
 	static bool getPaused();
 
+	static char getBtnState(int idx);
+
 private:
 	bool isRunning;
 	static bool isPaused;
 	SDL_Window* window;
 	Entity& mouse;
+	int fd;
+	static char btn_state[8];
 };
