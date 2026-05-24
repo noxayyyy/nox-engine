@@ -1,9 +1,6 @@
 #include "Animator.h"
-#include "Constants.h"
-#include <memory>
 
-Animator::Animation::Animation() {
-	id = "";
+Animator::Animation::Animation() : id("") {
 	frames = 1;
 	texture = nullptr;
 	speed = 0;
@@ -11,8 +8,7 @@ Animator::Animation::Animation() {
 	reversible = false;
 }
 
-Animator::Animation::Animation(const char* id) {
-	this->id = id;
+Animator::Animation::Animation(const std::string id) : id(id) {
 	frames = 1;
 	texture = nullptr;
 	speed = 0;
@@ -21,10 +17,10 @@ Animator::Animation::Animation(const char* id) {
 }
 
 Animator::Animation::Animation(
-	const char* id, SDL_Point frameSize, const char* texPath, int speed, bool isLooping,
+	const std::string id, SDL_Point frameSize, const char* texPath, int speed, bool isLooping,
 	bool isReversible
-) {
-	this->id = id;
+)
+	: id(id) {
 	frames = TextureManager::GetSizeOfSurface(texPath).x / frameSize.x;
 	texture = TextureManager::LoadTexture(texPath);
 	this->speed = speed;
@@ -94,18 +90,18 @@ void Animator::update() {
 void Animator::draw() {}
 
 void Animator::addAnimation(
-	const char* id, const char* texPath, int speed, const bool isLooping, const bool isReversible
+	const std::string id, const char* texPath, int speed, const bool isLooping,
+	const bool isReversible
 ) {
 	animations[id] =
 		std::make_shared<Animation>(id, frameSize, texPath, speed, isLooping, isReversible);
 }
 
 void Animator::addEdge(
-	const char* idFrom, const char* idTo, std::vector<std::shared_ptr<bool>> conditions
+	const std::string idFrom, const std::string idTo, std::vector<std::shared_ptr<bool>> conditions
 ) {
-	if (animations.find(idFrom) == animations.end() || animations.find(idTo) == animations.end()) {
+	if (animations.find(idFrom) == animations.end() || animations.find(idTo) == animations.end())
 		return;
-	}
 	adjMatrix[idFrom][idTo] = Edge(conditions);
 }
 

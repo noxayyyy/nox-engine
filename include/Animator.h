@@ -3,6 +3,7 @@
  * @brief Defines a state-machine-based animation component for entities.
  */
 
+#include "Constants.h"
 #include "Sprites.h"
 #include <memory>
 #include <unordered_map>
@@ -18,7 +19,7 @@ public:
 	 * @brief Represents a single, self-contained animation sequence.
 	 */
 	struct Animation {
-		const char* id;       ///< Unique identifier for the animation.
+		const std::string id; ///< Unique identifier for the animation.
 		int frames;           ///< The number of frames in the sprite sheet.
 		SDL_Texture* texture; ///< The texture containing the animation frames.
 		int speed;            ///< The delay in milliseconds between frames.
@@ -30,7 +31,7 @@ public:
 		 * @brief Constructs an Animation with a given ID.
 		 * @param id The unique identifier for this animation.
 		 */
-		Animation(const char* id);
+		Animation(const std::string id);
 		/**
 		 * @brief Constructs and initializes a complete Animation object.
 		 * @param id The unique identifier for this animation.
@@ -41,8 +42,8 @@ public:
 		 * @param isReversible Whether the animation should play in reverse after finishing.
 		 */
 		Animation(
-			const char* id, SDL_Point frameSize, const char* texPath, int speed = 100,
-			bool isLooping = true, bool isReversible = false
+			const std::string id, SDL_Point frameSize, const char* texPath,
+			int speed = DEFAULT_ANIMATION_SPEED, bool isLooping = true, bool isReversible = false
 		);
 		~Animation();
 	};
@@ -94,8 +95,8 @@ public:
 	 * @param isReversible Whether the animation should play in reverse after finishing.
 	 */
 	void addAnimation(
-		const char* id, const char* texPath, int speed = 100, const bool isLooping = true,
-		const bool isReversible = false
+		const std::string id, const char* texPath, int speed = DEFAULT_ANIMATION_SPEED,
+		const bool isLooping = true, const bool isReversible = false
 	);
 	/**
 	 * @brief Defines a conditional transition between two animations.
@@ -103,8 +104,10 @@ public:
 	 * @param idTo The ID of the destination animation state.
 	 * @param conditions A vector of pointers to booleans that must be true to transition.
 	 */
-	void
-	addEdge(const char* idFrom, const char* idTo, std::vector<std::shared_ptr<bool>> conditions);
+	void addEdge(
+		const std::string idFrom, const std::string idTo,
+		std::vector<std::shared_ptr<bool>> conditions
+	);
 	/**
 	 * @brief Gets the ID of the currently playing animation.
 	 * @return A string representing the ID of the current animation.
@@ -117,6 +120,6 @@ private:
 	Sprites* sprite;
 	SDL_Point frameSize;
 
-	std::unordered_map<const char*, std::shared_ptr<Animation>> animations;
-	std::unordered_map<const char*, std::unordered_map<const char*, Edge>> adjMatrix;
+	std::unordered_map<std::string, std::shared_ptr<Animation>> animations;
+	std::unordered_map<std::string, std::unordered_map<std::string, Edge>> adjMatrix;
 };

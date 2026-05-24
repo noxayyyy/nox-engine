@@ -1,9 +1,9 @@
-CC=arm-linux-g++
-AR=arm-linux-ar
+CC=g++
+AR=ar
 LIB=libnox_engine.a
 
 SRC_DIRS=./src
-INC_DIRS=./include /usr/local/arm-sdl2/include/SDL2 /usr/local/arm-sdl2/include
+INC_DIRS=./include
 OBJ_DIRS=./obj
 
 DEP_FLAGS=-MP -MMD

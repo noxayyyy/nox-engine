@@ -33,7 +33,7 @@ Tile::~Tile() {
 
 void Tile::init() {
 	transform = &entity->addComponent<Transform>(
-		(float)tileRect.x, (float)tileRect.y, tileRect.w, tileRect.h, 0.64f
+		(float)tileRect.x, (float)tileRect.y, tileRect.w, tileRect.h, 0.32f
 	);
 	sprite = &entity->addComponent<Sprites>(path);
 }

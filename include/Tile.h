@@ -45,5 +45,5 @@ public:
 	 * @param h The new height.
 	 * @param scale The new rendering scale.
 	 */
-	void resizeTile(int w, int h, float scale = 0.64f);
+	void resizeTile(int w, int h, float scale);
 };
