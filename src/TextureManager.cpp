@@ -54,11 +54,11 @@ SDL_Surface* TextureManager::LoadSurface(SDL_Rect& rect, SDL_Colour colour) {
 }
 
 void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& src, SDL_Rect& dest) {
-	SDL_BlitSurface(surface, &src, Game::screen, &dest);
+	SDL_BlitScaled(surface, &src, Game::screen, &dest);
 }
 
 void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& dest) {
-	SDL_BlitSurface(surface, NULL, Game::screen, &dest);
+	SDL_BlitScaled(surface, NULL, Game::screen, &dest);
 }
 
 void TextureManager::DrawSurface(
@@ -123,7 +123,7 @@ void TextureManager::DrawSurface(
 
 	SDL_SetColorKey(rotated, SDL_TRUE, colorkey);
 
-	SDL_BlitSurface(rotated, &src, Game::screen, &dest);
+	SDL_BlitScaled(rotated, &src, Game::screen, &dest);
 	SDL_FreeSurface(rotated);
 }
 
@@ -187,6 +187,6 @@ void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& dest, const dou
 
 	SDL_SetColorKey(rotated, SDL_TRUE, colorkey);
 
-	SDL_BlitSurface(rotated, NULL, Game::screen, &dest);
+	SDL_BlitScaled(rotated, NULL, Game::screen, &dest);
 	SDL_FreeSurface(rotated);
 }
