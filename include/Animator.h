@@ -9,6 +9,7 @@
 #include <SDL2/SDL_surface.h>
 #include <memory>
 #include <unordered_map>
+#include <vector>
 
 /**
  * @brief Manages sprite sheet animations and transitions between them using a state machine.
@@ -18,12 +19,15 @@
 struct Animator : public Component {
 public:
 	struct AnimFrame {
-		SDL_Surface* rot[4];
+		std::vector<SDL_Surface*> rot[4];
 
 		void clean() {
 			for (int i = 0; i < 4; i++) {
-				if (!rot[i]) continue;
-				SDL_FreeSurface(rot[i]);
+				for (auto* s : rot[i]) {
+					if (!s) continue;
+					SDL_FreeSurface(s);
+				}
+				rot[i].clear();
 			}
 		}
 	};
@@ -60,7 +64,7 @@ public:
 			int speed = DEFAULT_ANIMATION_SPEED, bool isLooping = true, bool isReversible = false
 		);
 
-		Animator::AnimFrame LoadFrame(const char* path);
+		Animator::AnimFrame LoadFrame(const char* path, SDL_Rect rect);
 
 		~Animation();
 	};

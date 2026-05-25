@@ -1,4 +1,6 @@
 #include "../include/Animator.h"
+#include <SDL2/SDL_pixels.h>
+#include <SDL2/SDL_stdinc.h>
 #include <SDL2/SDL_surface.h>
 
 Animator::Animation::Animation() : id("") {
@@ -21,22 +23,37 @@ Animator::Animation::Animation(
 )
 	: id(id) {
 	frames = TextureManager::GetSizeOfSurface(texPath).x / rect.w;
-	anim_frame = Animator::Animation::LoadFrame(texPath);
+	anim_frame = Animator::Animation::LoadFrame(texPath, rect);
 	this->speed = speed;
 	loop = isLooping;
 	reversible = isReversible;
 }
 
-Animator::AnimFrame Animator::Animation::LoadFrame(const char* path) {
+Animator::AnimFrame Animator::Animation::LoadFrame(const char* path, SDL_Rect rect) {
 	Animator::AnimFrame anim;
-	SDL_Surface* base = TextureManager::LoadSurface(path);
+	SDL_Surface* sheet = TextureManager::LoadSurface(path);
+	for (int i = 0; i < frames; i++) {
+		SDL_Surface* frame =
+			SDL_CreateRGBSurfaceWithFormat(0, rect.w, rect.h, 16, sheet->format->format);
 
-	anim.rot[0] = Transform::rotateSurface(base, Transform::DEG_0);
-	anim.rot[1] = Transform::rotateSurface(base, Transform::DEG_90);
-	anim.rot[2] = Transform::rotateSurface(base, Transform::DEG_180);
-	anim.rot[3] = Transform::rotateSurface(base, Transform::DEG_270);
+		uint32_t magenta = SDL_MapRGB(frame->format, 255, 0, 255);
+		SDL_FillRect(frame, NULL, magenta);
 
-	SDL_FreeSurface(base);
+		SDL_SetColorKey(sheet, SDL_FALSE, 0);
+		SDL_Rect src_rect = { i * rect.w, rect.y, rect.w, rect.h };
+		SDL_BlitSurface(sheet, &src_rect, frame, NULL);
+
+		SDL_SetColorKey(sheet, SDL_TRUE, SDL_MapRGB(sheet->format, 255, 0, 255));
+		SDL_SetColorKey(frame, SDL_TRUE, magenta);
+
+		anim.rot[0].emplace_back(Transform::rotateSurface(frame, Transform::DEG_0));
+		anim.rot[1].emplace_back(Transform::rotateSurface(frame, Transform::DEG_90));
+		anim.rot[2].emplace_back(Transform::rotateSurface(frame, Transform::DEG_180));
+		anim.rot[3].emplace_back(Transform::rotateSurface(frame, Transform::DEG_270));
+
+		SDL_FreeSurface(frame);
+	}
+	SDL_FreeSurface(sheet);
 
 	return anim;
 }
@@ -110,12 +127,15 @@ void Animator::draw() {
 		rot = Transform::DEG_0;
 		break;
 	case 90:
+	case -270:
 		rot = Transform::DEG_90;
 		break;
 	case 180:
+	case -180:
 		rot = Transform::DEG_180;
 		break;
 	case 270:
+	case -90:
 		rot = Transform::DEG_270;
 		break;
 	default:
@@ -123,7 +143,11 @@ void Animator::draw() {
 		break;
 	}
 
-	TextureManager::DrawSurface(currentAnimation->anim_frame.rot[(int)rot], frameRect, destRect);
+	int idx = frameRect.x / frameRect.w;
+	SDL_Rect src_rect = { 0, 0, frameRect.w, frameRect.h };
+	TextureManager::DrawSurface(
+		currentAnimation->anim_frame.rot[(int)rot][idx], src_rect, destRect
+	);
 }
 
 void Animator::addAnimation(
