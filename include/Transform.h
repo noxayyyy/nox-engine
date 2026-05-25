@@ -18,7 +18,7 @@ struct Transform : public Component {
 	/**
 	 * @brief Enumeration for common rotation angles.
 	 */
-	enum Rotations { NINETY, ONE_EIGHTY };
+	enum Rotation { DEG_0, DEG_90, DEG_180, DEG_270 };
 
 	Vector2D initPos, pos, vel; ///< Initial position, current position, and velocity vectors.
 	int height;                 ///< The height of the entity's bounding box.
@@ -51,10 +51,12 @@ struct Transform : public Component {
 	 * @param rotation The rotation to apply (NINETY or ONE_EIGHTY).
 	 * @param anticlockwise If true, rotates counter-clockwise.
 	 */
-	void rotate(Rotations rotation, bool anticlockwise);
+	void rotate(Rotation rotation, bool anticlockwise);
 	/**
 	 * @brief Sets the transform's angle to a specific value.
 	 * @param angle The new angle in degrees.
 	 */
 	void setAngle(double angle);
+
+	static SDL_Surface* rotateSurface(SDL_Surface* surface, Rotation rot);
 };

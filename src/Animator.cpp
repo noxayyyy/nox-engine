@@ -3,7 +3,6 @@
 
 Animator::Animation::Animation() : id("") {
 	frames = 1;
-	surface = nullptr;
 	speed = 0;
 	loop = false;
 	reversible = false;
@@ -11,28 +10,39 @@ Animator::Animation::Animation() : id("") {
 
 Animator::Animation::Animation(const std::string id) : id(id) {
 	frames = 1;
-	surface = nullptr;
 	speed = 0;
 	loop = false;
 	reversible = false;
 }
 
 Animator::Animation::Animation(
-	const std::string id, SDL_Point frameSize, const char* texPath, int speed, bool isLooping,
+	const std::string id, SDL_Rect rect, const char* texPath, int speed, bool isLooping,
 	bool isReversible
 )
 	: id(id) {
-	frames = TextureManager::GetSizeOfSurface(texPath).x / frameSize.x;
-	surface = TextureManager::LoadSurface(texPath);
+	frames = TextureManager::GetSizeOfSurface(texPath).x / rect.w;
+	anim_frame = Animator::Animation::LoadFrame(texPath);
 	this->speed = speed;
 	loop = isLooping;
 	reversible = isReversible;
 }
 
+Animator::AnimFrame Animator::Animation::LoadFrame(const char* path) {
+	Animator::AnimFrame anim;
+	SDL_Surface* base = TextureManager::LoadSurface(path);
+
+	anim.rot[0] = Transform::rotateSurface(base, Transform::DEG_0);
+	anim.rot[1] = Transform::rotateSurface(base, Transform::DEG_90);
+	anim.rot[2] = Transform::rotateSurface(base, Transform::DEG_180);
+	anim.rot[3] = Transform::rotateSurface(base, Transform::DEG_270);
+
+	SDL_FreeSurface(base);
+
+	return anim;
+}
+
 Animator::Animation::~Animation() {
-	if (surface) {
-		SDL_FreeSurface(surface);
-	}
+	anim_frame.clean();
 }
 
 Animator::Edge::Edge() {}
@@ -49,7 +59,9 @@ bool Animator::Edge::canTraverse() const {
 	});
 }
 
-Animator::Animator() {}
+Animator::Animator() {
+	frameRect = destRect = { 0, 0, 0, 0 };
+}
 
 Animator::~Animator() {
 	animations.clear();
@@ -57,22 +69,26 @@ Animator::~Animator() {
 }
 
 void Animator::init() {
-	sprite = &entity->getComponent<Sprites>();
-	frameSize = { sprite->srcRect.w, sprite->srcRect.h };
+	transform = &entity->getComponent<Transform>();
+	frameRect = { 0, 0, transform->width, transform->height };
 	animations[ANIM_ENTRY] = std::make_shared<Animation>(ANIM_ENTRY);
 	currentAnimation = animations.at(ANIM_ENTRY);
 }
 
 void Animator::update() {
-	if (currentAnimation->loop ||
-		sprite->srcRect.x != sprite->srcRect.w * (currentAnimation->frames - 1)) {
+	destRect.x = (int)transform->pos.x;
+	destRect.y = (int)transform->pos.y;
+	destRect.w = transform->width * transform->scale;
+	destRect.h = transform->height * transform->scale;
+
+	if (currentAnimation->loop || frameRect.x != frameRect.w * (currentAnimation->frames - 1)) {
 		int factor =
 			(int)((SDL_GetTicks64() / currentAnimation->speed) % (2 * currentAnimation->frames));
 		if (factor >= currentAnimation->frames) {
 			factor -= currentAnimation->reversible ? (factor % currentAnimation->frames) * 2 + 1
 												   : currentAnimation->frames;
 		}
-		sprite->srcRect.x = sprite->srcRect.w * factor;
+		frameRect.x = frameRect.w * factor;
 	}
 	if (adjMatrix.find(currentAnimation->id) == adjMatrix.end()) return;
 
@@ -81,21 +97,41 @@ void Animator::update() {
 		if (!it->second.canTraverse()) continue;
 
 		currentAnimation = animations.at(it->first);
-		sprite->surface = currentAnimation->surface;
-		sprite->srcRect.x = sprite->srcRect.y = 0;
+		frameRect.x = frameRect.y = 0;
 
 		break;
 	}
 }
 
-void Animator::draw() {}
+void Animator::draw() {
+	Transform::Rotation rot;
+	switch (transform->angle) {
+	case 0:
+		rot = Transform::DEG_0;
+		break;
+	case 90:
+		rot = Transform::DEG_90;
+		break;
+	case 180:
+		rot = Transform::DEG_180;
+		break;
+	case 270:
+		rot = Transform::DEG_270;
+		break;
+	default:
+		rot = Transform::DEG_0;
+		break;
+	}
+
+	TextureManager::DrawSurface(currentAnimation->anim_frame.rot[(int)rot], frameRect, destRect);
+}
 
 void Animator::addAnimation(
 	const std::string id, const char* texPath, int speed, const bool isLooping,
 	const bool isReversible
 ) {
 	animations[id] =
-		std::make_shared<Animation>(id, frameSize, texPath, speed, isLooping, isReversible);
+		std::make_shared<Animation>(id, frameRect, texPath, speed, isLooping, isReversible);
 }
 
 void Animator::addEdge(

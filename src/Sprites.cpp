@@ -34,11 +34,7 @@ void Sprites::update() {
 }
 
 void Sprites::draw() {
-	if (!transform->angle && entity->getID() != "pacman") {
-		TextureManager::DrawSurface(surface, srcRect, destRect);
-		return;
-	}
-	TextureManager::DrawSurface(surface, srcRect, destRect, (double)transform->angle);
+	TextureManager::DrawSurface(surface, srcRect, destRect);
 }
 
 void Sprites::recalcSpriteDimensions() {

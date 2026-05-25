@@ -4,7 +4,9 @@
  */
 
 #include "Constants.h"
-#include "Sprites.h"
+#include "TextureManager.h"
+#include "Transform.h"
+#include <SDL2/SDL_surface.h>
 #include <memory>
 #include <unordered_map>
 
@@ -15,13 +17,25 @@
  */
 struct Animator : public Component {
 public:
+	struct AnimFrame {
+		SDL_Surface* rot[4];
+
+		void clean() {
+			for (int i = 0; i < 4; i++) {
+				if (!rot[i]) continue;
+				SDL_FreeSurface(rot[i]);
+			}
+		}
+	};
+
 	/**
 	 * @brief Represents a single, self-contained animation sequence.
 	 */
 	struct Animation {
+
 		const std::string id; ///< Unique identifier for the animation.
 		int frames;           ///< The number of frames in the sprite sheet.
-		SDL_Surface* surface; ///< The surface containing the animation frames.
+		AnimFrame anim_frame; ///< The surface containing the animation frames.
 		int speed;            ///< The delay in milliseconds between frames.
 		bool loop;            ///< Whether the animation should loop upon completion.
 		bool reversible;      ///< If true, the animation plays forwards then backwards.
@@ -42,9 +56,12 @@ public:
 		 * @param isReversible Whether the animation should play in reverse after finishing.
 		 */
 		Animation(
-			const std::string id, SDL_Point frameSize, const char* texPath,
+			const std::string id, SDL_Rect rect, const char* texPath,
 			int speed = DEFAULT_ANIMATION_SPEED, bool isLooping = true, bool isReversible = false
 		);
+
+		Animator::AnimFrame LoadFrame(const char* path);
+
 		~Animation();
 	};
 
@@ -116,9 +133,9 @@ public:
 
 private:
 	std::shared_ptr<Animation> currentAnimation;
-
-	Sprites* sprite;
-	SDL_Point frameSize;
+	SDL_Rect frameRect;
+	SDL_Rect destRect;
+	Transform* transform;
 
 	std::unordered_map<std::string, std::shared_ptr<Animation>> animations;
 	std::unordered_map<std::string, std::unordered_map<std::string, Edge>> adjMatrix;
