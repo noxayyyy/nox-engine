@@ -1,4 +1,4 @@
-#include "Collider.h"
+#include "../include/Collider.h"
 
 Collider::Collider(
 	std::string tag, std::function<void(Collider& other)> onCollision, bool isTrigger,

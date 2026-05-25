@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "Game.h"
+#include "../include/Game.h"
 #include <SDL2/SDL_render.h>
 
 // #include <SDL2/SDL_ttf.h>
@@ -30,7 +30,7 @@ public:
 	 * @param fileName The path to the image file.
 	 * @return A pointer to the loaded SDL_Texture.
 	 */
-	static SDL_Texture* LoadTexture(const char* fileName);
+	static SDL_Surface* LoadSurface(const char* fileName);
 	/**
 	 * @brief Creates a texture by rendering text.
 	 * @param colour The color of the text.
@@ -44,20 +44,20 @@ public:
 	 * @param colour The color of the texture.
 	 * @return A pointer to the created SDL_Texture.
 	 */
-	static SDL_Texture* LoadTexture(SDL_Rect& rect, SDL_Colour colour);
+	static SDL_Surface* LoadSurface(SDL_Rect& rect, SDL_Colour colour);
 	/**
 	 * @brief Draws a portion of a texture.
 	 * @param tex The source texture.
 	 * @param src The source rectangle defining the portion to draw.
 	 * @param dest The destination rectangle on the screen.
 	 */
-	static void DrawTexture(SDL_Texture* tex, SDL_Rect& src, SDL_Rect& dest);
+	static void DrawSurface(SDL_Surface* surface, SDL_Rect& src, SDL_Rect& dest);
 	/**
 	 * @brief Draws an entire texture to a destination rectangle.
 	 * @param tex The source texture.
 	 * @param dest The destination rectangle on the screen.
 	 */
-	static void DrawTexture(SDL_Texture* tex, SDL_Rect& dest);
+	static void DrawSurface(SDL_Surface* surface, SDL_Rect& dest);
 	/**
 	 * @brief Draws a portion of a texture with rotation.
 	 * @param tex The source texture.
@@ -65,12 +65,13 @@ public:
 	 * @param dest The destination rectangle.
 	 * @param angle The rotation angle in degrees.
 	 */
-	static void DrawTexture(SDL_Texture* tex, SDL_Rect& src, SDL_Rect& dest, const double angle);
+	static void
+	DrawSurface(SDL_Surface* surface, SDL_Rect& src, SDL_Rect& dest, const double angle);
 	/**
 	 * @brief Draws an entire texture with rotation.
 	 * @param tex The source texture.
 	 * @param dest The destination rectangle.
 	 * @param angle The rotation angle in degrees.
 	 */
-	static void DrawTexture(SDL_Texture* tex, SDL_Rect& dest, const double angle);
+	static void DrawSurface(SDL_Surface* surface, SDL_Rect& dest, const double angle);
 };

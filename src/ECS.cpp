@@ -1,5 +1,5 @@
-#include "ECS.h"
-#include "Game.h"
+#include "../include/ECS.h"
+#include "../include/Game.h"
 
 // Entity Class
 Entity::Entity(Manager& memManager, std::string _id) : manager(memManager), active(false) {

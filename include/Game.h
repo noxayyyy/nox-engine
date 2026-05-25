@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "Constants.h"
+#include "../include/Constants.h"
 #include "ECS.h"
 #include "Vector2D.h"
 #include <SDL2/SDL.h>
@@ -34,7 +34,7 @@ public:
 	static float
 		timeScale; ///< A factor to scale time, allowing for slow-motion or fast-forward effects.
 	static SDL_Event event;         ///< The global SDL event object.
-	static SDL_Renderer* renderer;  ///< The global SDL renderer.
+	static SDL_Surface* screen;     ///< The global SDL screen surface.
 	static SDL_Point mouseCoords;   ///< The current screen coordinates of the mouse.
 	static bool mouseButtonPressed; ///< True if the primary mouse button is currently pressed.
 

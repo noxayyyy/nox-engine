@@ -88,7 +88,7 @@ private:
 	// Text* text;
 
 	SDL_Rect buttonRect;
-	SDL_Texture* texture;
+	SDL_Surface* surface;
 
 	SDL_Colour defColour;
 	SDL_Colour hoverColour;
@@ -98,5 +98,5 @@ private:
 	 * @brief Sets the button's background texture to a solid color.
 	 * @param colour The SDL_Colour to use for the texture.
 	 */
-	void setTex(SDL_Colour& colour);
+	void setSurface(SDL_Colour& colour);
 };

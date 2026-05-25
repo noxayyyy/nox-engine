@@ -1,5 +1,4 @@
-#include "Controller.h"
-#include <cstdio>
+#include "../include/Controller.h"
 
 Controller::Controller() {
 	// KEY_STATES[SDLK_w] = false;

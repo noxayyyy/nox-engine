@@ -1,5 +1,5 @@
-#include "SceneManager.h"
-#include "Constants.h"
+#include "../include/SceneManager.h"
+#include "../include/Constants.h"
 
 void SceneManager::loadScene(std::string id) {
 	Scene* toBeLoaded = getSceneById(id);

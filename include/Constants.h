@@ -5,26 +5,26 @@
 
 #pragma once
 
-#if __GNUC__ == 4 && __GNUC_MINOR__ < 7
-#define override /* Ignored in GCC < 4.7 */
-#endif
-
-#if __GNUC__ == 4 && __GNUC_MINOR__ < 6
-#define noexcept /* Ignored in GCC < 4.6 */
-#define nullptr NULL
-
-#include <sstream>
-#include <string>
-
-namespace std {
-template<typename T>
-inline std::string to_string(T value) {
-	std::ostringstream os;
-	os << value;
-	return os.str();
-}
-} // namespace std
-#endif
+// #if __GNUC__ == 4 && __GNUC_MINOR__ < 7
+// #define override /* Ignored in GCC < 4.7 */
+// #endif
+//
+// #if __GNUC__ == 4 && __GNUC_MINOR__ < 6
+// #define noexcept /* Ignored in GCC < 4.6 */
+// #define nullptr NULL
+//
+// #include <sstream>
+// #include <string>
+//
+// namespace std {
+// template<typename T>
+// inline std::string to_string(T value) {
+// 	std::ostringstream os;
+// 	os << value;
+// 	return os.str();
+// }
+// } // namespace std
+// #endif
 
 #include <SDL2/SDL_rect.h>
 #include <string>

@@ -21,7 +21,7 @@ public:
 	struct Animation {
 		const std::string id; ///< Unique identifier for the animation.
 		int frames;           ///< The number of frames in the sprite sheet.
-		SDL_Texture* texture; ///< The texture containing the animation frames.
+		SDL_Surface* surface; ///< The surface containing the animation frames.
 		int speed;            ///< The delay in milliseconds between frames.
 		bool loop;            ///< Whether the animation should loop upon completion.
 		bool reversible;      ///< If true, the animation plays forwards then backwards.

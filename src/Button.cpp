@@ -1,5 +1,6 @@
-#include "Button.h"
+#include "../include/Button.h"
 #include <SDL2/SDL_render.h>
+#include <SDL2/SDL_surface.h>
 
 Button::Button(
 	std::string inStr, int x, int y, int w, int h, float scale, SDL_Colour defColour,
@@ -55,8 +56,8 @@ Button::Button(std::string inStr, int x, int y, int w, int h, std::function<void
 }
 
 Button::~Button() {
-	if (texture) {
-		SDL_DestroyTexture(texture);
+	if (surface) {
+		SDL_FreeSurface(surface);
 	}
 }
 
@@ -67,7 +68,7 @@ void Button::init() {
 	collider = &entity->addComponent<Collider>(
 		"button",
 		[this](Collider& other) {
-			setTex(hoverColour);
+			setSurface(hoverColour);
 
 			if (MouseTracker::getMouseButtonPressed()) {
 				isPressed = true;
@@ -85,28 +86,28 @@ void Button::init() {
 	// text = &entity->addComponent<Text>(content, buttonRect.x, buttonRect.y, scale, textColour);
 	// text->centreText(buttonRect);
 
-	setTex(defColour);
+	setSurface(defColour);
 	manager.addToGroup(entity, BUTTONS);
 }
 
 void Button::update() {
-	SDL_DestroyTexture(texture);
-	setTex(defColour);
+	SDL_FreeSurface(surface);
+	setSurface(defColour);
 	// std::cout << std::boolalpha << collider->isColliding(MOUSE_TAG) << '\n';
 }
 
 void Button::reload() {
-	setTex(defColour);
+	setSurface(defColour);
 	isPressed = false;
 }
 
 void Button::draw() {
-	TextureManager::DrawTexture(texture, buttonRect);
+	TextureManager::DrawSurface(surface, buttonRect);
 }
 
-void Button::setTex(SDL_Colour& colour) {
-	if (texture) {
-		SDL_DestroyTexture(texture);
+void Button::setSurface(SDL_Colour& colour) {
+	if (surface) {
+		SDL_FreeSurface(surface);
 	}
-	texture = TextureManager::LoadTexture(buttonRect, colour);
+	surface = TextureManager::LoadSurface(buttonRect, colour);
 }

@@ -1,8 +1,9 @@
-#include "Animator.h"
+#include "../include/Animator.h"
+#include <SDL2/SDL_surface.h>
 
 Animator::Animation::Animation() : id("") {
 	frames = 1;
-	texture = nullptr;
+	surface = nullptr;
 	speed = 0;
 	loop = false;
 	reversible = false;
@@ -10,7 +11,7 @@ Animator::Animation::Animation() : id("") {
 
 Animator::Animation::Animation(const std::string id) : id(id) {
 	frames = 1;
-	texture = nullptr;
+	surface = nullptr;
 	speed = 0;
 	loop = false;
 	reversible = false;
@@ -22,15 +23,15 @@ Animator::Animation::Animation(
 )
 	: id(id) {
 	frames = TextureManager::GetSizeOfSurface(texPath).x / frameSize.x;
-	texture = TextureManager::LoadTexture(texPath);
+	surface = TextureManager::LoadSurface(texPath);
 	this->speed = speed;
 	loop = isLooping;
 	reversible = isReversible;
 }
 
 Animator::Animation::~Animation() {
-	if (texture) {
-		SDL_DestroyTexture(texture);
+	if (surface) {
+		SDL_FreeSurface(surface);
 	}
 }
 
@@ -80,7 +81,7 @@ void Animator::update() {
 		if (!it->second.canTraverse()) continue;
 
 		currentAnimation = animations.at(it->first);
-		sprite->texture = currentAnimation->texture;
+		sprite->surface = currentAnimation->surface;
 		sprite->srcRect.x = sprite->srcRect.y = 0;
 
 		break;

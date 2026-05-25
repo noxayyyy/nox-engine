@@ -54,12 +54,12 @@ public:
 
 private:
 	Transform* transform;
-	SDL_Texture* texture;
+	SDL_Surface* surface;
 	SDL_Rect srcRect, destRect;
 
 	/**
 	 * @brief Loads and assigns a new texture to this sprite.
 	 * @param tex The file path to the texture.
 	 */
-	void setTex(const char* tex);
+	void setSurface(const char* surface_path);
 };

@@ -1,13 +1,13 @@
-#include "Sprites.h"
-#include <SDL2/SDL_render.h>
+#include "../include/Sprites.h"
+#include <SDL2/SDL_surface.h>
 
 Sprites::Sprites(const char* tex) {
-	setTex(tex);
+	setSurface(tex);
 }
 
 Sprites::~Sprites() {
-	if (texture) {
-		SDL_DestroyTexture(texture);
+	if (surface) {
+		SDL_FreeSurface(surface);
 	}
 }
 
@@ -26,7 +26,7 @@ void Sprites::update() {
 }
 
 void Sprites::draw() {
-	TextureManager::DrawTexture(texture, srcRect, destRect, transform->angle);
+	TextureManager::DrawSurface(surface, srcRect, destRect, transform->angle);
 }
 
 void Sprites::recalcSpriteDimensions() {
@@ -34,9 +34,9 @@ void Sprites::recalcSpriteDimensions() {
 	srcRect.h = transform->height;
 }
 
-void Sprites::setTex(const char* tex) {
-	if (texture) {
-		SDL_DestroyTexture(texture);
+void Sprites::setSurface(const char* surface_path) {
+	if (surface) {
+		SDL_FreeSurface(surface);
 	}
-	texture = TextureManager::LoadTexture(tex);
+	surface = TextureManager::LoadSurface(surface_path);
 }

@@ -1,4 +1,4 @@
-#include "Transform.h"
+#include "../include/Transform.h"
 
 Transform::Transform() : height(50), width(50), scale(1.0f), speed(DEFAULT_TRANSFORM_SPEED) {
 	pos.zero();
