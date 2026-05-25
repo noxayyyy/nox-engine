@@ -1,4 +1,4 @@
-#include "../include/Sprites.h"
+#include "Sprites.h"
 #include <SDL2/SDL_surface.h>
 
 Sprites::Sprites(const char* surface_path) {

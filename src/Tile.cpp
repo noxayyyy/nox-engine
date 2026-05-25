@@ -1,4 +1,4 @@
-#include "../include/Tile.h"
+#include "Tile.h"
 
 Tile::Tile(int x, int y, int w, int h, int id) {
 	tileRect.x = x;

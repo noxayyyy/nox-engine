@@ -1,4 +1,4 @@
-#include "../include/Controller.h"
+#include "Controller.h"
 
 Controller::Controller() {}
 

@@ -1,4 +1,4 @@
-#include "../include/MouseTracker.h"
+#include "MouseTracker.h"
 
 MouseTracker::MouseTracker() {
 	isPressed = false;

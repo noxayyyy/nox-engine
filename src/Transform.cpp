@@ -1,4 +1,4 @@
-#include "../include/Transform.h"
+#include "Transform.h"
 #include <SDL2/SDL_stdinc.h>
 #include <SDL2/SDL_surface.h>
 #include <cstdint>

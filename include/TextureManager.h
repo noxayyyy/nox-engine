@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "../include/Game.h"
+#include "Game.h"
 #include <SDL2/SDL_render.h>
 
 // #include <SDL2/SDL_ttf.h>

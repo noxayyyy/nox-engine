@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "../include/Constants.h"
+#include "Constants.h"
 #include "ECS.h"
 #include "Vector2D.h"
 #include <SDL2/SDL.h>

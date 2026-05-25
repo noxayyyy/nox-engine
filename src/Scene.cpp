@@ -1,4 +1,4 @@
-#include "../include/Scene.h"
+#include "Scene.h"
 
 Scene::Scene(std::string name, int buildIndex, bool isPanel, bool isLocking, int layer) {
 	this->name = name;
