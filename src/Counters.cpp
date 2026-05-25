@@ -1,4 +1,4 @@
-// #include "Counters.h"
+// #include "../include/Counters.h"
 //
 // FPS::FPS(std::string inStr) : Text(inStr, 10, 0) {
 // 	value = 0;
@@ -30,6 +30,7 @@
 // 	value = 0;
 // 	frameIndex = 0;
 // }
+//
 //
 // Points::Points(std::string inStr) : Text(inStr, 1100, 0) {
 // 	value = 0;
