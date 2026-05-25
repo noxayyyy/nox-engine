@@ -8,7 +8,6 @@
 #include "Collider.h"
 #include "ECS.h"
 #include <csignal>
-#include <cstdio>
 #include <unordered_map>
 
 /**
@@ -28,12 +27,12 @@ public:
 	 * @brief Updates the state when a key is pressed down.
 	 * @param key The SDL_Keycode of the pressed key.
 	 */
-	// void updateKeyDown(SDL_Keycode key);
+	void updateKeyDown(SDL_Keycode key);
 	/**
 	 * @brief Updates the state when a key is released.
 	 * @param key The SDL_Keycode of the released key.
 	 */
-	// void updateKeyUp(SDL_Keycode key);
+	void updateKeyUp(SDL_Keycode key);
 	/**
 	 * @brief Calculates and applies velocity to the Transform based on current key states.
 	 */
@@ -49,5 +48,10 @@ private:
 	Transform* transform;
 	Collider* collider;
 
-	// std::unordered_map<SDL_Keycode, bool> KEY_STATES;
+	std::unordered_map<SDL_Keycode, bool> KEY_STATES {
+		{ SDLK_w, false },
+		{ SDLK_s, false },
+		{ SDLK_a, false },
+		{ SDLK_d, false },
+	};
 };

@@ -23,7 +23,7 @@ public:
 	 * @brief Constructs a sprite from a texture path.
 	 * @param tex The file path to the texture.
 	 */
-	Sprites(const char* tex);
+	Sprites(const char* surface_path);
 	/**
 	 * @brief Constructs a sprite with simple, built-in animation capabilities.
 	 * @param tex The file path to the sprite sheet.
@@ -31,7 +31,7 @@ public:
 	 * @param mSpeed The delay in milliseconds between frames.
 	 * @param loop Whether the animation should loop.
 	 */
-	Sprites(const char* tex, int nFrames, int mSpeed, bool loop);
+	Sprites(const char* surface_path, int nFrames, int mSpeed, bool loop);
 	~Sprites();
 
 	/**

@@ -1,8 +1,11 @@
 #include "../include/Sprites.h"
 #include <SDL2/SDL_surface.h>
 
-Sprites::Sprites(const char* tex) {
-	setSurface(tex);
+Sprites::Sprites(const char* surface_path) {
+	surface = nullptr;
+	transform = nullptr;
+	srcRect = destRect = { 0, 0, 0, 0 };
+	setSurface(surface_path);
 }
 
 Sprites::~Sprites() {
@@ -14,8 +17,13 @@ Sprites::~Sprites() {
 void Sprites::init() {
 	transform = &entity->addComponent<Transform>();
 	srcRect.x = srcRect.y = 0;
-	srcRect.w = transform->width;
-	srcRect.h = transform->height;
+	if (entity->getID() == "pacman") {
+		srcRect.w = transform->width;
+		srcRect.h = transform->height;
+	} else {
+		srcRect.w = surface->w;
+		srcRect.h = surface->h;
+	}
 }
 
 void Sprites::update() {
@@ -26,7 +34,11 @@ void Sprites::update() {
 }
 
 void Sprites::draw() {
-	TextureManager::DrawSurface(surface, srcRect, destRect, transform->angle);
+	if (!transform->angle && entity->getID() != "pacman") {
+		TextureManager::DrawSurface(surface, srcRect, destRect);
+		return;
+	}
+	TextureManager::DrawSurface(surface, srcRect, destRect, (double)transform->angle);
 }
 
 void Sprites::recalcSpriteDimensions() {

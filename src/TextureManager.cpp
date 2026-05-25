@@ -47,18 +47,18 @@ SDL_Surface* TextureManager::LoadSurface(const char* fileName) {
 
 SDL_Surface* TextureManager::LoadSurface(SDL_Rect& rect, SDL_Colour colour) {
 	SDL_Surface* surface =
-		SDL_CreateRGBSurfaceWithFormat(0, rect.w, rect.h, 32, SDL_PIXELFORMAT_RGB565);
+		SDL_CreateRGBSurfaceWithFormat(0, rect.w, rect.h, 16, SDL_PIXELFORMAT_RGB565);
 	SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, colour.r, colour.g, colour.b));
 
 	return surface;
 }
 
 void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& src, SDL_Rect& dest) {
-	SDL_BlitScaled(surface, &src, Game::screen, &dest);
+	SDL_BlitScaled(surface, NULL, Game::screen, &dest);
 }
 
 void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& dest) {
-	SDL_BlitScaled(surface, NULL, Game::screen, &dest);
+	SDL_BlitSurface(surface, NULL, Game::screen, &dest);
 }
 
 void TextureManager::DrawSurface(
@@ -70,21 +70,17 @@ void TextureManager::DrawSurface(
 	float cosA = cosf(rad);
 	float sinA = sinf(rad);
 
-	float surfaceCX = surface->w / 2.0f;
-	float surfaceCY = surface->h / 2.0f;
 	float destCX = dest.w / 2.0f;
 	float destCY = dest.h / 2.0f;
+	float srcCX = src.w / 2.0f;
+	float srcCY = src.h / 2.0f;
 
-	SDL_Surface* rotated = SDL_CreateRGBSurface(
-		0,
-		dest.w,
-		dest.h,
-		16,
-		surface->format->Rmask,
-		surface->format->Gmask,
-		surface->format->Bmask,
-		surface->format->Amask
-	);
+	// Scale factor from dest to src space
+	float scaleX = (float)src.w / dest.w;
+	float scaleY = (float)src.h / dest.h;
+
+	SDL_Surface* rotated =
+		SDL_CreateRGBSurfaceWithFormat(0, dest.w, dest.h, 16, surface->format->format);
 	if (!rotated) return;
 
 	uint32_t colorkey = SDL_MapRGB(rotated->format, 255, 0, 255);
@@ -102,15 +98,16 @@ void TextureManager::DrawSurface(
 			float rx = dx - destCX;
 			float ry = dy - destCY;
 
-			float surfaceX = cosA * rx + sinA * ry + surfaceCX;
-			float surfaceY = -sinA * rx + cosA * ry + surfaceCY;
+			// Rotate in dest space then scale to src space
+			float surfaceX = (cosA * rx + sinA * ry) * scaleX + srcCX;
+			float surfaceY = (-sinA * rx + cosA * ry) * scaleY + srcCY;
 
 			int sx = (int)surfaceX;
 			int sy = (int)surfaceY;
 
-			if (sx < 0 || sx >= surface->w || sy < 0 || sy >= surface->h) continue;
+			if (sx < 0 || sx >= src.w || sy < 0 || sy >= src.h) continue;
 
-			uint16_t pixel = surfacePx[sy * surface->w + sx];
+			uint16_t pixel = surfacePx[(sy + src.y) * surface->w + (sx + src.x)];
 
 			if (pixel == ck) continue;
 
@@ -122,8 +119,7 @@ void TextureManager::DrawSurface(
 	SDL_UnlockSurface(rotated);
 
 	SDL_SetColorKey(rotated, SDL_TRUE, colorkey);
-
-	SDL_BlitScaled(rotated, &src, Game::screen, &dest);
+	SDL_BlitSurface(rotated, NULL, Game::screen, &dest);
 	SDL_FreeSurface(rotated);
 }
 
@@ -139,16 +135,8 @@ void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& dest, const dou
 	float destCX = dest.w / 2.0f;
 	float destCY = dest.h / 2.0f;
 
-	SDL_Surface* rotated = SDL_CreateRGBSurface(
-		0,
-		dest.w,
-		dest.h,
-		16,
-		surface->format->Rmask,
-		surface->format->Gmask,
-		surface->format->Bmask,
-		surface->format->Amask
-	);
+	SDL_Surface* rotated =
+		SDL_CreateRGBSurfaceWithFormat(0, dest.w, dest.h, 16, surface->format->format);
 	if (!rotated) return;
 
 	uint32_t colorkey = SDL_MapRGB(rotated->format, 255, 0, 255);
@@ -186,7 +174,6 @@ void TextureManager::DrawSurface(SDL_Surface* surface, SDL_Rect& dest, const dou
 	SDL_UnlockSurface(rotated);
 
 	SDL_SetColorKey(rotated, SDL_TRUE, colorkey);
-
-	SDL_BlitScaled(rotated, NULL, Game::screen, &dest);
+	SDL_BlitSurface(rotated, NULL, Game::screen, &dest);
 	SDL_FreeSurface(rotated);
 }

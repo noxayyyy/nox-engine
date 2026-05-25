@@ -36,7 +36,10 @@ void Entity::disable() {
 	active = false;
 }
 
-void Entity::refresh() {}
+void Entity::refresh() {
+	if (active) return;
+	deleteAllComponents();
+}
 
 void Entity::reload() {
 	for (auto it = components.begin(); it != components.end(); it++) {
@@ -104,6 +107,10 @@ void Manager::refreshGroups() {
 void Manager::refresh() {
 	refreshGroups();
 
+	for (auto it = entities.begin(); it != entities.end(); it++) {
+		(*it)->refresh();
+	}
+
 	entities.erase(
 		std::remove_if(
 			entities.begin(),
@@ -112,10 +119,6 @@ void Manager::refresh() {
 		),
 		entities.end()
 	);
-
-	for (auto it = entities.begin(); it != entities.end(); it++) {
-		(*it)->refresh();
-	}
 }
 
 void Manager::addToGroup(Entity* memEntity, GroupID memGroup) {
