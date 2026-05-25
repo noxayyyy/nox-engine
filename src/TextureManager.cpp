@@ -34,17 +34,6 @@ SDL_Surface* TextureManager::LoadSurface(const char* fileName) {
 	return converted;
 }
 
-// SDL_Texture* TextureManager::LoadTexture(const SDL_Colour colour, const char* text) {
-// 	if (!font) {
-// 		std::cout << text << " font failed to load\n";
-// 	}
-// 	SDL_Surface* tmpSurface = TTF_RenderText_Solid(font, text, colour);
-// 	SDL_Texture* tex = SDL_CreateTextureFromSurface(Game::renderer, tmpSurface);
-// 	SDL_FreeSurface(tmpSurface);
-//
-// 	return tex;
-// }
-
 SDL_Surface* TextureManager::LoadSurface(SDL_Rect& rect, SDL_Colour colour) {
 	SDL_Surface* surface =
 		SDL_CreateRGBSurfaceWithFormat(0, rect.w, rect.h, 16, SDL_PIXELFORMAT_RGB565);
@@ -75,7 +64,6 @@ void TextureManager::DrawSurface(
 	float srcCX = src.w / 2.0f;
 	float srcCY = src.h / 2.0f;
 
-	// Scale factor from dest to src space
 	float scaleX = (float)src.w / dest.w;
 	float scaleY = (float)src.h / dest.h;
 
@@ -98,7 +86,6 @@ void TextureManager::DrawSurface(
 			float rx = dx - destCX;
 			float ry = dy - destCY;
 
-			// Rotate in dest space then scale to src space
 			float surfaceX = (cosA * rx + sinA * ry) * scaleX + srcCX;
 			float surfaceY = (-sinA * rx + cosA * ry) * scaleY + srcCY;
 

@@ -9,7 +9,6 @@ void SceneManager::loadScene(std::string id) {
 		bgScenes[currentScene->layer] = currentScene;
 		currentScene->reloadWithState();
 	} else if (currentScene) {
-		// currentScene->disableScene();
 		currentScene->clearScene();
 	}
 	currentScene = toBeLoaded;
@@ -17,7 +16,7 @@ void SceneManager::loadScene(std::string id) {
 	currentSceneIndex = currentScene->buildIndex;
 
 	currentScene->init();
-	manager.refresh(); // check if this works with multiple scenes
+	manager.refresh();
 }
 
 void SceneManager::loadScene(int buildIndex) {
@@ -37,7 +36,7 @@ void SceneManager::loadScene(int buildIndex) {
 	currentSceneIndex = currentScene->buildIndex;
 
 	currentScene->init();
-	manager.refresh(); // check if this works with multiple scenes
+	manager.refresh();
 }
 
 void SceneManager::loadNextScene() {

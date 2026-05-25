@@ -25,16 +25,6 @@ public:
 	 */
 	void init() override;
 	/**
-	 * @brief Updates the state when a key is pressed down.
-	 * @param key The SDL_Keycode of the pressed key.
-	 */
-	// void updateKeyDown(SDL_Keycode key);
-	/**
-	 * @brief Updates the state when a key is released.
-	 * @param key The SDL_Keycode of the released key.
-	 */
-	// void updateKeyUp(SDL_Keycode key);
-	/**
 	 * @brief Calculates and applies velocity to the Transform based on current key states.
 	 */
 	void update() override;
@@ -48,6 +38,4 @@ private:
 	int lastAngle;
 	Transform* transform;
 	Collider* collider;
-
-	// std::unordered_map<SDL_Keycode, bool> KEY_STATES;
 };

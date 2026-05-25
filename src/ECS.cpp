@@ -1,7 +1,6 @@
 #include "../include/ECS.h"
 #include "../include/Game.h"
 
-// Entity Class
 Entity::Entity(Manager& memManager, std::string _id) : manager(memManager), active(false) {
 	id = _id;
 }
@@ -43,7 +42,6 @@ void Entity::refresh() {
 
 void Entity::reload() {
 	for (auto it = components.begin(); it != components.end(); it++) {
-		// if (!active) return;
 		(*it)->reload();
 	}
 }
@@ -67,9 +65,6 @@ void Entity::deleteAllComponents() {
 	componentBitSet.reset();
 	componentArray.fill(std::shared_ptr<Component>());
 	components.clear();
-	// for (auto& x : this->components) {
-	// 	this->delComponent<decltype(x)>();
-	// }
 }
 
 // Manager Class

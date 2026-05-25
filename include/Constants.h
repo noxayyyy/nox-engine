@@ -43,7 +43,7 @@ enum GroupLabels : std::size_t {
 };
 
 // main
-const int FPS_CAP = 60; ///< The target frames per second for the game loop.
+const int FPS_CAP = 10; ///< The target frames per second for the game loop.
 const float FRAME_DELAY = 1.0f / (float)FPS_CAP; ///< The ideal time slice for a single frame.
 
 // ECS
@@ -52,7 +52,7 @@ const std::size_t MAX_GROUPS = 32;     ///< Maximum number of groups available i
 
 // game
 const SDL_Point WINDOW_SIZE { 480, 272 }; ///< Default window dimensions.
-const float DEFAULT_TRANSFORM_SPEED = 120.0f;
+const float DEFAULT_TRANSFORM_SPEED = 20.0f;
 const float DEFAULT_ANIMATION_SPEED = 100.0f;
 
 // scene manager

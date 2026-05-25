@@ -1,11 +1,6 @@
 #include "../include/Controller.h"
 
-Controller::Controller() {
-	// KEY_STATES[SDLK_w] = false;
-	// KEY_STATES[SDLK_s] = false;
-	// KEY_STATES[SDLK_a] = false;
-	// KEY_STATES[SDLK_d] = false;
-}
+Controller::Controller() {}
 
 Controller::~Controller() {
 	transform = nullptr;
@@ -21,16 +16,6 @@ void Controller::init() {
 		);
 	}
 }
-
-// void Controller::updateKeyDown(SDL_Keycode key) {
-// 	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
-// 	KEY_STATES[key] = true;
-// }
-//
-// void Controller::updateKeyUp(SDL_Keycode key) {
-// 	if (KEY_STATES.find(key) == KEY_STATES.end()) return;
-// 	KEY_STATES[key] = false;
-// }
 
 void Controller::update() {
 	if (Game::getPaused()) {
@@ -68,8 +53,4 @@ void Controller::update() {
 	}
 }
 
-void Controller::reload() {
-	// for (auto it = KEY_STATES.begin(); it != KEY_STATES.end(); it++) {
-	// 	it->second = false;
-	// }
-}
+void Controller::reload() {}
